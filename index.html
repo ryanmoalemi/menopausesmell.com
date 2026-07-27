@@ -187,8 +187,13 @@
       border-radius:18px;
       overflow:hidden;
       min-width:0;
+      position:relative;
     }
-    .small-card img{width:100%;aspect-ratio:1/1;object-fit:cover}
+    .small-card img{
+      width:100%;aspect-ratio:1/1;object-fit:cover;
+      background:linear-gradient(135deg, #e8f4f8 0%, #f4e8f8 100%);
+      display:block;
+    }
     .small-card p{
       margin:0;padding:13px 10px 15px;
       text-align:center;font-size:.88rem;font-weight:700;
@@ -230,7 +235,11 @@
       background:white;border:1px solid var(--line);
       border-radius:18px;overflow:hidden;
     }
-    .help-card img{aspect-ratio:1/1;object-fit:cover;width:100%}
+    .help-card img{
+      aspect-ratio:1/1;object-fit:cover;width:100%;
+      background:linear-gradient(135deg, #f4e8f8 0%, #e8f4f8 100%);
+      display:block;
+    }
     .help-card h3{font-size:.85rem;text-align:center;padding:12px 8px 15px;margin:0}
 
     .trending{
@@ -252,7 +261,11 @@
       transition:.2s transform,.2s box-shadow;
     }
     .article:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-    .article img{width:100%;aspect-ratio:4/3;object-fit:cover}
+    .article img{
+      width:100%;aspect-ratio:4/3;object-fit:cover;
+      background:linear-gradient(135deg, #f8e8e8 0%, #e8f8e8 100%);
+      display:block;
+    }
     .article-body{padding:15px}
     .article .tag{
       color:var(--purple);font-weight:850;font-size:.68rem;
@@ -265,7 +278,10 @@
       position:relative;border-radius:18px;overflow:hidden;
       min-height:300px;border:1px solid var(--line);
     }
-    .research-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .research-card img{
+      position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+      background:linear-gradient(135deg, #e8e8f8 0%, #f8e8f8 100%);
+    }
     .research-card::after{
       content:"";position:absolute;inset:35% 0 0;
       background:linear-gradient(transparent,rgba(19,30,35,.78));
@@ -281,14 +297,12 @@
     .signup-box{
       min-height:260px;
       display:grid;
-      grid-template-columns:1fr 1.1fr;
+      grid-template-columns:1fr;
       align-items:center;
       border:1px solid #eadfe8;
       border-radius:var(--radius);
       overflow:hidden;
-      background:
-        linear-gradient(90deg,#f6eaf8 0%,#faefec 45%,rgba(255,255,255,0) 72%),
-        url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=85") right center/55% auto no-repeat;
+      background:linear-gradient(135deg,#f6eaf8 0%,#faefec 100%);
     }
     .signup-copy{padding:36px}
     .signup h2{
@@ -408,27 +422,27 @@
         <h2 class="section-title">What Women Describe</h2>
         <div class="symptom-grid">
           <article class="small-card">
-            <img src="https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?auto=format&fit=crop&w=700&q=80" alt="Red onion">
+            <div style="width:100%;aspect-ratio:1/1;background:linear-gradient(135deg, #ff6b9d 0%, #ff8e8e 100%);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;">🧅</div>
             <p>Onion smell</p>
           </article>
           <article class="small-card">
-            <img src="https://images.unsplash.com/photo-1615477550927-6ec8445fcf14?auto=format&fit=crop&w=700&q=80" alt="Garlic">
+            <div style="width:100%;aspect-ratio:1/1;background:linear-gradient(135deg, #f4a261 0%, #e76f51 100%);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;">🧄</div>
             <p>Sour or musty smell</p>
           </article>
           <article class="small-card">
-            <img src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?auto=format&fit=crop&w=700&q=80" alt="Woman noticing underarm odor">
+            <div style="width:100%;aspect-ratio:1/1;background:linear-gradient(135deg, #a8dadc 0%, #457b9d 100%);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;">👃</div>
             <p>Strong underarm odor</p>
           </article>
           <article class="small-card">
-            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80" alt="Bed and pajamas">
+            <div style="width:100%;aspect-ratio:1/1;background:linear-gradient(135deg, #f1d4c4 0%, #d4a5a5 100%);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;">🛏️</div>
             <p>Pajamas smell after one night</p>
           </article>
           <article class="small-card">
-            <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=80" alt="Clothing on hangers">
+            <div style="width:100%;aspect-ratio:1/1;background:linear-gradient(135deg, #8ab17d 0%, #5a7c59 100%);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;">👕</div>
             <p>Clothes holding odor</p>
           </article>
           <article class="small-card">
-            <img src="https://images.unsplash.com/photo-1511295742362-92c96b1cf484?auto=format&fit=crop&w=700&q=80" alt="Woman resting in bed">
+            <div style="width:100%;aspect-ratio:1/1;background:linear-gradient(135deg, #d4a5a5 0%, #9b8ea0 100%);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;">😴</div>
             <p>Night sweats</p>
           </article>
         </div>
@@ -475,31 +489,31 @@
         <p class="section-subtitle">These are commonly discussed approaches, not one-size-fits-all medical treatments.</p>
         <div class="help-grid">
           <article class="help-card">
-            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=700&q=80" alt="Persimmon soap">
+            <div style="width:100%;aspect-ratio:1/1;background:linear-gradient(135deg, #d4af37 0%, #c9a961 100%);display:flex;align-items:center;justify-content:center;font-size:3rem;">🫧</div>
             <h3>Persimmon soap</h3>
           </article>
           <article class="help-card">
-            <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=700&q=80" alt="Cleanser bottle">
+            <div style="width:100%;aspect-ratio:1/1;background:linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);display:flex;align-items:center;justify-content:center;font-size:3rem;">🧴</div>
             <h3>Benzoyl peroxide wash</h3>
           </article>
           <article class="help-card">
-            <img src="https://images.unsplash.com/photo-1601049676869-702ea24cfd58?auto=format&fit=crop&w=700&q=80" alt="Skincare dropper bottle">
+            <div style="width:100%;aspect-ratio:1/1;background:linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);display:flex;align-items:center;justify-content:center;font-size:3rem;">💧</div>
             <h3>Glycolic acid</h3>
           </article>
           <article class="help-card">
-            <img src="https://images.unsplash.com/photo-1607006483225-6b5fb6f2a8a8?auto=format&fit=crop&w=700&q=80" alt="Body soap bar">
+            <div style="width:100%;aspect-ratio:1/1;background:linear-gradient(135deg, #3498db 0%, #2980b9 100%);display:flex;align-items:center;justify-content:center;font-size:3rem;">🧼</div>
             <h3>Whole-body deodorants</h3>
           </article>
           <article class="help-card">
-            <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=700&q=80" alt="Folded breathable fabrics">
+            <div style="width:100%;aspect-ratio:1/1;background:linear-gradient(135deg, #f39c12 0%, #d68910 100%);display:flex;align-items:center;justify-content:center;font-size:3rem;">👕</div>
             <h3>Breathable fabrics</h3>
           </article>
           <article class="help-card">
-            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=80" alt="Glass of water with lemon">
+            <div style="width:100%;aspect-ratio:1/1;background:linear-gradient(135deg, #16a085 0%, #138d75 100%);display:flex;align-items:center;justify-content:center;font-size:3rem;">💧</div>
             <h3>Hydration</h3>
           </article>
           <article class="help-card">
-            <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=700&q=80" alt="Fresh berries">
+            <div style="width:100%;aspect-ratio:1/1;background:linear-gradient(135deg, #e91e63 0%, #c2185b 100%);display:flex;align-items:center;justify-content:center;font-size:3rem;">🍎</div>
             <h3>Balanced nutrition</h3>
           </article>
         </div>
@@ -514,23 +528,23 @@
         </div>
         <div class="article-grid">
           <article class="article">
-            <img src="https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?auto=format&fit=crop&w=800&q=80" alt="Red onions">
+            <div style="width:100%;aspect-ratio:4/3;background:linear-gradient(135deg, #ff6b9d 0%, #ff8e8e 100%);display:flex;align-items:center;justify-content:center;font-size:4rem;">🧅</div>
             <div class="article-body"><span class="tag">Onion smell?</span><h3>Why Do I Smell Like Onion All of a Sudden?</h3></div>
           </article>
           <article class="article">
-            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Bed sheets">
+            <div style="width:100%;aspect-ratio:4/3;background:linear-gradient(135deg, #f1d4c4 0%, #d4a5a5 100%);display:flex;align-items:center;justify-content:center;font-size:4rem;">🛏️</div>
             <div class="article-body"><span class="tag">Pajamas & sheets</span><h3>Why Do My Pajamas Smell After One Night?</h3></div>
           </article>
           <article class="article">
-            <img src="https://images.unsplash.com/photo-1607006483225-6b5fb6f2a8a8?auto=format&fit=crop&w=800&q=80" alt="Soap and body wash">
+            <div style="width:100%;aspect-ratio:4/3;background:linear-gradient(135deg, #3498db 0%, #2980b9 100%);display:flex;align-items:center;justify-content:center;font-size:4rem;">🧼</div>
             <div class="article-body"><span class="tag">Best soaps</span><h3>The Best Soaps and Washes Women Swear By</h3></div>
           </article>
           <article class="article">
-            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=800&q=80" alt="Persimmon and soap">
+            <div style="width:100%;aspect-ratio:4/3;background:linear-gradient(135deg, #d4af37 0%, #c9a961 100%);display:flex;align-items:center;justify-content:center;font-size:4rem;">🫧</div>
             <div class="article-body"><span class="tag">Persimmon soap</span><h3>What Is Persimmon Soap and Does It Work?</h3></div>
           </article>
           <article class="article">
-            <img src="https://images.unsplash.com/photo-1511295742362-92c96b1cf484?auto=format&fit=crop&w=800&q=80" alt="Woman resting in bed">
+            <div style="width:100%;aspect-ratio:4/3;background:linear-gradient(135deg, #d4a5a5 0%, #9b8ea0 100%);display:flex;align-items:center;justify-content:center;font-size:4rem;">😴</div>
             <div class="article-body"><span class="tag">Night sweats</span><h3>Night Sweats and Body Odor: What Helps?</h3></div>
           </article>
         </div>
@@ -544,17 +558,14 @@
           <a class="view-all" href="#">Explore all research →</a>
         </div>
         <div class="research-grid">
-          <article class="research-card">
-            <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1000&q=80" alt="Laboratory microscope">
-            <h3>Scientific Studies</h3>
+          <article class="research-card" style="background:linear-gradient(135deg, #6c5ce7 0%, #5f3dc4 100%);display:flex;align-items:center;justify-content:center;">
+            <h3 style="font-size:1.8rem;display:flex;flex-direction:column;align-items:center;gap:10px;"><span style="font-size:3rem;">🔬</span>Scientific Studies</h3>
           </article>
-          <article class="research-card">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80" alt="Women talking together">
-            <h3>Community Experiences</h3>
+          <article class="research-card" style="background:linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);display:flex;align-items:center;justify-content:center;">
+            <h3 style="font-size:1.8rem;display:flex;flex-direction:column;align-items:center;gap:10px;"><span style="font-size:3rem;">👥</span>Community Experiences</h3>
           </article>
-          <article class="research-card">
-            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1000&q=80" alt="Doctor speaking with patient">
-            <h3>Expert Insights</h3>
+          <article class="research-card" style="background:linear-gradient(135deg, #00b894 0%, #0984e3 100%);display:flex;align-items:center;justify-content:center;">
+            <h3 style="font-size:1.8rem;display:flex;flex-direction:column;align-items:center;gap:10px;"><span style="font-size:3rem;">👨‍⚕️</span>Expert Insights</h3>
           </article>
         </div>
       </div>
