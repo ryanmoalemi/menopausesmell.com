@@ -159,3 +159,12 @@
 .solution-product img[src$="lume-in-use.webp"],.solution-product img[src$="mirai-at-sink.webp"],.product-art img[src$="lume-in-use.webp"],.product-art img[src$="mirai-at-sink.webp"]{object-fit:cover}
 .external-cleanser-photo.lifestyle{overflow:hidden}.external-cleanser-photo.lifestyle img{padding:0;object-fit:cover;object-position:48% 48%;border-radius:12px}
 @media(max-width:760px){.concern-photo.love-lifestyle img{height:205px}.external-cleanser-photo.lifestyle img{padding:0;object-fit:cover}.concern-voice figcaption{margin-top:7px}}
+
+/* A visible portrait belongs beside every reader quotation. */
+.portrait-quote{display:grid;grid-template-columns:76px minmax(0,1fr);column-gap:17px;row-gap:7px;align-items:start;margin:0 0 20px}
+.portrait-quote .reader-portrait{grid-column:1;grid-row:1 / span 2;display:block;width:76px;height:76px;object-fit:cover;border-radius:50%;border:3px solid #fff;outline:1px solid #c7ae89;box-shadow:0 3px 9px #3e263a14}
+.portrait-quote .reader-quote,.concern-voice.portrait-quote blockquote{grid-column:2;margin:0;padding:0;border:0;background:none;font:25px/1.32 Georgia,serif;min-width:0}
+.portrait-quote figcaption,.concern-voice.portrait-quote figcaption{grid-column:2;margin:0;padding:0;font:11px/1.45 'DM Sans',Arial,sans-serif;color:#6a6057}
+.portrait-quote .quote-credit{margin:0;font-size:11px}.reader-portrait-note{display:block;margin-top:3px;font-size:10px;line-height:1.45;color:#6a6057}
+.concern-voice.portrait-quote{margin:0}.reader-story-note .portrait-quote,.on-site-quote .portrait-quote{margin-top:17px}
+@media(max-width:760px){.portrait-quote{grid-template-columns:66px minmax(0,1fr);column-gap:13px;row-gap:7px}.portrait-quote .reader-portrait{width:66px;height:66px}.portrait-quote .reader-quote,.concern-voice.portrait-quote blockquote,.reader-voice .portrait-quote .reader-quote{font-size:21px;line-height:1.3}.portrait-quote figcaption,.concern-voice.portrait-quote figcaption{font-size:10px}.reader-portrait-note{font-size:10px}}

@@ -59,6 +59,8 @@ RESEARCH_LIMITS = {
     'Oral chlorophyll': 'Reports combine products or omit the brand and formula. They do not establish that chlorophyll reduces odor.',
 }
 
+from quote_visual import visual_quote
+
 def replace_dek(content, text):
     return re.sub(r'<p class="dek">.*?</p>', '<p class="dek">'+html.escape(text)+'</p>', content, count=1, flags=re.S)
 
@@ -68,7 +70,8 @@ def refine_page(path, title, description, content):
         # Reader quotes remain attributed in the article, below the clear topic heading.
         match = re.search(r'<h1>(.*?)</h1>(<span class="quote-credit">.*?</span>)?', content, re.S)
         if match and match.group(2):
-            reader = '<blockquote class="reader-quote">'+match.group(1)+'</blockquote>'+match.group(2)
+            photo = 'portrait-garden.webp' if path == '/ingredient-labels/' else 'portrait-window.webp'
+            reader = visual_quote(html.unescape(match.group(1)).strip('“”'), match.group(2), photo)
             content = content.replace('<article class="article-body">', '<article class="article-body">'+reader, 1)
         content = re.sub(r'<h1>.*?</h1>(?:<span class="quote-credit">.*?</span>)?', '<h1>'+title+'</h1>', content, count=1, flags=re.S)
         content = replace_dek(content, description)

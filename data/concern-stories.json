@@ -11,7 +11,8 @@
       "kind": "Post excerpt",
       "context": "The poster describes underarm odor returning despite showering, antiperspirants and deodorants.",
       "retrieval": "Indexed original Reddit post text returned by web search; direct page retrieval unavailable.",
-      "retrieved_at": "2026-11-13"
+      "retrieved_at": "2026-11-13",
+      "photo": "portrait-window.webp"
     },
     "body": {
       "heading": "Body odor that keeps coming back?",
@@ -24,7 +25,8 @@
       "kind": "Thread-title excerpt",
       "context": "The thread title describes new odor under the breasts despite washing and drying. The quoted sentences are from the title, not a product review.",
       "retrieval": "Indexed original Reddit thread title returned by web search; direct page retrieval unavailable.",
-      "retrieved_at": "2026-11-13"
+      "retrieved_at": "2026-11-13",
+      "photo": "portrait-garden.webp"
     },
     "intimate": {
       "heading": "Smelling different down there?",
@@ -37,7 +39,8 @@
       "kind": "Post excerpt",
       "context": "The poster describes a different scent after menopause and asks for suggestions. The post does not establish the cause of the change.",
       "retrieval": "Indexed original Reddit post text returned by web search; direct page retrieval unavailable.",
-      "retrieved_at": "2026-11-13"
+      "retrieved_at": "2026-11-13",
+      "photo": "portrait-outdoors.webp"
     }
   },
   "scope": "Reader concerns only. These quotes do not add observations to the existing product-rating sample. No stock or generated photo is presented as the quoted poster.",

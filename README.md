@@ -89,3 +89,5 @@ The homepage introduction is limited to a headline and one short subtitle, immed
 `concern_pages.py` renders the three homepage destinations with a short reader-language headline, a verified Reddit excerpt, photos near the top, a practical first step and product comparisons. `data/concern-stories.json` records the exact excerpts and source access limits. These concern quotes do not change product sentiment ratings. Avoid diagnostic questionnaires or long explanations before showing the reader a next step. Longer label precautions remain expandable. Public outbound website links remain Amazon-only.
 
 Public quote cards and concern-page openings must not include Discussion notes or research-notes calls to action. Keep quote attribution concise and retain source records in data. Natural product photographs and provenance are recorded in data/product-photo-sources.json.
+
+Reader quotations must include an adjacent circular portrait. Existing illustrative portraits are not the Reddit authors: keep that label visibly beside each quote. Keep each concern opening distinct and its product photography above the mobile fold. Shared markup lives in quote_visual.py.

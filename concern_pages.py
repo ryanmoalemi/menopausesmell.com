@@ -3,6 +3,7 @@ from pathlib import Path
 import html
 import json
 import re
+from quote_visual import visual_quote
 
 ROOT = Path(__file__).parent
 STORIES = json.loads((ROOT / 'data/concern-stories.json').read_text())['stories']
@@ -15,7 +16,7 @@ def hero(key, photos):
         f'<a class="concern-photo {fit}" href="{href}"><img src="/assets/{image}" alt="{E(alt)}" width="420" height="420" fetchpriority="high"><span>{E(label)}</span></a>'
         for image, alt, label, href, fit in photos
     )
-    return f'''<header class="concern-hero concern-{key}"><div class="concern-copy"><h1>{q['heading']}</h1><figure class="concern-voice"><blockquote cite="{q['url']}"><p>“{E(q['quote'])}”</p></blockquote><figcaption>{q['community']}</figcaption></figure></div><div class="concern-photos">{tiles}</div></header>'''
+    return f'''<header class="concern-hero concern-{key}"><div class="concern-copy"><h1>{q['heading']}</h1>{visual_quote(q['quote'], E(q['community']), q['photo'], class_name='concern-voice', cite=q['url'])}</div><div class="concern-photos">{tiles}</div></header>'''
 
 
 def first_step(title, text, source='body-odor'):
@@ -103,5 +104,5 @@ def intimate():
 def story_notes():
     rows = ''
     for key, q in STORIES.items():
-        rows += f'''<article class="reader-story-note" id="reader-{key}"><h3>{E(q['thread'])}</h3><blockquote cite="{q['url']}">“{E(q['quote'])}”</blockquote><p>{q['community']} · {q['date']} · {q['kind']}.</p><p>{E(q['context'])}</p></article>'''
+        rows += f'''<article class="reader-story-note" id="reader-{key}"><h3>{E(q['thread'])}</h3>{visual_quote(q['quote'], E(q['community']), q['photo'], cite=q['url'])}<p>{q['community']} · {q['date']} · {q['kind']}.</p><p>{E(q['context'])}</p></article>'''
     return f'<section class="reader-story-notes"><h2>Where the opening words come from</h2><p>These excerpts describe the concerns behind the three homepage paths. They are separate from our product-rating sample and are not product endorsements.</p>{rows}<p class="note-small">Checked November 13, 2026 through indexed Reddit text. Direct thread retrieval was unavailable. Full source references are retained in our research records.</p></section>'

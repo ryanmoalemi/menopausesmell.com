@@ -4,6 +4,7 @@ import json, html, re
 from urllib.parse import urlencode, urlsplit, urlunsplit, parse_qsl
 from reader_copy import PRODUCT_COPY, RESEARCH_LIMITS
 from ratings import rating, methodology
+from quote_visual import visual_quote
 
 ROOT=Path(__file__).parent
 E=html.escape
@@ -33,7 +34,8 @@ def credit(key):
  q=Q[key]
  return f'<span class="quote-credit">{a(q["url"],q["community"]+" · "+q["kind"])} · Direct quote</span>'
 def quote(key,tag='blockquote'):
- return f'<{tag} class="reader-quote">“{E(Q[key]["text"])}”</{tag}>{credit(key)}'
+ portraits={'need':'portrait-window.webp','body':'portrait-garden.webp','supplements':'portrait-outdoors.webp','comfort':'portrait-garden.webp','intimate':'portrait-outdoors.webp'}
+ return visual_quote(Q[key]['text'], credit(key), portraits.get(key,'portrait-window.webp'), tag=tag, cite=Q[key]['url'])
 def product_quote(pid):
  q=QUOTE_DATA['products'].get(pid)
  if not q: return ''
@@ -83,7 +85,7 @@ def product_page(p):
 def quote_context(pid):
  q=QUOTE_DATA['products'].get(pid)
  if not q:return ''
- return f'<div class="on-site-quote"><h3>The quoted experience</h3><blockquote cite="{E(q["url"],quote=True)}">“{E(q["text"])}”</blockquote><p>u/{E(q["username"])} · {E(q["community"])} · {E(q["year"])}. {E(q["scope"])}</p><p>One person’s experience. The family star score uses the separate eight-thread sample explained above.</p></div>'
+ return f'<div class="on-site-quote"><h3>The quoted experience</h3>{visual_quote(q['text'], 'u/'+E(q['username'])+' · '+E(q['community']), q['photo'], cite=q['url'])}<p>u/{E(q["username"])} · {E(q["community"])} · {E(q["year"])}. {E(q["scope"])}</p><p>One person’s experience. The family star score uses the separate eight-thread sample explained above.</p></div>'
 
 def research_page():
  ledger=json.loads((DATA/'social-shortlist.json').read_text()) if (DATA/'social-shortlist.json').exists() else {}
