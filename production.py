@@ -86,7 +86,7 @@ for route in routes:
     if live and path == '/privacy/':
         owner = html.escape(settings['site_owner'])
         email = html.escape(settings['contact_email'], quote=True)
-        body = '<h2>Who operates this site</h2><p>'+owner+' operates Menopause Wash. For privacy questions, contact <a href="mailto:'+email+'">'+email+'</a>.</p>'
+        body = '<h2>Who operates this site</h2><p>'+owner+' operates this website. For privacy questions, contact <a href="mailto:'+email+'">'+email+'</a>.</p>'
         body += '<h2>What these pages collect</h2><p>This site has no health questionnaire, email signup, account system, advertising pixels or analytics scripts. Checklist selections stay in the current browser tab and are not submitted to us. Reloading clears them.</p>'
         body += '<h2>Hosting and fonts</h2><p>GitHub Pages serves these static pages and may process standard request information such as IP addresses. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>. Google Fonts receives requests when your browser loads the fonts. See <a href="https://policies.google.com/privacy">Google’s privacy policy</a>.</p>'
         body += '<h2>Amazon and other links</h2><p>Product and research links take you to external sites with their own privacy practices. Amazon may use information from your visit and purchase under its privacy notice. Our affiliate links identify qualifying referrals. We do not receive your payment details or medical information.</p>'

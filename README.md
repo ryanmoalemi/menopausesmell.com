@@ -72,8 +72,12 @@ The three circular photos are AI-created illustrations, not Reddit commenters or
 
 ## November 12 reader journey update
 
-The homepage now introduces Menopause Wash and offers three routes by concern. `/body-odor/` explains why odor may change and the practical first steps. `/underarm-products/` explains deodorant versus antiperspirant before the existing comparisons. Intimate-odor pages distinguish surrounding skin from vaginal symptoms and lead to the relevant care or appointment page. Product detail pages state who might consider each format and the main purchase check. Product names and photos are clickable internally.
+The homepage speaks directly to readers and offers three routes by concern. `/body-odor/` explains why odor may change and the practical first steps. `/underarm-products/` explains deodorant versus antiperspirant before the existing comparisons. Intimate-odor pages distinguish surrounding skin from vaginal symptoms and lead to the relevant care or appointment page. Product detail pages state who might consider each format and the main purchase check. Product names and photos are clickable internally.
 
 The final presentation pass is `journey.py`, called after the earlier reader-copy pass. `production.py` also applies its outbound-link rule after production privacy/disclosure replacements. Public external HTTP links are limited to Amazon affiliate links at the owner's request. Reddit usernames, quotations, discussion assessments and medical source names remain on site; source URLs remain in the research data and noninteractive quote citations. Do not reintroduce outgoing Reddit, manufacturer or other shopping links without changing that policy.
 
 Reader-journey health references: Cleveland Clinic, Body Odor (https://my.clevelandclinic.org/health/diseases/17865-body-odor); NHS, Body odour (https://www.nhs.uk/symptoms/body-odour-bo/); NHS, Vaginitis (https://www.nhs.uk/conditions/vaginitis/); NHS, Vaginal discharge (https://www.nhs.uk/symptoms/vaginal-discharge/). Checked November 12, 2026. Existing exact product-label facts and Reddit rating values were retained.
+
+## Copy voice
+
+Speak directly to the reader. Do not use the domain or site name as a brand in editorial sentences, such as “Menopause Wash helps you.” Use direct phrasing such as “Understand why your body odor may be changing” and “Compare body washes.” The site identifier may remain in the masthead, metadata and copyright.
