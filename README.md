@@ -29,9 +29,7 @@ Sources:
 
 ## Current state
 
-This branch is a complete working rebuild. It has not replaced the live main branch. The repository currently belongs to `menopausesmell.com`; its existing CNAME is preserved. The rebuild brand and intended canonical domain are `menopausewash.com`. Confirm the intended hosting/domain arrangement before merging the public launch configuration.
-
-`public_launch` is false. Pages carry noindex directives and an empty sitemap until the domain and operator settings are complete. This prevents the staged copy from being presented as the finalized public site; it is not authentication or access control.
+The production domain is `menopausewash.com`. The repository retains its historical name `menopausesmell.com`. `CNAME` and `public_base_url` match the production domain. This release enables public-mode metadata, indexable pages and the sitemap.
 
 Amazon sign-in was blocked by the browser session on November 13, 2026. Product buttons therefore use explicitly labeled Amazon searches and do not earn a commission. Historical short links are preserved in the data ledger, including the original homepage link, but are not guessed onto exact product variants.
 
@@ -56,7 +54,7 @@ The generated privacy notice describes static GitHub Pages hosting, Google Fonts
 
 `validate.py` checks all 24 routes for a single H1, working internal routes and fragment targets, image files, nonempty alt text and relevant comparison/shopping paths. Production modes were also exercised with temporary fixture settings to confirm canonical/sitemap output and affiliate disclosure changes. Fixture links and identities are never committed to the real configuration.
 
-The design's earlier browser pass covered desktop and narrow mobile layouts, navigation, filters, details and printable checklists. No public domain deployment, live commission attribution or social account creation has been verified.
+The design's earlier browser pass covered desktop and narrow mobile layouts, navigation, filters, details and printable checklists. Public deployment is handled by GitHub Pages from the main branch. Live commission attribution and social account creation remain unverified.
 
 ## Editorial rules
 

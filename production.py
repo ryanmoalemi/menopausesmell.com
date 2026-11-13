@@ -59,8 +59,15 @@ for route in routes:
         page = page.replace('noindex,nofollow', 'index,follow')
         page = page.replace('Private editorial concept', 'Independent product comparisons')
         page = page.replace('private editorial concept for an independent information and product-comparison site', 'independent information and product-comparison site')
+        page = page.replace('This preview does not earn commissions.', 'These search links do not earn commissions.')
+        page = page.replace('This preview has no health questionnaire', 'This site has no health questionnaire')
+        page = page.replace('Affiliate links inactive', 'Amazon search links')
+        page = page.replace('The current draft was developed with AI-assisted research', 'These guides were developed with AI-assisted research')
+        page = page.replace('They are included in this private concept for reference; public commercial reuse rights have not been confirmed.', 'They identify the products discussed and do not imply endorsement by the manufacturer.')
+        page = page.replace('The current concept has no active affiliate tracking or verified program enrollment.', 'The current Amazon search links do not earn commissions.')
+        page = page.replace('This concept reflects a targeted check', 'This site reflects a targeted check')
     if active:
-        page = page.replace('Affiliate links inactive', 'Includes affiliate links')
+        page = page.replace('Affiliate links inactive', 'Includes affiliate links').replace('Amazon search links</span>', 'Includes affiliate links</span>')
         page = page.replace('This preview uses Amazon search links. They do not currently earn a commission.', 'Some product links earn us a commission from qualifying purchases.')
         page = page.replace('The current concept has no active affiliate tracking or verified program enrollment.', 'Some product links earn a commission from qualifying purchases. See our affiliate disclosure for details.')
     if path == '/affiliate-disclosure/':
