@@ -22,9 +22,9 @@ def internalize_sources(content):
 
 def routes_panel(panel_id='start', compact=False):
     items = [
-        ('/underarm-products/', 'towels.webp', 'Folded towels for a daily washing routine', 'My underarms smell different', 'Start with sweat vs. odor, then compare underarm options.'),
-        ('/external-washes/', 'mirai-body-wash.webp', 'Mirai liquid body wash packaging', 'It’s on my body or in skin folds', 'Compare rinse-off washes for odor on body skin.'),
-        ('/odor-and-menopause/', 'routine.webp', 'Towels and a dispenser in a bathroom', 'It’s vaginal or intimate odor', 'Understand the difference before choosing a cleanser.'),
+        ('/underarm-products/', 'towels.webp', 'Folded towels for a daily washing routine', 'My underarms smell different', 'See what to try first and compare body washes.'),
+        ('/external-washes/', 'mirai-body-wash.webp', 'Mirai liquid body wash packaging', 'It’s on my body or in skin folds', 'Care for skin folds and compare body washes.'),
+        ('/odor-and-menopause/', 'routine.webp', 'Towels and a dispenser in a bathroom', 'It’s vaginal or intimate odor', 'Start with gentle care and see what may help.'),
     ]
     rows = ''.join(f'<a class="journey-choice" href="{url}"><img src="/assets/{photo}" alt="{alt}" width="70" height="76"><span><strong>{title}</strong><small>{text}</small></span><span class="choice-arrow" aria-hidden="true">↗</span></a>' for url,photo,alt,title,text in items)
     unsure = '<p class="start-unsure">Not sure? <a href="/body-odor/">Read the basics first</a>.</p>' if panel_id=='start' else ''
@@ -67,16 +67,15 @@ def refine(path,title,description,content):
         return 'Menopause smell: understand the change and compare products','Understand changes in menopause body odor, find your starting point, and compare washes and underarm products discussed on Reddit.',home()
     if path=='/body-odor/':
         return 'Why body odor changes during menopause and what to try','Learn what may affect body odor during menopause, practical first steps and when to compare products or get advice.',basics()
+    if path in {'/underarm-products/', '/external-washes/', '/odor-and-menopause/'}:
+        from concern_pages import underarms, body_washes, intimate
+        if path == '/underarm-products/':
+            return 'Underarm odor during menopause: what to try next', 'Still smell after showering? Read familiar Reddit experiences, try a simple first step and compare underarm body-wash options.', internalize_sources(underarms(content))
+        if path == '/external-washes/':
+            return 'Body odor and skin folds: compare soaps and body washes', 'Body odor that keeps coming back? Start with gentle care, then compare persimmon soaps and acidified washes discussed on Reddit.', internalize_sources(body_washes())
+        return 'Smelling different down there during menopause?', 'Read a familiar Reddit experience, start with gentle outside care, and understand when to compare a cleanser or get medical help.', internalize_sources(intimate())
     # Replace repeated footer funnels with one relevant next step; avoid self-links.
     content=re.sub(r'<div class="wrap"><section class="(?:shop-strip|quiet-shop)">.*?</section></div>','',content,flags=re.S)
-    if path=='/external-washes/':
-        description='Compare persimmon soaps and acidified body washes by format, scent, Reddit experiences and intended use.'
-        content=content.replace('Deodorizing washes are marketed for odor on body skin. Compare the persimmon and acidified washes discussed on Reddit by format, ingredients and reported drawbacks.','Looking for a wash for sweaty body skin? Compare a persimmon liquid, an unscented acidified wash and an unscented persimmon bar. Start with the format and ingredients you prefer.')
-        content=re.sub(r'<div class="comparison-question">.*?</div>','<p class="comparison-orientation">New here? <a href="/body-odor/">Learn why odor can change</a>. Already know what you want? Choose liquid or bar below.</p>',content,count=1,flags=re.S)
-        content=content.replace('Other cleansers: compare the intended use','Prefer a straightforward fragrance-free cleanser?')
-        content=content.replace('These are additional label comparisons. The reviewed Reddit discussions do not establish these exact formulas as community favorites.','Vanicream and Dove Ultra Sensitive are general body washes to compare if fragrance-free labeling is your priority. They are included for their labels, not as proven Reddit favorites.')
-        content=content.replace('<div class="link-card"><h3>Fragrance-free body washes</h3>','<div class="link-card"><img class="choice-product-photo" src="/assets/vanicream.webp" alt="Vanicream Gentle Body Wash packaging"><h3>Fragrance-free body washes</h3>')
-        content=content.replace('<div class="link-card"><h3>A cleanser labeled for the vulva</h3>','<div class="link-card"><img class="choice-product-photo" src="/assets/love-cleanser.webp" alt="Love Wellness external cleanser packaging"><h3>A cleanser labeled for the vulva</h3>')
     if path.startswith('/washes/'):
         pid=path.strip('/').split('/')[-1]
         verdicts={
@@ -96,15 +95,6 @@ def refine(path,title,description,content):
                 content=content.replace(match.group(0),'',1).replace('<article class="article-body">','<article class="article-body">'+fig,1)
             if pid=='love-wellness-ph-balanced-cleanser':
                 content=content.replace('A body-wash label does not establish suitability for every body area.','This cleanser is labeled for the external vulva, not for internal washing or treatment of vaginal odor.')
-    if path=='/underarm-products/':
-        title='Underarm odor during menopause: what to try and compare'
-        content=content.replace('The Ordinary and PanOxyl for underarm odor?','Underarms smell different? Start here.')
-        content=content.replace('Reddit users discuss these products for underarm odor. One is an exfoliating toner; the other is an acne cleanser. Here is how their labeled uses differ from those routines.','Check whether the main problem is odor, heavy sweating or an irritating routine. Then compare the products people discuss, with their limits in view.')
-        start='''<section class="underarm-basics" id="start-with-basics"><h2>Match the product to the problem</h2><div class="basics-pair"><div><h3>Mostly sweat?</h3><p>Check whether your usual product is an antiperspirant. Antiperspirants reduce sweating; deodorants target odor. Ask a pharmacist if your current option is not helping.</p></div><div><h3>Looking for a different wash?</h3><p>Start with a rinse-off body-wash comparison. The toner and acne cleanser below are different product types, with different label precautions.</p><a href="/external-washes/">Compare body washes</a></div></div><p class="note-small"><a href="/sources/#body-odor">Medical sources for the basics</a>.</p></section>'''
-        content=content.replace('</header>','</header>'+start,1)
-    if path=='/odor-and-menopause/':
-        content=content.replace('<h2>Three useful next steps</h2>','<h2>Choose your next step</h2>')
-        content=content.replace('<h2>Start by separating the questions</h2>','<div class="intimate-directions"><h2>Which sounds closer?</h2><p><strong>Sweat on the surrounding skin:</strong> start with <a href="/gentle-care/">gentle outside-skin care</a>.</p><p><strong>A change in vaginal odor or discharge:</strong> read <a href="/when-to-get-checked/">when to get checked</a> before trying to solve it with a wash.</p><p><strong>Not sure:</strong> note when it happens and any other symptoms. You can bring that to a clinician without knowing the cause.</p></div><h2>Outside skin and the vagina are different</h2>')
     if path=='/gentle-care/':
         content=content.replace('<h2>If you still want a cleanser</h2>','<h2 id="cleanser">If you still want a cleanser</h2>')
         content=content.replace('<div class="actions"><a class="btn secondary"','<div class="actions"><a class="btn secondary"')
@@ -119,10 +109,14 @@ def refine(path,title,description,content):
         content=content.replace('<h2>What is different?</h2>','<p class="quick-answer"><strong>The short answer:</strong> these are different formulas, not the same supplement in two formats. Neither was established here as a treatment for menopause-related odor.</p><h2>What is different?</h2>')
         content=content.replace('class="article-figure compact-product-figure"','class="article-figure compact-product-figure"')
     if path=='/reddit-recommendations/':
+        from concern_pages import story_notes
+        content += '<div class="wrap">'+story_notes()+'</div>'
         content=content.replace('See which products came up in eight body-odor threads, what readers liked or disliked, and which exact versions were identified.','See how we scored the products, what people liked or disliked, and where the evidence is limited. All of the discussion summaries are here on this page.')
         content=content.replace('<div class="callout"><strong>How to read the counts</strong>','<div class="research-jumps"><a href="#ratings">How the stars work</a><a href="#rating-mirai">Mirai</a><a href="#rating-lume_cleansers">Lume</a><a href="#rating-ordinary">The Ordinary</a><a href="#rating-panoxyl">PanOxyl</a></div><div class="callout"><strong>How to read the counts</strong>')
     if path=='/sources/':
         content=content.replace('<h2>Product and community sources</h2>','<h2 id="body-odor">Body odor and sweating</h2><ul class="source-list"><li>Cleveland Clinic, <cite>Body Odor</cite>, medically reviewed March 4, 2022: sweat, skin bacteria, hormone changes, deodorants and antiperspirants.</li><li>NHS, <cite>Body odour (BO)</cite>, reviewed May 14, 2025: everyday care, pharmacist advice and when to seek assessment.</li><li>NHS, <cite>Vaginal discharge</cite>: changes in discharge and symptoms that need advice.</li></ul><p>These sources were checked for the reader-journey update on November 12, 2026. Product discussion scores use their separately disclosed Reddit sample.</p><h2 id="product-labels">Product and community sources</h2>')
+    if path == '/sources/':
+        content=content.replace('<h2 id="body-odor">', '<h2 id="skin-fold-care">Care for skin folds</h2><p>Cleveland Clinic, <cite>Intertrigo</cite>, reviewed August 24, 2021: keeping folds clean and dry, patting rather than rubbing, and getting rashes or signs of infection assessed. NHS, <cite>Body odour (BO)</cite>: washing, drying and changing clothing.</p><h2 id="intimate-care">Gentle outside care</h2><p>NHS, <cite>Vaginitis</cite> and <cite>Vaginal discharge</cite>: water for outside care, avoiding douching and scented products, and seeking advice for unusual discharge or persistent symptoms. NHS, <cite>Postmenopausal bleeding</cite>: any vaginal bleeding after menopause needs evaluation.</p><p class="note-small">Care sources checked November 13, 2026 for the three concern pages. Medical guidance supports the care steps, not endorsements of the pictured products.</p><h2 id="body-odor">')
     content=internalize_sources(content)
     content=content.replace('These links support the explanations on this site.', 'These sources support the explanations on this site.')
     content=content.replace('Each product page links to its manufacturer.', 'Product pages summarize the manufacturer labels we checked.')

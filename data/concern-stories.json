@@ -1,0 +1,79 @@
+{
+  "stories": {
+    "underarms": {
+      "heading": "Underarms still smell after showering?",
+      "quote": "By 11 am I stink, despite how much I shower",
+      "community": "r/Menopause",
+      "date": "October 21, 2024",
+      "date_short": "October 2024",
+      "thread": "I stink, please help me",
+      "url": "https://www.reddit.com/r/Menopause/comments/1g8vqat/",
+      "kind": "Post excerpt",
+      "context": "The poster describes underarm odor returning despite showering, antiperspirants and deodorants.",
+      "retrieval": "Indexed original Reddit post text returned by web search; direct page retrieval unavailable.",
+      "retrieved_at": "2026-11-13"
+    },
+    "body": {
+      "heading": "Body odor that keeps coming back?",
+      "quote": "I scrub. I use powder. I dry really well.",
+      "community": "r/Menopause",
+      "date": "March 17, 2025",
+      "date_short": "March 2025",
+      "thread": "Does anyone else have issues with your boobs being smelly?",
+      "url": "https://www.reddit.com/r/Menopause/comments/1jd5qpf/",
+      "kind": "Thread-title excerpt",
+      "context": "The thread title describes new odor under the breasts despite washing and drying. The quoted sentences are from the title, not a product review.",
+      "retrieval": "Indexed original Reddit thread title returned by web search; direct page retrieval unavailable.",
+      "retrieved_at": "2026-11-13"
+    },
+    "intimate": {
+      "heading": "Smelling different down there?",
+      "quote": "Not in a horrible way just different.",
+      "community": "r/Menopause",
+      "date": "July 10, 2025",
+      "date_short": "July 2025",
+      "thread": "Crotch smell after menopause",
+      "url": "https://www.reddit.com/r/Menopause/comments/1lwdyyu/",
+      "kind": "Post excerpt",
+      "context": "The poster describes a different scent after menopause and asks for suggestions. The post does not establish the cause of the change.",
+      "retrieval": "Indexed original Reddit post text returned by web search; direct page retrieval unavailable.",
+      "retrieved_at": "2026-11-13"
+    }
+  },
+  "scope": "Reader concerns only. These quotes do not add observations to the existing product-rating sample. No stock or generated photo is presented as the quoted poster.",
+  "care_sources": [
+    {
+      "organization": "NHS",
+      "title": "Body odour (BO)",
+      "url": "https://www.nhs.uk/symptoms/body-odour-bo/"
+    },
+    {
+      "organization": "NHS",
+      "title": "Vaginitis",
+      "url": "https://www.nhs.uk/conditions/vaginitis/"
+    },
+    {
+      "organization": "NHS",
+      "title": "Vaginal discharge",
+      "url": "https://www.nhs.uk/symptoms/vaginal-discharge/"
+    },
+    {
+      "organization": "Cleveland Clinic",
+      "title": "Intertrigo",
+      "url": "https://my.clevelandclinic.org/health/diseases/21693-intertrigo"
+    },
+    {
+      "organization": "American Academy of Dermatology",
+      "title": "Hyperhidrosis: 6 tips dermatologists give their patients",
+      "url": "https://www.aad.org/public/diseases/a-z/hyperhidrosis-self-care"
+    }
+  ],
+  "product_photo_sources": [
+    {
+      "file": "assets/panoxyl-10-bar.webp",
+      "source": "https://panoxyl.com/wp-content/uploads/2023/08/Treatment-Bar0.webp",
+      "page": "https://panoxyl.com/acne-products/acne-treatment-bar-bpo/",
+      "description": "Manufacturer product photograph, used to identify the compared 10% acne bar."
+    }
+  ]
+}
