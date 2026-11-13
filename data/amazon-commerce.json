@@ -1,6 +1,6 @@
 {
-  "tracking_id": null,
-  "enrollment_verified": false,
+  "tracking_id": "menopausewash-20",
+  "enrollment_verified": true,
   "products": {
     "vanicream-gentle-body-wash": {
       "search_url": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz",
@@ -85,5 +85,11 @@
       "url": "https://amzn.to/4pKMrFa",
       "reported_context": "vaginal probiotic, user later narrowed to this"
     }
-  ]
+  ],
+  "enrollment_verification": {
+    "source": "Site owner confirmation in chat",
+    "date": "2026-11-12",
+    "website_registered": "https://menopausewash.com",
+    "note": "Normal US tagged links enabled. OneLink activation not verified. Exact listing matches remain unverified; use tagged product searches."
+  }
 }

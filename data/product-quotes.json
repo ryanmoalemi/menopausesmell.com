@@ -1,0 +1,36 @@
+{
+  "checked_on": "2026-11-12",
+  "photo_note": "AI-created illustrative photo, not the Reddit commenter.",
+  "products": {
+    "mirai-persimmon-body-wash": {
+      "text": "I recommend Mirai Clinical Body Wash with Japanese Persimmon. Recently found it and I really like it.",
+      "username": "Joy_In_The_World",
+      "community": "r/Menopause",
+      "url": "https://www.reddit.com/r/Menopause/comments/yklgs7/comment/iuvgt2z/",
+      "year": "2022",
+      "scope": "About Mirai’s liquid body wash.",
+      "photo": "portrait-garden.webp",
+      "tone": "sage"
+    },
+    "lume-unscented-wash": {
+      "text": "Can you hide the Lume so the others don't steal it? Because it is ~elite~ for me!",
+      "username": "CMWZ",
+      "community": "r/Menopause",
+      "url": "https://www.reddit.com/r/Menopause/comments/1lczuq2/comment/my65qwd/",
+      "year": "2025",
+      "scope": "From a Lume body-wash discussion; scent not specified.",
+      "photo": "portrait-window.webp",
+      "tone": "rose"
+    },
+    "mirai-unscented-bar": {
+      "text": "I have used the soap, and find it does an excellent job of cleaning up arm pit stank.",
+      "username": "Resourceful_Giraffe",
+      "community": "r/Menopause",
+      "url": "https://www.reddit.com/r/Menopause/comments/yklgs7/comment/iuz3n5r/",
+      "year": "2022",
+      "scope": "About Mirai’s soap bar; scent not specified.",
+      "photo": "portrait-outdoors.webp",
+      "tone": "sand"
+    }
+  }
+}

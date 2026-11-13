@@ -1,0 +1,281 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-11-12",
+  "label": "Reddit sentiment",
+  "owner": "Menopause Wash editorial score",
+  "corpus_size": 8,
+  "unit": "One classified thread per product family, using selected accessible comments, not individual reviews.",
+  "formula": "(5 * positive + 3 * mixed + 1 * negative + 6) / (rated_threads + 2), rounded to nearest half star, ties upward.",
+  "neutral_adjustment": "Two neutral three-star observations are added to reduce extreme scores from small samples. They are not real reviews and are not included in displayed thread counts.",
+  "minimum_threads": 3,
+  "rules": [
+    "Positive: at least one clearly attributable favorable recommendation or experience, without a qualifying criticism found in the reviewed material.",
+    "Mixed: praise plus a qualifying criticism, or a report that helped only partly. Price, delivery, tolerability and disappointing results count as criticisms. General label warnings without a personal experience do not.",
+    "Negative: clearly attributable criticism without praise in the reviewed material.",
+    "Questions, plans to try, bare mentions, secondhand review summaries, known brand promotions and uncertain product matches are excluded.",
+    "Family scores are shared across variants, never presented as exact-formula customer ratings. Generic persimmon feedback is not assigned to Mirai. Lume deodorant feedback is not assigned to cleanser.",
+    "Thread count is shown separately and does not directly add stars. Upvotes, affiliate commissions and number of comments do not affect the score.",
+    "This is a purposive eight-thread sample, originally found partly using product-name queries. It is not representative of Reddit, a clinical effectiveness score, an Amazon rating, a verified-buyer average or a percentage of users satisfied.",
+    "Only selected accessible comments were reviewed; nested, deleted and unavailable comments may be missing. Repeated authors and combined routines limit interpretation.",
+    "The earlier two context threads and comments used as card quotations do not automatically enter the rating sample.",
+    "Products without three rated threads in this corpus show Not rated, not zero stars. No inference of low quality should be made."
+  ],
+  "threads": {
+    "B1": {
+      "title": "Body odor",
+      "url": "https://www.reddit.com/r/Menopause/comments/1q4m6y4/body_odor/",
+      "date": "2026-01-05"
+    },
+    "B2": {
+      "title": "Persimmon soap alternative",
+      "url": "https://www.reddit.com/r/Menopause/comments/1lczuq2/persimmon_soap_alternative/",
+      "date": "2025-06-16"
+    },
+    "B3": {
+      "title": "Body odor",
+      "url": "https://www.reddit.com/r/Perimenopause/comments/1lhcoie/body_odor/",
+      "date": "2025-06-22"
+    },
+    "B4": {
+      "title": "Day stank update: Persimmons soap fail",
+      "url": "https://www.reddit.com/r/Perimenopause/comments/1imauzw/day_stank_update_persimmons_soap_fail/",
+      "date": "2025-02-10"
+    },
+    "B5": {
+      "title": "Perimenopause smell?!",
+      "url": "https://www.reddit.com/r/Perimenopause/comments/1vt4mq8/perimenopause_smell/",
+      "date": "2026-08-20"
+    },
+    "B6": {
+      "title": "Body odour...",
+      "url": "https://www.reddit.com/r/Perimenopause/comments/1rw1uc8/body_odour/",
+      "date": "2026-03-17"
+    },
+    "B7": {
+      "title": "Help. I stink.",
+      "url": "https://www.reddit.com/r/Perimenopause/comments/1ry6v8r/help_i_stink/",
+      "date": "2026-03-19"
+    },
+    "B8": {
+      "title": "Any recommendations for deodorizing soaps?",
+      "url": "https://www.reddit.com/r/Menopause/comments/1hk2cy0/any_recommendations_for_deodorizing_soaps/",
+      "date": "2024-12-22"
+    }
+  },
+  "families": {
+    "mirai": {
+      "label": "Mirai cleanser family",
+      "products": [
+        "mirai-persimmon-body-wash",
+        "mirai-unscented-bar"
+      ],
+      "scope": "Mirai soaps and washes together; not a separate rating for this formula.",
+      "positive_threads": 3,
+      "rows": [
+        {
+          "thread": "B6",
+          "sentiment": "positive",
+          "reason": "A commenter names Mirai soap/wipes as part of a helpful routine. The cleanser and wipe effects cannot be separated."
+        },
+        {
+          "thread": "B7",
+          "sentiment": "mixed",
+          "reason": "Named Mirai soap gets praise, alongside a specific complaint about its price. Unbranded persimmon failures are not assigned to Mirai."
+        },
+        {
+          "thread": "B8",
+          "sentiment": "mixed",
+          "reason": "Named Mirai soap gets praise, alongside price and delivery complaints. A secondhand report of mixed reviews is not counted as a separate experience."
+        }
+      ],
+      "exclusions": "Generic persimmon comments, Mirai deodorant, and the two earlier context threads are excluded from this score."
+    },
+    "lume_cleansers": {
+      "label": "Lume cleanser family",
+      "products": [
+        "lume-unscented-wash"
+      ],
+      "scope": "Lume washes and bars together; not a separate rating for the unscented liquid.",
+      "positive_threads": 6,
+      "rows": [
+        {
+          "thread": "B2",
+          "sentiment": "mixed",
+          "reason": "Body-wash praise appears with price complaints and a bar-soap harshness report. An ambiguous Lume rash report is excluded because the product is unclear."
+        },
+        {
+          "thread": "B3",
+          "sentiment": "mixed",
+          "reason": "A user praises the acidified cleansing bar but objects to its price. Deodorant complaints are excluded."
+        },
+        {
+          "thread": "B4",
+          "sentiment": "positive",
+          "reason": "A commenter explicitly praises the acidified body wash. Separate deodorant failures are excluded."
+        },
+        {
+          "thread": "B5",
+          "sentiment": "mixed",
+          "reason": "Wash/deodorant routines receive praise, but another account describes high cost and incomplete relief. The wash effect cannot be isolated."
+        },
+        {
+          "thread": "B6",
+          "sentiment": "mixed",
+          "reason": "Unscented soap and a body-wash/deodorant routine are described as helpful but short-lived. Unspecified Lume failures are excluded."
+        },
+        {
+          "thread": "B7",
+          "sentiment": "positive",
+          "reason": "Body wash, soap and a combined Lume routine receive positive recommendations. Deodorant-only comments are excluded."
+        },
+        {
+          "thread": "B8",
+          "sentiment": "negative",
+          "reason": "The original poster reports no results from Lume soap. A separate successful wash/deodorant routine attributes the benefit to deodorant, so it is excluded."
+        }
+      ],
+      "exclusions": "Deodorant-only feedback, ambiguous Lume products, and the two earlier context threads are excluded from this score."
+    },
+    "ordinary": {
+      "label": "The Ordinary glycolic toner",
+      "products": [
+        "ordinary-glycolic-7"
+      ],
+      "scope": "Brand-specific toner discussion; most comments do not name the strength.",
+      "positive_threads": 8,
+      "rows": [
+        {
+          "thread": "B1",
+          "sentiment": "positive",
+          "reason": "Named toner receives personal praise for underarm odor."
+        },
+        {
+          "thread": "B2",
+          "sentiment": "positive",
+          "reason": "Named toner is described as inexpensive and helpful in a personal routine."
+        },
+        {
+          "thread": "B3",
+          "sentiment": "positive",
+          "reason": "Named toner is praised in combined cleansing/deodorant routines; its individual effect is not isolated."
+        },
+        {
+          "thread": "B4",
+          "sentiment": "positive",
+          "reason": "Named toner receives personal praise alongside deodorant use."
+        },
+        {
+          "thread": "B5",
+          "sentiment": "positive",
+          "reason": "A commenter names this toner as the product that helped most at the time."
+        },
+        {
+          "thread": "B6",
+          "sentiment": "positive",
+          "reason": "The 7% toner is explicitly identified in positive personal accounts."
+        },
+        {
+          "thread": "B7",
+          "sentiment": "mixed",
+          "reason": "Named toner receives positive reports alongside a price objection. General irritation cautions are not counted as personal reactions."
+        },
+        {
+          "thread": "B8",
+          "sentiment": "positive",
+          "reason": "Named toner is part of a helpful routine with Mirai and estrogen; individual effects are not isolated."
+        }
+      ],
+      "exclusions": "Generic glycolic-acid comments without a reliable brand match are excluded. This is sentiment about anecdotes, not an endorsement of off-label use."
+    },
+    "panoxyl": {
+      "label": "PanOxyl cleanser family",
+      "products": [
+        "panoxyl-10-bar"
+      ],
+      "scope": "Different PanOxyl washes and bars; not a separate rating for the 10% bar.",
+      "positive_threads": 5,
+      "rows": [
+        {
+          "thread": "B2",
+          "sentiment": "positive",
+          "reason": "Named PanOxyl bar appears in a helpful routine with hypochlorous spray."
+        },
+        {
+          "thread": "B4",
+          "sentiment": "mixed",
+          "reason": "Several named PanOxyl products receive praise; one commenter reports an allergy and cannot assess benefit."
+        },
+        {
+          "thread": "B5",
+          "sentiment": "positive",
+          "reason": "Named face wash is described as helpful within a broader routine."
+        },
+        {
+          "thread": "B6",
+          "sentiment": "positive",
+          "reason": "Named wash gets a personal benefit report. General fabric-bleaching precautions are not scored as an experienced drawback."
+        },
+        {
+          "thread": "B7",
+          "sentiment": "positive",
+          "reason": "Named bar receives positive personal reports. One wash commenter repeats across B6/B7; threads are not independent people."
+        }
+      ],
+      "exclusions": "Strengths and formats are pooled only at family level. Brand-unspecified benzoyl peroxide comments and plans to try are excluded."
+    }
+  },
+  "products": {
+    "vanicream-gentle-body-wash": {
+      "family": null,
+      "reason": "Not enough product-specific feedback in the reviewed body-odor sample."
+    },
+    "dove-ultra-sensitive": {
+      "family": null,
+      "reason": "Not enough product-specific feedback in the reviewed body-odor sample."
+    },
+    "love-wellness-ph-balanced-cleanser": {
+      "family": null,
+      "reason": "Not enough product-specific feedback in the reviewed body-odor sample."
+    },
+    "uro-gummies": {
+      "family": null,
+      "reason": "Not enough product-specific feedback in the reviewed body-odor sample."
+    },
+    "rephresh-pro-b": {
+      "family": null,
+      "reason": "Not enough product-specific feedback in the reviewed body-odor sample."
+    },
+    "love-good-girl": {
+      "family": null,
+      "reason": "Not enough product-specific feedback in the reviewed body-odor sample."
+    },
+    "mirai-unscented-bar": {
+      "family": "mirai",
+      "reason": null
+    },
+    "lume-unscented-wash": {
+      "family": "lume_cleansers",
+      "reason": null
+    },
+    "dove-sensitive-beauty-bar": {
+      "family": null,
+      "reason": "Not enough product-specific feedback in the reviewed body-odor sample."
+    },
+    "panoxyl-10-bar": {
+      "family": "panoxyl",
+      "reason": null
+    },
+    "ordinary-glycolic-7": {
+      "family": "ordinary",
+      "reason": null
+    },
+    "mirai-persimmon-body-wash": {
+      "family": "mirai",
+      "reason": null
+    },
+    "uro-capsules": {
+      "family": null,
+      "reason": "Not enough product-specific feedback in the reviewed body-odor sample."
+    }
+  }
+}

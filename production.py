@@ -33,7 +33,7 @@ for pid, product in commerce['products'].items():
         if dest.scheme != 'https' or dest.hostname not in {'www.amazon.com', 'amazon.com', 'amzn.to'}:
             raise ValueError(f'{pid}: expected an HTTPS US Amazon Special Link')
         active_count += 1
-active = bool(commerce.get('enrollment_verified') and active_count)
+active = bool(commerce.get('enrollment_verified') and (active_count or commerce.get('tracking_id')))
 
 OUT.mkdir(exist_ok=True)
 shutil.copytree(ROOT / 'assets', OUT / 'assets', dirs_exist_ok=True)
@@ -70,6 +70,9 @@ for route in routes:
         page = page.replace('Affiliate links inactive', 'Includes affiliate links').replace('Amazon search links</span>', 'Includes affiliate links</span>')
         page = page.replace('This preview uses Amazon search links. They do not currently earn a commission.', 'Some product links earn us a commission from qualifying purchases.')
         page = page.replace('The current concept has no active affiliate tracking or verified program enrollment.', 'Some product links earn a commission from qualifying purchases. See our affiliate disclosure for details.')
+        page = page.replace('The current Amazon search links do not earn commissions.', 'Our Amazon links include affiliate tracking. We may earn a commission from qualifying purchases.')
+        page = page.replace('They do not currently earn a commission.', 'We may earn a commission from qualifying purchases.')
+        page = page.replace('This preview uses Amazon search links.', 'Our Amazon buttons link to product searches or individual listings, as labeled.')
     if path == '/affiliate-disclosure/':
         status = '<p>As an Amazon Associate I earn from qualifying purchases.</p><p>Some product links are affiliate links. If you buy through one of those links, we may receive a commission. The disclosure appears near shopping links as well as on this page.</p>' if active else '<p>The current buttons open ordinary Amazon searches. They do not currently earn a commission. Exact product affiliate links have not yet been connected.</p>'
         body = '<h2>How this site is funded</h2>'+status
@@ -98,6 +101,7 @@ for route in routes:
             social.append('<a href="'+html.escape(url,quote=True)+'">'+label+'</a>')
     if social:
         page = page.replace('<h4>Behind the guides</h4>', '<h4>Behind the guides</h4>'+''.join(social))
+    page = page.replace('↗', '<svg class="external-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M4 3h9v9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>')
     file.write_text(page)
 
 (OUT / '404.html').write_text((OUT / 'not-found/index.html').read_text())

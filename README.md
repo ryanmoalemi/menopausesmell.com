@@ -24,6 +24,8 @@ Sources:
 - `data/commerce-products.json`, `data/products-research.json`: product labels and research.
 - `data/social-shortlist.json`, `data/reddit-copy.json`: discussion counts and direct quotations.
 - `data/amazon-commerce.json`: Amazon links and activation status.
+- `data/product-quotes.json`: verified quotations, source permalinks and illustrative-photo disclosure.
+- `ratings.py`, `data/reddit-ratings.json`: calculated editorial sentiment scores and per-thread assessment ledger.
 - `data/site-settings.json`: domain, operator, contact and social profiles.
 - `marketing/launch-copy.txt`: Pinterest and Reddit setup copy, welcome post and launch status.
 
@@ -31,16 +33,16 @@ Sources:
 
 The production domain is `menopausewash.com`. The repository retains its historical name `menopausesmell.com`. `CNAME` and `public_base_url` match the production domain. This release enables public-mode metadata, indexable pages and the sitemap.
 
-Amazon sign-in was blocked by the browser session on November 13, 2026. Product buttons therefore use explicitly labeled Amazon searches and do not earn a commission. Historical short links are preserved in the data ledger, including the original homepage link, but are not guessed onto exact product variants.
+The owner confirmed Amazon Associates tracking ID `menopausewash-20` and domain registration on November 12, 2026. All 26 Amazon button placements use tagged US product searches. Exact listing variants remain unverified, so buttons say “Search Amazon.” OneLink readiness and actual commission attribution have not been tested. Historical short links are preserved without assigning them to guessed variants.
 
 ## Connect Amazon links
 
-1. Use the owner's Amazon Associates account and verify enrollment. Add the final site and relevant promotional profiles to that account as required by the program.
+1. Owner-confirmed enrollment and domain registration are recorded in `data/amazon-commerce.json`. Keep promotional profiles registered as applicable.
 2. For each exact product and variant, obtain its approved Special Link from the owner's account. Confirm formula, size, seller and quantity.
-3. In `data/amazon-commerce.json`, paste that link into the corresponding product's `special_link`, then set its `exact_listing_verified` to true. Set `enrollment_verified` to true only after verification. The tracking ID is informational; the build never guesses it or constructs affiliate links from it.
+3. In `data/amazon-commerce.json`, paste that link into the corresponding product's `special_link`, then set its `exact_listing_verified` to true. The recorded owner confirmation enables tagged search URLs. Only set `exact_listing_verified` after checking the listing; the builder must not guess product matches.
 4. Run the build and validation. Configured products change from “Search Amazon” to “View on Amazon.” Unverified products keep search fallbacks. The Associate statement, disclosure article and footer update together.
 
-Do not commit Amazon passwords, session cookies, API credentials or payment information. No credentials are needed in this repository. There are no fixed prices, star ratings or fabricated product tests.
+Do not commit Amazon passwords, session cookies, API credentials or payment information. No credentials are needed in this repository. There are no fixed prices or fabricated product tests. Yellow stars are explicitly labeled editorial Reddit sentiment scores, not Amazon ratings or verified-buyer averages.
 
 ## Public launch
 
@@ -59,3 +61,11 @@ The design's earlier browser pass covered desktop and narrow mobile layouts, nav
 ## Editorial rules
 
 Keep product families distinct from exact formulas. The eight-thread body-odor sample is a limited sample, not a universal “best on Reddit” ranking. URO capsules and gummies are different products. User comments are anecdotal, not clinical evidence. Never fabricate personal experiences, ratings, clinician review or endorsements. New or persistent vaginal symptoms should not be framed as a reason to buy a stronger wash.
+
+## Sentiment scoring and photography
+
+`ratings.py` calculates family-level sentiment from the fixed eight-thread body-odor corpus. Positive threads contribute 5, mixed 3 and negative 1, with two neutral 3-point observations to temper small samples. Display rounds to the nearest half star, ties up. The artificial neutral adjustment is disclosed and excluded from real thread counts. At least three assessed threads are required; unrated products display no numeric stars. Discussion frequency is reported separately.
+
+The research page exposes each assessment and source URL. Never substitute generic persimmon experiences for Mirai, deodorant reviews for Lume wash, or capsule reviews for gummies. No AggregateRating structured data is emitted. Review the evidence ledger before changing classifications, and apply the same rules to every family.
+
+The three circular photos are AI-created illustrations, not Reddit commenters or verified customers. Their caption appears beside each quote. Compositions intentionally differ: a casual kitchen selfie, a close sideways car selfie with sunglasses on the head, and a low-angle laughing sofa selfie with reading glasses. Maintain natural skin texture and lighting, and preserve the local disclosure. Exact sourced words remain in the quote ledger.

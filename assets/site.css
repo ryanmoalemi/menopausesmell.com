@@ -12,3 +12,58 @@
 /* Reader copy pass: compact explanations, clear hierarchy, readable details. */
 .hero-explainer{font-size:16px;line-height:1.65;max-width:560px;margin:20px 0 0}.commerce-hero h1{max-width:650px}.hero-dek{font-size:21px;line-height:1.45}.hero-copy .actions{margin-top:23px}.section-intro{max-width:780px;margin:-4px 0 18px;line-height:1.65}.comparison-question{padding:0 0 24px}.comparison-question .reader-quote{font-size:24px;line-height:1.4;margin:0}.reader-layout{display:block;max-width:850px}.reader-layout .article-body{max-width:850px}.label-details{margin:18px 0;border:1px solid var(--line);border-radius:8px;padding:15px 18px}.label-details summary{font-weight:600;cursor:pointer}.label-details p{margin:15px 0 0;line-height:1.7}.compact-product-figure{float:right;width:160px;margin:0 0 22px 24px}.compact-product-figure img{height:200px;object-fit:contain}.compact-product-figure figcaption{font-size:11px}.article-body h2{clear:both}.source-tile small{font-size:13px}.quiet-shop a{line-height:1.6}.product-detail .detail-photo{align-self:start}.reader-layout .table-wrap{max-width:100%}
 @media(max-width:760px){.hero-explainer{font-size:15px;line-height:1.6;margin-top:18px}.hero-dek{font-size:18px}.commerce-hero h1{font-size:42px;line-height:1.07}.section-intro{font-size:15px}.comparison-question .reader-quote{font-size:21px}.label-details{padding:13px}.compact-product-figure{float:none;width:100%;margin:0 0 24px}.compact-product-figure img{height:180px}.reader-layout{max-width:100%}.research-row h2{overflow-wrap:anywhere}.reader-layout .article-body{width:100%}}
+
+/* Source-linked community excerpts. Photos are illustrative, never author identities. */
+.community-quote{margin:18px 0 22px;padding:19px 18px 16px;border-radius:14px;background:#edf0e7;border:1px solid #d7dfce;text-align:left}
+.community-quote.quote-rose{background:#f3e9e3;border-color:#e7d7cc}
+.community-quote.quote-sand{background:#f5efdf;border-color:#e8ddc2}
+.community-quote-label{display:block;font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:#63544c;margin-bottom:10px}
+.community-quote blockquote{margin:0;padding:0;border:0;background:none}
+.community-quote blockquote p,.social-product .community-quote blockquote p{margin:0;font-family:Georgia,'Times New Roman',serif;font-size:21px;line-height:1.38;color:#352d33}
+.community-quote figcaption{margin-top:18px}
+.quote-person{display:flex;align-items:center;gap:12px}
+.quote-portrait{display:block;width:64px;height:64px;flex:0 0 64px;object-fit:cover;border-radius:50%;border:3px solid #fff;outline:1px solid #c6c9bc}
+.quote-attribution{display:flex;flex-direction:column;gap:2px;min-width:0;font-size:11px;line-height:1.5}
+.quote-author{font-weight:700;font-size:12px;overflow-wrap:anywhere;text-decoration:none}
+.quote-attribution>span{color:#63594f}
+.quote-source{font-size:11px;text-underline-offset:3px}
+.community-quote .quote-photo-note,.social-product .community-quote .quote-photo-note{font-size:11px;line-height:1.45;color:#655d54;margin:12px 0 0}
+.community-quote .quote-scope,.social-product .community-quote .quote-scope{font-size:12px;line-height:1.5;margin:10px 0 0;padding-top:10px;border-top:1px solid #d4cfc3;color:#51483e}
+.article-body>.community-quote{max-width:640px;margin-bottom:20px;padding:25px}
+.article-body>.community-quote blockquote p{font-size:26px}
+.quote-research-link{font-size:14px}
+.social-product .product-body{display:flex;flex-direction:column}
+.social-product .product-links{margin-top:auto}
+@media(max-width:760px){.social-product .community-quote{margin-left:-100px;margin-top:20px;padding:18px}.social-product .community-quote blockquote p{font-size:23px}.social-product .product-links{margin-left:-100px}.social-product .product-links>.btn{width:100%}.social-product .quote-attribution{font-size:12px}.social-product .quote-author{font-size:13px}.social-product .quote-source{font-size:12px}.article-body>.community-quote{padding:20px}.article-body>.community-quote blockquote p{font-size:24px}}
+
+/* Editorial scores use drawn stars, including exact half fills. */
+.reddit-rating{margin:14px 0 17px;display:flex;flex-direction:column;align-items:flex-start;gap:5px}
+.rating-kicker{font-size:11px;line-height:1.45;font-weight:650;color:#584c51}
+.rating-line{display:flex;align-items:center;gap:10px;text-decoration:none;min-height:32px}
+.rating-line strong{font-size:19px;font-weight:750;white-space:nowrap;color:#392d34}
+.rating-line strong span{font-size:13px;font-weight:500;color:#63544c}
+.rating-stars{display:inline-flex;gap:2px;flex-shrink:0}
+.rating-stars svg{width:21px;height:21px;display:block}
+.rating-context{font-size:11px;line-height:1.45;font-weight:600;color:#5f5144}
+.rating-scope{font-size:11px;line-height:1.5;color:#665b54;display:block}
+.rating-method{font-size:11px;line-height:1.6;text-underline-offset:3px}
+.unrated{padding:12px 14px;border-left:3px solid #c9c1b4;background:#f6f2eb;border-radius:0 6px 6px 0}
+.unrated>strong{font-size:14px}.unrated .rating-context{font-weight:400}
+.rating-explainer{margin:32px 0;padding:28px;border:1px solid #ded5c2;border-radius:14px;background:#fffaf0}
+.rating-explainer h2{font-size:35px}.rating-explainer>p{max-width:900px}
+.rating-rules{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}
+.rating-rules>div{padding:17px;background:#fff;border:1px solid #e5dccb;border-radius:8px}
+.rating-rules strong{display:block;font-size:20px;color:#6b4d10;margin-bottom:6px}
+.rating-rules span{font-size:14px;line-height:1.6}
+.rating-audit{padding:25px 0;border-bottom:1px solid var(--line);max-width:900px;scroll-margin-top:24px}
+.rating-audit h3{font-size:28px;margin-bottom:10px}.rating-audit .rating-scope{font-size:14px}
+.rating-audit>p{font-size:15px}.sentiment-audit-list{padding-left:20px}
+.sentiment-audit-list li{margin:20px 0}.sentiment-audit-list li>div{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.sentiment-audit-list p{font-size:14px;margin-top:8px!important}
+.sentiment-tag{font-size:11px;font-weight:650;padding:3px 8px;border-radius:4px;background:#e7edde;color:#37412d}
+.sentiment-tag.mixed{background:#f6e8bb;color:#654710}.sentiment-tag.negative{background:#f0dedb;color:#733d3d}
+.amazon>span,.quote-source>span{font-family:Arial,sans-serif}
+@media(max-width:760px){.rating-stars svg{width:19px;height:19px}.rating-line{gap:7px}.rating-line strong{font-size:18px}.rating-kicker{font-size:11px}.rating-explainer{padding:20px 17px}.rating-explainer h2{font-size:29px}.rating-rules{grid-template-columns:1fr;gap:8px}.rating-rules>div{padding:12px 15px}.rating-rules strong{font-size:18px}.rating-audit h3{font-size:25px}.rating-audit .label-details{padding:12px}.sentiment-audit-list{padding-left:17px}}
+
+.external-arrow{display:inline-block;width:14px;height:14px;vertical-align:-2px;flex-shrink:0}
+@media(max-width:760px){.social-product{display:block}.social-product .product-art{float:left;width:88px;height:132px;min-height:0;margin:16px 14px 8px 14px;padding:0;background:#eee9e1;border-radius:6px}.social-product .product-art img{width:88px;height:132px;object-fit:contain}.social-product .product-body{display:block;padding:18px 14px}.social-product .reddit-rating{clear:both;padding-top:10px}.social-product .community-quote{margin-left:0}.social-product .product-links{margin-left:0}.social-product .rating-scope{max-width:100%}.social-product .rating-stars svg{width:22px;height:22px}}
