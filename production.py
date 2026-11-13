@@ -102,6 +102,10 @@ for route in routes:
     if social:
         page = page.replace('<h4>Behind the guides</h4>', '<h4>Behind the guides</h4>'+''.join(social))
     page = page.replace('↗', '<svg class="external-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M4 3h9v9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>')
+    from journey import internalize_sources
+    page = internalize_sources(page)
+    if path in {'/privacy/','/affiliate-disclosure/','/our-method/','/sources/'}:
+        page = page.replace(' · Not clinically reviewed', '')
     file.write_text(page)
 
 (OUT / '404.html').write_text((OUT / 'not-found/index.html').read_text())

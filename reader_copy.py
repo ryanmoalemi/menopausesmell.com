@@ -5,6 +5,7 @@ import re
 PRODUCT_COPY = {
     'mirai-persimmon-body-wash': {
         'display_name': 'Mirai Persimmon Body Wash',
+        'badge': 'Prefer a liquid persimmon wash?',
         'summary': 'A liquid body wash with persimmon fruit extract, marketed for body odor. This is the liquid Mirai product named in the earlier Reddit discussion.',
         'social_short': 'Mirai soaps and washes appear in 3 of the 8 body-odor threads we reviewed. The comments do not all name this liquid formula.',
         'label': 'The bottle reviewed is 9.3 fl oz (275 mL). Although some page graphics say fragrance-free, the ingredient list includes grapefruit peel oil and peppermint, lavandin, geranium and rosemary extracts. Check the full list if you avoid scented botanicals.',
@@ -13,6 +14,7 @@ PRODUCT_COPY = {
     },
     'lume-unscented-wash': {
         'display_name': 'Lume Unscented Body Wash',
+        'badge': 'Prefer an unscented liquid?',
         'summary': 'A rinse-off body wash with an acidic, low-pH formula. Lume calls this “acidified.” Its deodorant is a separate product.',
         'social_short': 'Lume cleansers appear in 6 of 8 reviewed threads. Three clearly mention the acidified liquid wash; the others describe different or unspecified formats.',
         'label': 'The product photo shows the Unscented wash in an 8.5 fl oz bottle. A separate 7 fl oz retailer ingredient list does not list fragrance. Because the sizes differ, check the ingredients and size on the exact bottle you buy.',
@@ -21,6 +23,7 @@ PRODUCT_COPY = {
     },
     'mirai-unscented-bar': {
         'display_name': 'Mirai Unscented Persimmon Soap',
+        'badge': 'Prefer an unscented soap bar?',
         'summary': 'A solid soap with persimmon fruit extract for readers who prefer a bar to a liquid body wash. The Unscented bar has a different formula from Mirai’s liquid wash.',
         'social_short': 'Mirai soaps and washes appear in 3 of 8 reviewed threads. This bar is a format option, not a separately proven Reddit favorite.',
         'label': 'The Unscented bar reviewed is 3.5 oz (100 g). Its ingredient list does not list fragrance or perfume essential oils. The brand says the ingredients may have a light natural scent. Lavender and citrus bars are separate scented versions.',
