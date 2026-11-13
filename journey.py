@@ -12,7 +12,7 @@ def internalize_sources(content):
         if re.match(r'https?://(?:www\.)?(?:amazon\.com|amzn\.to)(?:/|$)',html.unescape(url)):
             return match.group(0)
         if 'quote-source' in attrs:
-            return '<a class="quote-source" href="/reddit-recommendations/">Read our discussion notes</a>'
+            return ''
         label=label.replace('Read the manufacturer label','Manufacturer label checked').replace('Official manufacturer page','Manufacturer source').replace('Read the official URO capsule label','Official URO capsule label reviewed')
         cls='quote-author' if 'quote-author' in attrs else 'reference-label'
         return f'<span class="{cls}">'+label.replace('↗','')+'</span>'
@@ -22,9 +22,9 @@ def internalize_sources(content):
 
 def routes_panel(panel_id='start', compact=False):
     items = [
-        ('/underarm-products/', 'towels.webp', 'Folded towels for a daily washing routine', 'My underarms smell different', 'See what to try first and compare body washes.'),
-        ('/external-washes/', 'mirai-body-wash.webp', 'Mirai liquid body wash packaging', 'It’s on my body or in skin folds', 'Care for skin folds and compare body washes.'),
-        ('/odor-and-menopause/', 'routine.webp', 'Towels and a dispenser in a bathroom', 'It’s vaginal or intimate odor', 'Start with gentle care and see what may help.'),
+        ('/underarm-products/', 'lume-in-use.webp', 'Lume unscented body wash held over foamy bathwater', 'My underarms smell different', 'See what to try first and compare body washes.'),
+        ('/external-washes/', 'mirai-at-sink.webp', 'Hands dispensing Mirai body wash at a bathroom sink', 'It’s on my body or in skin folds', 'Care for skin folds and compare body washes.'),
+        ('/odor-and-menopause/', 'love-cleanser-lifestyle.webp', 'Love Wellness cleanser with a towel, earlier packaging', 'It’s vaginal or intimate odor', 'Start with gentle care and see what may help.'),
     ]
     rows = ''.join(f'<a class="journey-choice" href="{url}"><img src="/assets/{photo}" alt="{alt}" width="70" height="76"><span><strong>{title}</strong><small>{text}</small></span><span class="choice-arrow" aria-hidden="true">↗</span></a>' for url,photo,alt,title,text in items)
     unsure = '<p class="start-unsure">Not sure? <a href="/body-odor/">Read the basics first</a>.</p>' if panel_id=='start' else ''

@@ -5,6 +5,7 @@ Python 3.11+, standard library only. No secrets or Amazon API keys required.
 from pathlib import Path
 from urllib.parse import urlsplit
 import html
+import hashlib
 import json
 import re
 import runpy
@@ -106,6 +107,9 @@ for route in routes:
     page = internalize_sources(page)
     if path in {'/privacy/','/affiliate-disclosure/','/our-method/','/sources/'}:
         page = page.replace(' · Not clinically reviewed', '')
+    # A new stylesheet URL prevents returning visitors from keeping an older layout.
+    css_version = hashlib.sha256((ROOT / 'assets/site.css').read_bytes()).hexdigest()[:12]
+    page = page.replace('href="/assets/site.css"', 'href="/assets/site.css?v='+css_version+'"')
     file.write_text(page)
 
 (OUT / '404.html').write_text((OUT / 'not-found/index.html').read_text())

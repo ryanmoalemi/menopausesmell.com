@@ -2,7 +2,7 @@
   {
     "id": "mirai-persimmon-body-wash",
     "name": "Mirai Clinical Purifying & Deodorizing Body Wash with Persimmon",
-    "image": "mirai-body-wash.webp",
+    "image": "mirai-at-sink.webp",
     "short_name": "Mirai body wash",
     "badge": "Body odor · Persimmon wash",
     "summary": "The liquid Mirai wash specifically named in the original Reddit research.",
@@ -40,7 +40,7 @@
   {
     "id": "lume-unscented-wash",
     "name": "Lume Acidified Body Wash · Unscented",
-    "image": "lume-unscented-wash.png",
+    "image": "lume-in-use.webp",
     "short_name": "Lume body wash",
     "badge": "Body odor · Acidified wash",
     "summary": "Compare Lume’s rinse-off wash separately from its deodorant.",

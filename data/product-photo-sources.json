@@ -1,0 +1,27 @@
+{
+  "checked": "2026-11-13",
+  "scope": "Brand-sourced photographs, not customer endorsements. Resized and compressed for delivery; no products or people generated or composited.",
+  "photos": [
+    {
+      "file": "assets/lume-in-use.webp",
+      "brand": "Lume",
+      "source": "https://cdn.shopify.com/s/files/1/0172/9173/9236/files/how-to-use-lume-bodywash.jpg?crop=center&height=682&width=1024",
+      "page": "https://lumedeodorant.com/getting-started-body-care",
+      "depiction": "Unscented Acidified Body Wash held over bath foam; 5 fl oz packaging shown."
+    },
+    {
+      "file": "assets/mirai-at-sink.webp",
+      "brand": "Mirai Clinical",
+      "source": "https://miraiclinical.com/cdn/shop/files/bathroom_sink_persimmon_body_wash_usage.jpg?v=1773665120&width=1946",
+      "page": "https://miraiclinical.com/en-es/products/purifying-deodorizing-body-wash-with-persimmon-vb",
+      "depiction": "Hands pumping the 9.3 fl oz body wash at a bathroom sink."
+    },
+    {
+      "file": "assets/love-cleanser-lifestyle.webp",
+      "brand": "Love Wellness",
+      "source": "https://lovewellness.com/cdn/shop/articles/pH_Balancing_Cleanser_Lifestyle_Image_Desktop_b3dcf26c-7d74-46dc-be2c-0da47aac2e62.png?v=1767042733",
+      "page": "https://lovewellness.com/blogs/love-wellness/the-complicated-relationship-between-semen-and-vaginal-ph",
+      "depiction": "5 fl oz cleanser with towel and skin. Earlier packaging; current label remains on the product-detail page."
+    }
+  ]
+}
