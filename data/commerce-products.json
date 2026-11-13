@@ -1,0 +1,124 @@
+[
+  {
+    "id": "mirai-persimmon-body-wash",
+    "name": "Mirai Clinical Purifying & Deodorizing Body Wash with Persimmon",
+    "image": "mirai-body-wash.webp",
+    "short_name": "Mirai body wash",
+    "badge": "Body odor · Persimmon wash",
+    "summary": "The liquid Mirai wash specifically named in the original Reddit research.",
+    "social": "Mirai products were positively mentioned in 3 of 8 sampled body-odor threads, plus both historical threads. The liquid and unscented bar are format comparisons, not two separately ranked winners.",
+    "area": "External body skin",
+    "check": "Liquid wash, not the bar",
+    "tradeoff": "Contains grapefruit peel oil and aromatic botanical extracts despite fragrance-free page graphics. Reports about persimmon include dryness and irritation. A body-odor anecdote is not a recommendation for genital skin.",
+    "category": "body liquid",
+    "featured": true,
+    "label": "Page graphics claim fragrance-free, yet ingredient list includes grapefruit peel oil and peppermint/lavandin/geranium/rosemary extracts. Do not present as an uncomplicated fragrance-free sensitive-area pick. rinse-off body wash; reviewed manufacturer photo shows 9.3 fl oz / 275 mL",
+    "official_url": "https://miraiclinical.com/products/purifying-deodorizing-body-wash-with-persimmon",
+    "sources": [
+      {
+        "url": "https://www.reddit.com/r/Perimenopause/comments/1jp21ie/change_in_smell/",
+        "title": "Change in smell?"
+      },
+      {
+        "url": "https://www.reddit.com/r/Menopause/comments/yklgs7/has_anyone_else_noticed_that_they_smell_different/",
+        "title": "Has anyone else noticed that they smell different?"
+      },
+      {
+        "url": "https://www.reddit.com/r/Perimenopause/comments/1rw1uc8/body_odour/",
+        "title": "Body odour..."
+      },
+      {
+        "url": "https://www.reddit.com/r/Perimenopause/comments/1ry6v8r/help_i_stink/",
+        "title": "Help. I stink."
+      },
+      {
+        "url": "https://www.reddit.com/r/Menopause/comments/1hk2cy0/any_recommendations_for_deodorizing_soaps/",
+        "title": "Any recommendations for deodorizing soaps?"
+      }
+    ]
+  },
+  {
+    "id": "lume-unscented-wash",
+    "name": "Lume Acidified Body Wash · Unscented",
+    "image": "lume-unscented-wash.png",
+    "short_name": "Lume body wash",
+    "badge": "Body odor · Acidified wash",
+    "summary": "Compare Lume’s rinse-off wash separately from its deodorant.",
+    "social": "Lume cleansers were positively mentioned in 6 of 8 sampled body-odor threads. Only 3 explicitly identified acidified liquid body wash; scent and size were often unspecified.",
+    "area": "External body skin",
+    "check": "Wash, not deodorant",
+    "tradeoff": "Some people report irritation or no benefit. The reference photo shows 8.5 fl oz while a retrieved retail label is 7 fl oz. Confirm the current size and formula on Amazon.",
+    "category": "body liquid",
+    "featured": true,
+    "label": "Unscented printed on manufacturer front photo. Target 7oz ingredient panel has no Fragrance/Parfum; Target mini description explicitly says no fragrances or essential oils. Do not treat secondary panel as confirmed 8.5oz current formula. rinse-off liquid; manufacturer photo 8.5 fl oz / 250 mL; secondary label 7 fl oz",
+    "official_url": "https://lumedeodorant.com/products/unscented-acidified-body-wash",
+    "sources": [
+      {
+        "url": "https://www.reddit.com/r/Perimenopause/comments/1jp21ie/change_in_smell/",
+        "title": "Change in smell?"
+      },
+      {
+        "url": "https://www.reddit.com/r/Menopause/comments/1lczuq2/persimmon_soap_alternative/",
+        "title": "Persimmon soap alternative"
+      },
+      {
+        "url": "https://www.reddit.com/r/Perimenopause/comments/1lhcoie/body_odor/",
+        "title": "Body odor"
+      },
+      {
+        "url": "https://www.reddit.com/r/Perimenopause/comments/1imauzw/day_stank_update_persimmons_soap_fail/",
+        "title": "Day stank update: Persimmons soap fail"
+      },
+      {
+        "url": "https://www.reddit.com/r/Perimenopause/comments/1vt4mq8/perimenopause_smell/",
+        "title": "Perimenopause smell?!"
+      },
+      {
+        "url": "https://www.reddit.com/r/Perimenopause/comments/1rw1uc8/body_odour/",
+        "title": "Body odour..."
+      },
+      {
+        "url": "https://www.reddit.com/r/Perimenopause/comments/1ry6v8r/help_i_stink/",
+        "title": "Help. I stink."
+      }
+    ]
+  },
+  {
+    "id": "mirai-unscented-bar",
+    "name": "Mirai Clinical Deodorizing Soap with Persimmon · Unscented",
+    "image": "mirai-unscented-soap.webp",
+    "short_name": "Mirai soap bar",
+    "badge": "Body odor · Unscented bar",
+    "summary": "A bar-format comparison for readers looking at persimmon soap.",
+    "social": "Mirai products were positively mentioned in 3 of 8 sampled body-odor threads, plus both historical threads. The liquid and unscented bar are format comparisons, not two separately ranked winners.",
+    "area": "External body skin",
+    "check": "Choose Unscented, 3.5 oz",
+    "tradeoff": "Different formula from Mirai body wash. Some Reddit users report dryness, burning or rash from persimmon soaps; the precise products are not always identified.",
+    "category": "body bar",
+    "featured": true,
+    "label": "Selected Unscented ingredient list contains no Fragrance/Parfum or listed perfume essential oils. Generic FAQ says light natural ingredient scent. Lavender and citrus are distinct scented formulas. rinse-off soap bar, 3.5 oz / 100 g",
+    "official_url": "https://miraiclinical.com/products/deodorizing-soap-with-persimmon/",
+    "sources": [
+      {
+        "url": "https://www.reddit.com/r/Perimenopause/comments/1jp21ie/change_in_smell/",
+        "title": "Change in smell?"
+      },
+      {
+        "url": "https://www.reddit.com/r/Menopause/comments/yklgs7/has_anyone_else_noticed_that_they_smell_different/",
+        "title": "Has anyone else noticed that they smell different?"
+      },
+      {
+        "url": "https://www.reddit.com/r/Perimenopause/comments/1rw1uc8/body_odour/",
+        "title": "Body odour..."
+      },
+      {
+        "url": "https://www.reddit.com/r/Perimenopause/comments/1ry6v8r/help_i_stink/",
+        "title": "Help. I stink."
+      },
+      {
+        "url": "https://www.reddit.com/r/Menopause/comments/1hk2cy0/any_recommendations_for_deodorizing_soaps/",
+        "title": "Any recommendations for deodorizing soaps?"
+      }
+    ]
+  }
+]

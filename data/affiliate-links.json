@@ -1,0 +1,98 @@
+{
+  "status": "not_enrolled",
+  "amazon_associate_id": null,
+  "retailers": [],
+  "links": [
+    {
+      "product_id": "vanicream-gentle-body-wash",
+      "source_url": "https://www.vanicream.com/product/vanicream-body-wash",
+      "affiliate_url": null,
+      "program": null,
+      "enrollment_verified": false
+    },
+    {
+      "product_id": "dove-ultra-sensitive",
+      "source_url": "https://www.dove.com/us/en/p/ultra-sensitive-body-wash.html/00011111049444",
+      "affiliate_url": null,
+      "program": null,
+      "enrollment_verified": false
+    },
+    {
+      "product_id": "dove-sensitive",
+      "source_url": "https://www.dove.com/us/en/p/sensitive-body-wash.html/00011111122246/theme-02",
+      "affiliate_url": null,
+      "program": null,
+      "enrollment_verified": false
+    },
+    {
+      "product_id": "cerave-hydrating-facial-cleanser",
+      "source_url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+      "affiliate_url": null,
+      "program": null,
+      "enrollment_verified": false
+    },
+    {
+      "product_id": "good-clean-love-balance",
+      "source_url": "https://goodcleanlove.com/products/balance-moisturizing-wash-8-oz-new",
+      "affiliate_url": null,
+      "program": null,
+      "enrollment_verified": false
+    },
+    {
+      "product_id": "vagisil-menopause-mousse",
+      "source_url": "https://www.vagisil.com/product/menopause-support-probiotic-mousse-wash",
+      "affiliate_url": null,
+      "program": null,
+      "enrollment_verified": false
+    },
+    {
+      "product_id": "love-wellness-ph-balanced-cleanser",
+      "source_url": "https://lovewellness.com/products/ph-balanced-cleanser-5oz",
+      "affiliate_url": null,
+      "program": null,
+      "enrollment_verified": false
+    },
+    {
+      "product_id": "rephresh-pro-b",
+      "source_url": "https://www.rephresh.com/en/products/pro-b-vaginal-probiotic-supplement",
+      "affiliate_url": null,
+      "program": null,
+      "enrollment_verified": false
+    },
+    {
+      "product_id": "uro-capsules",
+      "source_url": "https://opositiv.com/products/uro-vaginal-probiotic-capsules/",
+      "affiliate_url": null,
+      "program": null,
+      "enrollment_verified": false
+    },
+    {
+      "product_id": "uro-gummies",
+      "source_url": "https://opositiv.com/products/vaginal-probiotic-gummy",
+      "affiliate_url": null,
+      "program": null,
+      "enrollment_verified": false
+    },
+    {
+      "product_id": "culturelle-womens-gummies",
+      "source_url": "https://culturelle.com/products/womens-probiotic-multivitamin-gummies",
+      "affiliate_url": null,
+      "program": null,
+      "enrollment_verified": false
+    },
+    {
+      "product_id": "love-good-girl",
+      "source_url": "https://lovewellness.com/products/new-good-girl-probiotics",
+      "affiliate_url": null,
+      "program": null,
+      "enrollment_verified": false
+    },
+    {
+      "product_id": "happy-v-prebiotic-probiotic",
+      "source_url": "https://happyv.com/products/probiotics-vaginal-health-supplement",
+      "affiliate_url": null,
+      "program": null,
+      "enrollment_verified": false
+    }
+  ]
+}

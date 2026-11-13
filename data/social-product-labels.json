@@ -1,0 +1,331 @@
+{
+  "project": "MenopauseWash.com social-product candidate verification v3",
+  "checked_at_utc": "2026-11-12T10:46:51.684688+00:00",
+  "status": "research ledger, not final rankings or medical endorsement",
+  "social_counts": "Not assessed here; join to social agent ledger. Brand mentions cannot be automatically assigned to exact formula/scent.",
+  "amazon_only": true,
+  "amazon_verification": "Prior bounded verification could not authenticate Amazon US product detail pages due public retrieval restrictions. All purchase links here are visibly labeled search fallback, no guessed ASIN, affiliate tag, stock, price or seller.",
+  "media_policy": "Manufacturer reference photos downloaded only where accessible. Public availability does not establish commercial reuse rights. Parent must replace with licensed assets or properly authorized Amazon media before publication.",
+  "products": [
+    {
+      "id": "mirai-unscented-bar",
+      "name": "Mirai Clinical Deodorizing Soap with Persimmon \u2014 Unscented",
+      "format": "rinse-off soap bar, 3.5 oz / 100 g",
+      "status": "candidate_pending_social_counts",
+      "manufacturer_url": "https://miraiclinical.com/products/deodorizing-soap-with-persimmon/",
+      "label_facts": {
+        "route": "External body cleansing in shower or bath. Brand highlights behind ears/back of neck. No intravaginal use inference.",
+        "fragrance": "Selected Unscented ingredient list contains no Fragrance/Parfum or listed perfume essential oils. Generic FAQ says light natural ingredient scent. Lavender and citrus are distinct scented formulas.",
+        "ingredients_highlights": [
+          "Persimmon tannin",
+          "green tea ingredients",
+          "camellia seed oil",
+          "marine-derived hydrolyzed collagen",
+          "glycerin",
+          "sorbitol"
+        ],
+        "warning_verification": "No complete product warning panel found. Do not invent manufacturer contraindications. General brand advice cautions against irritated/open areas."
+      },
+      "identity_caution": "Scent variants share page and some fragrance-free graphics appear against scented variants. Use explicit Unscented designation. User history mentions Mirai body wash: do not silently substitute this bar.",
+      "claim_gap": "Manufacturer nonenal/performance claims not independently evaluated. Social endorsement is not menopause-specific efficacy evidence.",
+      "amazon": {
+        "url": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz",
+        "kind": "constructed_search_fallback",
+        "verified_asin": null,
+        "cta": "Search Amazon",
+        "affiliate_tag": null,
+        "caution": "Search results can mix sellers, sizes, formulas and scents. Match the label before purchase; no verified Amazon SKU or live stock claim."
+      },
+      "media": {
+        "url": "https://miraiclinical.com/cdn/shop/files/Mirai-Clinical-Purifying-and-Deodorizing-Soap-Bar-with-Japanese-persimmon-one-hand.webp?v=1793619975&width=1426",
+        "local_path": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/mirai-unscented-soap.webp",
+        "visually_reviewed": true,
+        "permission": "Public manufacturer reference; publication/reuse rights not established. Not Amazon Product Advertising Content."
+      },
+      "sources": [
+        {
+          "url": "https://miraiclinical.com/products/deodorizing-soap-with-persimmon/",
+          "web_ref": "turn84view2",
+          "access_depth": "official page text reviewed"
+        },
+        {
+          "url": "https://miraiclinical.com/en-int/pages/deodorizing-soap-with-persimmon",
+          "web_ref": "turn94search3",
+          "access_depth": "official indexed text; size verified"
+        },
+        {
+          "url": "https://miraiclinical.com/blogs/japanese-culture-blog/how-to-choose-the-right-deodorant-soap-for-your-skin-type",
+          "web_ref": "turn88search4",
+          "access_depth": "official indexed general advice, not product warning panel"
+        }
+      ]
+    },
+    {
+      "id": "lume-unscented-wash",
+      "name": "Lume Acidified Body Wash \u2014 Unscented",
+      "format": "rinse-off liquid; manufacturer photo 8.5 fl oz / 250 mL; secondary label 7 fl oz",
+      "status": "candidate_partial_label_verification",
+      "manufacturer_url": "https://lumedeodorant.com/products/unscented-acidified-body-wash",
+      "label_facts": {
+        "route": "External body only; brand general safety says never internally or on broken/irritated skin. Patch test first; stop if irritation.",
+        "fragrance": "Unscented printed on manufacturer front photo. Target 7oz ingredient panel has no Fragrance/Parfum; Target mini description explicitly says no fragrances or essential oils. Do not treat secondary panel as confirmed 8.5oz current formula.",
+        "ingredients_highlights": [
+          "mandelic acid (AHA)",
+          "citric acid",
+          "surfactants",
+          "glycerin",
+          "aloe and other botanical extracts"
+        ],
+        "warning_verification": "Target 7oz label: external only, avoid eyes/rinse if contact; AHA sunburn warning, sun protection during use and one week afterwards. Official full current 8.5oz back panel could not be read."
+      },
+      "identity_caution": "Product page resolves but retrieval is script-only; raw fetch 403. Front image is older 8.5oz size while retail 7oz label is separate. Social recommendation may be brand-level, not unscented-specific.",
+      "claim_gap": "Odor-control marketing is not evidence for vaginal conditions; do not borrow 72h deodorant claims for wash.",
+      "amazon": {
+        "url": "https://www.amazon.com/s?k=Lume+Acidified+Body+Wash+Unscented",
+        "kind": "constructed_search_fallback",
+        "verified_asin": null,
+        "cta": "Search Amazon",
+        "affiliate_tag": null,
+        "caution": "Search results can mix sellers, sizes, formulas and scents. Match the label before purchase; no verified Amazon SKU or live stock claim."
+      },
+      "media": {
+        "url": "https://cdn.shopify.com/s/files/1/0172/9173/9236/files/unscented-body-wash-front_1_f898fbf0-291e-493a-8488-6e22d18c4a67.png?crop=center&height=2048&v=1688650925&width=2048",
+        "local_path": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/lume-unscented-wash.png",
+        "visually_reviewed": true,
+        "permission": "Public manufacturer reference; publication/reuse rights not established. Not Amazon Product Advertising Content."
+      },
+      "sources": [
+        {
+          "url": "https://lumedeodorant.com/products/unscented-acidified-body-wash",
+          "web_ref": "turn84view0",
+          "access_depth": "title only; body script-only"
+        },
+        {
+          "url": "https://lumedeodorant.com/products/acidified-body-wash",
+          "web_ref": "turn91image0",
+          "access_depth": "image search returned manufacturer Shopify image; downloaded and visually reviewed"
+        },
+        {
+          "url": "https://help.lumedeodorant.com/en-US/experiencing-a-rash-or-irritation-17769",
+          "web_ref": "turn86search0",
+          "access_depth": "official indexed safety text"
+        },
+        {
+          "url": "https://www.target.com/p/-/A-89558387",
+          "web_ref": "turn90search1",
+          "access_depth": "SECONDARY retailer full label text; 7oz"
+        },
+        {
+          "url": "https://www.target.com/p/-/A-90782957",
+          "web_ref": "turn83search1",
+          "access_depth": "SECONDARY retailer mini 1.5oz fragrance text"
+        }
+      ]
+    },
+    {
+      "id": "dove-sensitive-beauty-bar",
+      "name": "Dove Sensitive Skin Beauty Bar",
+      "format": "rinse-off bar, multiple packs",
+      "status": "candidate_label_verified_image_not_obtained_deprioritized",
+      "manufacturer_url": "https://www.dove.com/us/en/p/sensitive-skin-beauty-bar.html/00011111002593",
+      "label_facts": {
+        "route": "Manufacturer labels daily face, body and hands use. No specific vulvar direction found; never infer intravaginal use.",
+        "fragrance": "Manufacturer expressly fragrance-free; complete listed ingredients contain no fragrance/parfum.",
+        "ingredients_highlights": [
+          "Sodium Lauroyl Isethionate",
+          "Stearic Acid",
+          "Lauric Acid",
+          "Sodium Oleate",
+          "Cocamidopropyl Betaine",
+          "Glycerin"
+        ],
+        "warning_verification": "Complete warning panel not retrieved."
+      },
+      "identity_caution": "This is the fragrance-free Sensitive Skin BAR, not Sensitive Skin body wash or Ultra Sensitive 10-ingredient liquid. Do not substitute old liquid photo.",
+      "claim_gap": "General cleanser, no menopause odor treatment indication.",
+      "amazon": {
+        "url": "https://www.amazon.com/s?k=Dove+Sensitive+Skin+Beauty+Bar+Fragrance+Free",
+        "kind": "constructed_search_fallback",
+        "verified_asin": null,
+        "cta": "Search Amazon",
+        "affiliate_tag": null,
+        "caution": "Search results can mix sellers, sizes, formulas and scents. Match the label before purchase; no verified Amazon SKU or live stock claim."
+      },
+      "media": null,
+      "sources": [
+        {
+          "url": "https://www.dove.com/us/en/p/sensitive-skin-beauty-bar.html/00011111002593",
+          "web_ref": "turn94search0",
+          "access_depth": "official indexed full ingredient/usage text; full page later opened turn95view0"
+        }
+      ]
+    },
+    {
+      "id": "panoxyl-10-bar",
+      "name": "PanOxyl Acne Treatment Bar \u2014 10% Benzoyl Peroxide",
+      "format": "rinse-off acne medication bar, 4 oz / 113 g",
+      "status": "research_only_off_label_odor_use",
+      "manufacturer_url": "https://panoxyl.com/acne-products/acne-treatment-bar-bpo/",
+      "label_facts": {
+        "route": "Manufacturer identifies acne on face/chest/back; FAQ includes shoulders. Body-odor or intimate-use recommendation is not a labeled use.",
+        "fragrance": "Manufacturer says fragrance-free and dye-free.",
+        "active": "Benzoyl peroxide 10%",
+        "warning_verification": "DailyMed: external only; avoid very sensitive skin/BPO sensitivity and eyes/lips/mouth; may irritate and bleach hair/fabrics; severe irritation requires stopping/medical advice; pregnancy/breastfeeding asks health professional. Sun protection advised."
+      },
+      "identity_caution": "Not the 4% Creamy Wash or 10% Foaming Wash. Manufacturer webpage inactive ingredients differ from current DailyMed carton transcription, so actual purchased box must govern; do not present a single harmonized formula.",
+      "claim_gap": "Evidence for acne does not establish menopause odor efficacy. Underarm odor use is outside the retrieved labeled indication; keep separate from gentle cleanser picks.",
+      "amazon": {
+        "url": "https://www.amazon.com/s?k=PanOxyl+Acne+Treatment+Bar+10%25+Benzoyl+Peroxide+4+oz",
+        "kind": "constructed_search_fallback",
+        "verified_asin": null,
+        "cta": "Search Amazon",
+        "affiliate_tag": null,
+        "caution": "Search results can mix sellers, sizes, formulas and scents. Match the label before purchase; no verified Amazon SKU or live stock claim."
+      },
+      "media": {
+        "url": "https://panoxyl.com/wp-content/uploads/2023/08/PDP_BPOBar_05_v2.webp",
+        "local_path": null,
+        "visually_reviewed": false,
+        "permission": "Public manufacturer reference; publication/reuse rights not established. Not Amazon Product Advertising Content."
+      },
+      "media_download_result": "Manufacturer server returned 403; image URL observed through official page link30. Do not claim downloaded or visually verified.",
+      "sources": [
+        {
+          "url": "https://panoxyl.com/acne-products/acne-treatment-bar-bpo/",
+          "web_ref": "turn102view0",
+          "access_depth": "official page text reviewed"
+        },
+        {
+          "url": "https://panoxyl.com/faq/",
+          "web_ref": "turn99search5",
+          "access_depth": "official indexed FAQ"
+        },
+        {
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff09cbab-304b-4da9-e053-6394a90ae600",
+          "web_ref": "turn99search4",
+          "access_depth": "FDA label repository indexed warnings and carton text; differing inactive list"
+        }
+      ]
+    },
+    {
+      "id": "ordinary-glycolic-7",
+      "name": "The Ordinary Glycolic Acid 7% Exfoliating Toner",
+      "format": "leave-on exfoliating toner, 100 mL or 240 mL; reference photo 100 mL",
+      "status": "research_only_off_label_odor_use",
+      "manufacturer_url": "https://theordinary.com/en-us/glycolic-acid-7-exfoliating-toner-769915234060.html",
+      "label_facts": {
+        "route": "Face/neck, scalp, and brand tip for small rough/bumpy body areas. This is leave-on exfoliation, not a wash or intimate cleanser.",
+        "fragrance": "Listed formula contains no Fragrance/Parfum, but includes rose and cornflower waters; do not call fragrance-free without explicit brand confirmation.",
+        "active": "Glycolic acid 7%; manufacturer pH approximately 3.6",
+        "warning_verification": "Do not use on sensitive, peeling or compromised skin. Unbroken skin only; avoid eye area/contact; patch test; stop/rinse for irritation and consult physician. AHA sunburn precautions apply during use and one week afterwards."
+      },
+      "identity_caution": "Do not convert social underarm-odor discussion into manufacturer-approved odor dosing. No retrieved vulvar/groin directions.",
+      "claim_gap": "Brand claims concern exfoliation/texture; no menopause odor treatment efficacy established.",
+      "amazon": {
+        "url": "https://www.amazon.com/s?k=The+Ordinary+Glycolic+Acid+7%25+Exfoliating+Toner",
+        "kind": "constructed_search_fallback",
+        "verified_asin": null,
+        "cta": "Search Amazon",
+        "affiliate_tag": null,
+        "caution": "Search results can mix sellers, sizes, formulas and scents. Match the label before purchase; no verified Amazon SKU or live stock claim."
+      },
+      "media": {
+        "url": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7d9b7362/Images/products/The%20Ordinary/rdn-glycolic-acid-7pct-exfoliating-toner-100ml.png?sh=800&sm=fit&sw=800",
+        "local_path": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/ordinary-glycolic.png",
+        "visually_reviewed": true,
+        "permission": "Public manufacturer reference; publication/reuse rights not established. Not Amazon Product Advertising Content."
+      },
+      "sources": [
+        {
+          "url": "https://theordinary.com/en-us/glycolic-acid-7-exfoliating-toner-769915234060.html",
+          "web_ref": "turn102view1",
+          "access_depth": "official page text reviewed"
+        },
+        {
+          "url": "https://theordinary.com/on/demandware.store/Sites-deciem-us-Site/en_US/Product-GetProductDirections?pid=100418",
+          "web_ref": "turn99search2",
+          "access_depth": "official usage directions"
+        },
+        {
+          "url": "https://theordinary.com/en-us/glycolic-acid-7-exfoliating-toner-100418.html?tolstoy-start-video=e0308c8d-c050-4378-8e39-5b9a08996515&tolstoyAutoOpen=zy7p6e5up75a6",
+          "web_ref": "turn105search2",
+          "access_depth": "official indexed full ingredient list"
+        }
+      ]
+    },
+    {
+      "id": "mirai-persimmon-body-wash",
+      "name": "Mirai Clinical Purifying & Deodorizing Body Wash with Persimmon",
+      "format": "rinse-off body wash; reviewed manufacturer photo shows 9.3 fl oz / 275 mL",
+      "status": "candidate_fragrance_caution_not_equivalent_to_unscented_bar",
+      "manufacturer_url": "https://miraiclinical.com/products/purifying-deodorizing-body-wash-with-persimmon",
+      "label_facts": {
+        "route": "External body cleansing; page markets multiple odor areas but does not establish safety for internal vaginal use.",
+        "fragrance": "Page graphics claim fragrance-free, yet ingredient list includes grapefruit peel oil and peppermint/lavandin/geranium/rosemary extracts. Do not present as an uncomplicated fragrance-free sensitive-area pick.",
+        "ingredients_highlights": [
+          "Cocamidopropyl Hydroxysultaine",
+          "Sodium C14-16 Olefin Sulfonate",
+          "persimmon fruit juice ferment extract",
+          "green tea extract",
+          "aloe",
+          "Citrus Grandis Peel Oil",
+          "Mentha Piperita Leaf Extract",
+          "Lavandula Intermedia Extract"
+        ],
+        "warning_verification": "Complete back warning panel not retrieved."
+      },
+      "identity_caution": "Distinct formula from Mirai Unscented Soap bar; history specified body wash, while some social posts may say only persimmon soap. Preserve identity uncertainty.",
+      "claim_gap": "Brand nonenal/all-odor claims not independently verified; no demonstrated treatment of vaginal infection or menopause.",
+      "amazon": {
+        "url": "https://www.amazon.com/s?k=Mirai+Clinical+Purifying+Deodorizing+Body+Wash+Persimmon",
+        "kind": "constructed_search_fallback",
+        "verified_asin": null,
+        "cta": "Search Amazon",
+        "affiliate_tag": null,
+        "caution": "Search results can mix sellers, sizes, formulas and scents. Match the label before purchase; no verified Amazon SKU or live stock claim."
+      },
+      "media": {
+        "url": "https://miraiclinical.com/cdn/shop/files/Mirai_clinical_body_wash_pdp_main_pump_in_hand.webp?v=1792751915&width=1426",
+        "local_path": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/mirai-body-wash.webp",
+        "visually_reviewed": true,
+        "permission": "Public manufacturer reference; publication/reuse rights not established. Not Amazon Product Advertising Content."
+      },
+      "sources": [
+        {
+          "url": "https://miraiclinical.com/products/purifying-deodorizing-body-wash-with-persimmon",
+          "web_ref": "turn106view0",
+          "access_depth": "official page text reviewed"
+        },
+        {
+          "url": "https://miraiclinical.com/products/purifying-deodorizing-body-wash-with-persimmon",
+          "web_ref": "turn105search0",
+          "access_depth": "official full ingredient section indexed"
+        }
+      ]
+    }
+  ],
+  "historical_user_links_from_parent": [
+    {
+      "url": "https://amzn.to/3Rl8QfD",
+      "reported_context": "wash"
+    },
+    {
+      "url": "https://amzn.to/4pLylUb",
+      "reported_context": "symptom relief"
+    },
+    {
+      "url": "https://amzn.to/3RlbzFU",
+      "reported_context": "spray"
+    },
+    {
+      "url": "https://amzn.to/4pKMrFa",
+      "reported_context": "vaginal probiotic, user later narrowed to this"
+    }
+  ],
+  "historical_link_status": "Parent recovered links from actual user history; destinations not resolved. Do not assign a verified SKU. Parent reports pasted reviews identify URO capsules 60-count, not gummies; mapping to shortlink remains unverified.",
+  "related_ledgers": [
+    "mw-products-research.json",
+    "mw-amazon-links-v2.json",
+    "mw-social-research.json"
+  ]
+}

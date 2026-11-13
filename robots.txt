@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://menopausewash.com/sitemap.xml

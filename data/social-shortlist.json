@@ -1,0 +1,916 @@
+{
+  "version": "v3",
+  "updated": "2026-11-12",
+  "scope_correction": "Menopause/perimenopause BODY odor is the primary project. Earlier intimate-odor research is background only, not the basis of the body-product ranking.",
+  "status": "Current verified ledger; bounded public manual research.",
+  "method": {
+    "denominator": 8,
+    "historical_supplement_count": 2,
+    "unit": "Distinct discussion containing at least one visible positive recommendation; one count per candidate per thread.",
+    "access": "Original posts and selected visible comments opened as text. Keyword finds and contextual reads, not exhaustive nested-comment scrape.",
+    "selection": "Purposive search-result sample, not random or representative. Main body corpus assembled after scope correction, with one mixed groin/armpit thread. Historical threads supplied by user/context held separate.",
+    "rules": [
+      "Counted clear recommendations and personal success; marked suggestion-only separately.",
+      "Excluded questions, plans to try, mere mentions and related-post links.",
+      "Combined routines count as recommendations, never isolate causal effect.",
+      "Author independence not authenticated; visible repeated selected witnesses identified for PanOxyl and earlier intimate subset. Thread counts are not distinct-user counts.",
+      "No upvote-weighted score, share-of-platform estimate, comparative efficacy claim or overall Reddit winner.",
+      "Social recommendations are anecdotes, not clinical evidence. No Reddit identities included. Sponsorship/authenticity cannot generally be established."
+    ],
+    "search_bias": "Queries deliberately included candidate names (PanOxyl, persimmon, glycolic, Lume) as well as general body-odor terms. These are audited mentions in a purposive corpus, not an exhaustive ranking of all products or an estimate of market popularity.",
+    "example_queries": [
+      "site:reddit.com/r/Menopause body odor Panoxyl persimmon glycolic Lume",
+      "site:reddit.com/r/Perimenopause body odor Panoxyl persimmon soap Dove antibacterial",
+      "site:youtube.com menopause body odor persimmon Dr Dray"
+    ]
+  },
+  "counts": [
+    {
+      "id": "ordinary",
+      "label": "The Ordinary glycolic acid toner",
+      "positive_threads": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8"
+      ],
+      "count": 8,
+      "firsthand_or_positive_personal_routine_threads": 8,
+      "exact_sku_limit": "7% explicitly verified B6; other comments often omit concentration/current formulation. A leave-on toner, not a wash.",
+      "historical": "H1 mixed: secondhand praise and firsthand failure.",
+      "decision": "Strong underarm-topic comparator; do not position for vulvar or universal full-body application."
+    },
+    {
+      "id": "persimmon",
+      "label": "Persimmon cleanser category",
+      "positive_threads": [
+        "B1",
+        "B2",
+        "B3",
+        "B5",
+        "B6",
+        "B7",
+        "B8"
+      ],
+      "count": 7,
+      "firsthand_or_positive_personal_routine_threads": 6,
+      "exact_sku_limit": "Category spans different brands, formulations, scents, bars and liquids. B5 suggestion only.",
+      "historical": "H1 and H2 positive, separately counted.",
+      "decision": "Strong wash-category demand; must show drying/rash/failure and avoid equating category count to Mirai."
+    },
+    {
+      "id": "lume_cleansers",
+      "label": "Lume cleanser family",
+      "positive_threads": [
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7"
+      ],
+      "count": 6,
+      "exact_sku_limit": "B2 body-wash context; B3 acidified cleansing bar; B4 acidified body wash; B5 body wash plus deodorant; B6 unscented soap, form ambiguous; B7 body wash/soap/lotion routine. Explicit acidified liquid body wash positive B4/B5/B7 = 3, not six exact-SKU recommendations.",
+      "historical": "H1 body-wash positive combined with HRT. H2 deodorant only, excluded from wash.",
+      "decision": "Core wash comparator with clear price and scent objections. Keep wash and deodorant evidence separate."
+    },
+    {
+      "id": "panoxyl",
+      "label": "PanOxyl cleanser family",
+      "positive_threads": [
+        "B2",
+        "B4",
+        "B5",
+        "B6",
+        "B7"
+      ],
+      "count": 5,
+      "independent_selected_author_lower_bound": 4,
+      "exact_sku_limit": "Same author P1 in B6/B7. B2 bar, B4 4% explicitly plus other 10%/unspecified, B5 face wash, B6/B7 wash strength unspecified. Do not assign five to any exact SKU.",
+      "historical": "H1 bar recommendation; same author as B2 bar, not additional independent person.",
+      "decision": "Strong underarm article candidate. Medical/product-label review needed before application advice."
+    },
+    {
+      "id": "mirai",
+      "label": "Mirai persimmon cleanser family",
+      "positive_threads": [
+        "B6",
+        "B7",
+        "B8"
+      ],
+      "count": 3,
+      "exact_sku_limit": "B6 soap/wipes combined; B7 soap variant unspecified; B8 soap variant unspecified. None establishes unscented bar as most recommended exact SKU.",
+      "historical": "H1 Mirai soap; H2 separate firsthand Mirai Clinical Body Wash and soap-bar recommendations.",
+      "decision": "Defensible named persimmon comparator. Use 3-of-8 family badge only, disclose exact body-wash evidence in historical H2. Body Wash and Unscented Bar cannot both inherit category counts as independent winners."
+    },
+    {
+      "id": "hibiclens",
+      "label": "Hibiclens",
+      "positive_threads": [
+        "B2",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8"
+      ],
+      "count": 6,
+      "firsthand_or_positive_personal_routine_threads": 4,
+      "exact_sku_limit": "B5/B8 suggestions only; antiseptic skin cleanser, not a generic intimate wash.",
+      "historical": "H1 and H2 report use.",
+      "decision": "Cover as a frequently mentioned option requiring careful label/clinical context; do not hide it because affiliate fit is inconvenient."
+    },
+    {
+      "id": "hocl",
+      "label": "Hypochlorous-acid spray category",
+      "positive_threads": [
+        "B2",
+        "B3",
+        "B4",
+        "B6"
+      ],
+      "count": 4,
+      "exact_sku_limit": "No repeated exact brand. B3 links BioForce HOCl but combines with chlorophyll. B6 spelling Hypochlorus.",
+      "decision": "Evidence supports a category explainer, not a best-brand selection. @Retire2live attribution not independently verified."
+    },
+    {
+      "id": "dove_antibacterial",
+      "label": "Dove antibacterial body wash",
+      "positive_threads": [
+        "B6"
+      ],
+      "count": 1,
+      "exact_sku_limit": "Do not combine with Dove Sensitive, unscented soap, antiperspirant, or whole-body deodorant.",
+      "historical": "H1 two positive commenters, but one additional thread.",
+      "decision": "Reasonable lower-cost comparator backed by weaker sample frequency than lead categories."
+    },
+    {
+      "id": "witch_hazel",
+      "label": "Witch hazel",
+      "positive_threads": [
+        "B5",
+        "B7"
+      ],
+      "count": 2,
+      "exact_sku_limit": "No repeated brand; B4 negative personal experience. Other mentions incomplete/not counted.",
+      "decision": "Secondary explainer, not leading product winner."
+    },
+    {
+      "id": "chlorophyll",
+      "label": "Oral chlorophyll",
+      "positive_threads": [
+        "B3"
+      ],
+      "count": 1,
+      "exact_sku_limit": "Combined routines; unknown brand/formula; H2 liquid anecdote. Not proof of odor efficacy.",
+      "decision": "Do not name a best supplement or imply oral probiotic/gummy superiority."
+    }
+  ],
+  "body_threads": [
+    {
+      "id": "B1",
+      "title": "Body odor",
+      "url": "https://www.reddit.com/r/Menopause/comments/1q4m6y4/body_odor/",
+      "date": "2026-01-05",
+      "refs": [
+        "turn110view0"
+      ],
+      "setting": "General body odor",
+      "positive": [
+        "persimmon",
+        "ordinary"
+      ],
+      "negative": [
+        "Persimmon rash and strong product smell reported."
+      ],
+      "quotes": [
+        {
+          "candidate": "persimmon",
+          "text": "Yes, the persimmon soap fixed my funk and it's my only soap nowadays.",
+          "type": "firsthand",
+          "line": 283,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/1q4m6y4/body_odor/"
+        },
+        {
+          "candidate": "ordinary",
+          "text": "I second The Ordinary Glycolic acid for this, game changer for me!",
+          "type": "firsthand",
+          "line": 241,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/1q4m6y4/body_odor/"
+        }
+      ],
+      "access_depth": "Opened original post plus selected visible comment text; not every nested reply."
+    },
+    {
+      "id": "B2",
+      "title": "Persimmon soap alternative",
+      "url": "https://www.reddit.com/r/Menopause/comments/1lczuq2/persimmon_soap_alternative/",
+      "date": "2025-06-16",
+      "refs": [
+        "turn111view0",
+        "turn112view2",
+        "turn112view3",
+        "turn112view4",
+        "turn116view2"
+      ],
+      "setting": "General body odor; armpits, under breasts, thigh creases",
+      "positive": [
+        "persimmon",
+        "ordinary",
+        "lume_cleansers",
+        "panoxyl",
+        "hibiclens",
+        "hocl"
+      ],
+      "negative": [
+        "OP had rash after previously tolerating persimmon. Lume price is a purchase objection. A Lume bar user calls it harsh; another Lume rash report lacks exact product."
+      ],
+      "quotes": [
+        {
+          "candidate": "ordinary",
+          "text": "I use the Ordinary glycolic toner once weekly",
+          "type": "firsthand routine, claimed benefit in following clause",
+          "line": 294,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/1lczuq2/persimmon_soap_alternative/"
+        },
+        {
+          "candidate": "persimmon",
+          "text": "I have tried the persimmon and surprised how well it works.",
+          "type": "firsthand",
+          "line": 421,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/1lczuq2/persimmon_soap_alternative/"
+        },
+        {
+          "candidate": "lume_cleansers",
+          "text": "Can you hide the Lume so the others don't steal it? Because it is ~elite~ for me!",
+          "type": "firsthand; body-wash context, no exact scent",
+          "line": 444,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/1lczuq2/persimmon_soap_alternative/"
+        },
+        {
+          "candidate": "panoxyl",
+          "text": "I use an antibacterial bar soap (PanOxyl) PLUS a hypochlorous acid spray",
+          "type": "firsthand combined routine",
+          "line": 1089,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/1lczuq2/persimmon_soap_alternative/"
+        },
+        {
+          "candidate": "hocl",
+          "text": "It works really well, I have no BO.",
+          "type": "firsthand; explicitly hypochlorous spray in prior sentence",
+          "line": 1026,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/1lczuq2/persimmon_soap_alternative/"
+        },
+        {
+          "candidate": "hibiclens",
+          "text": "It’s fully taken care of the issue.",
+          "type": "firsthand combined routine; Hibiclens and Anti-Monkey Butt Powder",
+          "line": 1128,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/1lczuq2/persimmon_soap_alternative/"
+        }
+      ],
+      "access_depth": "Opened original post plus selected visible comment text; not every nested reply."
+    },
+    {
+      "id": "B3",
+      "title": "Body odor",
+      "url": "https://www.reddit.com/r/Perimenopause/comments/1lhcoie/body_odor/",
+      "date": "2025-06-22",
+      "refs": [
+        "turn111view1",
+        "turn112view7",
+        "turn112view8"
+      ],
+      "setting": "Whole-body sweat odor, OP explicitly excludes armpits",
+      "positive": [
+        "persimmon",
+        "ordinary",
+        "lume_cleansers",
+        "hocl",
+        "chlorophyll"
+      ],
+      "negative": [
+        "OP update: persimmon did not work, Dove full-body deodorant did. Lume deodorant complaints must not be transferred to wash. Fragrance sensitivity and cost recur."
+      ],
+      "quotes": [
+        {
+          "candidate": "persimmon",
+          "text": "I'm in total agreement persimmon soap is what worked on me.",
+          "type": "firsthand",
+          "line": 115,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1lhcoie/body_odor/"
+        },
+        {
+          "candidate": "ordinary",
+          "text": "PERSIMMON SOAP AND THE ORDINARY GLYCOLIC ACID.",
+          "type": "firsthand combined routine claimed fewer BO issues",
+          "line": 149,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1lhcoie/body_odor/"
+        },
+        {
+          "candidate": "lume_cleansers",
+          "text": "The Lume Acidified body cleansing bar is what works best for me.",
+          "type": "firsthand; exact product family",
+          "line": 536,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1lhcoie/body_odor/"
+        },
+        {
+          "candidate": "hocl",
+          "text": "Hypochlorous acid spray!! Plus chlorophyll.",
+          "type": "firsthand combined routine; spray brand BioForce HOCl linked, outcome not isolated",
+          "line": 589,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1lhcoie/body_odor/"
+        },
+        {
+          "candidate": "chlorophyll",
+          "text": "I also started taking chlorophyll pills everyday. Smell- gone!!!",
+          "type": "firsthand combined routine",
+          "line": 589,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1lhcoie/body_odor/"
+        }
+      ],
+      "access_depth": "Opened original post plus selected visible comment text; not every nested reply."
+    },
+    {
+      "id": "B4",
+      "title": "Day stank update: Persimmons soap fail",
+      "url": "https://www.reddit.com/r/Perimenopause/comments/1imauzw/day_stank_update_persimmons_soap_fail/",
+      "date": "2025-02-10",
+      "refs": [
+        "turn110view3",
+        "turn112view12"
+      ],
+      "setting": "Underarm odor; OP says crotch is fine",
+      "positive": [
+        "ordinary",
+        "lume_cleansers",
+        "panoxyl",
+        "hibiclens",
+        "hocl"
+      ],
+      "negative": [
+        "OP persimmon failure. Lume deodorant failure for pits but benefit for groin. Witch-hazel user says added smell was worse."
+      ],
+      "quotes": [
+        {
+          "candidate": "ordinary",
+          "text": "It’s the only thing that keeps us from having BO.",
+          "type": "firsthand; The Ordinary glycolic liquid identified earlier",
+          "line": 68,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1imauzw/day_stank_update_persimmons_soap_fail/"
+        },
+        {
+          "candidate": "panoxyl",
+          "text": "this is what helped me! I was v stinky under the arms. I have panoxyl 4%.",
+          "type": "firsthand exact concentration; other comment mentions 10%",
+          "line": 293,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1imauzw/day_stank_update_persimmons_soap_fail/"
+        },
+        {
+          "candidate": "lume_cleansers",
+          "text": "yes, the acidified body wash is great",
+          "type": "positive recommendation replying to Lume",
+          "line": 355,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1imauzw/day_stank_update_persimmons_soap_fail/"
+        },
+        {
+          "candidate": "hocl",
+          "text": "It has been a lifesaver for the in between shower times.",
+          "type": "firsthand; hypochlorous acid spray",
+          "line": 216,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1imauzw/day_stank_update_persimmons_soap_fail/"
+        },
+        {
+          "candidate": "hibiclens",
+          "text": "Hibiclens for the win",
+          "type": "positive recommendation; hyperlink label normalized to product text",
+          "line": 301,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1imauzw/day_stank_update_persimmons_soap_fail/"
+        }
+      ],
+      "access_depth": "Opened original post plus selected visible comment text; not every nested reply."
+    },
+    {
+      "id": "B5",
+      "title": "Perimenopause smell?!",
+      "url": "https://www.reddit.com/r/Perimenopause/comments/1vt4mq8/perimenopause_smell/",
+      "date": "2026-08-20",
+      "refs": [
+        "turn111view2",
+        "turn113view0",
+        "turn113view1",
+        "turn113view2"
+      ],
+      "setting": "Sweat odor during desk work; armpits and groin",
+      "positive": [
+        "ordinary",
+        "persimmon",
+        "lume_cleansers",
+        "panoxyl",
+        "hibiclens",
+        "witch_hazel"
+      ],
+      "negative": [
+        "Combined Lume routine reported helpful but imperfect and expensive. Persimmon and Hibiclens counted here as explicit suggestions only, not personal successes."
+      ],
+      "quotes": [
+        {
+          "candidate": "ordinary",
+          "text": "The Ordinary's glycolic acid helped me the most at the time.",
+          "type": "firsthand",
+          "line": 75,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1vt4mq8/perimenopause_smell/"
+        },
+        {
+          "candidate": "persimmon",
+          "text": "Persimmon soap",
+          "type": "explicit recommendation in list; not firsthand",
+          "line": 218,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1vt4mq8/perimenopause_smell/"
+        },
+        {
+          "candidate": "lume_cleansers",
+          "text": "I have to put y’all onto Lume acidified body wash and 72 hr full body deodorant!",
+          "type": "firsthand combined routine, claimed heat/walk success",
+          "line": 192,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1vt4mq8/perimenopause_smell/"
+        },
+        {
+          "candidate": "panoxyl",
+          "text": "I tried panoxyl face wash too for these areas and it works the same.",
+          "type": "firsthand combined routine with HRT and deodorant",
+          "line": 227,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1vt4mq8/perimenopause_smell/"
+        },
+        {
+          "candidate": "hibiclens",
+          "text": "Occasional: hibiclens, antibacterial soap.",
+          "type": "explicit recommendation, not firsthand",
+          "line": 218,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1vt4mq8/perimenopause_smell/"
+        },
+        {
+          "candidate": "witch_hazel",
+          "text": "Witch hazel in a spray bottle 🙌🏼",
+          "type": "positive recommendation, no brand",
+          "line": 168,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1vt4mq8/perimenopause_smell/"
+        }
+      ],
+      "access_depth": "Opened original post plus selected visible comment text; not every nested reply."
+    },
+    {
+      "id": "B6",
+      "title": "Body odour...",
+      "url": "https://www.reddit.com/r/Perimenopause/comments/1rw1uc8/body_odour/",
+      "date": "2026-03-17",
+      "refs": [
+        "turn111view3",
+        "turn113view3",
+        "turn113view4",
+        "turn113view5",
+        "turn113view6",
+        "turn113view7"
+      ],
+      "setting": "Underarm sweat odor despite showering and clean clothing",
+      "positive": [
+        "persimmon",
+        "mirai",
+        "ordinary",
+        "lume_cleansers",
+        "panoxyl",
+        "hibiclens",
+        "hocl",
+        "dove_antibacterial"
+      ],
+      "negative": [
+        "Lume unspecified product stopped working. Threads contain unverified clinical and dilution/contact-time advice; not adopted here."
+      ],
+      "quotes": [
+        {
+          "candidate": "persimmon",
+          "text": "Persimmon soap is the only thing that’s worked for me. Sharp, oniony smell is gone.",
+          "type": "firsthand",
+          "line": 56,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1rw1uc8/body_odour/"
+        },
+        {
+          "candidate": "ordinary",
+          "text": "I use the ordinary glycolic acid 7% exfoliating toner on my armpits when I smell and it takes it right away.",
+          "type": "firsthand; exact concentration",
+          "line": 139,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1rw1uc8/body_odour/"
+        },
+        {
+          "candidate": "mirai",
+          "text": "persimmon soap/wipes from Mirai",
+          "type": "firsthand combined routine; product form not isolated",
+          "line": 1251,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1rw1uc8/body_odour/"
+        },
+        {
+          "candidate": "lume_cleansers",
+          "text": "Yes! Lume soap unscented! Solved this for me for most of the day anyways by the next morning game over.",
+          "type": "firsthand cleanser, liquid/bar ambiguous",
+          "line": 1228,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1rw1uc8/body_odour/"
+        },
+        {
+          "candidate": "panoxyl",
+          "text": "it makes a huge difference for a few days.",
+          "type": "firsthand PanOxyl wash, same anonymous author P1 as B7",
+          "line": 1321,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1rw1uc8/body_odour/"
+        },
+        {
+          "candidate": "hibiclens",
+          "text": "Hibiclens has worked wonders for me.",
+          "type": "firsthand combined with Dove Sensitive",
+          "line": 791,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1rw1uc8/body_odour/"
+        },
+        {
+          "candidate": "hocl",
+          "text": "Hypochlorus spray after showering with persimmon is 🤌 my smell was musty.",
+          "type": "firsthand combined routine, spelling preserved",
+          "line": 64,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1rw1uc8/body_odour/"
+        },
+        {
+          "candidate": "dove_antibacterial",
+          "text": "But Dove antibacterial body wash fixed it immediately.",
+          "type": "firsthand",
+          "line": 685,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1rw1uc8/body_odour/"
+        }
+      ],
+      "access_depth": "Opened original post plus selected visible comment text; not every nested reply."
+    },
+    {
+      "id": "B7",
+      "title": "Help. I stink.",
+      "url": "https://www.reddit.com/r/Perimenopause/comments/1ry6v8r/help_i_stink/",
+      "date": "2026-03-19",
+      "refs": [
+        "turn111view4",
+        "turn113view8",
+        "turn113view9",
+        "turn113view10",
+        "turn113view11",
+        "turn113view12",
+        "turn118view0",
+        "turn118view5"
+      ],
+      "setting": "Underarm body odor; clean clothing and antiperspirant confusion",
+      "positive": [
+        "persimmon",
+        "mirai",
+        "ordinary",
+        "lume_cleansers",
+        "panoxyl",
+        "hibiclens",
+        "witch_hazel"
+      ],
+      "negative": [
+        "Persimmon failures and genital burning; acid plus antiperspirant fails for some. Mirai price objection. A visible brand-affiliated Carpe reply excluded from independent counts."
+      ],
+      "quotes": [
+        {
+          "candidate": "persimmon",
+          "text": "It does. I just bought some, it completely slayed my oniony smelling pits",
+          "type": "firsthand; whitespace normalized",
+          "line": 85,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1ry6v8r/help_i_stink/"
+        },
+        {
+          "candidate": "mirai",
+          "text": "I’ve been using the soap Mirai from Amazon. It definitely works",
+          "type": "firsthand; form/scent not specified",
+          "line": 1391,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1ry6v8r/help_i_stink/"
+        },
+        {
+          "candidate": "ordinary",
+          "text": "Also love The Ordinary glycolic acid- works wonders to knock out any unpleasant underarm odors!",
+          "type": "firsthand",
+          "line": 433,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1ry6v8r/help_i_stink/"
+        },
+        {
+          "candidate": "lume_cleansers",
+          "text": "Lume acidified body wash, soap, and lotion really works",
+          "type": "firsthand combined product-family claim",
+          "line": 1529,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1ry6v8r/help_i_stink/"
+        },
+        {
+          "candidate": "panoxyl",
+          "text": "Use PanOxyl wash a few times a week.",
+          "type": "recommendation; same anonymous author P1 as B6",
+          "line": 1491,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1ry6v8r/help_i_stink/"
+        },
+        {
+          "candidate": "hibiclens",
+          "text": "I was astonished at how much it helped.",
+          "type": "firsthand Hibiclens underarms",
+          "line": 475,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1ry6v8r/help_i_stink/"
+        },
+        {
+          "candidate": "witch_hazel",
+          "text": "It’s inexpensive and very effective.",
+          "type": "recommendation; witch hazel prior sentence",
+          "line": 502,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1ry6v8r/help_i_stink/"
+        }
+      ],
+      "access_depth": "Opened original post plus selected visible comment text; not every nested reply."
+    },
+    {
+      "id": "B8",
+      "title": "Any recommendations for deodorizing soaps?",
+      "url": "https://www.reddit.com/r/Menopause/comments/1hk2cy0/any_recommendations_for_deodorizing_soaps/",
+      "date": "2024-12-22",
+      "refs": [
+        "turn116view0",
+        "turn118view2",
+        "turn118view3",
+        "turn118view4"
+      ],
+      "setting": "Mixed sweat odor: groin plus armpits; OP reports infection ruled out",
+      "positive": [
+        "persimmon",
+        "mirai",
+        "ordinary",
+        "hibiclens"
+      ],
+      "negative": [
+        "OP: Lume tangerine soap no results. Mirai price/import delay objections. Combined Lume wash plus deodorant report excluded from wash success because attributed specifically to deodorant."
+      ],
+      "quotes": [
+        {
+          "candidate": "ordinary",
+          "text": "Glycolic acid (I use the ordinary) on pits after shower",
+          "type": "firsthand combined with Mirai and estrogen",
+          "line": 115,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/1hk2cy0/any_recommendations_for_deodorizing_soaps/"
+        },
+        {
+          "candidate": "mirai",
+          "text": "However it worked for me. I’m smelling my armpits in disbelief - no unpleasant odour at all.",
+          "type": "firsthand; Mirai named prior sentence",
+          "line": 129,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/1hk2cy0/any_recommendations_for_deodorizing_soaps/"
+        },
+        {
+          "candidate": "persimmon",
+          "text": "Persimmon bar soap and I no longer stank or smell like persimmons",
+          "type": "firsthand",
+          "line": 146,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/1hk2cy0/any_recommendations_for_deodorizing_soaps/"
+        },
+        {
+          "candidate": "hibiclens",
+          "text": "You could try hibiclens, but be sure to keep it from your eyes.",
+          "type": "explicit suggestion only",
+          "line": 245,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/1hk2cy0/any_recommendations_for_deodorizing_soaps/"
+        },
+        {
+          "candidate": "lume_cleansers",
+          "text": "I'm using their tangerine soap with no results.",
+          "type": "negative",
+          "line": 190,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/1hk2cy0/any_recommendations_for_deodorizing_soaps/"
+        }
+      ],
+      "access_depth": "Opened original post plus selected visible comment text; not every nested reply."
+    }
+  ],
+  "historical_supplement": [
+    {
+      "id": "H1",
+      "title": "Change in smell?",
+      "url": "https://www.reddit.com/r/Perimenopause/comments/1jp21ie/change_in_smell/",
+      "date": "2025-04-01",
+      "refs": [
+        "turn100view0",
+        "turn108view0",
+        "turn108view1",
+        "turn108view2",
+        "turn108view3",
+        "turn108view5"
+      ],
+      "setting": "OP explicitly asks about general body odor, not vaginal",
+      "positive": [
+        "persimmon",
+        "mirai",
+        "lume_cleansers",
+        "panoxyl",
+        "dove_antibacterial",
+        "hibiclens"
+      ],
+      "mixed": [
+        "ordinary"
+      ],
+      "quotes": [
+        {
+          "candidate": "dove_antibacterial",
+          "text": "I switched to Dove antibacterial body wash, which helped some.",
+          "type": "firsthand",
+          "line": 310,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1jp21ie/change_in_smell/"
+        },
+        {
+          "candidate": "dove_antibacterial",
+          "text": "I second dove antibacterial body wash!",
+          "type": "separate positive recommender",
+          "line": 318,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1jp21ie/change_in_smell/"
+        },
+        {
+          "candidate": "panoxyl",
+          "text": "PanOxyl bar soap is antibacterial and will kill any and all funk.",
+          "type": "recommendation; unverified absolute claim not endorsed",
+          "line": 648,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1jp21ie/change_in_smell/"
+        },
+        {
+          "candidate": "lume_cleansers",
+          "text": "HRT helped me immensely and that Lume body wash",
+          "type": "firsthand combined routine",
+          "line": 479,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1jp21ie/change_in_smell/"
+        },
+        {
+          "candidate": "mirai",
+          "text": "starting using Mirai persimmon soap",
+          "type": "firsthand combined routine; later claims success",
+          "line": 881,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1jp21ie/change_in_smell/"
+        },
+        {
+          "candidate": "ordinary",
+          "text": "I tried the ordinary glycolic and it didn’t really work.",
+          "type": "negative; another comment endorses secondhand",
+          "line": 812,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1jp21ie/change_in_smell/"
+        },
+        {
+          "candidate": "hibiclens",
+          "text": "I just started it and so far so good.",
+          "type": "firsthand, Hibiclens prior sentence",
+          "line": 750,
+          "source_url": "https://www.reddit.com/r/Perimenopause/comments/1jp21ie/change_in_smell/"
+        }
+      ],
+      "access_depth": "Opened original post plus selected visible comment text; not every nested reply."
+    },
+    {
+      "id": "H2",
+      "title": "Has anyone else noticed that they smell different?",
+      "url": "https://www.reddit.com/r/Menopause/comments/yklgs7/has_anyone_else_noticed_that_they_smell_different/",
+      "date": "2022-11-02",
+      "refs": [
+        "turn100view2",
+        "turn108view4",
+        "turn118view1"
+      ],
+      "setting": "OP body/sweat odor after hot flashes, with mixed groin discussion",
+      "positive": [
+        "persimmon",
+        "mirai",
+        "hibiclens",
+        "chlorophyll"
+      ],
+      "quotes": [
+        {
+          "candidate": "mirai_body_wash",
+          "text": "I recommend Mirai Clinical Body Wash with Japanese Persimmon. Recently found it and I really like it.",
+          "type": "firsthand exact body-wash family",
+          "line": 148,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/yklgs7/has_anyone_else_noticed_that_they_smell_different/"
+        },
+        {
+          "candidate": "mirai_bar",
+          "text": "I have used the soap, and find it does an excellent job of cleaning up arm pit stank.",
+          "type": "separate firsthand commenter; next sentence identifies bar, body wash untried",
+          "line": 155,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/yklgs7/has_anyone_else_noticed_that_they_smell_different/"
+        },
+        {
+          "candidate": "mirai_body_wash",
+          "text": "No problems with it at all.",
+          "type": "same body-wash recommender, sensitive-skin personal experience",
+          "line": 162,
+          "source_url": "https://www.reddit.com/r/Menopause/comments/yklgs7/has_anyone_else_noticed_that_they_smell_different/"
+        }
+      ],
+      "notes": "Lume discussion mainly deodorant, not wash. Historical supplement: not part of denominator 8.",
+      "access_depth": "Opened original post plus selected visible comment text; not every nested reply."
+    }
+  ],
+  "inaccessible_historical": {
+    "url": "https://www.reddit.com/r/Perimenopause/comments/1nl11tj/",
+    "status": "Direct access failed; exact-ID search did not retrieve identifiable discussion. Excluded."
+  },
+  "social_other_platforms": [
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=hmhcv_uvT0k",
+      "creator": "Dr Dray",
+      "date": "2026-02-03",
+      "title": "Title not returned in indexed result; nonenal/persimmon discussion",
+      "ref": "turn116youtube15",
+      "access": "Indexed creator description only; no video playback, transcript or comments.",
+      "insight": "Description explicitly names testing Mirai Clinical Deodorizing Body Wash with Persimmon and says claims are largely anecdotal. No verified positive verdict.",
+      "sponsorship": "Description states not sponsored; commissionable links disclosed.",
+      "counted": false
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=tZ2LPhC-9qY",
+      "creator": "The Only Alaura",
+      "date": "2023-08-31",
+      "title": "Lume Acidified Body Wash | Full Honest Review | ( Does it work?)",
+      "ref": "turn75youtube25",
+      "access": "Indexed description read; direct open failed; no playback/comments.",
+      "insight": "Description says would not repurchase/recommend; price and freshness objections.",
+      "sponsorship": "Not established from retrieved description.",
+      "counted": false
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=FoyeekwUwTU",
+      "creator": "BrittneyMonet",
+      "date": "2023-07-14",
+      "title": "LUME ACIDIFIED BODY WASH REVIEW | does this body wash ACTUALLY remove odor better than soap ?!",
+      "ref": "turn75youtube24",
+      "access": "Title/metadata only; description unavailable; direct open failed.",
+      "insight": "Cannot infer verdict from title.",
+      "sponsorship": "Unknown.",
+      "counted": false
+    },
+    {
+      "platform": "X",
+      "access": "Public search queries only, no signed-in browser.",
+      "insight": "No relevant independent post with verifiable recommendation retrieved. This is an access/retrieval limitation, not evidence of no discussion.",
+      "counted": false
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=6ixaan4mUzM",
+      "creator": "Dr Dray",
+      "date": "2025-02-06",
+      "title": "How To Stop Armpit Odor For Good",
+      "ref": "turn119youtube0",
+      "access": "Indexed creator description only; no playback, transcript or comments.",
+      "insight": "Description lists PanOxyl 4% benzoyl peroxide wash, SkinSmart hypochlorous acid spray, and several antiperspirants. Confirms exact PanOxyl strength is discussed, but no video-derived effectiveness verdict or instructions were accessed.",
+      "sponsorship": "States not sponsored; commissionable links disclosed.",
+      "counted": false
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=FdQb1tz6wlQ",
+      "creator": "Dr Dray",
+      "date": "2023-05-18",
+      "title": "DOES HIBICLENS WORK? | Dermatologist @DrDrayzday",
+      "ref": "turn120youtube12",
+      "access": "Indexed creator description and chapter list only; no playback or transcript.",
+      "insight": "Explicit body-odor section at 4:33, safety section at 8:43 and usage section at 11:09. Description alone does not establish a favorable recommendation.",
+      "sponsorship": "States not sponsored; commissionable links disclosed.",
+      "counted": false
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=nQbpO8IOfIU",
+      "creator": "Dr Dray",
+      "date": "2023-09-06",
+      "title": "The TRUTH About UNDERARM LIGHTENING",
+      "ref": "turn120youtube13",
+      "access": "Indexed creator description and chapter list only; no playback or transcript.",
+      "insight": "Discusses The Ordinary glycolic toner and underarm skin; endpoint is pigmentation, not odor. Excluded as odor endorsement.",
+      "sponsorship": "Commercial shop/social links visible; sponsorship not established in retrieved description.",
+      "counted": false
+    }
+  ],
+  "recommendations_for_site": [
+    "Lead with body odor: underarms, under breasts, skin folds and clothing; separate sweat/groin odor from vaginal symptoms.",
+    "Show family/category evidence labels and exact product caveats. Prefer 'mentioned positively in 6 of 8 sampled body-odor threads' to 'Reddit's best'.",
+    "Core wash comparison can cover Mirai persimmon cleanser and Lume acidified cleanser, with Dove antibacterial as a lower-frequency value option. Treat Mirai liquid and unscented bar as variants, not two independently top-ranked winners.",
+    "Put The Ordinary glycolic toner and PanOxyl in a distinct underarm-options section; neither is an intimate-wash recommendation.",
+    "Include Hibiclens and hypochlorous spray discussion in evidence guides because they recur, with authoritative product-label/clinical review before instructions.",
+    "Make irritation, fragrance, expense, formula/scent distinctions and partial/non-response visible beside benefits.",
+    "Address practical confusion: wash versus deodorant versus antiperspirant; persistence in clothing; different body areas; no-buy hygiene/laundry options without shame.",
+    "Do not force oral probiotics/gummies into a best-products block. Current body corpus does not establish a repeated exact-brand supplement winner; URO historical item is capsules, not gummies."
+  ],
+  "prior_intimate_background": {
+    "file": "/workspace/scratch/c6b1ac0e24cb/mw-social-research.json",
+    "note": "Earlier ten-thread product audit focused disproportionately on intimate odor and is not merged into body counts. It supports a secondary education branch only."
+  }
+}

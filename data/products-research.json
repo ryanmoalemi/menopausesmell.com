@@ -1,0 +1,434 @@
+{
+  "project": "MenopauseWash.com product and affiliate candidate research",
+  "checked_date_utc": "2026-11-12",
+  "research_window_utc": "2026-11-12 approximately 09:31–09:55 UTC; clock checkpoint 2026-11-12T09:43:10Z",
+  "scope": "US editorial comparison candidates. Public official product and program pages only; no applications, account access, purchases, messages or publication.",
+  "interpretation": {
+    "include": "Eligible for a factual external-cleanser comparison, subject to clinician/editorial review; not an endorsement of menopause-odor efficacy.",
+    "research-only": "Keep in internal ledger or evidence explainer; do not present as a proven odor treatment or default purchase recommendation.",
+    "exclude": "Exclude from fragrance-free/sensitive-vulva shortlist; may be discussed transparently in an ingredient comparison.",
+    "supplements": "All oral products remain research-only. Manufacturer pages establish labels and marketing claims, not clinical efficacy for menopause-related odor. Do not transfer evidence between species, strains, doses, formulations, routes or populations. These oral capsules/gummies are not suppositories.",
+    "price": "USD manufacturer snapshots, not Amazon prices; no stock, shipping, subscription or discount guarantee.",
+    "rights": "Public image URLs permit inspection, not assumed commercial reuse. Obtain licensed affiliate creative or manufacturer permission before publication. No product image was edited."
+  },
+  "cleansers": [
+    {
+      "id": "vanicream-gentle-body-wash",
+      "name": "Vanicream Gentle Body Wash",
+      "official_url": "https://www.vanicream.com/product/vanicream-body-wash",
+      "support_url": "https://www.vanicream.com/body-products/cleansers",
+      "refs": [
+        "turn29view0",
+        "turn11search2"
+      ],
+      "access_depth": "Product page opened; full directions and ingredients read; public manufacturer front image visually inspected locally.",
+      "category": "include",
+      "format_size": "Liquid rinse-off body wash; inspected front bottle 12 fl oz / 355 mL.",
+      "route": "External hands/body; lather on wet skin and rinse. Manufacturer does not establish intravaginal use or menopause-specific efficacy.",
+      "ingredients": "Water, glycerin, coco-glucoside, propanediol, sodium cocoyl glycinate, acrylates copolymer, panthenol, caprylyl glycol, disodium EDTA, sodium chloride, 1,2-hexanediol, mica, titanium dioxide, sodium hydroxide, citric acid.",
+      "fragrance": "Brand cleanser page states no fragrance or masking fragrance. Bottle visibly says fragrance free. No essential oils/botanical extracts per product page.",
+      "cautions_claim_gaps": "General skin cleanser, not a vaginal pH or infection treatment; suitability for any individual vulvar skin condition is not established by this page.",
+      "price_usd": null,
+      "photo_url": "https://www.vanicream.com/dynamic-media/product/images/refreshed_body-wash-bottle-front.jpg?gravity=center&k=gnqxTZ1jLe9LVPIBrBdVQA&v=galleryMedia",
+      "photo_local": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/vanicream.jpg",
+      "photo_use_rights": "Unknown; review reference only."
+    },
+    {
+      "id": "dove-ultra-sensitive",
+      "name": "Dove Ultra Sensitive Serum Body Wash with only 10 ingredients",
+      "official_url": "https://www.dove.com/us/en/p/ultra-sensitive-body-wash.html/00011111049444",
+      "refs": [
+        "turn29view1",
+        "turn32view4"
+      ],
+      "access_depth": "Full product page and ingredient section read; public product image downloaded and visually inspected.",
+      "category": "include",
+      "format_size": "Rinse-off gel body wash, 18.5 oz / 547 mL.",
+      "route": "External body cleansing; not an internal vaginal wash.",
+      "ingredients": "Water, cocamidopropyl betaine, sodium methyl lauroyl taurate, sodium chloride, glycerin, hydroxystearic acid, stearic acid, cocamide MEA, sodium benzoate, citric acid.",
+      "fragrance": "Explicitly fragrance-free; displayed ingredients omit fragrance.",
+      "cautions_claim_gaps": "Keep exact Ultra Sensitive variant identity. Ordinary Sensitive Body Wash is a different fragranced formula. No menopause-odor treatment evidence established.",
+      "price_usd": null,
+      "photo_url": "https://assets.unileversolutions.com/v1/130193126.png",
+      "photo_local": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/dove.png",
+      "photo_use_rights": "Unknown; review reference only."
+    },
+    {
+      "id": "dove-sensitive",
+      "name": "Dove Sensitive Body Wash",
+      "official_url": "https://www.dove.com/us/en/p/sensitive-body-wash.html/00011111122246/theme-02",
+      "requested_url_redirected": "https://www.dove.com/us/en/p/sensitive-skin-hypoallergenic-body-wash.html/00011111122246",
+      "refs": [
+        "turn29view2",
+        "turn32view5",
+        "turn11search4"
+      ],
+      "access_depth": "Current redirected official product page opened; full ingredients read; older indexed official FAQ additionally states contains fragrance.",
+      "category": "exclude",
+      "format_size": "Rinse-off body wash; 20 oz page with 11 oz and 30.6 oz options.",
+      "route": "External body cleansing.",
+      "ingredients_facts": "Ingredient list includes cocamidopropyl betaine, lauric acid, sodium lauroyl glycinate, sodium lauroyl isethionate, soybean oils, glycerin, Fragrance, BHT and iodopropynyl butylcarbamate.",
+      "fragrance": "Fragrance is explicitly listed. Hypoallergenic/sensitive branding does not make this fragrance-free.",
+      "cautions_claim_gaps": "Exclude from an unscented shortlist. Do not mislabel as Dove Sensitive Skin unscented; a bar and a body wash can have different formulas.",
+      "price_usd": null,
+      "photo_url": null
+    },
+    {
+      "id": "cerave-hydrating-facial-cleanser",
+      "name": "CeraVe Hydrating Facial Cleanser",
+      "official_url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+      "refs": [
+        "turn32view1",
+        "turn36view7",
+        "turn12search4"
+      ],
+      "access_depth": "Official product page opened; free-of-added-fragrance feature and ingredient list read.",
+      "category": "research-only",
+      "format_size": "Non-foaming facial cleanser; exact purchasable size not selected.",
+      "route": "External facial skin per page; not specifically labeled for vulva.",
+      "ingredients_facts": "Glycerin, cetearyl/stearyl/cetyl alcohols, PEG-40 stearate, ceramides NP/AP/EOP, sodium hyaluronate, cholesterol, phenoxyethanol; no fragrance in displayed list.",
+      "fragrance": "Manufacturer explicitly says free of added fragrance.",
+      "cautions_claim_gaps": "Potential general gentle-cleanser comparison, but avoid converting face-wash labeling into a vulvar recommendation without expert review. Formula can change; manufacturer directs customers to package ingredients.",
+      "price_usd": null,
+      "photo_url": null
+    },
+    {
+      "id": "good-clean-love-balance",
+      "name": "Good Clean Love Balance Moisturizing Wash",
+      "official_url": "https://goodcleanlove.com/products/balance-moisturizing-wash-8-oz-new",
+      "support_url": "https://goodcleanlove.com/pages/frequently-asked-questions",
+      "refs": [
+        "turn32view0",
+        "turn36view6",
+        "turn38view1",
+        "turn12search2"
+      ],
+      "access_depth": "Official product page and ingredients opened; official FAQ indexed result read.",
+      "category": "exclude",
+      "format_size": "Rinse-off wash; 8 oz full size and 1 oz travel options. Page displayed Sold out for visible selection.",
+      "route": "External intimate cleanser; do not infer internal use from vaginal microbiome marketing.",
+      "ingredients_facts": "Aloe juice, glycerin, surfactants, lactic acid, Natural Lavender Flavor, botanical extracts, potassium sorbate and sodium benzoate.",
+      "fragrance": "Contains natural lavender flavor; page expressly describes floral aroma. Free from synthetic/artificial fragrance does not mean fragrance-free. Official FAQ says lavender was always present and packaging was updated.",
+      "cautions_claim_gaps": "Exclude from fragrance-free shortlist. Brand pH, microbiome, irritation and odor assertions are not independent efficacy evidence; avoid importing marketing assertions into site conclusions.",
+      "price_usd": null,
+      "photo_url": null
+    },
+    {
+      "id": "vagisil-menopause-mousse",
+      "name": "Vagisil Menopause Support Probiotic Mousse Wash",
+      "official_url": "https://www.vagisil.com/product/menopause-support-probiotic-mousse-wash",
+      "refs": [
+        "turn29view3",
+        "turn45view2"
+      ],
+      "access_depth": "Official product page opened, full ingredients and usage read; manufacturer side-label photo downloaded and visually reviewed.",
+      "category": "exclude",
+      "format_size": "Foaming mousse pump; exact size not read from selected side image.",
+      "route": "For external use only; apply and rinse thoroughly.",
+      "ingredients_facts": "Cocamidopropyl betaine, Lactobacillus Ferment, sodium hyaluronate, lauryl glucoside, glycerin, lactic acid, octenidine HCl, phenoxyethanol, Fragrance (among full list).",
+      "fragrance": "CONFLICT: official page at lines 124 says Free from fragrance, dyes, and sulfates; same page feature at line 103 says Light botanical scent and ingredient list at line 169 ends Fragrance. Side-label photo also reads Light botanical scent.",
+      "cautions_claim_gaps": "Treat as fragranced pending manufacturer reconciliation, not fragrance-free. Lactobacillus Ferment does not establish live probiotic organisms/CFU. pH 5.5 and 24-hour odor marketing do not establish treatment efficacy.",
+      "price_usd": null,
+      "photo_url": "https://www.vagisil.com/sites/g/files/sgirzt251/files/2025-04/3_US_MenopauseWash_side.jpg",
+      "photo_local": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/vagisil.jpg",
+      "photo_use_rights": "Unknown; review reference only."
+    },
+    {
+      "id": "love-wellness-ph-balanced-cleanser",
+      "name": "Love Wellness pH Balanced Cleanser",
+      "official_url": "https://lovewellness.com/products/ph-balanced-cleanser-5oz",
+      "refs": [
+        "turn49view3",
+        "turn50view1",
+        "turn51view2",
+        "turn51view1",
+        "turn59view0"
+      ],
+      "access_depth": "Official page and ingredient image opened; manufacturer ingredient image downloaded and visually transcribed; no fragrance/essential-oil statement and consumer-study footnote checked.",
+      "category": "include",
+      "format_size": "External intimate gel cleanser, 5 fl oz standard.",
+      "route": "Apply a dime-sized amount with clean hands to vulva, lather gently and rinse; page advises against loofah/sponge/towel.",
+      "ingredients_facts": "Aloe barbadensis leaf juice, disodium/sodium cocoyl glutamate, decyl glucoside, citric acid, Chondrus crispus extract (carrageenan), calendula flower extract, gluconolactone, xanthan gum, benzyl alcohol, sodium benzoate, tetrasodium glutamate diacetate, acacia senegal gum.",
+      "fragrance": "Manufacturer explicitly says no fragrance or essential oils; inspected ingredient image has no parfum/fragrance. Benzyl alcohol appears in ingredients; ingredient-function/individual sensitivity questions remain separate from fragrance-free marketing.",
+      "cautions_claim_gaps": "Brand cites a consumer-perception study, 31 women aged 23–64 for four weeks. Do not present reported lack of pH disruption as objective proof or menopause-specific effectiveness.",
+      "price_usd": 14.99,
+      "price_context": "One-time purchase, 5 fl oz; separate introductory subscription offer shown.",
+      "photo_url": "https://lovewellness.com/cdn/shop/files/Frame_1533210585_430596d4-1f18-4e60-a32d-67a29c8265c1.jpg?v=1778538237&width=1500",
+      "photo_use_rights": "Unknown; label review reference only.",
+      "photo_local": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/love-cleanser-label.jpg",
+      "front_photo_url": "https://lovewellness.com/cdn/shop/files/Standard.png?v=1791470512&width=1500",
+      "front_photo_local": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/love-cleanser-front.png",
+      "front_photo_status": "Official manufacturer image downloaded and visually inspected. Commercial reuse permission unknown; review reference only."
+    }
+  ],
+  "additional_cleanser_lead": {
+    "name": "SweetSpot Labs Fragrance-Free Intimate & Body Cleanser / older Unscented Gentle Wash",
+    "category": "research-only",
+    "attempted_official_url": "https://sweetspotlabs.com/",
+    "access_depth": "Official domain inaccessible through search tool. No current official US product page verified. Do not fabricate product URL or equate old and new names/formulas.",
+    "third_party_lead_url": "https://www.target.com/p/-/A-87815398",
+    "refs": [
+      "turn32view2",
+      "turn16search7"
+    ],
+    "notes": "Retailer lists unscented and no fragrance added, but not sufficient for current official identity verification. Archived ingredient PDF found on unrelated Squarespace host; provenance/currentness not established. Exclude from initial shoppable comparison until current packaging, availability and manufacturer identity are verified."
+  },
+  "oral_supplements": [
+    {
+      "id": "rephresh-pro-b",
+      "name": "repHresh Pro-B Vaginal Probiotic Supplement",
+      "official_url": "https://www.rephresh.com/en/products/pro-b-vaginal-probiotic-supplement",
+      "refs": [
+        "turn36view0",
+        "turn38view2",
+        "turn12search6",
+        "turn57view2"
+      ],
+      "access_depth": "Official product page opened, FAQ and directions read; physical package insert not inspected.",
+      "category": "research-only",
+      "format_route": "Oral capsule, one per day; NOT a gummy or intravaginal product.",
+      "label_facts": "5 billion beneficial bacteria per serving; L. rhamnosus GR-1 and L. reuteri RC-14 identified in official FAQ. Vegan, non-GMO, gluten-free claims.",
+      "cautions_claim_gaps": "Full excipients/insert not verified. Do not conflate Pro-B with repHresh vaginal gel. Strain studies require separate population/outcome appraisal; no menopause-odor outcome established here.",
+      "price_usd": null,
+      "photo_url": null,
+      "front_photo_url": "https://www.rephresh.com/images/product-images/pro-b-vaginal-probiotic-supplement-01.jpg",
+      "front_photo_local": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/rephresh-front.jpg",
+      "front_photo_status": "Official manufacturer image downloaded and visually inspected. Commercial reuse permission unknown; review reference only."
+    },
+    {
+      "id": "uro-capsules",
+      "name": "O Positiv URO Vaginal Probiotic Capsules",
+      "official_url": "https://opositiv.com/products/uro-vaginal-probiotic-capsules/",
+      "refs": [
+        "turn36view1",
+        "turn38view4",
+        "turn40view5"
+      ],
+      "access_depth": "Official product page opened; ingredient facts and one-time price read.",
+      "category": "research-only",
+      "format_route": "Two oral capsules daily with water; 30 servings / 60 capsules.",
+      "label_facts": "V-Positiv blend 50 mg, 5 billion CFU total: L. acidophilus, L. rhamnosus, L. reuteri, L. fermentum. XOS 400 mg. Other ingredients maltodextrin, vegetarian cellulose capsule, natural color.",
+      "strain_identifiers": "Species only in retrieved ingredient panel; no alphanumeric strain IDs given.",
+      "cautions_claim_gaps": "Species names cannot establish equivalence to GR-1/RC-14 trials. Proprietary blend does not disclose per-species CFU. Manufacturer odor/pH claims are not independently validated here. Not the URO gummy formulation.",
+      "price_usd": 31.99,
+      "price_context": "One-time single bottle; $26.99 monthly delivery separately displayed.",
+      "photo_url": null
+    },
+    {
+      "id": "uro-gummies",
+      "name": "O Positiv URO Vaginal Probiotic Gummy Vitamins, Pink Pineapple",
+      "official_url": "https://opositiv.com/products/vaginal-probiotic-gummy",
+      "refs": [
+        "turn32view3",
+        "turn38view3",
+        "turn36view5",
+        "turn38view0"
+      ],
+      "access_depth": "Official product page, ingredient facts and format-comparison FAQ read; front bottle photo visually inspected.",
+      "category": "research-only",
+      "format_route": "Two oral gummies daily; 60 gummies / 30 servings; adults 18+.",
+      "label_facts": "Bacillus coagulans SNZ 1969, 1 billion CFU in 135 mg proprietary blend with pineapple fruit powder and sea-buckthorn juice powder. Vitamin C 45 mg, vitamin D3 50 mcg, sodium 5 mg. Tapioca syrup, sugar, pectin, natural flavor and color among excipients.",
+      "cautions_claim_gaps": "Different organism, dose and added vitamins from URO capsules; no borrowed capsule efficacy claims. Vegetarian but not vegan per manufacturer because vitamin D source. Check total vitamin D across supplements and full label with clinician as relevant. Brand advises clinician consultation for medication use, medical conditions, pregnancy/nursing or supplement combinations.",
+      "price_usd": 33.99,
+      "price_context": "One-time bottle; $27.99 recurring monthly option separately displayed.",
+      "photo_url": "https://cdn.shopify.com/s/files/1/0588/9340/2261/files/pdp_shadow_dtc_1_1b1351f9-6ecb-4cbb-b2e5-cc8f1b5bfe61.webp?crop=center&height=500&v=1784234266&width=500",
+      "photo_local": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/uro-gummy.webp",
+      "photo_use_rights": "Unknown; review reference only."
+    },
+    {
+      "id": "culturelle-womens-gummies",
+      "name": "Culturelle Women's Probiotics + Multivitamin Gummies",
+      "official_url": "https://culturelle.com/products/womens-probiotic-multivitamin-gummies",
+      "refs": [
+        "turn36view2",
+        "turn38view5",
+        "turn40view3",
+        "turn40view4",
+        "turn51view0"
+      ],
+      "access_depth": "Official page/FAQ read; supplement-facts image downloaded and visually transcribed.",
+      "category": "research-only",
+      "format_route": "Two oral gummies daily; 60-count bottle.",
+      "label_facts": "Label: 7.5 mg probiotic blend / 1 billion CFU of Bacillus coagulans and Bacillus subtilis; no strain IDs. Two gummies, 30 servings, 3 g added sugar. Vitamins A/C/D/E/K2, B1/B2/B3/B6/folate/B12/biotin/B5, calcium, zinc, selenium; sodium separately. D3 20 mcg. Cane sugar, corn syrup, water, natural flavor, pectin, citric acid, fruit/vegetable juice color.",
+      "cautions_claim_gaps": "General digestive/immune/multivitamin product, no menopause-odor efficacy established. Label supports 16 named vitamins/minerals, while FAQ says 15; wrong capsule paragraph mentions LGG/CECT 8145. Ignore that mismatched capsule copy. Current physical package still should be matched before purchase. Dairy-free formula made in facility handling dairy per image.",
+      "price_usd": 25.99,
+      "price_context": "60 gummies; displayed Out of Stock.",
+      "photo_url": "https://culturelle.com/cdn/shop/files/cul-womens-gummies-PDP-tiles-supplement-facts.webp?crop=center&height=1200&v=1783368743&width=1200",
+      "photo_use_rights": "Unknown; label review reference only.",
+      "photo_local": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/culturelle-label.webp"
+    },
+    {
+      "id": "love-good-girl",
+      "name": "Love Wellness Good Girl Probiotics",
+      "official_url": "https://lovewellness.com/products/new-good-girl-probiotics",
+      "refs": [
+        "turn36view3",
+        "turn40view0",
+        "turn40view2",
+        "turn50view4",
+        "turn45view3",
+        "turn58view1"
+      ],
+      "access_depth": "Official product page and study footnote read; supplement-facts image downloaded and visually transcribed.",
+      "category": "research-only",
+      "format_route": "One oral capsule daily, preferably with meal; 30 capsules.",
+      "label_facts": "50 mg proprietary blend, 1 billion CFU total: B. subtilis DE111 plus L. acidophilus, gasseri, salivarius, brevis, rhamnosus, casei, plantarum, paracasei. Other ingredients inulin, HPMC capsule and medium-chain triglycerides. Only DE111 has an alphanumeric strain identifier on inspected panel.",
+      "cautions_claim_gaps": "90% freshness claim comes from consumer-perception study of 33 women 18+, six weeks; not an objective microbiome measurement or menopause-specific randomized trial. New formula is 1 capsule/9 organisms, not older 2-capsule version. Manufacturer advises clinician consultation before supplement use.",
+      "price_usd": 24.99,
+      "price_context": "One-time 30 count; $14.99 introductory subscription separately shown.",
+      "photo_url": "https://lovewellness.com/cdn/shop/files/Frame_1533211091.jpg?v=1769714276&width=1500",
+      "photo_local": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/lovewellness-label.jpg",
+      "photo_use_rights": "Unknown; label review reference only.",
+      "front_photo_url": "https://lovewellness.com/cdn/shop/files/Good_Girl_Probiotics.png?v=1791470284&width=1500",
+      "front_photo_local": "/workspace/scratch/c6b1ac0e24cb/mw-research-images/love-probiotic-front.png",
+      "front_photo_status": "Official manufacturer image downloaded and visually inspected. Commercial reuse permission unknown; review reference only."
+    },
+    {
+      "id": "happy-v-prebiotic-probiotic",
+      "name": "Happy V Prebiotic + Probiotic",
+      "official_url": "https://happyv.com/products/probiotics-vaginal-health-supplement",
+      "refs": [
+        "turn36view4",
+        "turn38view7"
+      ],
+      "access_depth": "Official product page opened; complete supplement facts, excipients and one-time price read.",
+      "category": "research-only",
+      "format_route": "Two oral capsules per serving; 30 servings / 60 capsules.",
+      "label_facts": "20 billion CFU total: L. acidophilus LA-14 8B, B. lactis HN019 3B, L. rhamnosus HN001 2B, L. crispatus CCFM1110 2B, L. gasseri HLG13 2B, L. reuteri HR7 2B, B. subtilis DE111 1B. Biotin 30 mcg; PreforPro bacteriophage blend 15 mg. Rice flour, vegetable magnesium stearate, bamboo silicon dioxide, hypromellose capsule.",
+      "cautions_claim_gaps": "Strain transparency is comparatively useful, but does not establish that this full product treats menopausal odor. Claims based on individual strains cannot automatically be attributed to the seven-strain finished formula. Do not copy brand language about resolving infections.",
+      "price_usd": 44.99,
+      "price_context": "One-time bottle; subscription prices/temporary sale separate.",
+      "photo_url": null,
+      "photo_rights_source": "https://happyv.com/policies/terms-of-service",
+      "photo_use_rights": "Terms indexed on official site restrict commercial copying/public display; use approved partner assets only."
+    }
+  ],
+  "affiliate_programs": [
+    {
+      "name": "Amazon Associates US",
+      "application_url": "https://affiliate-program.amazon.com/",
+      "terms_url": "https://affiliate-program.amazon.com/help/operating/policies",
+      "rate_source_url": "https://affiliate-program.amazon.com/help/node/topic/GRXPHT8U84RAYDXZ",
+      "refs": [
+        "turn44view0",
+        "turn49view0",
+        "turn49view1"
+      ],
+      "access_depth": "Official landing, current policies and rate table opened. Policies marked updated April 14, 2026.",
+      "offered_status": "Public application offered; approval required.",
+      "our_enrollment": "Unknown/not verified; no application made and no Associate ID available.",
+      "public_rate": "Health & Personal Care 1%; Beauty 3%; exact SKU category must be checked. Do not budget all products at advertised up-to-10% ceiling.",
+      "cookie_attribution": "Session generally ends at earliest 24 hours, qualifying non-digital order, or another affiliate's link. Items added during session may qualify if order completed within 89 days from initial click, subject to all other terms.",
+      "priority": "include as initial general retailer application candidate",
+      "notes": "Use real issued tracking links only after enrollment. No fabricated tag, no claim of active partnership. Use approved product content/creative under applicable license."
+    },
+    {
+      "name": "iHerb Affiliate Program",
+      "application_url": "https://www.iherb.com/info/affiliates",
+      "resolved_url": "https://nz.iherb.com/info/affiliates",
+      "refs": [
+        "turn44view2",
+        "turn47view4",
+        "turn47view5"
+      ],
+      "access_depth": "Official global program page opened, geo-redirected to NZ; program FAQ read. US-specific executed contract not reviewed.",
+      "offered_status": "Application routes publicly listed: Partnerize, Impact, CJ, Awin.",
+      "our_enrollment": "Unknown/not verified; no application made.",
+      "public_rate": "Page advertises up to 25%; actual approved publisher rate unknown. This is a ceiling, not a forecast.",
+      "cookie_attribution": "7 days, overwritten by another affiliate link or Rewards link/code.",
+      "priority": "include as relevant retailer/network application candidate",
+      "notes": "Commercial publishers must use affiliate program, not consumer Rewards. Product availability/US catalog and approved terms still need checking."
+    },
+    {
+      "name": "Target Partners",
+      "application_url": "https://partners.target.com/",
+      "terms_faq_url": "https://partners.target.com/faqs",
+      "refs": [
+        "turn26search3",
+        "turn26search4",
+        "turn44view3",
+        "turn47view0"
+      ],
+      "access_depth": "Official indexed search extracts read; direct opens returned JavaScript shell only. Thus not a fully rendered/current contract verification.",
+      "offered_status": "Official search-indexed page offers application through Impact.",
+      "our_enrollment": "Unknown/not verified; no application made.",
+      "public_rate": "Indexed official landing advertises up to 8%; product/category eligibility and actual personal-care rate unknown.",
+      "cookie_attribution": "Official indexed FAQ: 7 days, last click.",
+      "priority": "research-only until category commission eligibility confirmed",
+      "notes": "Do not infer health/personal-care products earn 8%, or even a nonzero commission, from overall headline."
+    },
+    {
+      "name": "Walmart Affiliate Program",
+      "application_url": "https://affiliates.walmart.com/",
+      "faq_url": "https://affiliates.walmart.com/faqs",
+      "terms_url": "https://affiliates.walmart.com/terms",
+      "refs": [
+        "turn44view4",
+        "turn47view1",
+        "turn26search6"
+      ],
+      "access_depth": "Official landing and FAQ opened; official terms indexed extract read.",
+      "offered_status": "Application offered via Impact; approval required.",
+      "our_enrollment": "Unknown/not verified; no application made.",
+      "public_rate": "FAQ advertises up to 4%; current product-specific payout details reside in affiliate portal and remain unknown.",
+      "cookie_attribution": "Duration not verified; terms refer to relevant Referral Window without a fixed public duration in retrieved text.",
+      "priority": "include as broad retailer application candidate",
+      "notes": "Program existence does not establish commission eligibility or stock of each product."
+    },
+    {
+      "name": "Love Wellness through FlexOffers",
+      "application_url": "https://www.flexoffers.com/affiliate-programs/love-wellness-affiliate-program/",
+      "refs": [
+        "turn44view5"
+      ],
+      "access_depth": "Official network listing opened; last update shown September 4, 2026; public publisher-signup link present.",
+      "offered_status": "Network advertises brand offer; retrieved template displays both Active and Deactivated labels, so active availability needs network confirmation.",
+      "our_enrollment": "Unknown/not verified; no application made.",
+      "public_rate": "4% new-customer sales; 2.4% existing-customer sales, per public payout description.",
+      "cookie_attribution": "7 days per listing.",
+      "priority": "research-only pending active offer confirmation and approved creative",
+      "notes": "Network-listed route, not proof of direct brand enrollment. Medical-claims editorial standards remain independent of commission."
+    }
+  ],
+  "additional_program_leads": [
+    {
+      "name": "O Positiv affiliate/ambassador",
+      "url": "https://opositiv.com/pages/creator-terms-conditions-guidelines",
+      "refs": [
+        "turn18search6"
+      ],
+      "access_depth": "Official terms search extract, not full application funnel.",
+      "notes": "Terms dated May 23, 2024 describe applying via social channels/TikTok Shop or ambassador program. Website publisher eligibility and application endpoint not verified; commission varies, no fixed public rate/cookie confirmed. Enrollment unknown."
+    },
+    {
+      "name": "Happy V Practitioner Program",
+      "url": "https://pro.happyv.com/",
+      "refs": [
+        "turn21search0"
+      ],
+      "access_depth": "Official indexed result only.",
+      "notes": "Clinician/practitioner program with affiliate dashboard, not established as general editorial publisher program. Do not apply as practitioner without eligibility. Enrollment/rate/cookie unknown."
+    },
+    {
+      "name": "Good Clean Love",
+      "url": "https://goodcleanlove.com/",
+      "notes": "Third-party directories advertise affiliate terms, but no official brand/network application page verified in this pass. Do not repeat directory claims of 20% commission as established fact."
+    }
+  ],
+  "disclosure": {
+    "ftc_url": "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking",
+    "ftc_refs": [
+      "turn47view3",
+      "turn51view3"
+    ],
+    "ftc_access_depth": "Official guidance opened and affiliate-marketing section read.",
+    "ftc_summary": "Disclose commission relationship clearly and conspicuously close to recommendation/link. Affiliate link or Buy now alone is not adequate; Paid link next to link can identify nature. A linked disclosure page alone is insufficient.",
+    "proposed_when_enrolled_copy": "We may earn a commission when you buy through links on this page.",
+    "amazon_url": "https://affiliate-program.amazon.com/help/node/topic/GHQNZAU6669EZS98",
+    "amazon_refs": [
+      "turn44view1"
+    ],
+    "amazon_exact_statement": "As an Amazon Associate I earn from qualifying purchases.",
+    "amazon_notes": "Official page requires statement clearly/conspicuously on site plus legally compliant disclosure near links/reviews. Do not assert Associate status before enrollment. This is a researched implementation checklist, not legal advice or completed compliance review."
+  }
+}

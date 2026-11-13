@@ -1,0 +1,89 @@
+{
+  "tracking_id": null,
+  "enrollment_verified": false,
+  "products": {
+    "vanicream-gentle-body-wash": {
+      "search_url": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz",
+      "special_link": null,
+      "exact_listing_verified": false
+    },
+    "dove-ultra-sensitive": {
+      "search_url": "https://www.amazon.com/s?k=Dove+Ultra+Sensitive+Body+Wash+10+ingredients+fragrance+free+18.5+oz",
+      "special_link": null,
+      "exact_listing_verified": false
+    },
+    "love-wellness-ph-balanced-cleanser": {
+      "search_url": "https://www.amazon.com/s?k=Love+Wellness+pH+Balanced+Cleanser+fragrance+free+5+fl+oz",
+      "special_link": null,
+      "exact_listing_verified": false
+    },
+    "uro-gummies": {
+      "search_url": "https://www.amazon.com/s?k=O+Positiv+URO+Vaginal+Probiotic+Gummies+Pink+Pineapple+60+count",
+      "special_link": null,
+      "exact_listing_verified": false
+    },
+    "rephresh-pro-b": {
+      "search_url": "https://www.amazon.com/s?k=repHresh+Pro-B+Vaginal+Probiotic+Supplement+30+capsules",
+      "special_link": null,
+      "exact_listing_verified": false
+    },
+    "love-good-girl": {
+      "search_url": "https://www.amazon.com/s?k=Love+Wellness+Good+Girl+Probiotics+9+strains+30+capsules",
+      "special_link": null,
+      "exact_listing_verified": false
+    },
+    "mirai-unscented-bar": {
+      "search_url": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz",
+      "special_link": null,
+      "exact_listing_verified": false
+    },
+    "lume-unscented-wash": {
+      "search_url": "https://www.amazon.com/s?k=Lume+Acidified+Body+Wash+Unscented",
+      "special_link": null,
+      "exact_listing_verified": false
+    },
+    "dove-sensitive-beauty-bar": {
+      "search_url": "https://www.amazon.com/s?k=Dove+Sensitive+Skin+Beauty+Bar+Fragrance+Free",
+      "special_link": null,
+      "exact_listing_verified": false
+    },
+    "panoxyl-10-bar": {
+      "search_url": "https://www.amazon.com/s?k=PanOxyl+Acne+Treatment+Bar+10%25+Benzoyl+Peroxide+4+oz",
+      "special_link": null,
+      "exact_listing_verified": false
+    },
+    "ordinary-glycolic-7": {
+      "search_url": "https://www.amazon.com/s?k=The+Ordinary+Glycolic+Acid+7%25+Exfoliating+Toner",
+      "special_link": null,
+      "exact_listing_verified": false
+    },
+    "mirai-persimmon-body-wash": {
+      "search_url": "https://www.amazon.com/s?k=Mirai+Clinical+Purifying+Deodorizing+Body+Wash+Persimmon",
+      "special_link": null,
+      "exact_listing_verified": false
+    },
+    "uro-capsules": {
+      "search_url": "https://www.amazon.com/s?k=O+Positiv+URO+Vaginal+Probiotic+Capsules+60+count",
+      "special_link": null,
+      "exact_listing_verified": false
+    }
+  },
+  "historical_user_links": [
+    {
+      "url": "https://amzn.to/3Rl8QfD",
+      "reported_context": "wash"
+    },
+    {
+      "url": "https://amzn.to/4pLylUb",
+      "reported_context": "symptom relief"
+    },
+    {
+      "url": "https://amzn.to/3RlbzFU",
+      "reported_context": "spray"
+    },
+    {
+      "url": "https://amzn.to/4pKMrFa",
+      "reported_context": "vaginal probiotic, user later narrowed to this"
+    }
+  ]
+}
