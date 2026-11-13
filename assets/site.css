@@ -168,3 +168,7 @@
 .portrait-quote .quote-credit{margin:0;font-size:11px}.reader-portrait-note{display:block;margin-top:3px;font-size:10px;line-height:1.45;color:#6a6057}
 .concern-voice.portrait-quote{margin:0}.reader-story-note .portrait-quote,.on-site-quote .portrait-quote{margin-top:17px}
 @media(max-width:760px){.portrait-quote{grid-template-columns:66px minmax(0,1fr);column-gap:13px;row-gap:7px}.portrait-quote .reader-portrait{width:66px;height:66px}.portrait-quote .reader-quote,.concern-voice.portrait-quote blockquote,.reader-voice .portrait-quote .reader-quote{font-size:21px;line-height:1.3}.portrait-quote figcaption,.concern-voice.portrait-quote figcaption{font-size:10px}.reader-portrait-note{font-size:10px}}
+
+/* Answer the reader before presenting product photography. */
+.concern-answer{font-size:16px;line-height:1.6;max-width:600px;margin:20px 0 0;color:#453a40}.concern-answer strong{font-weight:600}
+@media(max-width:760px){.concern-answer{font-size:15px;line-height:1.55;margin-top:17px}}

@@ -16,7 +16,7 @@ def hero(key, photos):
         f'<a class="concern-photo {fit}" href="{href}"><img src="/assets/{image}" alt="{E(alt)}" width="420" height="420" fetchpriority="high"><span>{E(label)}</span></a>'
         for image, alt, label, href, fit in photos
     )
-    return f'''<header class="concern-hero concern-{key}"><div class="concern-copy"><h1>{q['heading']}</h1>{visual_quote(q['quote'], E(q['community']), q['photo'], class_name='concern-voice', cite=q['url'])}</div><div class="concern-photos">{tiles}</div></header>'''
+    return f'''<header class="concern-hero concern-{key}"><div class="concern-copy"><h1>{q['heading']}</h1>{visual_quote(q['quote'], E(q['community']), q['photo'], class_name='concern-voice', cite=q['url'])}<p class="concern-answer"><strong>{E(q['answer_lead'])}</strong> {E(q['product_intro'])}</p></div><div class="concern-photos">{tiles}</div></header>'''
 
 
 def first_step(title, text, source='body-odor'):
@@ -69,8 +69,8 @@ def underarms(old_content):
     for pid, photo, name, text in entries:
         others += f'''<article class="other-option" id="{pid}"><div class="other-product"><img src="/assets/{photo}" alt="{E(name)}" width="110" height="130" loading="lazy"><div><h3>{name}</h3><p>{text}</p></div></div>{compact_rating(pid)}{precautions.get(pid, '')}{amazon(pid, 'underarm_other_options')}</article>'''
     return '<div class="wrap concern-page">'+hero('underarms', [
-        ('mirai-unscented-soap.webp','Mirai persimmon soap held in wet hands','Persimmon soap','#product-mirai-unscented-bar',''),
-        ('lume-in-use.webp','Lume unscented body wash held over foamy bathwater','Unscented body wash','#product-lume-unscented-wash','lifestyle'),
+        ('mirai-unscented-soap.webp','Mirai persimmon soap held in wet hands','Mirai persimmon soap','#product-mirai-unscented-bar',''),
+        ('lume-in-use.webp','Lume unscented body wash held over foamy bathwater','Lume unscented wash','#product-lume-unscented-wash','lifestyle'),
     ])+first_step('Keep the routine simple.', 'Gently wash, dry your underarms well, and use an antiperspirant if you also need sweat control. A wash cleans skin; antiperspirant reduces sweating.')+f'''
     <section class="solution-section" id="wash-options"><div class="solution-heading"><h2>Two washes women talk about</h2><p>For the washing part of your routine. Neither stops sweating.</p></div>{affiliate_note()}{wash_cards(['mirai-unscented-bar','lume-unscented-wash'])}</section>
     <details class="other-discussed"><summary><span class="summary-photos"><img src="/assets/ordinary-glycolic.png" alt="The Ordinary Glycolic Acid Toner" width="44" height="50"><img src="/assets/panoxyl-10-bar.webp" alt="PanOxyl Acne Treatment Bar" width="44" height="50"></span><span>What about glycolic acid and PanOxyl?<small>Two other products you may have seen recommended.</small></span></summary><p class="other-intro">These have different uses and stronger precautions. Ask a pharmacist or dermatologist before adapting them for underarm odor.</p><div class="solution-grid">{others}</div></details>
@@ -80,8 +80,8 @@ def underarms(old_content):
 
 def body_washes():
     return '<div class="wrap concern-page">'+hero('body', [
-        ('mirai-at-sink.webp','Hands dispensing Mirai body wash at a bathroom sink','Liquid body wash','#product-mirai-persimmon-body-wash',''),
-        ('mirai-unscented-soap.webp','Mirai persimmon soap held in wet hands','Persimmon soap bar','#product-mirai-unscented-bar',''),
+        ('mirai-at-sink.webp','Hands dispensing Mirai body wash at a bathroom sink','Mirai liquid body wash','#product-mirai-persimmon-body-wash',''),
+        ('mirai-unscented-soap.webp','Mirai persimmon soap held in wet hands','Mirai persimmon soap','#product-mirai-unscented-bar',''),
     ])+first_step('Keep skin folds clean and dry.', 'Pat dry rather than scrub, and change out of damp bras or clothing. If there is a rash, soreness or broken skin, get it checked before trying a stronger wash.', 'skin-fold-care')+f'''
     <section class="solution-section" id="wash-options"><div class="solution-heading"><h2>Compare body washes</h2><p>Persimmon soap or an acidified wash? Here are the differences and the Reddit experiences.</p></div><p class="body-area-note">For body skin. For the vulva or vaginal odor, use the <a href="/odor-and-menopause/">intimate-care guide</a>.</p>{affiliate_note()}
     <div class="filters" role="group" aria-label="Filter wash comparison"><button class="filter" data-filter="all" aria-pressed="true">All washes</button><button class="filter" data-filter="liquid" aria-pressed="false">Liquid washes</button><button class="filter" data-filter="bar" aria-pressed="false">Soap bars</button></div><p class="filter-status" id="filter-status" aria-live="polite">3 products shown</p>{wash_cards(['mirai-persimmon-body-wash','lume-unscented-wash','mirai-unscented-bar'], True)}</section>
@@ -92,7 +92,7 @@ def body_washes():
 def intimate():
     from commerce import amazon
     return '<div class="wrap concern-page">'+hero('intimate', [
-        ('love-cleanser-lifestyle.webp','Love Wellness cleanser beside a towel, brand photo showing earlier packaging','Optional external cleanser','#cleanser-option','lifestyle love-lifestyle'),
+        ('love-cleanser-lifestyle.webp','Love Wellness cleanser beside a towel, brand photo showing earlier packaging','Love Wellness external cleanser','#cleanser-option','lifestyle love-lifestyle'),
     ])+first_step('Start with gentle outside care.', 'Rinse the outside skin with water, pat dry, and avoid scented washes or deodorants there. Never wash inside the vagina. You do not need to buy a special wash.', 'intimate-care')+f'''
     <section class="intimate-help" id="outside-care"><div><span class="eyebrow">If the change is new or persistent</span><h2>You can ask for help without knowing the cause.</h2></div><p>Book a medical visit for a strong or persistent change, unusual discharge, itching, burning or pain. Any vaginal bleeding after menopause needs evaluation. <a href="/when-to-get-checked/">When to get checked</a>.</p></section>
     <section class="external-cleanser" id="cleanser-option"><div class="external-cleanser-photo lifestyle"><img src="/assets/love-cleanser-lifestyle.webp" alt="Love Wellness cleanser beside a towel, earlier packaging" width="360" height="400" loading="lazy"></div><div><span class="eyebrow">If you prefer a cleanser</span><h2>Love Wellness pH Balanced Cleanser</h2><p>A fragrance-free wash labeled for the vulva, the genital skin on the outside.</p><p><strong>Optional:</strong> water may be enough. This is a label comparison, not a Reddit-ranked favorite or a treatment for vaginal odor.</p><p class="note-small">Use externally according to the label. Stop if it irritates. Photo shows earlier packaging; check the current label on Amazon.</p>{affiliate_note()}<div class="solution-actions">{amazon('love-wellness-ph-balanced-cleanser','intimate_care')}<a href="/washes/love-wellness-ph-balanced-cleanser/">Ingredients &amp; details</a></div></div></section>

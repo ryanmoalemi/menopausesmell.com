@@ -91,3 +91,5 @@ The homepage introduction is limited to a headline and one short subtitle, immed
 Public quote cards and concern-page openings must not include Discussion notes or research-notes calls to action. Keep quote attribution concise and retain source records in data. Natural product photographs and provenance are recorded in data/product-photo-sources.json.
 
 Reader quotations must include an adjacent circular portrait. Existing illustrative portraits are not the Reddit authors: keep that label visibly beside each quote. Keep each concern opening distinct and its product photography above the mobile fold. Shared markup lives in quote_visual.py.
+
+Concern-page openings follow: question, relatable quote with portrait, a short answer and product introduction, then labeled product photographs. The answer must explain why those photos are there before the reader reaches them. Keep medical explanations separate from the quoted Reddit words.

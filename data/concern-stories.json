@@ -12,7 +12,9 @@
       "context": "The poster describes underarm odor returning despite showering, antiperspirants and deodorants.",
       "retrieval": "Indexed original Reddit post text returned by web search; direct page retrieval unavailable.",
       "retrieved_at": "2026-11-13",
-      "photo": "portrait-window.webp"
+      "photo": "portrait-window.webp",
+      "answer_lead": "Sweat and skin bacteria can bring odor back.",
+      "product_intro": "These two cleansers come up in Reddit conversations about stubborn body odor. Compare them below."
     },
     "body": {
       "heading": "Body odor that keeps coming back?",
@@ -26,7 +28,9 @@
       "context": "The thread title describes new odor under the breasts despite washing and drying. The quoted sentences are from the title, not a product review.",
       "retrieval": "Indexed original Reddit thread title returned by web search; direct page retrieval unavailable.",
       "retrieved_at": "2026-11-13",
-      "photo": "portrait-garden.webp"
+      "photo": "portrait-garden.webp",
+      "answer_lead": "Skin folds can trap warmth and moisture.",
+      "product_intro": "The liquid wash and soap bar below are options for cleansing body skin. Keeping folds dry matters too."
     },
     "intimate": {
       "heading": "Smelling different down there?",
@@ -40,7 +44,9 @@
       "context": "The poster describes a different scent after menopause and asks for suggestions. The post does not establish the cause of the change.",
       "retrieval": "Indexed original Reddit post text returned by web search; direct page retrieval unavailable.",
       "retrieved_at": "2026-11-13",
-      "photo": "portrait-outdoors.webp"
+      "photo": "portrait-outdoors.webp",
+      "answer_lead": "Start with gentle care on the outside.",
+      "product_intro": "A special wash isn’t essential. The cleanser shown is an optional choice for the vulva, not a treatment for vaginal odor."
     }
   },
   "scope": "Reader concerns only. These quotes do not add observations to the existing product-rating sample. No stock or generated photo is presented as the quoted poster.",
@@ -69,6 +75,11 @@
       "organization": "American Academy of Dermatology",
       "title": "Hyperhidrosis: 6 tips dermatologists give their patients",
       "url": "https://www.aad.org/public/diseases/a-z/hyperhidrosis-self-care"
+    },
+    {
+      "organization": "Cleveland Clinic",
+      "title": "Body Odor",
+      "url": "https://my.clevelandclinic.org/health/diseases/17865-body-odor"
     }
   ],
   "product_photo_sources": [
