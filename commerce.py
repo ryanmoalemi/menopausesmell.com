@@ -50,15 +50,18 @@ def amazon(pid,placement='card'):
   query=dict(parse_qsl(parts.query))
   query['tag']=LINKS['tracking_id']
   url=urlunsplit((parts.scheme,parts.netloc,parts.path,urlencode(query),parts.fragment))
- label='View on Amazon' if active else 'Search Amazon'
- name=PRODUCT_MAP.get(pid,{}).get('display_name',pid.replace('-',' '))
- return f'<a class="btn amazon" aria-label="{E(label+' for '+name,quote=True)}" href="{E(url,quote=True)}" rel="sponsored nofollow noopener" target="_blank" data-product-id="{pid}" data-placement="{placement}">{label}<span aria-hidden="true">↗</span></a>'
+ name=p.get('button_name',PRODUCT_MAP.get(pid,{}).get('display_name',pid.replace('-',' ')))
+ label=('View ' if active else 'Find ')+name+' on Amazon'
+ target=p.get('listing_target',PRODUCT_MAP.get(pid,{}).get('name',name))
+ kind='Amazon listing' if active else 'Amazon search'
+ return f'<div class="amazon-choice"><a class="btn amazon" aria-label="{E(label+" for "+target,quote=True)}" href="{E(url,quote=True)}" rel="sponsored nofollow noopener" target="_blank" data-product-id="{pid}" data-placement="{placement}">{E(label)}<span aria-hidden="true">↗</span></a><span class="amazon-target"><strong>{kind}:</strong> {E(target)}. Confirm the label, size and seller before ordering.</span></div>'
+
 def disclosure():
  if LINKS.get('enrollment_verified'):
-  text='As an Amazon Associate I earn from qualifying purchases. Buttons marked “Search Amazon” open product search results.'
+  text='As an Amazon Associate I earn from qualifying purchases.'
  else:
   text='These links open Amazon search results. This preview does not earn commissions.'
- return f'<p class="disclosure">{text} {a("/affiliate-disclosure/","How links work")}. Check the exact formula, size and seller in Amazon results.</p>'
+ return f'<p class="disclosure">{text} {a("/affiliate-disclosure/","How links work")}.</p>'
 def card(p,compact=False):
  return f'''<article id="product-{p['id']}" class="product social-product" data-product="{p['id']}" data-category="{p['category']}"><div class="product-art"><a href="/washes/{p['id']}/"><img src="/assets/{p['image']}" alt="{E(p['name'])} packaging" loading="lazy"></a></div><div class="product-body"><span class="badge">{E(p['badge'])}</span><h3><a href="/washes/{p['id']}/">{E(p.get('display_name',p['name']))}</a></h3>{rating(p['id'])}<p>{E(p['summary'])}</p><dl><div><dt>For</dt><dd>{E(p['area'])}</dd></div><div><dt>Check</dt><dd>{E(p['check'])}</dd></div></dl>{product_quote(p['id'])}<div class="product-links">{a('/washes/'+p['id']+'/','See ingredients &amp; tradeoffs')}{amazon(p['id'])}</div></div></article>'''
 def shortlist():

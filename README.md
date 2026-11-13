@@ -93,3 +93,6 @@ Public quote cards and concern-page openings must not include Discussion notes o
 Reader quotations must include an adjacent circular portrait. Existing illustrative portraits are not the Reddit authors: keep that label visibly beside each quote. Keep each concern opening distinct and its product photography above the mobile fold. Shared markup lives in quote_visual.py.
 
 Concern-page openings follow: question, relatable quote with portrait, a short answer and product introduction, then labeled product photographs. The answer must explain why those photos are there before the reader reaches them. Keep medical explanations separate from the quoted Reddit words.
+
+
+Shopping guidance update, November 13, 2026: concern pages lead with a format-based starting choice; compact fact grids collect scent, ingredients, body area, tradeoff and feedback scope. Amazon buttons name the target and disclose searches. Probiotic pages show selected positive and mixed customer reviews with source context; raw provenance is in data/customer-review-research.json. Do not transfer capsule reviews to gummies, claim causal benefit from anecdotes, or calculate a star score from these selected reviews.

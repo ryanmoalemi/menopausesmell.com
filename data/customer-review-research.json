@@ -1,0 +1,49 @@
+{
+  "checked_date": "2026-11-13",
+  "scope": "Selected firsthand customer reports, not a representative sample or clinical evidence. Capsules and gummies are kept separate. No aggregate review rating created.",
+  "access_limit": "Amazon product page returned 503; Woot review text was retrieved through indexed search. Woot identifies the quotes as Amazon reviews.",
+  "selected_quotes": [
+    {
+      "heading": "A positive experience",
+      "text": "these definitely help with strong odors!",
+      "author": "Brianna Whittington",
+      "source_label": "Amazon review via Woot",
+      "date_label": "October 14, 2026",
+      "photo": "portrait-garden.webp",
+      "url": "https://www.woot.com/review/B0D5FZGY8W?filter=5&itemid=WT491612A&offerid=3115fbc3-9d8b-4f80-baea-76710d346847",
+      "context": "Reviewer reports doing outdoor work and sweating, easy swallowing and no unwanted effects. Menopause status not stated."
+    },
+    {
+      "heading": "A mixed experience",
+      "text": "Haven’t noticed much difference since stopping",
+      "author": "Vinerrr",
+      "source_label": "Amazon review via Woot",
+      "date_label": "August 16, 2026",
+      "photo": "portrait-window.webp",
+      "url": "https://www.woot.com/review/B0D5FZGY8W?filter=5&itemid=WT491612A&offerid=3115fbc3-9d8b-4f80-baea-76710d346847",
+      "context": "Six months use, felt fresher but questioned repurchase value; capsules large. Menopause status not stated."
+    }
+  ],
+  "additional_sources": [
+    {
+      "url": "https://opositiv.com/pages/vaginal-health-aid",
+      "type": "brand-hosted customer testimonials",
+      "finding": "Reviewers describing menopause report perceived improvements in odor or comfort. Not an independent sample."
+    },
+    {
+      "url": "https://www.reddit.com/r/Menopause/comments/1i5454q/",
+      "type": "reddit self reports",
+      "finding": "Burning and itching reported during URO use. Other conditions/treatments mentioned. No causal conclusion."
+    },
+    {
+      "url": "https://opositiv.com/products/uro-vaginal-probiotic-capsules",
+      "type": "official label",
+      "finding": "2 capsules, 60 per bottle; 5B CFU in four Lactobacillus species blend, 400 mg XOS."
+    },
+    {
+      "url": "https://opositiv.com/products/vaginal-probiotic-gummies",
+      "type": "official label",
+      "finding": "2 gummies, 60 per bottle; B. coagulans SNZ 1969, 1B CFU; vitamin C 45mg, D3 50mcg, added sugar."
+    }
+  ]
+}

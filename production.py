@@ -110,6 +110,8 @@ for route in routes:
     # A new stylesheet URL prevents returning visitors from keeping an older layout.
     css_version = hashlib.sha256((ROOT / 'assets/site.css').read_bytes()).hexdigest()[:12]
     page = page.replace('href="/assets/site.css"', 'href="/assets/site.css?v='+css_version+'"')
+    js_version = hashlib.sha256((ROOT / 'assets/site.js').read_bytes()).hexdigest()[:12]
+    page = page.replace('src="/assets/site.js"', 'src="/assets/site.js?v='+js_version+'"')
     file.write_text(page)
 
 (OUT / '404.html').write_text((OUT / 'not-found/index.html').read_text())
