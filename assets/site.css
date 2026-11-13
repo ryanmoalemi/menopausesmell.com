@@ -68,13 +68,16 @@
 .external-arrow{display:inline-block;width:14px;height:14px;vertical-align:-2px;flex-shrink:0}
 
 /* Search visitor journey: a clear welcome and a short choice by concern. */
-.journey-hero{display:grid;grid-template-columns:1.05fr 1fr;gap:55px;align-items:center;padding:45px 0 40px}
-.journey-intro h1{font-size:62px;line-height:1.04;letter-spacing:-.035em;margin:16px 0 22px}
-.journey-dek{font-size:18px;line-height:1.65;max-width:540px}
-.journey-promise{font-size:16px;line-height:1.5;font-weight:600;margin-top:17px;max-width:460px}
-.journey-intro .actions{margin-top:25px;gap:18px;align-items:center}
-.journey-intro .text-link{font-size:14px}
-.journey-trust{font-size:11px;line-height:1.6;color:#72665c;margin-top:20px;max-width:480px}
+.journey-hero{padding:36px 0 32px}
+.journey-intro{margin-bottom:24px}
+.journey-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.journey-choices .journey-choice{margin-top:0;height:100%}
+.journey-intro h1{font-size:58px;line-height:1.08;letter-spacing:-.035em;margin:0 0 12px}
+.journey-dek{font-size:18px;line-height:1.5;max-width:760px;margin:0}
+
+
+
+
 .start-panel{padding:26px;background:#e7ebdf;border:1px solid #cfd7c4;border-radius:18px;scroll-margin-top:18px}
 .start-panel>.eyebrow{font-size:10px;margin-bottom:8px}
 .start-panel h2{font-size:35px;line-height:1.15;margin:0 0 19px}
@@ -111,8 +114,8 @@
 .social-product h3 a{text-decoration:none}.social-product h3 a:hover{text-decoration:underline;text-underline-offset:4px}
 .social-product .product-art>a{display:block;width:100%;height:100%}
 .reference-label{text-decoration:none}.quote-person .quote-author{display:block}
-@media(max-width:1000px){.journey-hero{gap:28px}.journey-intro h1{font-size:52px}.start-panel{padding:20px}.journey-choice strong{font-size:15px}.journey-choice{gap:10px}.basics-layout{gap:26px;grid-template-columns:minmax(0,1fr) minmax(300px,1fr)}.journey-next{flex-direction:column;align-items:start;gap:20px}}
-@media(max-width:760px){.journey-hero{display:block;padding:27px 0}.journey-intro h1{font-size:43px;line-height:1.06;letter-spacing:-.04em;margin:13px 0 17px}.journey-intro>.eyebrow{font-size:10px}.journey-dek{font-size:16px;line-height:1.6}.journey-promise{font-size:15px;margin-top:15px}.journey-intro .actions{margin-top:20px;gap:14px}.journey-intro .btn{width:100%}.journey-trust{font-size:10px;margin:17px 0 22px}.start-panel{padding:19px 16px;border-radius:13px}.start-panel h2{font-size:31px;margin-bottom:15px}.journey-choice{padding:9px;gap:10px}.journey-choice img{width:57px;height:72px;flex-basis:57px}.journey-choice strong{font-size:15px}.journey-choice small{font-size:12px;line-height:1.45}.choice-arrow{padding:0}.start-unsure{font-size:12px}.understand-band{display:block;padding:26px 0}.understand-band h2{font-size:30px}.reader-voice{padding:21px;margin-top:23px}.reader-voice .reader-quote{font-size:23px}.journey-bottom{display:block;padding:0 0 30px}.journey-bottom>div{padding-top:28px}.journey-bottom h2{font-size:28px}.basics-layout{display:flex;flex-direction:column;gap:20px}.basics-layout>aside{width:100%}.basics-layout .start-panel{margin-top:0}.basics-layout h2{font-size:29px}.basics-layout .article-body{width:100%}.journey-next h2{font-size:28px}.journey-next .btn{width:100%}.buyer-summary{padding:15px;font-size:14px}.underarm-basics{padding:20px 17px}.underarm-basics h2{font-size:28px}.basics-pair{display:block}.basics-pair>div+div{margin-top:22px}.intimate-directions{padding:19px}.research-jumps{gap:7px}.research-jumps a{font-size:12px;padding:9px 11px}.choice-product-photo{width:70px;height:90px;margin-left:12px}.social-product .product-art>a{height:132px}}
+@media(max-width:1000px){.journey-intro h1{font-size:52px}.start-panel{padding:20px}.journey-choice strong{font-size:15px}.journey-choice{gap:10px}.basics-layout{gap:26px;grid-template-columns:minmax(0,1fr) minmax(300px,1fr)}.journey-next{flex-direction:column;align-items:start;gap:20px}}
+@media(max-width:760px){.journey-hero{padding:25px 0}.journey-intro{margin-bottom:20px}.journey-choices{grid-template-columns:1fr;gap:9px}.journey-intro h1{font-size:43px;line-height:1.06;letter-spacing:-.04em;margin:0 0 12px}.journey-dek{font-size:16px;line-height:1.5}.start-panel{padding:19px 16px;border-radius:13px}.start-panel h2{font-size:31px;margin-bottom:15px}.journey-choice{padding:9px;gap:10px}.journey-choice img{width:57px;height:72px;flex-basis:57px}.journey-choice strong{font-size:15px}.journey-choice small{font-size:12px;line-height:1.45}.choice-arrow{padding:0}.start-unsure{font-size:12px}.understand-band{display:block;padding:26px 0}.understand-band h2{font-size:30px}.reader-voice{padding:21px;margin-top:23px}.reader-voice .reader-quote{font-size:23px}.journey-bottom{display:block;padding:0 0 30px}.journey-bottom>div{padding-top:28px}.journey-bottom h2{font-size:28px}.basics-layout{display:flex;flex-direction:column;gap:20px}.basics-layout>aside{width:100%}.basics-layout .start-panel{margin-top:0}.basics-layout h2{font-size:29px}.basics-layout .article-body{width:100%}.journey-next h2{font-size:28px}.journey-next .btn{width:100%}.buyer-summary{padding:15px;font-size:14px}.underarm-basics{padding:20px 17px}.underarm-basics h2{font-size:28px}.basics-pair{display:block}.basics-pair>div+div{margin-top:22px}.intimate-directions{padding:19px}.research-jumps{gap:7px}.research-jumps a{font-size:12px;padding:9px 11px}.choice-product-photo{width:70px;height:90px;margin-left:12px}.social-product .product-art>a{height:132px}}
 @media(max-width:760px){.social-product{display:block}.social-product .product-art{float:left;width:88px;height:132px;min-height:0;margin:16px 14px 8px 14px;padding:0;background:#eee9e1;border-radius:6px}.social-product .product-art img{width:88px;height:132px;object-fit:contain}.social-product .product-body{display:block;padding:18px 14px}.social-product .reddit-rating{clear:both;padding-top:10px}.social-product .community-quote{margin-left:0}.social-product .product-links{margin-left:0}.social-product .rating-scope{max-width:100%}.social-product .rating-stars svg{width:22px;height:22px}}
 
 .on-site-quote{background:#efeee5;border-radius:9px;padding:17px 20px;margin:17px 0}.on-site-quote h3{font-size:23px}.on-site-quote blockquote{margin:14px 0;font-family:Georgia,serif;font-size:22px;line-height:1.4}.on-site-quote p{font-size:13px}

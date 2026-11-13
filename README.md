@@ -81,3 +81,5 @@ Reader-journey health references: Cleveland Clinic, Body Odor (https://my.clevel
 ## Copy voice
 
 Speak directly to the reader. Do not use the domain or site name as a brand in editorial sentences, such as “Menopause Wash helps you.” Use direct phrasing such as “Understand why your body odor may be changing” and “Compare body washes.” The site identifier may remain in the masthead, metadata and copyright.
+
+The homepage introduction is limited to a headline and one short subtitle, immediately followed by the three concern cards. Do not reintroduce an introductory paragraph, a button that merely jumps to these cards, or a trust line between the introduction and the cards.
