@@ -1,0 +1,100 @@
+MENOPAUSE WASH: SOCIAL LAUNCH COPY
+Prepared November 13, 2026
+Status: drafts ready; accounts and posts not yet created.
+
+PINTEREST
+
+Create a separate free business account for Menopause Wash. The user must complete the new-account credentials and terms. Do not convert an unrelated personal account.
+
+Display name
+Menopause Wash | Body Odor & Product Guides
+
+Preferred handle
+menopausewash
+Availability has not been checked.
+
+Bio
+Clear guides to body odor during menopause, with body-wash comparisons, ingredient notes and source-linked Reddit discussions. Some links may earn us a commission once affiliate links are connected. General information, not medical advice.
+
+Website
+Use the final public domain after it has been deployed and verified. Do not promote a private concept preview or a domain whose destination has not been confirmed.
+
+Initial boards
+1. Menopause Body Odor
+   Guides to body odor changes, body washes and when a symptom needs a clinician's attention.
+2. Body Wash Ingredients & Comparisons
+   Compare persimmon soap, acidified washes and fragrance-free cleansers by ingredients, intended area and drawbacks.
+3. Gentle External Care
+   Understand the difference between outside genital skin and the vagina, with practical care information and symptom guidance.
+
+FIRST PIN
+Destination path: /external-washes/
+Title: Body odor during menopause? Compare body washes
+Graphic headline: Body odor during menopause
+Graphic subtitle: Persimmon soap or acidified body wash? Compare ingredients and reported drawbacks.
+Description: Deodorizing soaps are body cleansers marketed for body odor. Compare Mirai and Lume formats discussed in selected Reddit threads, with label details and mixed reader experiences. These are body-wash comparisons, not treatments for vaginal odor. The guide includes Amazon shopping links. Affiliate disclosure: we may earn a commission from qualifying purchases once affiliate links are active.
+Before publishing: use the actual live destination, replace the conditional disclosure with an accurate current-status disclosure, and use only licensed or owned images. Do not claim personal testing or “Reddit's number one.”
+
+SECOND PIN
+Destination path: /ingredient-labels/
+Title: What does “pH balanced” on a wash actually mean?
+Graphic headline: Read beyond “pH balanced”
+Description: A cleanser's label does not tell you the cause of a vaginal symptom. Learn what to check for fragrance, intended body area and product claims before buying. Our guide links to product comparisons and explains its sources.
+
+THIRD PIN
+Destination path: /gummies-vs-capsules/
+Title: Probiotic gummies vs. capsules: compare the formulas
+Graphic headline: Same brand. Different formula.
+Description: Compare the labels behind probiotic gummies and capsules. Strains, doses and study details matter. Our review did not establish these retail supplements as treatments for menopause-related odor. Read the evidence notes before buying.
+
+REDDIT COMMUNITY
+
+Preferred name: r/MenopauseWash
+Availability has not been checked.
+Display title: Menopause Wash: Body Odor & Gentle Care
+Type: public, adult-topic health discussion; apply Reddit's actual content settings based on its current definitions rather than guessing a rating.
+
+Description
+A brand-run discussion space for body odor during perimenopause and menopause, product labels and gentle external care. Run by the publisher of Menopause Wash, an affiliate product-comparison site. Experiences are welcome; diagnosis, cure promises and undisclosed promotions are not.
+
+Rules
+1. Be kind. No shaming people about body odor or intimate health.
+2. Share experiences as experiences. Do not diagnose another member or claim that a product will cure a condition.
+3. Disclose a connection to a product, business or website. No unsolicited promotional messages or affiliate-link drops.
+4. Keep personal information private. Do not post someone else's health information or identifying screenshots.
+5. No spam, repeated copy-paste comments, vote requests or coordinated voting.
+
+WELCOME POST: READY TO PUBLISH ONCE THE COMMUNITY EXISTS
+
+Title
+Welcome: body odor, product labels and questions without the shame
+
+Body
+This community is run by the publisher of Menopause Wash, a product-comparison site that plans to use Amazon affiliate links. We want that connection to be clear from the start.
+
+The goal here is to make discussions about body odor and gentle care easier to navigate. If you share a product experience, the exact formula helps: a brand can sell several washes, scents and supplement formulas that are not interchangeable.
+
+A few useful details to include:
+- Where you used the product, such as body skin or underarms.
+- Its exact name and variant.
+- What you noticed, including irritation or no improvement.
+- Whether you have any connection to the company.
+
+Please do not share identifying health details. Community replies cannot diagnose the cause of a new symptom. Body odor and vaginal odor are different concerns; a new or persistent vaginal change, especially with discharge, itching, burning or pain, is something to discuss with a clinician.
+
+There are no product links in this welcome post. What would make product comparisons more useful to you: ingredients, fragrance, price per use, or clearer explanations of where a product is intended to be used?
+
+CONTRIBUTING IN OTHER COMMUNITIES
+
+Read the actual current thread and local community rules before replying. Only contribute if business-affiliated accounts and the kind of reply are welcome. Answer the specific question, keep the answer useful on its own, and omit promotional links unless explicitly allowed and relevant. Disclose the business connection when discussing products or the business's own work. Never claim menopause symptoms, product use, purchases, credentials or personal results that are not true. Do not copy-paste the welcome post into unrelated communities, solicit votes, arrange exchanges or post in volume to hit a karma target. Karma comes from other users' votes and cannot be promised.
+
+Current access status
+Amazon: current cloud browser rejected at sign-in before credentials could be supplied. Product links are not verified.
+Reddit: explicit site-served block for the current automated browser. No subreddit or post created; no replies submitted.
+Pinterest: accessible, signed out. Signup is ready for user completion before account setup continues.
+
+References checked
+https://support.reddithelp.com/hc/en-us/articles/360043504051-Spam
+https://redditinc.com/policies/reddit-rules
+https://help.pinterest.com/en/business/article/get-a-business-account
+https://create.pinterest.com/blog/affiliate-marketing-link-basics/

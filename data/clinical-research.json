@@ -1,0 +1,337 @@
+{
+  "project": "MenopauseWash.com clinical/editorial evidence",
+  "researched_at": "2026-11-12",
+  "scope": "Primary authoritative sources and original clinical studies for US affiliate editorial copy. Research notes, not a clinical treatment protocol or systematic review.",
+  "conclusion": "A gentle external-cleansing comparison can be credible if it states that water is sufficient for many people and purchase is optional. Menopause-related physiology, new odor, infection diagnosis, and treatments must remain distinct. Current studies do not establish retail probiotic gummies as a reliable treatment for menopause-related odor.",
+  "safe_site_copy": [
+    {
+      "text": "A natural genital scent is normal. A new, strong or persistent change in odor deserves attention, especially with unusual discharge, itching, burning or pain. A cleanser cannot tell you what is causing the change.",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "text": "The vulva is the external genital area; the vagina is internal. Gently clean the outside with water. If you prefer a cleanser, choose a plain fragrance-free option that you tolerate, rinse well and stop if it irritates. Do not douche or wash inside the vagina. You do not need an intimate wash for routine care.",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "text": "Lower estrogen around menopause can affect vaginal tissues and their environment. Dryness, irritation, painful sex and urinary symptoms may be part of genitourinary syndrome of menopause (GSM), but similar symptoms can have other causes. Persistent symptoms are worth discussing with a clinician.",
+      "sources": [
+        "S1",
+        "S12"
+      ]
+    },
+    {
+      "text": "Probiotic evidence depends on the exact strain, formulation, route, population and outcome studied. Small menopause studies have mixed findings and do not establish that an oral gummy improves odor. A supplement is optional and does not replace assessment or treatment of symptoms.",
+      "sources": [
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10"
+      ],
+      "note": "The final sentence is an editorial conclusion from the evidence, not a quoted guideline statement."
+    },
+    {
+      "text": "A home vaginal pH test cannot diagnose an infection. Vaginal pH can rise after menopause, and neither a high nor a low reading explains symptoms on its own. Avoid choosing a treatment or trying to reach a particular pH number without clinical context.",
+      "sources": [
+        "S5",
+        "S12"
+      ],
+      "note": "The advice against using a number as a sales target is an editorial inference."
+    },
+    {
+      "text": "Contact a clinician for new or persistent odor, unusual discharge, itching, burning, pain with urination or sex, or symptoms that recur. Any vaginal bleeding after menopause needs assessment, even a small amount or a single episode. Seek urgent care for pelvic pain with fever or unusual discharge; severe or worsening pelvic pain, fainting or heavy bleeding warrants emergency help.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "SUP1"
+      ],
+      "note": "Use US-local terms, not NHS telephone numbers. This is a concise referral signpost, not a diagnostic checklist."
+    }
+  ],
+  "claims_matrix": [
+    {
+      "topic": "External wash",
+      "allow": "Describe verified label facts: external-use directions, fragrance status, ingredient list, bottle size and current price.",
+      "avoid": "Treats menopause odor, prevents BV/yeast/UTI, repairs GSM, or needed for hygiene.",
+      "why": "Clinical care guidance is not product-specific efficacy evidence."
+    },
+    {
+      "topic": "Normal scent",
+      "allow": "Natural scent exists; a change with symptoms can merit assessment.",
+      "avoid": "Odor means dirty, unhealthy or bacterial imbalance.",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "topic": "pH",
+      "allow": "Report the manufacturer's stated product pH as a product fact, clearly attributed.",
+      "avoid": "Restores vaginal pH, balances hormones, every postmenopausal vagina should have pH 3.8–4.5, high pH proves BV.",
+      "sources": [
+        "S5",
+        "S11",
+        "S12"
+      ]
+    },
+    {
+      "topic": "Fragrance-free",
+      "allow": "A label attribute relevant to avoiding potential irritants.",
+      "avoid": "Guaranteed safe, hypoallergenic for everyone, clinician approved without substantiation.",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "topic": "Probiotic trial",
+      "allow": "Name exact strains, route, duration, enrolled population and measured outcome; state limitations beside result.",
+      "avoid": "Clinically proven menopause odor cure based on microbial scores or premenopausal BV recurrence.",
+      "sources": [
+        "S7",
+        "S8",
+        "S9",
+        "S10"
+      ]
+    },
+    {
+      "topic": "Gummies",
+      "allow": "An optional oral format with verified ingredient, strain and CFU facts; explain evidence gaps.",
+      "avoid": "Transfer capsule or vaginal-product efficacy to a gummy; infer efficacy from total CFU alone.",
+      "sources": [
+        "S6"
+      ],
+      "note": "Evidence transfer requires formulation/population/outcome relevance; this is a reasoned applicability judgment."
+    },
+    {
+      "topic": "Care recommendations",
+      "allow": "Encourage diagnosis for persistent symptoms; acknowledge clinician-directed GSM options exist.",
+      "avoid": "Home BV diagnosis, antimicrobial/boric-acid/douching regimens, or using affiliate products before seeking care.",
+      "sources": [
+        "S2",
+        "S4",
+        "S5",
+        "S12"
+      ]
+    },
+    {
+      "topic": "Review status",
+      "allow": "Reviewed against published sources, with date and actual author credentials.",
+      "avoid": "Medically reviewed, doctor recommended, clinical grade or gynecologist approved unless real qualified review or endorsement is documented."
+    }
+  ],
+  "core_sources": [
+    {
+      "id": "S1",
+      "organization": "ACOG",
+      "title": "Vulvovaginal Health",
+      "url": "https://www.acog.org/womens-health/faqs/vulvovaginal-health",
+      "date": "No page publication/review date verified",
+      "accessed": "2026-11-12",
+      "access_depth": "Substantial indexed official-page text retrieved; direct open failed with 402. Do not describe as full-page review.",
+      "web_refs": [
+        "turn6search0",
+        "turn22view0"
+      ],
+      "summary": "Normal odor is acknowledged. Strong noticeable odor can signal a problem. Distinguishes vulvar cleansing from avoiding douches, sprays and vaginal deodorants. Discusses estrogen-related tissue changes and GSM symptoms. Guidance allows plain fragrance-free soap externally and says clear water suffices when inner vulvar irritation occurs."
+    },
+    {
+      "id": "S2",
+      "organization": "NHS",
+      "title": "Vaginitis",
+      "url": "https://www.nhs.uk/conditions/vaginitis/",
+      "date": "Page last reviewed 2023-02-27; next review due 2026-02-27 (overdue on access)",
+      "accessed": "2026-11-12",
+      "access_depth": "Full official HTML including symptom/referral and hygiene sections",
+      "web_refs": [
+        "turn25view3",
+        "turn30view3"
+      ],
+      "summary": "Symptoms include altered discharge/odor, itching, pain and spotting. Recommends assessment for first-time, persistent or unusual symptoms. Advises washing around the vagina with water, avoiding douching and scented hygiene products. Soap can cause irritation."
+    },
+    {
+      "id": "S3",
+      "organization": "NHS",
+      "title": "Postmenopausal bleeding",
+      "url": "https://www.nhs.uk/symptoms/post-menopausal-bleeding/",
+      "date": "Page last reviewed 2026-09-24",
+      "accessed": "2026-11-12",
+      "access_depth": "Full official HTML",
+      "web_refs": [
+        "turn25view4",
+        "turn30view4"
+      ],
+      "summary": "Any vaginal bleeding after menopause needs evaluation, including a small amount or one episode. It is often not serious, but can signal cancer. For a US site omit UK referral timing/service logistics."
+    },
+    {
+      "id": "S4",
+      "organization": "CDC",
+      "title": "Bacterial Vaginosis — STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/bv.htm",
+      "date": "Last reviewed 2021-07-22",
+      "accessed": "2026-11-12",
+      "access_depth": "Full official HTML, diagnostics and probiotic/douching sections checked",
+      "web_refs": [
+        "turn6search2",
+        "turn22view1",
+        "turn25view6"
+      ],
+      "summary": "Douching lacks support for symptom relief and may increase relapse. The guideline does not support available probiotic products as adjunctive/replacement BV therapy, while separately discussing an encouraging Lactin-V trial. This 2021 page is not a 2026 regulatory-status source; do not repeat its availability claim as current without verification."
+    },
+    {
+      "id": "S5",
+      "organization": "FDA",
+      "title": "Vaginal pH",
+      "url": "https://www.fda.gov/medical-devices/home-use-tests/vaginal-ph",
+      "date": "No publication/update date displayed in retrieved page",
+      "accessed": "2026-11-12",
+      "access_depth": "Full official HTML",
+      "web_refs": [
+        "turn9search3",
+        "turn22view2"
+      ],
+      "summary": "A home test measures acidity, not cause. Elevated pH need not mean infection; tests cannot identify the type, and a negative result does not rule out infection. FDA advises evaluation for pH changes or continuing symptoms. This page alone does not explain menopause physiology; pair with S12."
+    },
+    {
+      "id": "S6",
+      "organization": "NIH Office of Dietary Supplements",
+      "title": "Probiotics — Health Professional Fact Sheet",
+      "url": "https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/",
+      "date": "Updated 2025-03-25",
+      "accessed": "2026-11-12",
+      "access_depth": "Full official HTML; identification, strain specificity, selection and safety checked",
+      "web_refs": [
+        "turn13view2",
+        "turn25view5",
+        "turn34view2"
+      ],
+      "summary": "Clinical probiotic recommendations must account for exact strains. Benefit depends on product, indication and dose. Not every product labeled probiotic has proven benefit. Viable counts through expiration and storage matter; a higher CFU number does not establish clinical superiority. For seriously ill or immunocompromised people, clinician involvement is especially relevant."
+    },
+    {
+      "id": "S7",
+      "authors": "Petricevic L, Unger FM, Viernstein H, Kiss H",
+      "title": "Randomized, double-blind, placebo-controlled study of oral lactobacilli to improve the vaginal flora of postmenopausal women",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18701205/",
+      "doi": "10.1016/j.ejogrb.2008.06.003",
+      "date": "Online 2008-08-12; November 2008 issue",
+      "accessed": "2026-11-12",
+      "access_depth": "Complete PubMed abstract and bibliographic data via indexed official record; full article not accessed; direct PubMed open yielded no usable body",
+      "web_refs": [
+        "turn9search0",
+        "turn22search4",
+        "turn30search0"
+      ],
+      "summary": "Double-blind RCT: 72 postmenopausal women with intermediate Nugent scores 4–6; 35 active, 37 placebo. Oral GR-1 and RC-14 capsules for 14 days; reported 2.5 billion CFU each. Swab one day after completion. A drop of at least two Nugent grades occurred in 60% versus 16%; median change 3 versus 0. Limitations: small, very short, surrogate microscopic outcome, no demonstrated odor relief or durability in the abstract. Not a gummy trial; do not call this a BV cure trial. Nugent interpretation after menopause adds uncertainty (S11)."
+    },
+    {
+      "id": "S8",
+      "authors": "Bisanz JE et al.",
+      "title": "A Systems Biology Approach Investigating the Effect of Probiotics on the Vaginal Microbiome and Host Responses in a Double Blind, Placebo-Controlled Clinical Trial of Post-Menopausal Women",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0104511",
+      "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25127240/",
+      "doi": "10.1371/journal.pone.0104511",
+      "date": "2014-08-15",
+      "accessed": "2026-11-12",
+      "access_depth": "Full primary journal HTML; methods, clinical outcomes and funding read",
+      "web_refs": [
+        "turn25view0",
+        "turn30view2",
+        "turn34view0"
+      ],
+      "summary": "Exploratory blinded crossover study, 14 generally healthy postmenopausal participants with intermediate Nugent scores. GR-1/RC-14 were administered vaginally for three days, with 17-day washout before crossover; NOT orally. No significant Nugent or vaginal-pH improvement versus placebo; sequencing found increased Lactobacillus abundance. Very small feasibility sample with no formal power calculation; molecular changes do not establish odor benefit. Industry funded with sponsor involvement in design, analysis and manuscript. Do not turn the experimental administration into consumer instructions."
+    },
+    {
+      "id": "S9",
+      "authors": "Ribeiro AE et al.",
+      "title": "Can the use of probiotics in association with isoflavone improve the symptoms of genitourinary syndrome of menopause? Results from a randomized controlled trial",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30531444/",
+      "doi": "10.1097/GME.0000000000001279",
+      "date": "PubMed online date 2018-12-10; Menopause volume 26(6), 643–652 (often cited as 2019)",
+      "accessed": "2026-11-12",
+      "access_depth": "Complete abstract and bibliographic record from indexed PubMed; full article not accessed",
+      "web_refs": [
+        "turn22search0",
+        "turn30search1"
+      ],
+      "summary": "RCT of 60 postmenopausal women aged 40–60: oral isoflavone alone, isoflavone plus a multiorganism probiotic, or hormone therapy, for 16 weeks. Assessed urogenital symptom scales and vaginal measurements. Probiotics altered isoflavone metabolism but did not relieve vulvovaginal symptoms or produce the expected estrogenic urogenital effect. Small study, combination intervention, not a probiotic-alone comparison; strain identifiers were absent from retrieved abstract. No odor-specific efficacy claim is justified."
+    },
+    {
+      "id": "S10",
+      "authors": "Cohen CR et al.",
+      "title": "Randomized Trial of Lactin-V to Prevent Recurrence of Bacterial Vaginosis",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1915254",
+      "accessible_primary_pdf": "https://www.nejm.org/doi/pdf/10.1056/NEJMoa1915254?articleTools=true",
+      "doi": "10.1056/NEJMoa1915254",
+      "date": "2020-05-14",
+      "accessed": "2026-11-12",
+      "access_depth": "Full primary PDF text retrieved; full-text HTML search indexed but direct HTML open 403",
+      "web_refs": [
+        "turn13search1",
+        "turn42view0"
+      ],
+      "summary": "Phase 2b double-blind placebo-controlled RCT: 228 premenopausal women aged 18–45, all after vaginal metronidazole for diagnosed BV. Vaginal L. crispatus CTV-05 for 11 weeks; follow-up 24 weeks. BV recurrence by week 12 was 30% versus 45%, RR 0.66 (95% CI 0.44–0.87). This supports a particular vaginal live biotherapeutic in a particular post-antibiotic setting, not menopause odor or retail oral gummies. Missing primary-outcome data affected about 14%; imputation/sensitivity analyses were used. Current regulatory/commercial status not verified."
+    },
+    {
+      "id": "S11",
+      "authors": "Mitchell CM, Srinivasan S et al.",
+      "title": "Bacterial Communities Associated With Abnormal Nugent Score in Postmenopausal Versus Premenopausal Women",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8350750/",
+      "doi": "10.1093/infdis/jiaa675",
+      "date": "Online 2020-10-27; June 2021 issue",
+      "accessed": "2026-11-12",
+      "access_depth": "Full primary article via PMC; cohort methods and results read",
+      "web_refs": [
+        "turn22view3",
+        "turn34view1"
+      ],
+      "summary": "Compared microbiota and Nugent scores in 144 postmenopausal and 220 premenopausal participants. High scores after menopause were not linked to most classic BV-associated taxa; authors caution against inferring BV from high Nugent scores in this group. Observational cross-cohort comparison, not a home-pH validation trial. Cohorts differed and the postmenopausal group was largely White and selected for discomfort without clinical BV at enrollment."
+    },
+    {
+      "id": "S12",
+      "organization": "AUA/SUFU/AUGS; endorsed by The Menopause Society and ISSWSH",
+      "title": "Genitourinary Syndrome of Menopause Guideline",
+      "url": "https://www.auanet.org/documents/Guidelines/PDF/2025%20Guidelines/GSM%20Unabridged%202025.pdf",
+      "date": "Approved April 2025",
+      "accessed": "2026-11-12",
+      "access_depth": "Full official guideline PDF text; diagnostic physiology and statements 15–16 checked",
+      "web_refs": [
+        "turn13view3",
+        "turn30view5"
+      ],
+      "summary": "Declining sex steroids can change tissue maturation and raise vaginal pH; GSM requires clinical context and consideration of other causes. The guideline's expert-opinion statements find insufficient support for alternative supplements as GSM treatment and advise avoiding irritating cleansers. This is not proof that every cleanser irritates or every probiotic is ineffective.",
+      "rights_note": "The PDF flags a license requirement for promotional use. Do not reproduce its tables, graphics or use society endorsement to promote products. Prefer original editorial summaries with links and obtain rights advice if planning promotional reproduction."
+    }
+  ],
+  "supplementary_referral_source": {
+    "id": "SUP1",
+    "organization": "NHS",
+    "title": "Pelvic pain",
+    "url": "https://www.nhs.uk/symptoms/pelvic-pain/",
+    "date": "Last reviewed 2025-11-24",
+    "accessed": "2026-11-12",
+    "access_depth": "Full official HTML",
+    "web_refs": [
+      "turn42view1"
+    ],
+    "summary": "Pelvic pain plus fever/chills, unusual vaginal discharge/bleeding or urinary difficulty warrants urgent help. Severe/worsening pain, fainting or heavy vaginal bleeding warrants emergency care. Translate service names for US readers; do not reproduce UK phone directions."
+  },
+  "conflicts_and_guardrails": [
+    "ACOG vulvovaginal FAQ permits plain fragrance-free soap externally, while its vaginitis advice and NHS emphasize water. Harmonize as water is sufficient; an optional tolerated fragrance-free cleanser is an external preference, not a necessary treatment.",
+    "An ACOG expert-story page recommends probiotics/yogurt in general prevention advice (https://www.acog.org/womens-health/experts-and-stories/the-latest/think-you-have-a-vaginal-infection-heres-what-you-need-to-know, ref turn6search4). CDC disease-specific BV guidance does not support probiotics as adjunctive/replacement treatment. These differ in scope and evidentiary specificity. Do not turn the broad story into a menopause-gummy endorsement.",
+    "CDC's 2021 BV guideline describes Lactin-V trial success while making a broader negative probiotic recommendation. Explain the specific investigational vaginal formulation and antibiotic-treated population; avoid saying all probiotics have no evidence or all probiotics work.",
+    "The 2024 narrative review at https://pmc.ncbi.nlm.nih.gov/articles/PMC10873068/ (refs turn9search5/turn22search8) has a table describing Bisanz 2014 as oral. The original paper unequivocally used vaginal administration. Use the primary paper. The same review simplifies Ribeiro as oral probiotic although the actual arm combined isoflavone plus probiotics.",
+    "A microscopic or sequencing shift is not equivalent to symptom relief. In postmenopause even Nugent-score interpretation differs from reproductive-age populations.",
+    "No source reviewed establishes that a generic pH-balanced wash changes internal vaginal pH, repairs GSM, prevents infection or treats menopause odor.",
+    "Do not transfer vaginal-product data to oral products or capsule data to gummies merely because genus/species overlap. Exact strain, dose, viable delivery, ingredients, storage, treatment setting and measured clinical outcome affect applicability.",
+    "This was a targeted evidence review, not proof that no other trial exists. Use 'evidence does not establish' or 'we did not identify direct evidence for this product/outcome,' not an absolute 'no research exists.'",
+    "Do not use a medical disclaimer to excuse unsupported claims or label an AI/editorial review medically reviewed."
+  ],
+  "parent_citation_instruction": "Root must open/search-find any source it wishes to cite in final output. Exact URLs and web refs are supplied above. Treat access-depth limits honestly. Keep source-derived summaries concise; avoid verbatim excerpts."
+}
