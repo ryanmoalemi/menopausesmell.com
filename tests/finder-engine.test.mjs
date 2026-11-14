@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {freshAnswers, changeArea, toggleExclusive, careReason, routeAfterConcern, routeAfterSensitivity, eligibleProducts, resultFor, amazonURL, validateCatalog, finderPath, ALLERGENS, CONCERNS} from '../finder_src/engine.mjs';
+import {freshAnswers, changeArea, toggleExclusive, careReason, routeAfterConcern, routeAfterSensitivity, eligibleProducts, resultFor, amazonURL, validateCatalog, finderPath, ALLERGENS, CONCERNS, triedOptions, TRIED_CATEGORIES} from '../finder_src/engine.mjs';
 const catalog=JSON.parse(fs.readFileSync(new URL('../data/finder-products.json',import.meta.url)));
 const a=(patch={})=>({...freshAnswers(),area:'underarms',concerns:['odor'],sensitivities:['reactive'],tried:['lume-unscented-wash'],...patch});
 const result=patch=>resultFor(a(patch),catalog,true);
@@ -67,7 +67,21 @@ test('unverified allergy coverage never passes a specific restriction',()=>{
 });
 test('fresh start clears every answer and does not share mutable arrays',()=>{
  const old=a({allergies:['silver'],unknownProduct:'old brand',routine:'old routine',aluminumFree:true,format:'bar',reasons:{old:['irritated']}}),fresh=freshAnswers();
- assert.equal(fresh.area,null);for(const key of ['concerns','sensitivities','allergies','tried'])assert.deepEqual(fresh[key],[]);
+ assert.equal(fresh.area,null);for(const key of ['concerns','sensitivities','allergies','triedCategories','tried'])assert.deepEqual(fresh[key],[]);
  assert.deepEqual(fresh.reasons,{});assert.equal(fresh.unknownProduct,'');assert.equal(fresh.routine,'');assert.equal(fresh.aluminumFree,false);assert.equal(fresh.format,'any');
  fresh.concerns.push('odor');assert.deepEqual(freshAnswers().concerns,[]);assert.deepEqual(old.allergies,['silver']);
+});
+
+test('trying bar soap prioritizes a different cleanser format',()=>{const r=result({area:'body_folds',sensitivities:['none'],triedCategories:['soap']});assert.equal(r.primary.id,'vanicream-gentle-body-wash');assert.equal(r.revisitsCategory,false);});
+test('broad prior history never masquerades as exact product exclusion',()=>{const r=result({concerns:['both'],triedCategories:['antiperspirant']});assert.equal(r.primary.category,'antiperspirant');assert.equal(r.revisitsCategory,true);assert.equal(r.triedCategory,'antiperspirant');});
+test('category history never overrides a skin restriction',()=>{const r=result({area:'body_folds',sensitivities:['reactive'],triedCategories:['body_wash']});assert.equal(r.primary.gentle,true);assert.equal(r.revisitsCategory,true);});
+test('category cards are relevant to the selected concern',()=>{assert.ok(triedOptions(a()).includes('antiperspirant'));assert.ok(!triedOptions(a()).includes('probiotics'));assert.ok(triedOptions(a({area:'vaginal_change',concerns:['change']})).includes('probiotics'));assert.ok(triedOptions(a({area:'urine_leakage'})).includes('pads'));assert.ok(triedOptions(a({area:'body_folds',concerns:['clothes']})).includes('laundry'));});
+test('all combinations of visible category history retain a supported result',()=>{
+ for(const x of [a(),a({area:'body_folds'}),a({area:'vaginal_change',concerns:['change']}),a({area:'urine_leakage'})]){
+  const options=triedOptions(x).filter(x=>x!=='nothing');
+  for(let mask=0;mask<2**options.length;mask++){
+   const history=options.filter((_,i)=>mask&(1<<i)),r=resultFor({...x,triedCategories:history},catalog);
+   assert.equal(r.kind,'product');assert.ok(!x.tried.includes(r.primary.id));assert.equal(r.revisitsCategory,history.includes(r.triedCategory));
+  }
+ }
 });

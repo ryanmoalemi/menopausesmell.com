@@ -86,3 +86,14 @@ The body and icon SVGs are the supplied original assets. Inter and Noto Serif ar
 - Source references: https://www.poise.com/en-us/products/incontinence-pads/ultra-thin/light-absorbency-regular-length-without-wings ; https://www.target.com/p/-/A-79330413 ; https://www.hanes.com/products/hanes-womens-cotton-assorted-briefs-10-pack/pw40wh ; https://www.utopiadeals.com/products/washcloths ; https://www.amazon.com/dp/B01N7K7EFF
 - Care copy checked against https://www.nhs.uk/symptoms/vaginal-discharge/ and https://www.aad.org/public/everyday-care/skin-care-secrets/prevent-skin-problems/test-skin-care-products/ .
 - Validation: 41 engine tests, including ordinary route/allergen combinations, plus 8 build tests and the 25-page site validator. Manual browser checks cover small mobile and desktop, reset, leakage shopping, aluminum exclusion, photo picking and back navigation.
+
+
+## Category cards and personal reveal, 2026-11-14
+
+Concern headings now name the selected area. No allergies is first and the duplicate uncertain answer is removed from the skin question. The prior-product question now uses compact, brand-neutral category cards with relevant choices per path. Exact product exclusions remain supported in the engine; broad category history prefers a different cleanser format where appropriate and is explicitly identified when the best eligible result remains in a category the shopper has tried. It is not treated as proof that every formula in that category failed.
+
+The reveal adds Selected for you, factual attribute/approach badges, a restrained entrance animation, and an in-tool explanation using the shopper's area, concerns and category history. No invented match percentages, ratings or loading process. OS reduced motion remains honored.
+
+Category vocabulary informed by indexed Reddit conversations: https://www.reddit.com/r/Menopause/comments/1dannsk/ ; https://www.reddit.com/r/Perimenopause/comments/1mg04ad/peri_and_body_odor/ ; https://www.reddit.com/r/Menopause/comments/1mk8b1w/ ; https://www.reddit.com/r/Perimenopause/comments/1wm3bxs/my_newest_awful_symptom_excessive_crotch_sweating/ ; https://www.reddit.com/r/Menopause/comments/1lvfbss/smell_down_there/ . Categories describe prior use, not endorsement of the remedies in those comments.
+
+Results-design references: https://docs.revenuehunt.com/how-to-guides/show-results-explanation/ ; https://help.octaneai.com/en/articles/17435466-use-smart-copy-in-your-quiz . Used answer recall, concise reasons and consistent product controls. Vendor conversion claims were not treated as proof of this implementation's performance.
