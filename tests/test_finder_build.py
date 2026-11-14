@@ -1,4 +1,3 @@
-import copy
 import json
 from pathlib import Path
 import tempfile
@@ -10,6 +9,7 @@ class FinderBuild(unittest.TestCase):
         self.temp=tempfile.TemporaryDirectory()
         self.out=Path(self.temp.name)
         self.settings=json.loads((ROOT/'data/finder-settings.json').read_text())
+        self.settings.update(enabled=False, release_approved=False, reuse_existing_site_images=False)
         self.products=json.loads((ROOT/'data/finder-products.json').read_text())
     def tearDown(self): self.temp.cleanup()
     def build(self,preview=False):return build_finder(self.out,preview,settings=self.settings,products=self.products)
@@ -29,10 +29,24 @@ class FinderBuild(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'approved'):self.build()
     def test_image_permissions_gate(self):
         self.settings.update(enabled=True,release_approved=True)
-        with self.assertRaisesRegex(ValueError,'image permissions'):self.build()
+        with self.assertRaisesRegex(ValueError,'image needs'):self.build()
     def test_candidate_eligibility_gate(self):
         self.settings.update(enabled=True,release_approved=True)
-        for p in self.products:p['imageRightsVerified']=True
+        for p in self.products:
+            p['imageRightsVerified']=True
+            p['publishEligible']=False
         with self.assertRaisesRegex(ValueError,'eligibility'):self.build()
+
+    def test_approved_existing_asset_does_not_falsify_rights(self):
+        self.settings.update(enabled=True,release_approved=True,reuse_existing_site_images=True)
+        self.assertTrue(self.build())
+        self.assertFalse(any(p['imageRightsVerified'] for p in self.products))
+        self.assertFalse(json.loads((self.out/'product-finder/config.json').read_text())['preview'])
+        self.assertIn('index,follow',(self.out/'product-finder/index.html').read_text())
+        self.assertFalse((self.out/'__review').exists())
+    def test_changed_unverified_asset_does_not_pass_existing_asset_check(self):
+        self.settings.update(enabled=True,release_approved=True,reuse_existing_site_images=True)
+        self.products[0]['existingAssetSha256']='not-the-approved-asset'
+        with self.assertRaisesRegex(ValueError,'image needs'):self.build()
 
 if __name__=='__main__':unittest.main()

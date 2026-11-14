@@ -4,5 +4,4 @@ __pycache__/
 
 dist/
 .openai/
-product-finder/
 __review/

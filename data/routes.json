@@ -118,5 +118,10 @@
     "path": "/probiotics/uro-capsules/",
     "title": "URO capsules: customer reviews, ingredients and buying guide",
     "description": "Read positive and mixed customer experiences, check the capsule formula and compare Amazon options."
+  },
+  {
+    "path": "/product-finder/",
+    "title": "Find your next step",
+    "description": "A few questions to find a useful next step."
   }
 ]

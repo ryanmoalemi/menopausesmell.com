@@ -25,7 +25,7 @@ test('symptoms take priority over outside skin and other answers',()=>assert.equ
 test('urine route does not substitute washes or supplements',()=>assert.equal(result({area:'urine_leakage'}).reason,'urine'));
 test('aluminum-free preference retains sweat category and caveat state',()=>assert.deepEqual(result({concerns:['wetness'],aluminumFree:true}),{kind:'sweat',aluminumFree:true}));
 test('capsules and gummies remain distinct exact products',()=>{const cap=catalog.find(x=>x.id==='uro-capsules'),gum=catalog.find(x=>x.id==='uro-gummies');assert.notEqual(cap.amazonQuery,gum.amazonQuery);assert.notEqual(cap.image,gum.image);});
-test('uncleared preview records cannot qualify for production',()=>assert.equal(eligibleProducts(a(),catalog,false).length,0));
+test('uncleared preview records cannot qualify for production',()=>assert.equal(eligibleProducts(a(),catalog.map(p=>({...p,publishEligible:false})),false).length,0));
 test('clothes and dampness receive practical routes',()=>{for(const c of ['clothes','damp'])assert.equal(result({area:'body_folds',concerns:[c]}).kind,c);});
 test('uncertain underarm answer does not silently become an odor match',()=>assert.equal(result({concerns:['unsure']}).kind,'uncertain-underarm'));
 test('Amazon parameters contain fixed product and affiliate tag only',()=>{const p=catalog[2],u=new URL(amazonURL(p));assert.equal(u.hostname,'www.amazon.com');assert.deepEqual([...u.searchParams.keys()],['k','tag']);assert.equal(u.searchParams.get('tag'),'menopausewash-20');assert.equal(u.searchParams.get('k'),p.amazonQuery);});

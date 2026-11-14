@@ -22,11 +22,12 @@
     "checked": null,
     "labelDirections": null,
     "size": null,
-    "imageSource": null,
+    "imageSource": "https://menopausewash.com/assets/lume-unscented-wash.png",
     "amazonQuery": "Lume Acidified Body Wash Unscented",
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
-    "imageRightsStatus": "Existing manufacturer reference asset; commercial reuse permission unconfirmed."
+    "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
+    "existingAssetSha256": "c44dbc8d9f856513ac3761d15f281a80c27eb2a0cb2a690ad7ceec841d014653"
   },
   {
     "id": "mirai-unscented-bar",
@@ -36,7 +37,7 @@
     "format": "bar",
     "candidate": true,
     "labelVerified": true,
-    "publishEligible": false,
+    "publishEligible": true,
     "imageRightsVerified": false,
     "exactListingVerified": false,
     "gentle": false,
@@ -51,11 +52,12 @@
     "checked": "2026-11-14",
     "labelDirections": "Rinse-off body soap for external skin. Confirm directions and warnings on the purchased label.",
     "size": "3.5 oz / 100 g",
-    "imageSource": null,
+    "imageSource": "https://menopausewash.com/assets/mirai-unscented-soap.webp",
     "amazonQuery": "Mirai Clinical Persimmon Deodorizing Soap Unscented 3.5 oz",
     "fact": "An unscented bar with persimmon and green tea extracts.",
     "caveat": "Soap can dry or irritate skin. Stop if it bothers yours.",
-    "imageRightsStatus": "Existing manufacturer reference asset; commercial reuse permission unconfirmed."
+    "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
+    "existingAssetSha256": "1f0992274c049dd031f54d85650b418686a3fb20b9913c1cab16293c41281104"
   },
   {
     "id": "vanicream-gentle-body-wash",
@@ -65,7 +67,7 @@
     "format": "liquid",
     "candidate": true,
     "labelVerified": true,
-    "publishEligible": false,
+    "publishEligible": true,
     "imageRightsVerified": false,
     "exactListingVerified": false,
     "gentle": true,
@@ -80,11 +82,12 @@
     "checked": "2026-11-14",
     "labelDirections": "Apply to wet skin, lather, rinse and pat dry. Hands and body.",
     "size": "12 fl oz / 355 mL",
-    "imageSource": null,
+    "imageSource": "https://menopausewash.com/assets/vanicream.webp",
     "amazonQuery": "Vanicream Gentle Body Wash 12 fl oz",
     "fact": "No botanical extracts or essential oils.",
     "caveat": "It may not solve the odor by itself.",
-    "imageRightsStatus": "Existing manufacturer reference asset; commercial reuse permission unconfirmed."
+    "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
+    "existingAssetSha256": "f0620692f96a90b2ea80188a52b8c14b07dec9a6eac3b5d4a2baa42809be1091"
   },
   {
     "id": "mirai-persimmon-body-wash",
@@ -109,11 +112,12 @@
     "checked": null,
     "labelDirections": null,
     "size": null,
-    "imageSource": null,
+    "imageSource": "https://menopausewash.com/assets/mirai-body-wash.webp",
     "amazonQuery": "Mirai Clinical Purifying Deodorizing Body Wash Persimmon",
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
-    "imageRightsStatus": "Existing manufacturer reference asset; commercial reuse permission unconfirmed."
+    "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
+    "existingAssetSha256": "95b9fc895de744d81abf47201abb0e719f18193ab7b402cfe71edf777510c46b"
   },
   {
     "id": "dove-ultra-sensitive",
@@ -138,11 +142,12 @@
     "checked": null,
     "labelDirections": null,
     "size": null,
-    "imageSource": null,
+    "imageSource": "https://menopausewash.com/assets/dove.webp",
     "amazonQuery": "Dove Ultra Sensitive Body Wash 10 ingredients fragrance free 18.5 oz",
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
-    "imageRightsStatus": "Existing manufacturer reference asset; commercial reuse permission unconfirmed."
+    "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
+    "existingAssetSha256": "dd9ba3ce528c5fa34f14578659d81fd95089b9ec56fc9be564ece89163435719"
   },
   {
     "id": "ordinary-glycolic-7",
@@ -167,11 +172,12 @@
     "checked": null,
     "labelDirections": null,
     "size": null,
-    "imageSource": null,
+    "imageSource": "https://menopausewash.com/assets/ordinary-glycolic.png",
     "amazonQuery": "The Ordinary Glycolic Acid 7% Exfoliating Toner",
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
-    "imageRightsStatus": "Existing manufacturer reference asset; commercial reuse permission unconfirmed."
+    "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
+    "existingAssetSha256": "735d077fd0bfb28ae600f70c300797ed5c971b86c4841c4b123ede9757caebb0"
   },
   {
     "id": "panoxyl-10-bar",
@@ -196,11 +202,12 @@
     "checked": null,
     "labelDirections": null,
     "size": null,
-    "imageSource": null,
+    "imageSource": "https://menopausewash.com/assets/panoxyl-10-bar.webp",
     "amazonQuery": "PanOxyl Acne Treatment Bar 10% Benzoyl Peroxide 4 oz",
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
-    "imageRightsStatus": "Existing manufacturer reference asset; commercial reuse permission unconfirmed."
+    "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
+    "existingAssetSha256": "be0292ec95b30199e04818f29dd1599957f87ae82d38f00ed07801accb7294b3"
   },
   {
     "id": "uro-capsules",
@@ -225,11 +232,12 @@
     "checked": null,
     "labelDirections": null,
     "size": null,
-    "imageSource": null,
+    "imageSource": "https://menopausewash.com/assets/uro-capsules.webp",
     "amazonQuery": "O Positiv URO Vaginal Probiotic Capsules 60 count",
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
-    "imageRightsStatus": "Existing manufacturer reference asset; commercial reuse permission unconfirmed."
+    "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
+    "existingAssetSha256": "add6f7eaba41e2ce43df93580e8b9ac7941f1c8538e539d6753c7fad7b6219d3"
   },
   {
     "id": "uro-gummies",
@@ -254,11 +262,12 @@
     "checked": null,
     "labelDirections": null,
     "size": null,
-    "imageSource": null,
+    "imageSource": "https://menopausewash.com/assets/uro-gummy.webp",
     "amazonQuery": "O Positiv URO Vaginal Probiotic Gummies Pink Pineapple 60 count",
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
-    "imageRightsStatus": "Existing manufacturer reference asset; commercial reuse permission unconfirmed."
+    "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
+    "existingAssetSha256": "e17c411ee732e423fbfdafb122d14ee65133fb5781ce3c80df4c9c963725ad9c"
   },
   {
     "id": "rephresh-pro-b",
@@ -283,10 +292,11 @@
     "checked": null,
     "labelDirections": null,
     "size": null,
-    "imageSource": null,
+    "imageSource": "https://menopausewash.com/assets/rephresh.webp",
     "amazonQuery": "repHresh Pro-B Vaginal Probiotic Supplement 30 capsules",
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
-    "imageRightsStatus": "Existing manufacturer reference asset; commercial reuse permission unconfirmed."
+    "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
+    "existingAssetSha256": "ead7573a952b7595e05317f4f9c46785bb28a2e3a2d2fd27c675b0f5abc3ec1f"
   }
 ]

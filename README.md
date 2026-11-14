@@ -107,4 +107,4 @@ Shopping guidance update, November 13, 2026: concern pages lead with a format-ba
 
 ## Product finder preview
 
-The design-package implementation is documented in [docs/finder-review/README.md](docs/finder-review/README.md). Build it with `python production.py --finder-preview`. It is disabled for normal public builds pending review.
+The design-package implementation is documented in [docs/finder-review/README.md](docs/finder-review/README.md). Build it with `python production.py --finder-preview`. The site owner approved launch on November 14, 2026. Normal builds now include `/product-finder/`; the preview flag still provides an isolated local review build.

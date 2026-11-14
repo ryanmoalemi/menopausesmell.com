@@ -1,4 +1,4 @@
-"""Build the isolated, memory-only product finder. Disabled for public builds by default."""
+"""Build the isolated, memory-only product finder. Publication and product eligibility are explicit settings."""
 from pathlib import Path
 import hashlib
 import json
@@ -18,8 +18,18 @@ def build_finder(out, preview=False, *, root=ROOT, settings=None, products=None)
     if not preview:
         if not settings.get('release_approved'):
             raise ValueError('Finder release has not been approved')
-        if any(not p.get('imageRightsVerified') for p in products):
-            raise ValueError('Finder product image permissions remain unverified')
+        for product in products:
+            asset = (root / product['image'].lstrip('/')).resolve()
+            if not asset.is_relative_to(root.resolve()) or not asset.is_file():
+                raise ValueError('Finder product image file is missing or outside the site')
+            # Launch approval permits reusing existing user-provided site assets.
+            # It does not certify a third-party license. Keep that status separate.
+            same_existing_asset = (
+                settings.get('reuse_existing_site_images')
+                and product.get('existingAssetSha256') == hashlib.sha256(asset.read_bytes()).hexdigest()
+            )
+            if not product.get('imageRightsVerified') and not same_existing_asset:
+                raise ValueError('Finder image needs verified rights or approved existing site asset provenance')
         if any(p.get('candidate') and (not p.get('labelVerified') or not p.get('publishEligible')) for p in products):
             raise ValueError('Finder recommendation eligibility remains unverified')
     shutil.copytree(root / 'finder_src', target)
@@ -34,13 +44,21 @@ def build_finder(out, preview=False, *, root=ROOT, settings=None, products=None)
         page = page.replace(f'./{name}"', f'./{name}?v={version}"')
     if not preview:
         page = page.replace('noindex,nofollow', 'index,follow')
+        base = json.loads((root / 'data/site-settings.json').read_text())['public_base_url'].rstrip('/')
+        page = page.replace('</head>', f'<link rel="canonical" href="{base}/product-finder/"><meta property="og:url" content="{base}/product-finder/"></head>')
     (target / 'index.html').write_text(page)
     if preview:
         review = out / '__review'
         review.mkdir(exist_ok=True)
         shutil.copy2(root / 'tests/fixtures/finder-responsive-review.html', review / 'index.html')
-    home = out / 'index.html'
-    if home.exists():
-        page = home.read_text().replace('</h1>', '</h1><p><a class="button" href="/product-finder/">Find my next step</a></p>', 1)
-        home.write_text(page)
+    for site_page in out.rglob('index.html'):
+        if site_page.is_relative_to(target) or '__review' in site_page.parts:
+            continue
+        page = site_page.read_text()
+        page = page.replace('<a class="nav-cta" href="/external-washes/">Compare washes</a>', '<a class="nav-cta" href="/product-finder/">Product finder</a>')
+        page = page.replace('<h4>Find your next step</h4>', '<h4>Find your next step</h4><a href="/product-finder/">Find a starting point for you</a>')
+        if site_page == out / 'index.html':
+            anchor = '<p class="journey-dek">Understand odor changes, explore care options, and compare products.</p>'
+            page = page.replace(anchor, anchor + '<div class="actions"><a class="btn" href="/product-finder/">Find my next step</a></div><p class="note-small">A few quick questions. No email needed.</p>', 1)
+        site_page.write_text(page)
     return True

@@ -143,6 +143,8 @@ gtag('config', '''+json.dumps(measurement_id)+''', {
 
 if build_finder(OUT, finder_preview):
     routes.append(ROUTE)
+    if not finder_preview:
+        (ROOT / 'data/routes.json').write_text(json.dumps(routes, indent=2) + '\n')
 (OUT / 'finder-routes.json').write_text(json.dumps(routes))
 if finder_preview:
     for preview_page in OUT.rglob('*.html'):

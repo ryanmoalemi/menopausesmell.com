@@ -1,6 +1,6 @@
 # Product finder implementation review
 
-Implemented from `MenopauseWash-Design-Handoff/02-mobile-screens` and `03-desktop`, not the exploratory boards. Preview only, with publication disabled. The design package archive SHA256 is `af984e18ec3ddb60a1f18929f8730e33e175354a3270950b30d911bf921d85f7`.
+Implemented from `MenopauseWash-Design-Handoff/02-mobile-screens` and `03-desktop`, not the exploratory boards. Launch approved by the site owner on November 14, 2026 after the mobile and desktop implementation review. The design package archive SHA256 is `af984e18ec3ddb60a1f18929f8730e33e175354a3270950b30d911bf921d85f7`.
 
 ## Review screens
 
@@ -42,7 +42,7 @@ The preview build does not export generated pages to the GitHub Pages repository
 
 ## Verified in this review
 
-26 JavaScript tests and 5 Python tests pass. The static validator passes all 25 preview routes.
+26 JavaScript tests and 7 Python tests pass. The static validator passes all 25 preview routes.
 
 Browser checks covered the complete design-example journey, exact product search (including URO capsule/gummy distinction), retained answers when editing, the sweat-control outcome and aluminum-free preference, the vaginal-change care outcome, unknown ingredient no-match, ingredient details, pelvic hotspot clarification, manual reduced motion, dialog Tab/Shift+Tab containment, Escape, and restored focus.
 
@@ -50,11 +50,13 @@ Opening layout: 320, 360, 375, 390, 430, 768, 1024, 1440px and 740 x 390 landsca
 
 Not verified on physical iOS/Android devices, real screen readers, 200% OS text scaling, or network-failure simulation. The technical-error route preserves answers in code, and malformed catalog data is covered by tests.
 
-## Before public release
+## Launch configuration
 
-The user requested mobile and desktop review before publishing. Keep `data/finder-settings.json` disabled until that review is complete.
+The site owner approved publication on November 14, 2026. The finder is enabled at `/product-finder/`, linked from the homepage and shared navigation, and included in the sitemap. Production config uses `preview: false`. No finder analytics or health-answer persistence is enabled.
 
-The two preview recommendation candidates have manufacturer ingredient/direction context checked on November 14, 2026. Exact Amazon listings have not been verified; buttons are explicitly labeled as searches. Product-photo commercial reuse rights remain unconfirmed. The build deliberately rejects a public finder release while these records are uncleared. The other products are available as previous-attempt selections, not automatic recommendations. Sweat-control and deodorant shortlists remain category guidance until exact eligible products are verified.
+The two recommendation candidates have current manufacturer ingredient context checked on November 14, 2026. Exact Amazon listings remain unverified; buttons explicitly open product searches using `menopausewash-20`. Other catalog products are previous-attempt choices, not automatic recommendations. Sweat-control and deodorant shortlists remain category guidance until exact products qualify.
+
+The approved launch reuses only the existing site's product photography. SHA256 provenance checks keep this approval limited to those exact published files. Third-party photo permission fields remain unverified; the launch instruction is not represented as a license verification. Newly introduced imagery still needs its own basis for publication.
 
 No fabricated review scores, prices, popularity counts, product endorsements or testimonial portraits were added.
 
