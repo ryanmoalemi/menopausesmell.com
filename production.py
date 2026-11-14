@@ -10,6 +10,9 @@ import json
 import re
 import runpy
 import shutil
+import sys
+from finder import build_finder, ROUTE
+finder_preview = "--finder-preview" in sys.argv
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'dist'
@@ -37,6 +40,8 @@ for pid, product in commerce['products'].items():
         active_count += 1
 active = bool(commerce.get('enrollment_verified') and (active_count or commerce.get('tracking_id')))
 
+if OUT.exists():
+    shutil.rmtree(OUT)
 OUT.mkdir(exist_ok=True)
 shutil.copytree(ROOT / 'assets', OUT / 'assets', dirs_exist_ok=True)
 runpy.run_path(str(ROOT / 'build.py'), run_name='__main__')
@@ -60,7 +65,7 @@ for route in routes:
         if search_config.get(setting):
             tags += '<meta name="'+name+'" content="'+html.escape(search_config[setting], quote=True)+'">'
     measurement_id = search_config.get('ga4_measurement_id')
-    if live and measurement_id and path != '/not-found/':
+    if live and not finder_preview and measurement_id and path != '/not-found/':
         if not re.fullmatch(r'G-[A-Z0-9]+', measurement_id):
             raise ValueError('Invalid GA4 measurement ID')
         tags += '<script async src="https://www.googletagmanager.com/gtag/js?id='+measurement_id+'"></script>'
@@ -108,10 +113,10 @@ gtag('config', '''+json.dumps(measurement_id)+''', {
         owner = html.escape(settings['site_owner'])
         email = html.escape(settings['contact_email'], quote=True)
         body = '<h2>Who operates this site</h2><p>'+owner+' operates this website. For privacy questions, contact <a href="mailto:'+email+'">'+email+'</a>.</p>'
-        body += '<h2>What these pages collect</h2><p>This site has no health questionnaire, email signup, account system or checkout. Checklist selections stay in the current browser tab and are not submitted to us or Google Analytics. Reloading clears them.</p>'
+        body += '<h2>What these pages collect</h2><p>Finder answers and checklist selections stay in memory in the current browser tab. They are not submitted to us, analytics or advertising services. Reloading clears them. There is no email signup, account system or checkout.</p>'
         if search_config.get('ga4_measurement_id'):
             body += '<h2>Website analytics</h2><p>We use Google Analytics to understand which pages people read, how visitors find the site and which outbound links they click, including Amazon links. Google may use cookies and process browser, device and approximate location information to provide these reports. Google signals and advertising personalization are disabled in our site tag. We do not send names, email addresses or checklist answers to Analytics. URL query strings and fragments are removed from the page address sent by our tag.</p><p>You can restrict cookies or use tracking protection in your browser. Our analytics reports do not tell us what you purchase on Amazon.</p>'
-        body += '<h2>Hosting and fonts</h2><p>GitHub Pages serves these static pages and may process standard request information such as IP addresses. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>. Google Fonts receives requests when your browser loads the fonts. See <a href="https://policies.google.com/privacy">Google’s privacy policy</a>.</p>'
+        body += '<h2>Hosting and fonts</h2><p>GitHub Pages serves these static pages and may process standard request information such as IP addresses. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>. The product finder serves fonts locally and does not load Google Analytics. Other pages use Google Fonts, which receives requests when your browser loads those fonts. See <a href="https://policies.google.com/privacy">Google’s privacy policy</a>.</p>'
         body += '<h2>Amazon and other links</h2><p>Product and research links take you to external sites with their own privacy practices. Amazon may use information from your visit and purchase under its privacy notice. Our affiliate links identify qualifying referrals. We do not receive your payment details or medical information.</p>'
         body += '<h2>Updates</h2><p>This notice describes the current site. We will update it if we add data collection or change how the site operates.</p>'
         page = replace_article(page, 'Privacy and your information', 'How these pages, the checklist and external links handle information.', body)
@@ -136,9 +141,16 @@ gtag('config', '''+json.dumps(measurement_id)+''', {
     page = page.replace('src="/assets/site.js"', 'src="/assets/site.js?v='+js_version+'"')
     file.write_text(page)
 
+if build_finder(OUT, finder_preview):
+    routes.append(ROUTE)
+(OUT / 'finder-routes.json').write_text(json.dumps(routes))
+if finder_preview:
+    for preview_page in OUT.rglob('*.html'):
+        preview_page.write_text(preview_page.read_text().replace('index,follow', 'noindex,nofollow'))
+
 (OUT / '404.html').write_text((OUT / 'not-found/index.html').read_text())
 indexed = [x for x in routes if x['path'] != '/not-found/']
-if live:
+if live and not finder_preview:
     sitemap = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+html.escape(base+x['path'])+'</loc></url>' for x in indexed)+'</urlset>'
     (OUT / 'sitemap.xml').write_text(sitemap)
     (OUT / 'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+base+'/sitemap.xml\n')
@@ -154,9 +166,10 @@ if indexnow_key:
 
 (OUT / '.nojekyll').touch()
 shutil.copy2(ROOT / 'CNAME', OUT / 'CNAME')
-for file in OUT.rglob('*'):
-    if file.is_file():
-        dest = ROOT / file.relative_to(OUT)
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(file, dest)
-print(f'Exported {len(routes)} pages at repository root. Public: {live}. Affiliate links active: {active}.')
+if not finder_preview:
+    for file in OUT.rglob('*'):
+        if file.is_file() and file.name != 'finder-routes.json':
+            dest = ROOT / file.relative_to(OUT)
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(file, dest)
+print(f'Built {len(routes)} pages. Finder preview: {finder_preview}. Exported to repository root: {not finder_preview}.')
