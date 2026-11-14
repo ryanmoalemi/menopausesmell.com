@@ -1,4 +1,4 @@
-import {AREAS,SENSITIVITIES,CONCERNS,freshAnswers,concernKind,toggleExclusive,changeArea,careReason,routeAfterConcern,routeAfterSensitivity,resultFor,eligibleProducts,amazonURL,validateCatalog,finderPath} from './engine.mjs';
+import {AREAS,SENSITIVITIES,ALLERGENS,CONCERNS,freshAnswers,concernKind,toggleExclusive,changeArea,careReason,routeAfterConcern,routeAfterSensitivity,resultFor,eligibleProducts,amazonURL,validateCatalog,finderPath} from './engine.mjs';
 const root=document.querySelector('#finder'),dialog=document.querySelector('#finder-dialog'),dialogContent=document.querySelector('#dialog-content'),announcer=document.querySelector('#announcer');
 const systemMotion=matchMedia('(prefers-reduced-motion: reduce)');
 let answers=freshAnswers(),step='area',catalog=null,config=null,failed=false,editing=false,notice='',reduced=systemMotion.matches,opener=null,trail=[];
@@ -22,7 +22,7 @@ function body(interactive=false){
 }
 function progress(){
  const path=finderPath(answers),done=step==='result',current=done?path.length:Math.max(0,path.indexOf(step));
- const labels={area:['Area','body'],concern:['Concern','drop'],sensitivity:['Skin','leaf'],allergy:['Ingredient','shield'],tried:['Tried','bottle']};
+ const labels={area:['Area','body'],concern:['Concern','drop'],sensitivity:['Skin','leaf'],tried:['Tried','bottle']};
  return `<div class="journey-progress"><div class="progress-caption"><strong>${done?'Your next step is ready':current===0?'Let’s find your starting point':current===path.length-1?'One last step':'Making it personal'}</strong><span>${done?'Answers complete':`${current+1} of ${path.length}`}</span></div><ol class="progress" aria-label="${done?'Completed finder steps':`Question ${current+1} of ${path.length}`}">${path.map((id,i)=>`<li class="${i===current?'current':i<current?'done':''}" ${i===current?'aria-current="step"':''}><span class="step-track"></span><span class="step-node">${icon(i<current?'check':labels[id][1])}</span><span class="stage-label">${labels[id][0]}</span></li>`).join('')}</ol></div>`;
 }
 function backButton(){return `<button class="btn secondary back" data-action="back" ${!trail.length&&step==='area'?'disabled aria-label="Back, you are at the first question"':''}>${icon('arrow')}<span>Back</span></button>`;}
@@ -48,84 +48,85 @@ function render({focus=false,restoreId=null}={}){
   const kind=concernKind(answers),under=kind==='underarms';
   question(under?'Smell, sweating, or both?':'Which sounds closest?',`${under?'':`<p class="helper">${kind==='intimate'?'These need different next steps.':'For '+esc(areaLabel().toLowerCase())+'. Select all that apply.'}</p>`}${summary()}<fieldset class="choices"><legend class="sr-only">${under?'Smell, sweating, or both?':'Which sounds closest?'}</legend>${CONCERNS[kind].map(([v,l])=>choice('concerns',v,l,{multi:!under,checked:answers.concerns.includes(v)})).join('')}</fieldset>${footer(!!answers.concerns.length)}`,'concern-screen');
  }else if(step==='sensitivity'){
-  question('Anything to avoid?',`<p class="helper">Select all that apply.</p>${chips()}<fieldset class="choices"><legend class="sr-only">Sensitivities and ingredients to avoid</legend>${SENSITIVITIES.map(([v,l,i])=>choice('sensitivities',v,l,{multi:true,art:i,checked:answers.sensitivities.includes(v)})).join('')}</fieldset>${footer(!!answers.sensitivities.length)}`,'sensitivity-screen');
- }else if(step==='allergy'){
-  question('Which ingredient do you need to avoid?',`<p class="helper">Enter the ingredient name if you know it.</p><label class="field-label" for="allergy-detail">Ingredient name</label><input id="allergy-detail" class="plain-input" type="text" maxlength="160" autocomplete="off" value="${esc(answers.allergy)}" placeholder="For example, an ingredient on your label"><div class="state-box gold">${icon('shield')}<p>We cannot confirm an allergy-safe match without the ingredient and verified product labels.</p></div><button class="text-link" data-action="allergy-unknown">I'm not sure</button><br><button class="text-link" data-action="general-browse">Review product ingredients here</button>${footer(!!answers.allergy.trim(),'Use this ingredient')}`,'allergy-screen');
+  question('Anything to avoid?',`<p class="helper">Select all that apply.</p>${chips()}<fieldset class="choices"><legend class="sr-only">Sensitivities and ingredients to avoid</legend>${SENSITIVITIES.map(([v,l,i])=>choice('sensitivities',v,l,{multi:true,art:i,checked:answers.sensitivities.includes(v)})).join('')}</fieldset>${answers.sensitivities.includes('allergy')?`<button class="allergy-picker" data-action="allergens">${icon('shield')}<span>${answers.allergies.length?esc(answers.allergies.map(x=>ALLERGENS.find(y=>y[0]===x)?.[1]).join(', ')):'Choose the ingredient(s) to avoid'}</span>${icon('chevron')}</button>`:''}${footer(!!answers.sensitivities.length)}`,'sensitivity-screen');
  }else if(step==='tried'){
-  const firstIds=answers.area==='underarms'?['vanicream-antiperspirant','vanicream-deodorant','lume-unscented-wash']:answers.concerns.includes('clothes')?['tide-free-gentle','vanicream-gentle-body-wash','mirai-unscented-bar']:answers.concerns.includes('damp')?['interdry-fabric','vanicream-gentle-body-wash','mirai-unscented-bar']:['lume-unscented-wash','mirai-unscented-bar','vanicream-gentle-body-wash'];
+  const care=careReason(answers);
+  const firstIds=care==='urine'?['poise-light-pads','hanes-cotton-briefs','utopia-washcloths']:care?['hanes-cotton-briefs','utopia-washcloths','vanicream-gentle-body-wash']:answers.area==='underarms'?['vanicream-antiperspirant','vanicream-deodorant','lume-unscented-wash']:answers.concerns.includes('clothes')?['tide-free-gentle','vanicream-gentle-body-wash','mirai-unscented-bar']:answers.concerns.includes('damp')?['interdry-fabric','vanicream-gentle-body-wash','mirai-unscented-bar']:['lume-unscented-wash','mirai-unscented-bar','vanicream-gentle-body-wash'];
   const first=firstIds.map(id=>catalog.find(p=>p.id===id)).filter(Boolean);
   const displayed=first;
-  question("What hasn’t worked for you?",`<p class="helper">Choose the exact product when you can.</p><fieldset class="picker-grid"><legend class="sr-only">Products that did not help</legend>${displayed.map(p=>productChoice(p)).join('')}<button class="search-card" data-action="search"><span class="search-icon">${icon('search')}</span><strong>Find another<br>product</strong><small>Wash, deodorant or other</small></button></fieldset>${selectedProducts().length?`<button class="tried-notes" data-action="tried-notes">${selectedProducts().length} selected · Add what didn’t work ${icon('chevron')}</button>`:''}${answers.unknownProduct?'<p class="other-product-note">Exact product not identified. No formula excluded.</p>':''}<div class="previous-extras">${choice('tried','nothing','Nothing yet',{multi:true,checked:answers.tried.includes('nothing')})}${choice('tried','unknown','Not sure what',{multi:true,checked:answers.tried.includes('unknown')})}</div><button class="routine-button" data-action="routine" aria-pressed="${answers.tried.includes('routine')}">${answers.tried.includes('routine')?'✓ ':''}At-home remedy or routine change</button>${answers.tried.includes('routine')?`<p class="small-note">Selected${answers.routine?': '+esc(answers.routine):''}</p>`:''}${footer(!!answers.tried.length,'Show my result')}`,'tried-screen');
+  question("What hasn’t worked for you?",`<p class="helper">Choose the exact product when you can.</p><fieldset class="picker-grid"><legend class="sr-only">Products that did not help</legend>${displayed.map(p=>productChoice(p)).join('')}<button class="search-card" data-action="search"><span class="search-icon">${icon('search')}</span><strong>Find another<br>product</strong><small>Search by name</small></button></fieldset>${selectedProducts().length?`<button class="tried-notes" data-action="tried-notes">${selectedProducts().length} selected · Add what didn’t work ${icon('chevron')}</button>`:''}${answers.unknownProduct?'<p class="other-product-note">Exact product not identified. No formula excluded.</p>':''}<div class="previous-extras">${choice('tried','nothing','Nothing yet',{multi:true,checked:answers.tried.includes('nothing')})}${choice('tried','unknown','Not sure what',{multi:true,checked:answers.tried.includes('unknown')})}</div><button class="routine-button" data-action="routine" aria-pressed="${answers.tried.includes('routine')}">${answers.tried.includes('routine')?'✓ ':''}At-home remedy or routine change</button>${answers.tried.includes('routine')?`<p class="small-note">Selected${answers.routine?': '+esc(answers.routine):''}</p>`:''}${footer(!!answers.tried.length,'Show my result')}`,'tried-screen');
  }else if(step==='result')renderResult();
  if(focus){window.scrollTo({top:0,behavior:'instant'});document.querySelector('h1')?.focus({preventScroll:true});}
  else if(restoreId)document.getElementById(restoreId)?.focus({preventScroll:true});
 }
 function next(){
+ if(step==='sensitivity'&&answers.sensitivities.includes('allergy')&&!answers.allergies.length){openAllergens();return;}
  notice='';rememberStep();
- if(step==='area')step=answers.area==='urine_leakage'?'result':'concern';
+ if(step==='area')step=answers.area==='urine_leakage'?'sensitivity':'concern';
  else if(step==='concern')step=routeAfterConcern(answers);
  else if(step==='sensitivity')step=routeAfterSensitivity(answers);
- else if(step==='allergy'||step==='tried')step='result';
- if(editing&&!careReason(answers)&&step==='sensitivity'&&answers.sensitivities.length)step=routeAfterSensitivity(answers);
+ else if(step==='tried')step='result';
+ if(editing&&step==='sensitivity'&&answers.sensitivities.length)step=routeAfterSensitivity(answers);
  if(editing&&step==='tried'&&answers.tried.length)step='result';
  if(step==='result'){editing=false;announcer.textContent='Your next step is ready. You can edit your answers.';}
  render({focus:true});
 }
 function rememberStep(){trail.push({step,resultAnswers:step==='result'?structuredClone(answers):null});}
 function back(){const previous=trail.pop();notice='';step=previous?.step||'area';if(previous?.resultAnswers)answers=previous.resultAnswers;editing=false;render({focus:true});}
-const categoryNames={cleanser:'Cleansing option',antiperspirant:'For sweat control',deodorant:'For odor control',moisture:'For damp skin folds',laundry:'For clothes holding odor',probiotic:'Optional supplement'};
-function amazonButton(p){return `<a class="btn result-buy" href="${esc(amazonURL(p,config.tracking_id))}" target="_blank" rel="sponsored noopener noreferrer" aria-label="Shop ${esc(p.name+' '+p.variant)} on Amazon">Shop on Amazon ${icon('arrow')}</a>`;}
-function commerceNote(p){return `<p class="commerce-note">As an Amazon Associate I earn from qualifying purchases.${p.exactListingVerified?'':' Opens a product search. Check the formula, size and seller.'}</p>`;}
+const categoryNames={cleanser:'Cleansing option',antiperspirant:'For sweat control',deodorant:'For odor control',moisture:'For damp skin folds',laundry:'For clothes holding odor',probiotic:'Optional supplement',bladder:'For light bladder leaks',underwear:'Everyday comfort',cloth:'For gentle skin care'};
+function amazonButton(p){return `<a class="btn result-buy" href="${esc(amazonURL(p,config.tracking_id))}" target="_blank" rel="sponsored noopener noreferrer" aria-label="Shop ${esc(p.name+' '+p.variant)} on Amazon">Buy on Amazon ${icon('arrow')}</a>`;}
+function commerceNote(p){return `<p class="commerce-note">As an Amazon Associate I earn from qualifying purchases.${p.exactListingVerified?'':' Opens an Amazon search.'}</p>`;}
 function productCard(p,{compact=false,buy=true}={}){
  const category=p.category||'cleanser';
  return `<article class="shop-card tone-${category} ${compact?'compact-shop-card':''}"><div class="shop-photo ${p.photoStyle==='lifestyle'?'lifestyle-photo':''}"><span class="photo-label">${esc(categoryNames[category])}</span><img src="${p.image}" alt="${esc(p.name+' '+p.variant)}" width="600" height="600"></div><div class="shop-copy"><p class="eyebrow">${esc(categoryNames[category])}</p><h2>${esc(p.name)}</h2><p class="shop-variant">${esc(p.variant)}</p><p class="shop-fit">${esc(p.fact)}</p>${buy?amazonButton(p):'<p class="restricted-note">Review the ingredients with your pharmacist before choosing this product.</p>'}<button class="product-details" data-action="details" data-value="${p.id}">Ingredients &amp; how to use</button><p class="shop-caution">${esc(p.caveat)}</p>${buy?commerceNote(p):''}</div></article>`;
 }
 function approaches(){
  const types=answers.area==='underarms'?[['deodorants','Deodorants','bottle'],['antiperspirants','Antiperspirants','shield'],['cleansers','Body washes','bottle'],['home','At-home care','leaf']]:[['cleansers','Gentle cleansers','bottle'],['moisture','Moisture care','leaf'],['probiotics','Probiotics','capsule'],['home','At-home care','leaf']];
- return `<section class="approaches"><h2>Compare another approach</h2><div class="approach-grid">${types.map(([id,label,i])=>`<button class="approach-card" data-action="approach" data-value="${id}">${icon(i)}<span>${label}${icon('chevron')}</span></button>`).join('')}</div></section>`;
+ return `<section class="approaches"><h2>Compare another approach</h2><div class="approach-grid">${types.filter(([id])=>id==='home'||eligibleProducts(answers,catalog,config.preview,({deodorants:'deodorant',antiperspirants:'antiperspirant',cleansers:'cleanser',moisture:'moisture',probiotics:'probiotic'})[id]).length).map(([id,label,i])=>`<button class="approach-card" data-action="approach" data-value="${id}">${icon(i)}<span>${label}${icon('chevron')}</span></button>`).join('')}</div></section>`;
 }
-function resultFooter(){return '<footer class="result-footer"><span>A starting point, not a diagnosis.</span><button data-action="disclosure">Affiliate disclosure</button><button data-action="privacy">About your answers</button></footer>';}
+function resultFooter(){return '<footer class="result-footer"><button data-action="start-over">Start over</button><button data-action="disclosure">Affiliate disclosure</button><button data-action="privacy">About your answers</button></footer>';}
 function renderResult(){
  const r=resultFor(answers,catalog,config.preview);
  if(r.kind!=='product'){renderState(r);return;}
  const p=r.primary;
+ const careNotes={urine:'For new or bothersome leaks, see a clinician. Painful urination, blood in urine or fever needs prompt medical advice.',vaginal:'Get new odor, discharge, itching, burning, pain or bleeding checked. Comfort items do not treat the cause.',skin:'Avoid scrubbing or adding actives to irritated skin. Get advice for broken skin or a new, persistent or worsening rash.',uncertain:'If the smell is new, persistent or comes with other symptoms, a clinician can help identify the cause.'};
+ const notes=[r.care?careNotes[r.care]:'',r.allergyReview?'Your allergy isn’t fully identified here. Check the exact label with a pharmacist before using this option.':answers.sensitivities.includes('allergy')?'We filtered the ingredients you selected using the labels we checked. Recheck the exact label before use.':''].filter(Boolean);
  const copy={
   sweat:['Start with sweat control.','You chose '+(answers.concerns.includes('both')?'smell and wetness.':'underarm wetness.')+' Start with a fragrance-free antiperspirant for sweat control.','An option for the wetness you described.','Use on dry underarms and follow the label. If sweating is new, severe or persistent, speak with a clinician.'],
   odor:['Start with odor control.','You said the smell is the problem. This fragrance-free deodorant targets underarm odor without adding another scent.','A simple option for the smell you described.','Apply a small amount to clean underarms. This is deodorant, so it will not stop sweating.'],
-  'odor-only':['An aluminum-free option for smell.','You prefer aluminum-free products. This deodorant can help with odor, but it will not reduce the wetness you selected.','Fits your aluminum-free preference.','Dry your underarms well and change damp clothes. For less sweating, you would need a different type of product.'],
+  'odor-only':['An aluminum-free option for smell.','You’re avoiding aluminum. This deodorant can help with smell, but it will not reduce the wetness you selected.','Fits your aluminum-free preference.','Dry your underarms well and change damp clothes. For less sweating, you would need a different type of product.'],
+  'odor-unsure':['Start with a simple deodorant.','You’re unsure whether it’s smell or sweat. This fragrance-free gel is an option for smell; it does not reduce wetness.'],
+  'odor-fallback':['Try a different part of your routine.','We left out the products and ingredients you ruled out. This deodorant is an option for smell, but it does not reduce sweating.'],
+  'wash-fallback':['A fresh option for washing.','Your earlier choices are excluded. This cleanser fits the washing part of your routine; it does not stop sweating.'],
+  'comfort-fallback':['An everyday comfort option.','We left out the products you ruled out. Breathable underwear gives you a fresh change when things feel damp. It does not treat the cause of odor.'],
+  'cloth-fallback':['Keep your next step gentle.','With your earlier choices ruled out, a clean cotton cloth is a simple option for gently patting intact skin dry.'],
+  leaks:['Help for little leaks.','These fragrance-free pads absorb the light bladder leaks you described and help contain odor.'],
+  'comfort-intimate':['A fresh, comfortable change.','For intimate odor or a change you’re unsure about, breathable cotton underwear is a comfort option while you get the cause checked.'],
+  'comfort-skin':['A softer next step for your skin.','You said your skin is sore or irritated. A clean cotton cloth with cool water can comfort intact skin without adding another scented product.'],
   clothes:['Give the clothes a fresh start.','You said the smell seems to stay in your clothes. Try a fragrance-free laundry detergent before adding more products to your skin.','For the fabric holding onto the smell.','Use the amount on the bottle, follow the garment care label, and dry clothes fully.'],
   damp:['Help damp skin folds stay dry.','You said the skin stays sweaty or damp. For areas where skin touches skin, this fabric helps move moisture away.','For damp folds, including under the breasts.','Start with clean, dry skin and follow the fabric instructions. Change damp clothing, too.'],
   external:['Keep outside-skin care gentle.','For sweat on outer groin skin, start gently. If you want a rinse-off cleanser for that outer body skin, this fragrance-free option fits.','An optional cleanser for outer body skin.','Water is enough for vulva care. Keep this cleanser off the vulva and out of the vagina. Dry the surrounding skin gently.'],
   wash:[r.gentle?'A gentle wash to start with.':'A washing option that fits.','You said the smell comes back after washing.'+(r.gentle?' A fragrance-free cleanser keeps the washing step gentle.':' This rinse-off option is a place to start for body skin.'),'For the washing part of your routine.','Rinse well and gently pat dry. A cleanser alone may not solve persistent odor.']
  }[r.route];
- root.innerHTML=`<div class="result-layout">${progress()}<div class="step-content result-main"><section class="result-intro"><div class="result-heading-row"><p class="eyebrow">Chosen for your answers</p><button class="edit-button" data-action="edit">Edit answers</button></div><h1 tabindex="-1">${copy[0]}</h1><p class="result-reason">${copy[1]}</p>${chips()}</section>${productCard(p)}</div><div class="result-actions">${backButton()}<button class="btn secondary" data-action="more-options">${r.alternatives.length?'Compare options':'Other options'} ${icon('chevron')}</button></div>${resultFooter()}</div>`;
+ root.innerHTML=`<div class="result-layout ${r.care?'has-care':''}">${progress()}<div class="step-content result-main"><section class="result-intro"><div class="result-heading-row"><p class="eyebrow">Chosen for your answers</p><button class="edit-button" data-action="edit">Edit answers</button></div><h1 tabindex="-1">${copy[0]}</h1><p class="result-reason">${copy[1]}</p>${chips()}</section>${productCard(p)}${notes.length?`<aside class="care-note"><strong>A quick note</strong><p>${notes.map(esc).join(' ')}</p></aside>`:''}</div><div class="result-actions">${backButton()}<button class="btn secondary" data-action="more-options">${r.alternatives.length?'Compare options':'Other options'} ${icon('chevron')}</button></div>${resultFooter()}</div>`;
 }
-function renderState(r){
- let title='',reason='',content='';
- if(r.kind==='care'){
-  const care={
-   vaginal:['Get the change checked first.','A new vaginal smell, discharge, itching, burning, pain or bleeding needs a different next step from body odor.','Arrange a medical appointment. A wash or probiotic cannot tell you what is causing the change. Avoid washing inside the vagina.'],
-   skin:['Let irritated skin recover first.','You selected skin that is sore, broken, irritated or has a new rash.','Avoid adding deodorant, acids or a stronger cleanser to the affected area. Get medical advice if it is new, persistent or worsening.'],
-   urine:['For leaks, focus on bladder care.','You selected urine or little leaks. A deodorizing wash will not address leakage.','Discuss new or bothersome leakage with a clinician. Painful urination, blood in your urine, fever or feeling unwell needs prompt medical advice.'],
-   uncertain:['Let’s narrow down the source.','Outside-skin sweat, vaginal changes and urine leaks need different next steps.','Sweat on the crease of the thigh is outer skin. A change in vaginal discharge is a vaginal concern. Dampness after coughing, laughing or urgency may be leakage.']
-  }[r.reason];
-  [title,reason]=care;content=`<div class="state-box"><h2>What to do now</h2><p>${care[2]}</p></div>${r.reason==='uncertain'?'<button class="btn" data-action="another">Choose the area again</button>':'<button class="btn" data-action="care-notes">What to tell your clinician</button>'}`;
- }else if(r.kind==='uncertain-underarm'){
-  title='Which part bothers you most?';reason='One quick choice will help us pick the right type of product.';
-  content='<div class="choices"><button class="choice" data-action="clarify" data-value="odor">The smell, even when I feel dry</button><button class="choice" data-action="clarify" data-value="both">Wet patches or sweat, with or without smell</button></div>';
- }else{
-  title=r.reason==='allergy'?'Check the allergy before choosing.':'Let’s keep your preferences in place.';
-  reason=r.reason==='allergy'?'You selected an ingredient allergy'+(answers.allergy?' ('+esc(answers.allergy)+')':'')+'. We cannot confirm an allergy-safe match from this questionnaire.':'The current products in this category do not fit your preferences, or you have already tried them.';
-  content=`<div class="state-box gold"><h2>${r.reason==='allergy'?'Your ingredient restriction comes first.':'Your previous choices are remembered.'}</h2><p>${r.reason==='allergy'?'Check the exact label with a pharmacist. You can review product photos and ingredient details here without losing your answers.':'We will not put a product you ruled out back into your recommendations.'}</p></div><button class="btn secondary" data-action="general-browse">Review product photos &amp; ingredients</button>`;
- }
- root.innerHTML=`<section class="state-result">${progress()}<div class="step-content"><p class="eyebrow">Your next step</p><h1 tabindex="-1">${title}</h1><p class="helper">${reason}</p>${chips()}${content}</div><div class="result-actions">${backButton()}<button class="btn secondary" data-action="edit">Review answers</button></div>${resultFooter()}</section>`;
+function renderState(){
+ root.innerHTML=`<section class="state-result">${progress()}<div class="step-content"><h1 tabindex="-1">You’ve ruled out these options.</h1><p class="helper">We won’t recommend something you said did not work or contains an ingredient you need to avoid.</p>${chips()}<button class="btn" data-action="edit">Review my choices</button></div><div class="result-actions">${backButton()}<button class="btn secondary" data-action="start-over">Start over</button></div>${resultFooter()}</section>`;
+}
+function openAllergens(){
+ openDialog('What do you need to avoid?',`<p class="helper">Choose what you know. We’ll filter the products, then you can check the current label before buying.</p><fieldset class="choices allergen-choices"><legend class="sr-only">Ingredients to avoid</legend>${ALLERGENS.map(([v,l])=>choice('allergens',v,l,{multi:true,checked:answers.allergies.includes(v)})).join('')}</fieldset><button class="btn" data-action="allergens-done">Use these choices</button>`);
+}
+function startOver(){
+ if(dialog.open)closeDialog();
+ answers=freshAnswers();step='area';trail=[];editing=false;notice='';opener=null;dialogContent.innerHTML='';
+ announcer.textContent='Started over. All previous answers cleared.';render({focus:true});
 }
 function triedNotes(){
  openDialog('What didn’t work?',`<p class="helper">Optional. The selected products are already excluded from your recommendations.</p>${selectedProducts().map(p=>`<section class="failure-details"><h3>${esc(shortName(p))}</h3><fieldset class="choices"><legend class="sr-only">Why ${esc(p.name)} did not help</legend>${[['odor',"Didn't help the smell"],['sweat',"Didn't help the sweating"],['irritated','Irritated my skin'],['disliked',"Didn't like the scent or texture"]].map(([v,l])=>choice('reason-'+p.id,v,l,{multi:true,checked:(answers.reasons[p.id]||[]).includes(v)})).join('')}</fieldset></section>`).join('')}<button class="btn" data-action="close">Done</button>`);
 }
 function moreOptions(){
  const r=resultFor(answers,catalog,config.preview);
- openDialog('Explore your options',`${r.route==='sweat'||r.route==='odor-only'?`<label class="choice multi aluminum-choice"><input id="aluminum-preference" type="checkbox" name="aluminum" ${answers.aluminumFree?'checked':''}><span class="choice-label">I prefer aluminum-free options</span><span class="mark">${icon('check')}</span></label>`:''}${r.alternatives?.length?`<h3>Another option that fits</h3>${r.alternatives.map(p=>productCard(p,{compact:true})).join('')}`:''}${approaches()}<button class="text-link" data-action="another">Check another area ${icon('chevron')}</button><button class="btn secondary" data-action="close">Back to my result</button>`);
+ openDialog('Explore your options',`${r.route==='sweat'||r.route==='odor-only'?`<label class="choice multi aluminum-choice"><input id="aluminum-preference" type="checkbox" name="aluminum" ${answers.aluminumFree?'checked':''}><span class="choice-label">I prefer aluminum-free options</span><span class="mark">${icon('check')}</span></label>`:''}${r.alternatives?.length?`<h3>Another option that fits</h3>${r.alternatives.map(p=>productCard(p,{compact:true})).join('')}`:''}${approaches()}<button class="text-link" data-action="another">Start over ${icon('chevron')}</button><button class="btn secondary" data-action="close">Back to my result</button>`);
 }
 function openDialog(title,html){opener=document.activeElement;dialogContent.innerHTML=`<div class="dialog-header"><h2 id="dialog-title">${title}</h2><button class="close-dialog" data-action="close" aria-label="${title==='Your answers'?'Close answer editor':'Close dialog'}">${icon('close')}</button></div>${html}`;dialog.showModal();}
 function closeDialog(){dialog.close();opener?.focus({preventScroll:true});}
@@ -136,7 +137,7 @@ function openEditor(){
 function openSearch(){openDialog('Find a product you tried',`<p class="helper">Match the product and formula. A wash and a deodorant are different products.</p><label class="sr-only" for="product-search">Search products</label><input type="search" class="plain-input" id="product-search" placeholder="Search by brand or product" autocomplete="off"><div class="search-results">${catalog.map(p=>productChoice(p,true)).join('')}</div><button class="text-link" data-action="unknown-product">I can't find the exact one</button><button class="btn" data-action="search-done">Done</button>`);document.querySelector('#product-search').focus();}
 function details(id){
  const p=catalog.find(x=>x.id===id);if(!p)return;
- const excluded=answers.tried.includes(id)||answers.sensitivities.includes('allergy');
+ const excluded=!eligibleProducts(answers,catalog,config.preview,p.category||'cleanser').some(x=>x.id===id);
  openDialog('Product details',`<div class="details-product"><img src="${p.image}" alt="${esc(p.name)}"><div><h3>${esc(p.name)}</h3><p class="small-note">${esc(p.variant)}</p></div></div><p>${esc(p.caveat)}</p><h3 class="field-label">Ingredients</h3><p class="ingredients">${esc(p.ingredients||'Current ingredients are not verified.')}</p><p class="small-note">${esc(p.labelDirections||'Check the current product label for use and warnings.')}</p><p class="small-note">Check the label on the product you buy. Formulas and packaging can change.</p>${excluded?'<p class="restricted-note">This item is not a personalized match for your current answers.</p>':amazonButton(p)}${excluded?'':commerceNote(p)}<button class="btn secondary" data-action="close">Back to my result</button>`);
 }
 function approach(id){
@@ -167,14 +168,15 @@ function handleChange(e){
  const t=e.target;if(!(t instanceof HTMLInputElement))return;
  if(t.name==='area')setArea(t.value);
  else if(t.name==='concerns')answers.concerns=concernKind(answers)==='underarms'?[t.value]:toggleExclusive(answers.concerns,t.value,['unsure']);
- else if(t.name==='sensitivities'){answers.sensitivities=toggleExclusive(answers.sensitivities,t.value);if(!answers.sensitivities.includes('allergy'))answers.allergy='';}
+ else if(t.name==='sensitivities'){answers.sensitivities=toggleExclusive(answers.sensitivities,t.value);if(!answers.sensitivities.includes('allergy'))answers.allergies=[];}
+ else if(t.name==='allergens'){answers.allergies=toggleExclusive(answers.allergies,t.value,[]);return;}
  else if(t.name==='tried'){
   answers.tried=toggleExclusive(answers.tried,t.value,['nothing','unknown']);
   for(const id of Object.keys(answers.reasons))if(!answers.tried.includes(id))delete answers.reasons[id];
   if(!answers.tried.includes('unknown'))answers.unknownProduct='';
   if(dialog.open){dialog.querySelectorAll('input[name="tried"]').forEach(x=>x.checked=answers.tried.includes(x.value));return;}
  }else if(t.name.startsWith('reason-')){const id=t.name.slice(7);answers.reasons[id]=toggleExclusive(answers.reasons[id]||[],t.value,[]);return;}
- else if(t.name==='aluminum')answers.aluminumFree=t.checked;
+ else if(t.name==='aluminum'){answers.aluminumFree=t.checked;render();moreOptions();return;}
  else return;
  render({restoreId:t.id});
 }
@@ -185,12 +187,13 @@ function handleAction(e){
  else if(a==='pelvic')openDialog('Which area do you mean?',`<p class="helper">Choose the source. The outline alone cannot tell the difference.</p>${AREAS.filter(x=>['outer_groin','vaginal_change','urine_leakage'].includes(x[0])).map(([id,l])=>`<button class="edit-row" data-action="pelvic-choice" data-value="${id}">${l}${icon('chevron')}</button>`).join('')}`);
  else if(a==='pelvic-choice'){setArea(v);closeDialog();render({restoreId:'area-'+v});}
  else if(a==='edit-step'){closeDialog();rememberStep();step=v;editing=true;if(step==='concern'&&answers.area==='urine_leakage')step='area';render({focus:true});}
- else if(a==='another'){if(dialog.open)closeDialog();rememberStep();step='area';editing=false;notice='Choose another area. Compatible preferences and previous products stay selected.';render({focus:true});}
+ else if(a==='another'||a==='start-over')startOver();
+ else if(a==='allergens')openAllergens();
+ else if(a==='allergens-done'){if(!answers.allergies.length)answers.allergies=['other'];closeDialog();render();}
  else if(a==='search')openSearch();else if(a==='search-done'){closeDialog();render({restoreId:selectedProducts()[0]?'tried-'+selectedProducts()[0].id:null});}
  else if(a==='unknown-product'){answers.unknownProduct=document.querySelector('#product-search').value.trim().slice(0,160);answers.tried=['unknown'];answers.reasons={};closeDialog();render({restoreId:'tried-unknown'});}
  else if(a==='routine'){answers.tried=toggleExclusive(answers.tried,'routine',['nothing','unknown']);render();if(answers.tried.includes('routine'))openDialog('At-home remedy or routine',`<p class="helper">Add a note if you want. This stays in your browser tab.</p><label for="routine-detail">What did you try? (optional)</label><textarea class="plain-input" id="routine-detail" maxlength="240" rows="3">${esc(answers.routine)}</textarea><button class="btn" data-action="routine-done">Done</button>`);}
  else if(a==='routine-done'){answers.routine=document.querySelector('#routine-detail').value.trim();closeDialog();render();}
- else if(a==='allergy-unknown'){rememberStep();answers.allergy='';step='result';render({focus:true});}
  else if(a==='general-browse')browseProductDetails();
  else if(a==='tried-notes')triedNotes();else if(a==='more-options')moreOptions();
  else if(a==='clarify'){answers.concerns=[v];render({focus:true});}
@@ -206,7 +209,6 @@ async function load(){
  }catch{failed=true;renderError();}
 }
 root.addEventListener('change',handleChange);root.addEventListener('click',handleAction);dialog.addEventListener('change',handleChange);dialog.addEventListener('click',handleAction);
-root.addEventListener('input',e=>{if(e.target.id==='allergy-detail'){answers.allergy=e.target.value;root.querySelector('[data-action="next"]').disabled=!answers.allergy.trim();}});
 dialog.addEventListener('input',e=>{if(e.target.id==='product-search'){const q=e.target.value.toLowerCase().trim(),found=catalog.filter(p=>(p.name+' '+p.variant).toLowerCase().includes(q));dialog.querySelector('.search-results').innerHTML=found.length?found.map(p=>productChoice(p,true)).join(''):'<p>No exact product found. You can continue without guessing the formula.</p>';}});
 dialog.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const c=[...dialog.querySelectorAll('a[href],button,input,select,textarea,[tabindex="0"]')].filter(x=>!x.disabled&&x.getClientRects().length),first=c[0],last=c.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}});
 dialog.addEventListener('close',()=>opener?.focus({preventScroll:true}));
@@ -215,5 +217,6 @@ function closeMenu(){menu.hidden=true;menuToggle.setAttribute('aria-expanded','f
 menuToggle.addEventListener('click',()=>{menu.hidden=!menu.hidden;menuToggle.setAttribute('aria-expanded',String(!menu.hidden));});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!menu.hidden){closeMenu();menuToggle.focus();}});
 document.addEventListener('click',e=>{if(!menu.hidden&&!e.target.closest('#finder-menu')&&!e.target.closest('#menu-toggle'))closeMenu();});
+document.querySelector('#menu-reset').addEventListener('click',()=>{closeMenu();startOver();});
 document.querySelector('#menu-privacy').addEventListener('click',()=>{closeMenu();privacy();});
 systemMotion.addEventListener('change',e=>{if(e.matches){reduced=true;updateMotion();}});updateMotion();load();

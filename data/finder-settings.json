@@ -25,6 +25,21 @@
       "source": "https://images.ctfassets.net/ajjw8wywicb3/OTym19fie2pvyHlJheFRF/17df7bafee4ed5dcf1a7e2330a0aad70/Tide_Free_and_Gentle_HDL_PI_SP_748x748_20260930.jpg?fm=png",
       "sha256": "ebafd666bc88ea0a4d80bf5ecd92c91421be6f8889050e51a885a35e6f59c879",
       "purpose": "Product identification in finder, requested by site owner 2026-11-14"
+    },
+    "poise-light-pads": {
+      "source": "https://target.scene7.com/is/image/Target/GUEST_b5d89a6c-89c1-4330-8e0a-bab67d6e8756?fmt=pjpeg&hei=900&wid=900",
+      "sha256": "303fbc8b8cef46d657355af08d7b1e2f9e7fad28b7ae6225efa966cd0cbde707",
+      "purpose": "Product identification requested by site owner 2026-11-14"
+    },
+    "hanes-cotton-briefs": {
+      "source": "https://www.hanes.com/images/catalog/catalog/product/H/N/HNS_PW40AD/HNS_PW40AD_Assorted_Front.jpg?width=449",
+      "sha256": "2500359c25af79724c6c2583710d762850ee6b1a43c2e9fa51bc2c47f708df41",
+      "purpose": "Product identification requested by site owner 2026-11-14"
+    },
+    "utopia-washcloths": {
+      "source": "https://www.utopiadeals.com/cdn/shop/files/UTWC700GMWHITE-1_77b11d08-d413-4c42-9ac3-e5dbd16c2564.jpg?v=8579590936282063230",
+      "sha256": "3bdd5221ca87ce5076e2c0ad2d28c605402d1ae137e3943d640d66a522052410",
+      "purpose": "Product identification requested by site owner 2026-11-14"
     }
   }
 }

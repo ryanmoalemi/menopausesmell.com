@@ -6,7 +6,8 @@ export const CONCERNS={
  body:[['odor','The smell comes back after washing'],['damp','The skin stays sweaty or damp'],['clothes','It seems to stay in my clothes'],['rash','The area is sore, broken, or has a new rash'],['unsure',"I'm not sure"]],
  intimate:[['outside','Sweat on the outside skin'],['change','Vaginal smell or discharge is new or different'],['urine','Urine or little leaks'],['symptoms','I also have itching, burning, soreness, pain or bleeding'],['unsure',"I'm not sure"]]
 };
-export const freshAnswers=()=>({area:null,concerns:[],sensitivities:[],allergy:'',tried:[],reasons:{},unknownProduct:'',routine:'',format:'any',aluminumFree:false});
+export const ALLERGENS=[['fragrance','Fragrance'],['aluminum','Aluminum'],['propylene_glycol','Propylene glycol'],['lanolin','Lanolin'],['silver','Silver'],['adhesive','Adhesives'],['latex','Latex'],['other','Something else / not sure']];
+export const freshAnswers=()=>({area:null,concerns:[],sensitivities:[],allergies:[],tried:[],reasons:{},unknownProduct:'',routine:'',format:'any',aluminumFree:false});
 export const concernKind=a=>a.area==='underarms'?'underarms':['vaginal_change','unsure'].includes(a.area)?'intimate':'body';
 export function toggleExclusive(values,value,exclusive=['none','unsure']){
  if(values.includes(value))return values.filter(x=>x!==value);
@@ -15,43 +16,56 @@ export function toggleExclusive(values,value,exclusive=['none','unsure']){
 export function changeArea(a,area){return a.area===area?a:{...a,area,concerns:[],format:'any',aluminumFree:false};}
 export function careReason(a){
  if(a.concerns.some(x=>['change','symptoms'].includes(x)))return 'vaginal';
- if(a.area==='urine_leakage'||a.concerns.includes('urine'))return 'urine';
  if(a.concerns.includes('rash')||a.sensitivities.includes('irritated'))return 'skin';
+ if(a.area==='urine_leakage'||a.concerns.includes('urine'))return 'urine';
  if(concernKind(a)==='intimate'&&a.concerns.includes('unsure'))return 'uncertain';
  return null;
 }
-export const routeAfterConcern=a=>careReason(a)?'result':'sensitivity';
-export const routeAfterSensitivity=a=>careReason(a)?'result':a.sensitivities.includes('allergy')?'allergy':'tried';
-// The visible journey follows actual routing, including shorter care paths.
-export function finderPath(a){
- if(a.area==='urine_leakage')return ['area'];
- if(careReason({...a,sensitivities:[]}))return ['area','concern'];
- if(a.sensitivities.includes('irritated'))return ['area','concern','sensitivity'];
- return ['area','concern','sensitivity',a.sensitivities.includes('allergy')?'allergy':'tried'];
+export const routeAfterConcern=()=> 'sensitivity';
+export const routeAfterSensitivity=()=> 'tried';
+// Progress reflects only the questions actually asked. Leakage needs no odor question.
+export function finderPath(a){return a.area==='urine_leakage'?['area','sensitivity','tried']:['area','concern','sensitivity','tried'];}
+export function allergyReviewNeeded(a){return a.sensitivities.includes('allergy')&&(!a.allergies?.length||a.allergies.includes('other'));}
+export function ingredientCompatible(a,p){
+ const restrictions=a.sensitivities.includes('allergy')?(a.allergies||[]):[];
+ return restrictions.filter(x=>x!=='other').every(x=>(p.excludesIngredients||[]).includes(x));
 }
 export function eligibleProducts(a,catalog,preview=false,category='cleanser'){
- if(careReason(a)||a.sensitivities.includes('allergy'))return [];
- const area=a.concerns.includes('outside')?'outer_groin':a.area;
+ const care=careReason(a),support=['cloth','underwear','bladder'];
+ if(care&&!support.includes(category))return [];
+ if(care==='skin'&&category==='bladder')return [];
+ if(care&&care!=='urine'&&category==='bladder')return [];
+ const area=a.concerns.includes('outside')&&!care?'outer_groin':a.area;
  return catalog.filter(p=>(p.category||'cleanser')===category&&(p.candidate||p.browseEligible)&&p.labelVerified&&(preview||p.publishEligible)&&(category==='probiotic'||p.areas.includes(area))&&!a.tried.includes(p.id)
-  &&(!a.sensitivities.includes('fragrance')||p.fragranceFree===true)&&(!a.sensitivities.includes('reactive')||p.gentle===true)
+  &&ingredientCompatible(a,p)&&(!a.sensitivities.includes('fragrance')||p.fragranceFree===true)&&(!a.sensitivities.includes('reactive')||p.gentle===true)
   &&(!a.aluminumFree||p.aluminumFree!==false)&&(category!=='cleanser'||a.format==='any'||a.format===p.format));
 }
 export function resultFor(a,catalog,preview=false){
- const care=careReason(a);if(care)return {kind:'care',reason:care};
- if(a.sensitivities.includes('allergy'))return {kind:'no-match',reason:'allergy'};
+ const care=careReason(a),aluminumAvoid=a.aluminumFree||(a.sensitivities.includes('allergy')&&a.allergies?.includes('aluminum'));
  let route='wash',category='cleanser';
- if(a.area==='underarms'){
-  if(a.concerns.includes('unsure'))return {kind:'uncertain-underarm'};
-  if(a.concerns.some(x=>['wetness','both'].includes(x))){route=a.aluminumFree?'odor-only':'sweat';category=a.aluminumFree?'deodorant':'antiperspirant';}
-  else{route='odor';category='deodorant';}
+ if(care){
+  if(care==='urine'){route='leaks';category='bladder';}
+  else if(care==='skin'){route='comfort-skin';category='cloth';}
+  else{route='comfort-intimate';category='underwear';}
+ }else if(a.area==='underarms'){
+  if(a.concerns.some(x=>['wetness','both'].includes(x))){route=aluminumAvoid?'odor-only':'sweat';category=aluminumAvoid?'deodorant':'antiperspirant';}
+  else{route=a.concerns.includes('unsure')?'odor-unsure':'odor';category='deodorant';}
  }else if(a.concerns.includes('clothes')){route='clothes';category='laundry';}
  else if(a.area==='outer_groin'||a.concerns.includes('outside'))route='external';
  else if(a.concerns.includes('damp')){route='damp';category='moisture';}
- const products=eligibleProducts(a,catalog,preview,category).filter(p=>p.candidate);
- if(!products.length)return {kind:'no-match',reason:a.format==='any'?'excluded':'format'};
  const gentle=a.sensitivities.some(x=>['fragrance','reactive'].includes(x));
- products.sort((a,b)=>gentle?Number(b.gentle)-Number(a.gentle):a.order-b.order);
- return {kind:'product',route,primary:products[0],alternatives:products.slice(1,3),gentle};
+ const list=category=>eligibleProducts(a,catalog,preview,category).filter(p=>p.candidate).sort((x,y)=>gentle?Number(y.gentle)-Number(x.gentle)||x.order-y.order:x.order-y.order);
+ let products=list(category),fallback=false;
+ if(!products.length){
+  const alternatives=care?['underwear','cloth']:a.area==='underarms'?['deodorant','cleanser','cloth']:['cleanser','underwear','cloth'];
+  for(const next of alternatives){
+   if(next===category)continue;
+   const options=list(next);
+   if(options.length){products=options;category=next;route=({deodorant:'odor-fallback',cleanser:'wash-fallback',underwear:'comfort-fallback',cloth:'cloth-fallback'})[next];fallback=true;break;}
+  }
+ }
+ if(!products.length)return {kind:'no-match',reason:'excluded'};
+ return {kind:'product',route,primary:products[0],alternatives:products.slice(1,3),gentle,care,allergyReview:allergyReviewNeeded(a),fallback};
 }
 export function amazonURL(product,tag='menopausewash-20'){
  if(product.exactListingVerified&&/^B[A-Z0-9]{9}$/.test(product.asin||'')){

@@ -57,7 +57,17 @@
     "fact": "An unscented bar with persimmon and green tea extracts.",
     "caveat": "Soap can dry or irritate skin. Stop if it bothers yours.",
     "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
-    "existingAssetSha256": "1f0992274c049dd031f54d85650b418686a3fb20b9913c1cab16293c41281104"
+    "existingAssetSha256": "1f0992274c049dd031f54d85650b418686a3fb20b9913c1cab16293c41281104",
+    "excludesIngredients": [
+      "fragrance",
+      "aluminum",
+      "propylene_glycol",
+      "lanolin",
+      "silver",
+      "adhesive",
+      "latex"
+    ],
+    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label."
   },
   {
     "id": "vanicream-gentle-body-wash",
@@ -88,7 +98,17 @@
     "fact": "No botanical extracts or essential oils.",
     "caveat": "It may not solve the odor by itself.",
     "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
-    "existingAssetSha256": "f0620692f96a90b2ea80188a52b8c14b07dec9a6eac3b5d4a2baa42809be1091"
+    "existingAssetSha256": "f0620692f96a90b2ea80188a52b8c14b07dec9a6eac3b5d4a2baa42809be1091",
+    "excludesIngredients": [
+      "fragrance",
+      "aluminum",
+      "propylene_glycol",
+      "lanolin",
+      "silver",
+      "adhesive",
+      "latex"
+    ],
+    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label."
   },
   {
     "id": "mirai-persimmon-body-wash",
@@ -338,7 +358,16 @@
     "imageSource": "https://www.vanicream.com/dynamic-media/product/images/vanicream6.1-014.jpg?gravity=center&v=galleryMedia&k=KKJRawvcz%2FvcbQ1pzw0U2g",
     "sourcePhotoSha256": "0fc4584781c41615a2b1ea962d44f73971fd2ea800696f9f37a7607cefedc818",
     "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner\u2019s request. Separate commercial license not verified.",
-    "photoStyle": "lifestyle"
+    "photoStyle": "lifestyle",
+    "excludesIngredients": [
+      "fragrance",
+      "propylene_glycol",
+      "lanolin",
+      "silver",
+      "adhesive",
+      "latex"
+    ],
+    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label."
   },
   {
     "id": "vanicream-deodorant",
@@ -372,7 +401,17 @@
     "imageSource": "https://www.vanicream.com/dynamic-media/product/images/deodorant-vv24a-front-2806-ret-crop.jpg?gravity=center&k=oOyihXOSkq5ZjBkrweUo4w&v=galleryMedia",
     "sourcePhotoSha256": "8c0801eab8166d473475230aba81d826c2f6aa317b43f6055e538d3498a8ebb7",
     "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner\u2019s request. Separate commercial license not verified.",
-    "exactListingVerified": false
+    "exactListingVerified": false,
+    "excludesIngredients": [
+      "fragrance",
+      "aluminum",
+      "propylene_glycol",
+      "lanolin",
+      "silver",
+      "adhesive",
+      "latex"
+    ],
+    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label."
   },
   {
     "id": "interdry-fabric",
@@ -403,7 +442,16 @@
     "imageSource": "https://products.coloplast.us/globalassets/images/product-images/wtr---multisite/interdry/interdry-us/interdryus1_650x650.png",
     "sourcePhotoSha256": "2192ce1b0bdf3ae2a9c18594decee42bafac660b5c80f2b61ae2cb470cfee18f",
     "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner\u2019s request. Separate commercial license not verified.",
-    "exactListingVerified": false
+    "exactListingVerified": false,
+    "excludesIngredients": [
+      "fragrance",
+      "aluminum",
+      "propylene_glycol",
+      "lanolin",
+      "adhesive",
+      "latex"
+    ],
+    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label."
   },
   {
     "id": "tide-free-gentle",
@@ -435,6 +483,133 @@
     "imageSource": "https://images.ctfassets.net/ajjw8wywicb3/OTym19fie2pvyHlJheFRF/17df7bafee4ed5dcf1a7e2330a0aad70/Tide_Free_and_Gentle_HDL_PI_SP_748x748_20260930.jpg?fm=png",
     "sourcePhotoSha256": "ebafd666bc88ea0a4d80bf5ecd92c91421be6f8889050e51a885a35e6f59c879",
     "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner\u2019s request. Separate commercial license not verified.",
-    "exactListingVerified": false
+    "exactListingVerified": false,
+    "excludesIngredients": [
+      "fragrance"
+    ]
+  },
+  {
+    "id": "poise-light-pads",
+    "name": "Poise Ultra Thin Bladder Leak Pads",
+    "variant": "3 Drop Light \u00b7 Regular \u00b7 28 pads",
+    "category": "bladder",
+    "format": "pad",
+    "areas": [
+      "urine_leakage",
+      "vaginal_change",
+      "unsure"
+    ],
+    "source": "https://www.poise.com/en-us/products/incontinence-pads/ultra-thin/light-absorbency-regular-length-without-wings",
+    "ingredients": "Fragrance-free absorbent pad with an adhesive backing. Full current materials are not verified here. Check the package and manufacturer material list if you have a contact allergy.",
+    "labelDirections": "For light bladder leaks. Attach to underwear and change when wet or soiled. Dispose in the trash, not the toilet. Follow the current package directions.",
+    "fact": "Absorbs light bladder leaks and helps contain urine odor.",
+    "caveat": "For light leaks, not treatment of the cause. Check the absorbency and change regularly.",
+    "amazonQuery": "Poise Ultra Thin bladder leak pads 3 Drop Light Regular 28 count",
+    "excludesIngredients": [
+      "fragrance"
+    ],
+    "imageSource": "https://target.scene7.com/is/image/Target/GUEST_b5d89a6c-89c1-4330-8e0a-bab67d6e8756?fmt=pjpeg&hei=900&wid=900",
+    "socialSources": [
+      "https://www.reddit.com/r/Menopause/comments/17hvs7s/",
+      "https://www.reddit.com/r/Menopause/comments/1j5bqjc/"
+    ],
+    "image": "/assets/finder/poise-light-pads.jpg",
+    "candidate": true,
+    "labelVerified": true,
+    "publishEligible": true,
+    "imageRightsVerified": false,
+    "checked": "2026-11-14",
+    "gentle": true,
+    "fragranceFree": true,
+    "order": 20,
+    "exactListingVerified": false,
+    "sourcePhotoSha256": "303fbc8b8cef46d657355af08d7b1e2f9e7fad28b7ae6225efa966cd0cbde707",
+    "imageUsage": "Exact product photo for product identification requested by site owner. Separate commercial license not verified."
+  },
+  {
+    "id": "hanes-cotton-briefs",
+    "name": "Hanes Breathable Cotton Briefs",
+    "variant": "10-pack \u00b7 Choose your size and colors",
+    "category": "underwear",
+    "format": "fabric",
+    "areas": [
+      "body_folds",
+      "outer_groin",
+      "vaginal_change",
+      "urine_leakage",
+      "unsure"
+    ],
+    "source": "https://www.hanes.com/products/hanes-womens-cotton-assorted-briefs-10-pack/pw40wh",
+    "ingredients": "Cotton body fabric; heather colors may include polyester. Elastic waistband and leg openings. Full trim and finishing materials, including latex status, are not verified. Check the exact size and color label.",
+    "labelDirections": "Follow the garment care label. Change out of damp underwear. Choose a comfortable fit and check the exact fabric composition before ordering.",
+    "fact": "Breathable everyday underwear for a fresh, dry change.",
+    "caveat": "A comfort option, not treatment for vaginal odor or infection. Fabric blends vary by color.",
+    "amazonQuery": "Hanes womens breathable cotton briefs 10 pack PW40WH",
+    "excludesIngredients": [
+      "fragrance",
+      "aluminum",
+      "propylene_glycol",
+      "lanolin",
+      "silver",
+      "adhesive"
+    ],
+    "imageSource": "https://www.hanes.com/images/catalog/catalog/product/H/N/HNS_PW40AD/HNS_PW40AD_Assorted_Front.jpg?width=449",
+    "image": "/assets/finder/hanes-cotton-briefs.jpg",
+    "candidate": true,
+    "labelVerified": true,
+    "publishEligible": true,
+    "imageRightsVerified": false,
+    "checked": "2026-11-14",
+    "gentle": true,
+    "fragranceFree": true,
+    "order": 21,
+    "exactListingVerified": false,
+    "sourcePhotoSha256": "2500359c25af79724c6c2583710d762850ee6b1a43c2e9fa51bc2c47f708df41",
+    "imageUsage": "Exact product photo for product identification requested by site owner. Separate commercial license not verified."
+  },
+  {
+    "id": "utopia-washcloths",
+    "name": "Utopia Cotton Washcloths",
+    "variant": "White \u00b7 12 \u00d7 12 in \u00b7 12-pack",
+    "category": "cloth",
+    "format": "fabric",
+    "areas": [
+      "underarms",
+      "body_folds",
+      "outer_groin",
+      "vaginal_change",
+      "urine_leakage",
+      "unsure"
+    ],
+    "source": "https://www.utopiadeals.com/products/washcloths",
+    "ingredients": "100% ring-spun cotton cloth, white. Wash before first use. This material description is not a guarantee against sensitivity to textile finishes or laundry products.",
+    "labelDirections": "Machine wash following the care label. For comfort, use clean cloths with water on intact external skin, or pat gently dry. Do not scrub irritated skin or use as a wound dressing.",
+    "fact": "A simple cotton cloth for gentle pat-drying or a cool, damp compress on intact skin.",
+    "caveat": "Pat, don\u2019t scrub. Wash before first use. Not a dressing for broken skin.",
+    "amazonQuery": "Utopia Towels Wash Cloths 12 by 12 12 Pack white",
+    "excludesIngredients": [
+      "fragrance",
+      "aluminum",
+      "propylene_glycol",
+      "lanolin",
+      "silver",
+      "adhesive",
+      "latex"
+    ],
+    "imageSource": "https://www.utopiadeals.com/cdn/shop/files/UTWC700GMWHITE-1_77b11d08-d413-4c42-9ac3-e5dbd16c2564.jpg?v=8579590936282063230",
+    "asin": "B01N7K7EFF",
+    "exactListingVerified": true,
+    "listingVerificationSource": "https://www.amazon.com/dp/B01N7K7EFF",
+    "image": "/assets/finder/utopia-washcloths.jpg",
+    "candidate": true,
+    "labelVerified": true,
+    "publishEligible": true,
+    "imageRightsVerified": false,
+    "checked": "2026-11-14",
+    "gentle": true,
+    "fragranceFree": true,
+    "order": 22,
+    "sourcePhotoSha256": "3bdd5221ca87ce5076e2c0ad2d28c605402d1ae137e3943d640d66a522052410",
+    "imageUsage": "Exact product photo for product identification requested by site owner. Separate commercial license not verified."
   }
 ]

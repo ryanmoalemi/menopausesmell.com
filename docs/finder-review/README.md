@@ -74,3 +74,15 @@ The body and icon SVGs are the supplied original assets. Inter and Noto Serif ar
 - Kept the body interaction and product-photo picker. Optional failure notes, alternative recommendations and care details open inside the finder. The main product photo, explanation and Amazon action remain together.
 - Browser review: 320x740 and 390x844 mobile, 1363x936 desktop; no horizontal overflow. At 320x740 all standard underarm questions fit without content scrolling, and the sweat recommendation's Back/Other options row ends at about 662px before the final concern-chip addition. Checked body selection, previous-product notes, Back retention and the one-question bladder-care return path.
 - Validation: 37 matching/progress tests plus 8 build tests passed; 25 generated pages validated.
+
+
+## Shopping continuity update, 2026-11-14
+
+- Start over resets answers, ingredient selections, failure notes, formatting preferences, history, and dialog content. Edit answers remains separate.
+- Ingredient choices replace the open text allergy screen; the product-photo question stays in the flow. Specific selected ingredients require recorded exclusion coverage. Unknown allergies carry explicit label-review copy, never an allergy-safe claim.
+- Leakage uses the three actual questions (area, skin, tried) and a light bladder-leak pad. Vaginal-change and irritated-skin routes offer comfort items with concise clinician notes; no treatment claims or guide detours.
+- Previous failures remain excluded. A different routine category can be suggested with a clear explanation. If every eligible catalog product has been ruled out, retain an honest exceptional no-match state rather than reinsert a failed or excluded item.
+- Added exact product photography: Poise Ultra Thin Light Regular 28 pads (Target product photo), Hanes cotton briefs (manufacturer), Utopia 12-pack white washcloths (manufacturer). Only Utopia has a newly verified exact Amazon destination; other new items use disclosed fixed-product searches.
+- Source references: https://www.poise.com/en-us/products/incontinence-pads/ultra-thin/light-absorbency-regular-length-without-wings ; https://www.target.com/p/-/A-79330413 ; https://www.hanes.com/products/hanes-womens-cotton-assorted-briefs-10-pack/pw40wh ; https://www.utopiadeals.com/products/washcloths ; https://www.amazon.com/dp/B01N7K7EFF
+- Care copy checked against https://www.nhs.uk/symptoms/vaginal-discharge/ and https://www.aad.org/public/everyday-care/skin-care-secrets/prevent-skin-problems/test-skin-care-products/ .
+- Validation: 41 engine tests, including ordinary route/allergen combinations, plus 8 build tests and the 25-page site validator. Manual browser checks cover small mobile and desktop, reset, leakage shopping, aluminum exclusion, photo picking and back navigation.
