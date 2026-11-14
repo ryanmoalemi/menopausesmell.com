@@ -49,4 +49,10 @@ class FinderBuild(unittest.TestCase):
         self.products[0]['existingAssetSha256']='not-the-approved-asset'
         with self.assertRaisesRegex(ValueError,'image needs'):self.build()
 
+    def test_new_source_photo_requires_matching_recorded_source_and_bytes(self):
+        self.settings.update(enabled=True,release_approved=True,reuse_existing_site_images=True)
+        photo = next(p for p in self.products if p.get('sourcePhotoSha256'))
+        photo['sourcePhotoSha256']='changed-photo'
+        with self.assertRaisesRegex(ValueError,'image needs'):self.build()
+
 if __name__=='__main__':unittest.main()

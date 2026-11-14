@@ -42,7 +42,17 @@ for path, page in pages.items():
                 errors.append(f'{path}: missing anchor {href}')
         elif not (ROOT/target.lstrip('/')).is_file():
             errors.append(f'{path}: missing route {href}')
-    if not any('amazon.com' in x or 'amzn.to' in x or x in ['/external-washes/','/probiotics/'] for x in page.links):
+    shopping = any('amazon.com' in x or 'amzn.to' in x or x in ['/external-washes/','/probiotics/'] for x in page.links)
+    if path == '/product-finder/':
+        # The finder renders its shopping links only after questions are answered.
+        # Do not require an exit link in the loading screen to pass validation.
+        app = (ROOT/'product-finder/app.mjs').read_text()
+        products = json.loads((ROOT/'product-finder/catalog.json').read_text())
+        shopping = 'amazonURL(p,config.tracking_id)' in app and any(p.get('candidate') and p.get('amazonQuery') for p in products)
+        for product in products:
+            if not (ROOT/product['image'].lstrip('/')).is_file():
+                errors.append(f'{path}: missing catalog image {product["image"]}')
+    if not shopping:
         errors.append(f'{path}: no relevant comparison/shopping route')
 if errors:
     raise SystemExit('\n'.join(errors))

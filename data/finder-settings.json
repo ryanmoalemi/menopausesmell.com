@@ -4,5 +4,27 @@
   "tracking_id": "menopausewash-20",
   "note": "User approved launch after mobile and desktop review. Reuse existing published site imagery without claiming third-party rights verification. Amazon destinations remain clearly disclosed product searches.",
   "approved_on": "2026-11-14",
-  "reuse_existing_site_images": true
+  "reuse_existing_site_images": true,
+  "source_product_photos": {
+    "vanicream-antiperspirant": {
+      "source": "https://www.vanicream.com/dynamic-media/product/images/vanicream6.1-014.jpg?gravity=center&v=galleryMedia&k=KKJRawvcz%2FvcbQ1pzw0U2g",
+      "sha256": "0fc4584781c41615a2b1ea962d44f73971fd2ea800696f9f37a7607cefedc818",
+      "purpose": "Product identification in finder, requested by site owner 2026-11-14"
+    },
+    "vanicream-deodorant": {
+      "source": "https://www.vanicream.com/dynamic-media/product/images/deodorant-vv24a-front-2806-ret-crop.jpg?gravity=center&k=oOyihXOSkq5ZjBkrweUo4w&v=galleryMedia",
+      "sha256": "8c0801eab8166d473475230aba81d826c2f6aa317b43f6055e538d3498a8ebb7",
+      "purpose": "Product identification in finder, requested by site owner 2026-11-14"
+    },
+    "interdry-fabric": {
+      "source": "https://products.coloplast.us/globalassets/images/product-images/wtr---multisite/interdry/interdry-us/interdryus1_650x650.png",
+      "sha256": "2192ce1b0bdf3ae2a9c18594decee42bafac660b5c80f2b61ae2cb470cfee18f",
+      "purpose": "Product identification in finder, requested by site owner 2026-11-14"
+    },
+    "tide-free-gentle": {
+      "source": "https://images.ctfassets.net/ajjw8wywicb3/OTym19fie2pvyHlJheFRF/17df7bafee4ed5dcf1a7e2330a0aad70/Tide_Free_and_Gentle_HDL_PI_SP_748x748_20260930.jpg?fm=png",
+      "sha256": "ebafd666bc88ea0a4d80bf5ecd92c91421be6f8889050e51a885a35e6f59c879",
+      "purpose": "Product identification in finder, requested by site owner 2026-11-14"
+    }
+  }
 }

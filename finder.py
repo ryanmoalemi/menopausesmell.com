@@ -28,9 +28,17 @@ def build_finder(out, preview=False, *, root=ROOT, settings=None, products=None)
                 settings.get('reuse_existing_site_images')
                 and product.get('existingAssetSha256') == hashlib.sha256(asset.read_bytes()).hexdigest()
             )
-            if not product.get('imageRightsVerified') and not same_existing_asset:
+            # Exact manufacturer photos requested for product identification.
+            # Provenance is recorded separately from a verified commercial license.
+            photo = settings.get('source_product_photos', {}).get(product['id'], {})
+            same_source_photo = (
+                photo.get('source') == product.get('imageSource')
+                and photo.get('sha256') == hashlib.sha256(asset.read_bytes()).hexdigest()
+                and product.get('sourcePhotoSha256') == photo.get('sha256')
+            )
+            if not product.get('imageRightsVerified') and not same_existing_asset and not same_source_photo:
                 raise ValueError('Finder image needs verified rights or approved existing site asset provenance')
-        if any(p.get('candidate') and (not p.get('labelVerified') or not p.get('publishEligible')) for p in products):
+        if any((p.get('candidate') or p.get('browseEligible')) and (not p.get('labelVerified') or not p.get('publishEligible')) for p in products):
             raise ValueError('Finder recommendation eligibility remains unverified')
     shutil.copytree(root / 'finder_src', target)
     (target / 'catalog.json').write_text(json.dumps(products, indent=2) + '\n')

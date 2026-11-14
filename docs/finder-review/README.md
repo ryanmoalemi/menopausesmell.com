@@ -37,7 +37,7 @@ The preview build does not export generated pages to the GitHub Pages repository
 - Exact product-photo selections, searchable catalog, optional reasons and routine note. Capsule/gummy and wash/bar identities remain separate.
 - One eligible primary result with at most two qualifying alternatives. Tried items and restrictions are never silently relaxed.
 - Edit sheet, Back, another-area flow, privacy information, reduced motion, keyboard focus containment and return focus.
-- Separate category guidance for wetness, odor control, clothes and dampness. Optional deodorant, antiperspirant, probiotic and at-home comparisons use existing internal guides.
+- Product cards for wetness, odor control, clothes and dampness. Optional product comparisons, ingredient details, at-home care and appointment notes stay inside the finder.
 - Answers are kept only in JavaScript memory. Finder fonts and data are local. No finder analytics, storage, query-string answers or raw health details in affiliate parameters. Amazon links use fixed product searches and `menopausewash-20` with no referrer.
 
 ## Verified in this review
