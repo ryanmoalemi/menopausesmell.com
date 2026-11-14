@@ -1,9 +1,6 @@
 name: Notify IndexNow
 on:
-  workflow_run:
-    workflows: ["pages build and deployment"]
-    types: [completed]
-    branches: [main]
+  page_build:
   workflow_dispatch:
 permissions:
   contents: read
@@ -12,18 +9,23 @@ concurrency:
   cancel-in-progress: false
 jobs:
   notify:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    if: github.event_name == 'workflow_dispatch' || github.event.build.status == 'built'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          ref: ${{ github.event.build.commit || github.sha }}
           persist-credentials: false
       - uses: actions/cache/restore@v4
         with:
           path: .indexnow-state.json
           key: indexnow-v1-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: indexnow-v1-
+      - name: Use the initial accepted submission if there is no cache
+        run: |
+          if [ ! -f .indexnow-state.json ]; then
+            cp data/indexnow-baseline.json .indexnow-state.json
+          fi
       - name: Submit added, changed and removed page URLs
         run: python3 scripts/submit_indexnow.py
       - uses: actions/cache/save@v4
