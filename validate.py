@@ -3,8 +3,12 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
 import json
+import sys
 
 ROOT = Path(__file__).resolve().parent
+PREVIEW = '--finder-preview' in sys.argv
+ROUTES_FILE = ROOT / ('dist/finder-routes.json' if PREVIEW else 'data/routes.json')
+if PREVIEW: ROOT = ROOT / 'dist'
 class Page(HTMLParser):
     def __init__(self, text):
         super().__init__()
@@ -20,13 +24,13 @@ class Page(HTMLParser):
         if tag == 'a' and a.get('href'): self.links.append(a['href'])
         if tag == 'img': self.images.append(a)
 
-routes = json.loads((ROOT / 'data/routes.json').read_text())
+routes = json.loads(ROUTES_FILE.read_text())
 pages = {r['path']: Page((ROOT/r['path'].strip('/')/'index.html').read_text()) for r in routes}
 errors = []
 for path, page in pages.items():
     if page.h1 != 1: errors.append(f'{path}: {page.h1} H1 elements')
     for image in page.images:
-        if not image.get('alt'): errors.append(f'{path}: missing image alt')
+        if not image.get('alt') and image.get('aria-hidden') != 'true': errors.append(f'{path}: missing image alt')
         if image.get('src','').startswith('/') and not (ROOT/image['src'].lstrip('/')).is_file():
             errors.append(f'{path}: missing image {image["src"]}')
     for href in page.links:

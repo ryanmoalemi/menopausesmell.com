@@ -103,3 +103,8 @@ Shopping guidance update, November 13, 2026: concern pages lead with a format-ba
 `data/search-services.json` holds the public Google and Bing ownership verification tags and IndexNow key. Keep the published tags and key text file in place. Google Search Console uses the canonical HTTPS URL-prefix property; Bing uses the same site URL. Both use `/sitemap.xml`.
 
 `scripts/submit_indexnow.py` checks the live key file and submits sitemap URLs whose content hash changed, plus removed URLs from its previous state. The GitHub Actions workflow runs after a successful Pages deployment and caches the last accepted hashes. A first run submits the full 23-URL sitemap. HTTP 200/202 confirms receipt, not indexing. Use `--dry-run` to inspect changes without sending them.
+
+
+## Product finder preview
+
+The design-package implementation is documented in [docs/finder-review/README.md](docs/finder-review/README.md). Build it with `python production.py --finder-preview`. The site owner approved launch on November 14, 2026. Normal builds now include `/product-finder/`; the preview flag still provides an isolated local review build.

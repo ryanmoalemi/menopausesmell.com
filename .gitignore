@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 .publish-manifest.json
+
+dist/
+.openai/
+__review/

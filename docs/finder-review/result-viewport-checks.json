@@ -1,0 +1,32 @@
+[
+  {
+    "size": "320x740",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "size": "375x740",
+    "scrollWidth": 375,
+    "width": 375
+  },
+  {
+    "size": "390x844",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "size": "768x1024",
+    "scrollWidth": 753,
+    "width": 753
+  },
+  {
+    "size": "1024x900",
+    "scrollWidth": 1009,
+    "width": 1009
+  },
+  {
+    "size": "1440x1100",
+    "scrollWidth": 1421,
+    "width": 1421
+  }
+]
