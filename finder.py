@@ -59,6 +59,6 @@ def build_finder(out, preview=False, *, root=ROOT, settings=None, products=None)
         page = page.replace('<h4>Find your next step</h4>', '<h4>Find your next step</h4><a href="/product-finder/">Find a starting point for you</a>')
         if site_page == out / 'index.html':
             anchor = '<p class="journey-dek">Understand odor changes, explore care options, and compare products.</p>'
-            page = page.replace(anchor, anchor + '<div class="actions"><a class="btn" href="/product-finder/">Find my next step</a></div><p class="note-small">A few quick questions. No email needed.</p>', 1)
+            page = page.replace(anchor, anchor + '<div class="actions"><a class="btn" href="/product-finder/">Find my next step</a></div><p class="note-small">Answer a few questions to get care tips and product options for your situation.</p>', 1)
         site_page.write_text(page)
     return True
