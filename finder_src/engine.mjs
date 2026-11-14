@@ -22,6 +22,13 @@ export function careReason(a){
 }
 export const routeAfterConcern=a=>careReason(a)?'result':'sensitivity';
 export const routeAfterSensitivity=a=>careReason(a)?'result':a.sensitivities.includes('allergy')?'allergy':'tried';
+// The visible journey follows actual routing, including shorter care paths.
+export function finderPath(a){
+ if(a.area==='urine_leakage')return ['area'];
+ if(careReason({...a,sensitivities:[]}))return ['area','concern'];
+ if(a.sensitivities.includes('irritated'))return ['area','concern','sensitivity'];
+ return ['area','concern','sensitivity',a.sensitivities.includes('allergy')?'allergy':'tried'];
+}
 export function eligibleProducts(a,catalog,preview=false,category='cleanser'){
  if(careReason(a)||a.sensitivities.includes('allergy'))return [];
  const area=a.concerns.includes('outside')?'outer_groin':a.area;

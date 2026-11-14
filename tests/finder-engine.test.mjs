@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {freshAnswers, changeArea, toggleExclusive, careReason, routeAfterConcern, routeAfterSensitivity, eligibleProducts, resultFor, amazonURL, validateCatalog} from '../finder_src/engine.mjs';
+import {freshAnswers, changeArea, toggleExclusive, careReason, routeAfterConcern, routeAfterSensitivity, eligibleProducts, resultFor, amazonURL, validateCatalog, finderPath} from '../finder_src/engine.mjs';
 const catalog=JSON.parse(fs.readFileSync(new URL('../data/finder-products.json',import.meta.url)));
 const a=(patch={})=>({...freshAnswers(),area:'underarms',concerns:['odor'],sensitivities:['reactive'],tried:['lume-unscented-wash'],...patch});
 const result=patch=>resultFor(a(patch),catalog,true);
@@ -40,3 +40,11 @@ test('probiotic is optional only, never an automatic odor or sweat match',()=>{f
 test('verified Amazon listing uses exact ASIN and fixed tag only',()=>{const p=catalog.find(p=>p.id==='vanicream-antiperspirant'),u=new URL(amazonURL(p));assert.equal(u.pathname,'/dp/B01M7ZAQNN');assert.deepEqual([...u.searchParams.keys()],['tag']);assert.equal(u.searchParams.get('tag'),'menopausewash-20');});
 test('unverified Amazon listing stays an explicit product search',()=>{const p=catalog.find(p=>p.id==='vanicream-deodorant'),u=new URL(amazonURL(p));assert.equal(u.pathname,'/s');assert.equal(u.searchParams.get('k'),p.amazonQuery);});
 test('finder has no guide or comparison exit links',()=>{for(const path of ['../finder_src/app.mjs','../finder_src/index.html']){const text=fs.readFileSync(new URL(path,import.meta.url),'utf8');assert.doesNotMatch(text,/href=["']\/(?:body-odor|underarm-products|external-washes|gentle-care|appointment-checklist|odor-and-menopause|probiotics|ingredient-labels|when-to-get-checked)/);}});
+
+test('ordinary progress follows the four questions actually asked',()=>assert.deepEqual(finderPath(a()),['area','concern','sensitivity','tried']));
+test('allergy progress replaces the tried step with ingredient details',()=>assert.deepEqual(finderPath(a({sensitivities:['allergy']})),['area','concern','sensitivity','allergy']));
+test('care routes finish progress at the question that supplies the next step',()=>{
+ assert.deepEqual(finderPath(a({area:'urine_leakage'})),['area']);
+ assert.deepEqual(finderPath(a({area:'vaginal_change',concerns:['change']})),['area','concern']);
+ assert.deepEqual(finderPath(a({sensitivities:['irritated']})),['area','concern','sensitivity']);
+});

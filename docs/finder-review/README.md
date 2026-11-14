@@ -65,3 +65,12 @@ No fabricated review scores, prices, popularity counts, product endorsements or 
 `finder_src/` holds the standalone UI. `engine.mjs` contains pure matching logic. `data/finder-products.json` holds formula, variant, direction, source and eligibility records. `finder.py` is the build boundary. Existing `production.py` handles normal site export; the preview flag isolates review output. `tests/fixtures/` holds the preview-only responsive harness.
 
 The body and icon SVGs are the supplied original assets. Inter and Noto Serif are self-hosted with their license notices. Existing repository product photography is reused for private implementation review; this is not a new rights clearance.
+
+## Compact finder update, 2026-11-14
+
+- Reduced header, body illustration, choice cards and result spacing. The primary question/result is constrained to the available dynamic viewport; Back and Continue remain outside the content overflow area. Oversized text, short landscape screens and optional expanded content can scroll without hiding navigation.
+- Added a four-stop visual progress track with animated milestone checks. The track reflects actual routed questions, including shorter care paths and ingredient-allergy questions. System reduced-motion preferences remain honored.
+- Back retains entered choices. Returning from an unfinished result edit restores the previous result's answers. The first question shows a disabled Back button.
+- Kept the body interaction and product-photo picker. Optional failure notes, alternative recommendations and care details open inside the finder. The main product photo, explanation and Amazon action remain together.
+- Browser review: 320x740 and 390x844 mobile, 1363x936 desktop; no horizontal overflow. At 320x740 all standard underarm questions fit without content scrolling, and the sweat recommendation's Back/Other options row ends at about 662px before the final concern-chip addition. Checked body selection, previous-product notes, Back retention and the one-question bladder-care return path.
+- Validation: 37 matching/progress tests plus 8 build tests passed; 25 generated pages validated.
