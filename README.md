@@ -50,7 +50,7 @@ Set `public_base_url`, `site_owner`, and `contact_email`; set CNAME to the confi
 
 Verify commercial usage rights for manufacturer product photography or replace those images with authorized program assets before public publication. Existing photography notes explicitly say these rights have not yet been confirmed. Update that statement only after confirming rights. Keep the source credits.
 
-The generated privacy notice describes static GitHub Pages hosting, Google Fonts, external links and a local checklist. Revisit it if the actual hosting, tracking or collection changes. The site has no analytics, pixels, email capture, account system, symptom submissions or checkout.
+The generated privacy notice describes static GitHub Pages hosting, Google Fonts, external links and a local checklist. Revisit it if the actual hosting, tracking or collection changes. Google Analytics now measures page views, scrolls and outbound clicks. The tag disables Google signals and ad personalization; form interaction and site-search measurement are disabled. Checklist answers are not collected. The site has no email capture, account system, symptom submissions or checkout.
 
 ## Validation
 
@@ -96,3 +96,10 @@ Concern-page openings follow: question, relatable quote with portrait, a short a
 
 
 Shopping guidance update, November 13, 2026: concern pages lead with a format-based starting choice; compact fact grids collect scent, ingredients, body area, tradeoff and feedback scope. Amazon buttons name the target and disclose searches. Probiotic pages show selected positive and mixed customer reviews with source context; raw provenance is in data/customer-review-research.json. Do not transfer capsule reviews to gummies, claim causal benefit from anecdotes, or calculate a star score from these selected reviews.
+
+
+## Search service setup
+
+`data/search-services.json` holds the public Google and Bing ownership verification tags and IndexNow key. Keep the published tags and key text file in place. Google Search Console uses the canonical HTTPS URL-prefix property; Bing uses the same site URL. Both use `/sitemap.xml`.
+
+`scripts/submit_indexnow.py` checks the live key file and submits sitemap URLs whose content hash changed, plus removed URLs from its previous state. The GitHub Actions workflow runs after a successful Pages deployment and caches the last accepted hashes. A first run submits the full 23-URL sitemap. HTTP 200/202 confirms receipt, not indexing. Use `--dry-run` to inspect changes without sending them.

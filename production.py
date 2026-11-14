@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'dist'
 settings = json.loads((ROOT / 'data/site-settings.json').read_text())
 commerce = json.loads((ROOT / 'data/amazon-commerce.json').read_text())
+search_config = json.loads((ROOT / 'data/search-services.json').read_text())
 live = settings.get('public_launch', False)
 base = settings['public_base_url'].rstrip('/')
 parsed = urlsplit(base)
@@ -55,6 +56,25 @@ for route in routes:
     tags += '<meta property="og:url" content="'+html.escape(canonical, quote=True)+'">'
     tags += '<meta property="og:type" content="website"><meta property="og:site_name" content="Menopause Wash">'
     tags += '<meta name="twitter:card" content="summary">'
+    for setting, name in [('google_site_verification', 'google-site-verification'), ('bing_site_verification', 'msvalidate.01')]:
+        if search_config.get(setting):
+            tags += '<meta name="'+name+'" content="'+html.escape(search_config[setting], quote=True)+'">'
+    measurement_id = search_config.get('ga4_measurement_id')
+    if live and measurement_id and path != '/not-found/':
+        if not re.fullmatch(r'G-[A-Z0-9]+', measurement_id):
+            raise ValueError('Invalid GA4 measurement ID')
+        tags += '<script async src="https://www.googletagmanager.com/gtag/js?id='+measurement_id+'"></script>'
+        tags += '''<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '''+json.dumps(measurement_id)+''', {
+  allow_google_signals: false,
+  allow_ad_personalization_signals: false,
+  page_location: window.location.origin + window.location.pathname,
+  page_referrer: document.referrer ? document.referrer.split('?')[0].split('#')[0] : ''
+});
+</script>'''
     page = page.replace('</head>', tags+'</head>')
     if live and path != '/not-found/':
         page = page.replace('noindex,nofollow', 'index,follow')
@@ -88,7 +108,9 @@ for route in routes:
         owner = html.escape(settings['site_owner'])
         email = html.escape(settings['contact_email'], quote=True)
         body = '<h2>Who operates this site</h2><p>'+owner+' operates this website. For privacy questions, contact <a href="mailto:'+email+'">'+email+'</a>.</p>'
-        body += '<h2>What these pages collect</h2><p>This site has no health questionnaire, email signup, account system, advertising pixels or analytics scripts. Checklist selections stay in the current browser tab and are not submitted to us. Reloading clears them.</p>'
+        body += '<h2>What these pages collect</h2><p>This site has no health questionnaire, email signup, account system or checkout. Checklist selections stay in the current browser tab and are not submitted to us or Google Analytics. Reloading clears them.</p>'
+        if search_config.get('ga4_measurement_id'):
+            body += '<h2>Website analytics</h2><p>We use Google Analytics to understand which pages people read, how visitors find the site and which outbound links they click, including Amazon links. Google may use cookies and process browser, device and approximate location information to provide these reports. Google signals and advertising personalization are disabled in our site tag. We do not send names, email addresses or checklist answers to Analytics. URL query strings and fragments are removed from the page address sent by our tag.</p><p>You can restrict cookies or use tracking protection in your browser. Our analytics reports do not tell us what you purchase on Amazon.</p>'
         body += '<h2>Hosting and fonts</h2><p>GitHub Pages serves these static pages and may process standard request information such as IP addresses. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>. Google Fonts receives requests when your browser loads the fonts. See <a href="https://policies.google.com/privacy">Google’s privacy policy</a>.</p>'
         body += '<h2>Amazon and other links</h2><p>Product and research links take you to external sites with their own privacy practices. Amazon may use information from your visit and purchase under its privacy notice. Our affiliate links identify qualifying referrals. We do not receive your payment details or medical information.</p>'
         body += '<h2>Updates</h2><p>This notice describes the current site. We will update it if we add data collection or change how the site operates.</p>'
@@ -123,6 +145,13 @@ if live:
 else:
     (OUT / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"/>')
     (OUT / 'robots.txt').write_text('User-agent: *\nDisallow: /\n')
+search_config = json.loads((ROOT / 'data/search-services.json').read_text())
+indexnow_key = search_config.get('indexnow_key')
+if indexnow_key:
+    if not re.fullmatch(r'[a-zA-Z0-9-]{8,128}', indexnow_key):
+        raise ValueError('Invalid IndexNow key format')
+    (OUT / (indexnow_key + '.txt')).write_text(indexnow_key, encoding='utf-8')
+
 (OUT / '.nojekyll').touch()
 shutil.copy2(ROOT / 'CNAME', OUT / 'CNAME')
 for file in OUT.rglob('*'):
