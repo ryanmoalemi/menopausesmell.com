@@ -1,4 +1,4 @@
-import {AREAS,SENSITIVITIES,ALLERGENS,CONCERNS,TRIED_CATEGORIES,triedOptions,productApproach,freshAnswers,concernKind,toggleExclusive,changeArea,careReason,routeAfterConcern,routeAfterSensitivity,resultFor,eligibleProducts,amazonURL,validateCatalog,finderPath} from './engine.mjs?v=dc1ee9a656fd';
+import {AREAS,SENSITIVITIES,ALLERGENS,CONCERNS,TRIED_CATEGORIES,triedOptions,productApproach,freshAnswers,concernKind,toggleExclusive,changeArea,careReason,routeAfterConcern,routeAfterSensitivity,resultFor,eligibleProducts,amazonURL,validateCatalog,finderPath} from './engine.mjs?v=25738faafac4';
 const root=document.querySelector('#finder'),dialog=document.querySelector('#finder-dialog'),dialogContent=document.querySelector('#dialog-content'),announcer=document.querySelector('#announcer');
 const systemMotion=matchMedia('(prefers-reduced-motion: reduce)');
 let answers=freshAnswers(),step='area',catalog=null,config=null,failed=false,editing=false,notice='',reduced=systemMotion.matches,opener=null,trail=[];
@@ -77,7 +77,11 @@ function next(){
  render({focus:true});
 }
 function rememberStep(){trail.push({step,resultAnswers:step==='result'?structuredClone(answers):null});}
-function back(){const previous=trail.pop();notice='';step=previous?.step||'area';if(previous?.resultAnswers)answers=previous.resultAnswers;editing=false;render({focus:true});}
+function back(){
+ const previous=trail.pop();
+ if(!previous||previous.step==='area'){startOver();return;}
+ notice='';step=previous.step;if(previous.resultAnswers)answers=previous.resultAnswers;editing=false;render({focus:true});
+}
 const categoryNames={cleanser:'Cleansing option',antiperspirant:'For sweat control',deodorant:'For odor control',moisture:'For damp skin folds',laundry:'For clothes holding odor',probiotic:'Optional supplement',bladder:'For light bladder leaks',underwear:'Everyday comfort',cloth:'For gentle skin care'};
 function amazonButton(p){return `<a class="btn result-buy" href="${esc(amazonURL(p,config.tracking_id))}" target="_blank" rel="sponsored noopener noreferrer" aria-label="Shop ${esc(p.name+' '+p.variant)} on Amazon">Buy on Amazon ${icon('arrow')}</a>`;}
 function commerceNote(p){return `<p class="commerce-note">As an Amazon Associate I earn from qualifying purchases.${p.exactListingVerified?'':' Opens an Amazon search.'}</p>`;}
@@ -154,7 +158,7 @@ function openDialog(title,html){opener=document.activeElement;dialogContent.inne
 function closeDialog(){dialog.close();opener?.focus({preventScroll:true});}
 function openEditor(){
  const values=[['area','Your area',areaLabel()],['concern','Your concern',answers.concerns.map(x=>concernLabels[x]).join(', ')||'Not chosen'],['sensitivity','Sensitivities',answers.sensitivities.map(x=>sensitivityLabels[x]).join(', ')||'Not chosen'],['tried','Already tried',answers.triedCategories.map(x=>TRIED_CATEGORIES[x]?.[0]).filter(Boolean).join(', ')||'Not chosen']];
- openDialog('Your answers',`<p class="helper">Change an answer without starting over.</p>${values.map(([s,l,v])=>`<button class="edit-row" data-action="edit-step" data-value="${s}"><span><small>${l}</small><strong>${esc(v)}</strong></span>${icon('chevron')}</button>`).join('')}<button class="btn" data-action="close">Back to my result</button>`);
+ openDialog('Your answers',`<p class="helper">Choose an answer to change. Going back to your area clears all answers.</p>${values.map(([s,l,v])=>`<button class="edit-row" data-action="edit-step" data-value="${s}"><span><small>${l}</small><strong>${esc(v)}</strong></span>${icon('chevron')}</button>`).join('')}<button class="btn" data-action="close">Back to my result</button>`);
 }
 function openSearch(){openDialog('Find a product you tried',`<p class="helper">Match the product and formula. A wash and a deodorant are different products.</p><label class="sr-only" for="product-search">Search products</label><input type="search" class="plain-input" id="product-search" placeholder="Search by brand or product" autocomplete="off"><div class="search-results">${catalog.map(p=>productChoice(p,true)).join('')}</div><button class="text-link" data-action="unknown-product">I can't find the exact one</button><button class="btn" data-action="search-done">Done</button>`);document.querySelector('#product-search').focus();}
 function details(id){
@@ -185,7 +189,7 @@ function disclosure(){openDialog('About Amazon links','<p>As an Amazon Associate
 function privacy(){openDialog('About your answers','<p class="helper">Your selections stay in memory in this browser tab. Refreshing or closing the page clears them.</p><p>We do not send finder answers to analytics, advertising services or Amazon. This finder loads its fonts and product data from this site.</p><p class="small-note">Amazon links contain only a product identifier or search and our affiliate tag. Hosting providers and websites you choose to visit have their own privacy practices.</p><button class="btn" data-action="close">Got it</button>');}
 function updateMotion(){document.documentElement.classList.toggle('reduce-motion',reduced);document.querySelectorAll('[data-action="motion"],#menu-motion').forEach(b=>{b.setAttribute('aria-pressed',String(reduced));b.textContent=reduced?'Motion reduced':'Reduce motion';});}
 function toggleMotion(){reduced=systemMotion.matches||!reduced;updateMotion();announcer.textContent=reduced?'Reduced motion enabled.':'Standard motion enabled.';}
-function setArea(area){if(answers.area&&answers.area!==area)notice='Your area changed. Please choose the concern for this area. Your other answers are kept.';answers=changeArea(answers,area);}
+function setArea(area){notice='';answers=changeArea(answers,area);}
 function handleChange(e){
  const t=e.target;if(!(t instanceof HTMLInputElement))return;
  if(t.name==='area')setArea(t.value);
@@ -209,7 +213,10 @@ function handleAction(e){
  else if(a==='hotspot'){setArea(v);render({restoreId:'area-'+v});announcer.textContent=areaLabel()+' selected.';}
  else if(a==='pelvic')openDialog('Which area do you mean?',`<p class="helper">Choose the source. The outline alone cannot tell the difference.</p>${AREAS.filter(x=>['outer_groin','vaginal_change','urine_leakage'].includes(x[0])).map(([id,l])=>`<button class="edit-row" data-action="pelvic-choice" data-value="${id}">${l}${icon('chevron')}</button>`).join('')}`);
  else if(a==='pelvic-choice'){setArea(v);closeDialog();render({restoreId:'area-'+v});}
- else if(a==='edit-step'){closeDialog();rememberStep();step=v;editing=true;if(step==='concern'&&answers.area==='urine_leakage')step='area';render({focus:true});}
+ else if(a==='edit-step'){
+  if(v==='area'||(v==='concern'&&answers.area==='urine_leakage')){startOver();return;}
+  closeDialog();rememberStep();step=v;editing=true;render({focus:true});
+ }
  else if(a==='another'||a==='start-over')startOver();
  else if(a==='allergens')openAllergens();
  else if(a==='allergens-done'){if(!answers.allergies.length)answers.allergies=['other'];closeDialog();render();}

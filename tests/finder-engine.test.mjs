@@ -17,7 +17,11 @@ test('a deodorant identifier does not exclude same-brand wash',()=>{const p={...
 test('new vaginal change gets a comfort product with a care note',()=>{const r=result({area:'vaginal_change',concerns:['change']});assert.equal(r.care,'vaginal');assert.equal(r.primary.category,'underwear');});
 test('outside skin gets an optional external cleanser, distinct from vaginal symptoms',()=>{const r=result({area:'vaginal_change',concerns:['outside']});assert.equal(r.route,'external');assert.equal(r.primary.id,'vanicream-gentle-body-wash');});
 test('every candidate excluded produces no match',()=>assert.equal(result({area:'body_folds',sensitivities:['none'],tried:catalog.filter(x=>x.candidate).map(x=>x.id)}).kind,'no-match'));
-test('changing area clears dependent concern but retains restrictions and tried items',()=>{const before=a({format:'bar',aluminumFree:true,reasons:{'lume-unscented-wash':['odor']}}),after=changeArea(before,'body_folds');assert.deepEqual(after.concerns,[]);assert.equal(after.format,'any');assert.equal(after.aluminumFree,false);assert.deepEqual(after.sensitivities,before.sensitivities);assert.deepEqual(after.tried,before.tried);assert.deepEqual(after.reasons,before.reasons);});
+test('selecting an area starts fresh even when reselecting the previous area',()=>{
+ const before=a({format:'bar',aluminumFree:true,allergies:['silver'],triedCategories:['soap'],unknownProduct:'old brand',routine:'old routine',reasons:{'lume-unscented-wash':['odor']}});
+ for(const area of ['underarms','body_folds'])assert.deepEqual(changeArea(before,area),{...freshAnswers(),area});
+ assert.deepEqual(before.allergies,['silver']);assert.deepEqual(before.triedCategories,['soap']);
+});
 test('None and Not sure remain exclusive',()=>{assert.deepEqual(toggleExclusive(['fragrance'],'none'),['none']);assert.deepEqual(toggleExclusive(['none'],'reactive'),['reactive']);assert.deepEqual(toggleExclusive(['none'],'none'),[]);});
 test('Nothing yet excludes previously tried selections',()=>assert.deepEqual(toggleExclusive(['lume-unscented-wash'],'nothing',['nothing','unknown']),['nothing']));
 test('unknown ingredient gets explicit label review without a fake safety claim',()=>{const r=result({sensitivities:['allergy'],allergies:['other']});assert.equal(r.kind,'product');assert.equal(r.allergyReview,true);});

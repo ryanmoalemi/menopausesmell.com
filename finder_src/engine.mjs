@@ -28,7 +28,7 @@ export function toggleExclusive(values,value,exclusive=['none','unsure']){
  if(values.includes(value))return values.filter(x=>x!==value);
  return exclusive.includes(value)?[value]:[...values.filter(x=>!exclusive.includes(x)),value];
 }
-export function changeArea(a,area){return a.area===area?a:{...a,area,concerns:[],triedCategories:[],format:'any',aluminumFree:false};}
+export function changeArea(_previous,area){return {...freshAnswers(),area};}
 export function careReason(a){
  if(a.concerns.some(x=>['change','symptoms'].includes(x)))return 'vaginal';
  if(a.concerns.includes('rash')||a.sensitivities.includes('irritated'))return 'skin';
