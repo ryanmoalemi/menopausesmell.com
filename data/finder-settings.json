@@ -40,6 +40,36 @@
       "source": "https://www.utopiadeals.com/cdn/shop/files/UTWC700GMWHITE-1_77b11d08-d413-4c42-9ac3-e5dbd16c2564.jpg?v=8579590936282063230",
       "sha256": "3bdd5221ca87ce5076e2c0ad2d28c605402d1ae137e3943d640d66a522052410",
       "purpose": "Product identification requested by site owner 2026-11-14"
+    },
+    "frida-peri-bottle": {
+      "source": "https://frida.com/cdn/shop/files/image1_02808585-6772-4239-812c-0c38174d07b9_600x.jpg?v=1789756795",
+      "sha256": "6134a1f582cf61c3ab2d41f9946ea3d39632f8d2d1e83126bc5196f6c8201af9",
+      "purpose": "Real product identification in expanded finder, requested by site owner 2026-11-15"
+    },
+    "depend-silhouette": {
+      "source": "https://target.scene7.com/is/image/Target/GUEST_e9213c42-1912-4667-aecc-fe66a250fd69?fmt=pjpeg&hei=900&wid=900",
+      "sha256": "4608cb618e8824e487b5f60e89e70af33eb9752bdb0f780970ce692cafc15bde",
+      "purpose": "Real product identification in expanded finder, requested by site owner 2026-11-15"
+    },
+    "vaseline-original": {
+      "source": "https://assets.unileversolutions.com/v1/1474787.png",
+      "sha256": "4a97af11056866ab5163168d84d6aea4cb36906b33ab4e4d3dbe01a007e04189",
+      "purpose": "Real product identification in expanded finder, requested by site owner 2026-11-15"
+    },
+    "revaree-original": {
+      "source": "https://hellobonafide.com/cdn/shop/files/Bonafide__REV30DAYSTOCKB_Shopify_Cart_2_600x.png?v=1756823829",
+      "sha256": "e2c0288e5e63b3b746f7d58cd47ea9fd3820ef06cfa23f323fba880d1bc985a0",
+      "purpose": "Real product identification in expanded finder, requested by site owner 2026-11-15"
+    },
+    "replens-moisturizer": {
+      "source": "https://www.replens.com/images/product-images/replens-long-lasting-moisturizer-03.jpg",
+      "sha256": "f8def9e730a8a86fa3641ea23078a3af4c2a7189dabf03ce9c67cbe870a4afd3",
+      "purpose": "Real product identification in expanded finder, requested by site owner 2026-11-15"
+    },
+    "uberlube": {
+      "source": "https://uberlube.com/cdn/shop/files/home-slider-55ml-2_e1e0c6ff-6cff-43d9-b277-b9f3f2f90feb.jpg?v=1746133625&width=800",
+      "sha256": "dbd47a57c9c4e843cdaf8b65b1378e5bad6ae2c9696ba9f4556065506512086c",
+      "purpose": "Real product identification in expanded finder, requested by site owner 2026-11-15"
     }
   }
 }

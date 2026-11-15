@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {freshAnswers, changeArea, toggleExclusive, careReason, routeAfterConcern, routeAfterSensitivity, eligibleProducts, resultFor, amazonURL, validateCatalog, finderPath, ALLERGENS, CONCERNS, triedOptions, TRIED_CATEGORIES} from '../finder_src/engine.mjs';
+import {freshAnswers, changeArea, toggleExclusive, careReason, routeAfterConcern, routeAfterSensitivity, eligibleProducts, resultFor, amazonURL, validateCatalog, finderPath, ALLERGENS, CONCERNS, triedOptions, TRIED_CATEGORIES,resultIntro,careMessage,historyMessage,hasSkinWarning,hasIntimateWarning} from '../finder_src/engine.mjs';
 const catalog=JSON.parse(fs.readFileSync(new URL('../data/finder-products.json',import.meta.url)));
 const a=(patch={})=>({...freshAnswers(),area:'underarms',concerns:['odor'],sensitivities:['reactive'],tried:['lume-unscented-wash'],...patch});
 const result=patch=>resultFor(a(patch),catalog,true);
@@ -117,14 +117,89 @@ test('every shortlisted item respects allergies, exact failures, and body area',
   }
  }
 });
-test('care shortlists never add an active skin treatment to reach five',()=>{
- for(const x of [a({concerns:['rash']}),a({area:'vaginal_change',concerns:['change']}),a({area:'urine_leakage',concerns:[]})]){
-  const r=resultFor(x,catalog);assert.ok(r.recommendations.length<5);
-  for(const item of r.recommendations)assert.ok(['cloth','laundry','underwear','bladder'].includes(item.product.category));
+test('warning routes add only applicable comfort products, not active treatment fillers',()=>{
+ for(const x of [a({concerns:['rash']}),a({area:'vaginal_change',concerns:['change']}),a({area:'vaginal_change',concerns:['symptoms','urine']})]){
+  const r=resultFor(x,catalog);assert.ok(r.recommendations.length<=5);
+  for(const item of r.recommendations)assert.ok(['cloth','laundry','underwear','bladder','rinse'].includes(item.product.category));
  }
 });
 test('aluminum-free applies to every recommendation',()=>{
  const r=result({concerns:['both'],aluminumFree:true,tried:[],sensitivities:['none']});
  assert.ok(r.recommendations.every(x=>x.product.aluminumFree!==false));
  assert.ok(r.recommendations.every(x=>x.product.category!=='antiperspirant'));
+});
+
+test('the reported mixed intimate route keeps leak protection and five distinct useful picks',()=>{
+ const x=a({area:'vaginal_change',concerns:['outside','urine','symptoms'],sensitivities:['none'],tried:[],triedCategories:['nothing']});
+ const r=resultFor(x,catalog);assert.equal(r.route,'leaks');assert.equal(r.care,'vaginal');
+ assert.deepEqual(r.recommendations.map(x=>x.product.id),['poise-light-pads','frida-peri-bottle','depend-silhouette','hanes-cotton-briefs','utopia-washcloths']);
+ const intro=resultIntro(x,r);assert.match(intro.description,/outside skin/);assert.match(intro.description,/bladder leaks/);assert.match(intro.description,/intimate symptoms/);
+ assert.match(careMessage(x),/Bleeding after menopause/);assert.match(careMessage(x),/pelvic floor/);
+});
+test('unsuccessful pads prioritize absorbent underwear without suppressing leak protection',()=>{
+ const x=a({area:'urine_leakage',concerns:[],sensitivities:['none'],triedCategories:['pads']});const r=resultFor(x,catalog);
+ assert.equal(r.primary.id,'depend-silhouette');assert.match(r.recommendations[0].reason,/Pads or liners have not worked/);
+ assert.ok(triedOptions({...x,concerns:['dryness','friction','outside']}).includes('vaginal_moisturizer'));
+ assert.ok(triedOptions({...x,concerns:['dryness','friction','outside']}).includes('lubricant'));
+});
+test('dryness and friction have different jobs and no filler underwear or cleansers',()=>{
+ const x=a({area:'vaginal_change',concerns:['dryness','friction'],sensitivities:['none'],tried:[]});const r=resultFor(x,catalog);
+ assert.deepEqual(r.recommendations.map(x=>x.product.id),['revaree-original','uberlube','replens-moisturizer']);
+ assert.equal(result({...x,concerns:['friction']}).primary.id,'uberlube');
+ assert.deepEqual(result({...x,concerns:['dryness']}).recommendations.map(x=>x.product.category),['vaginal_moisturizer','vaginal_moisturizer']);
+});
+test('new vaginal symptoms block inserts and lubricant but do not erase independent leaks',()=>{
+ for(const warning of ['change','symptoms']){
+  const x=a({area:'vaginal_change',concerns:['dryness','friction','urine',warning],sensitivities:['none']});const r=resultFor(x,catalog);
+  assert.ok(r.recommendations.some(x=>x.product.category==='bladder'));
+  assert.ok(r.recommendations.every(x=>!['vaginal_moisturizer','lubricant','barrier','cleanser','probiotic'].includes(x.product.category||'cleanser')));
+ }
+});
+test('irritated or broken skin excludes pads, barriers, washes and inserts in every path',()=>{
+ for(const area of ['vaginal_change','urine_leakage','body_folds']){
+  const x=a({area,concerns:['urine','dryness','friction','symptoms'],sensitivities:['irritated']});
+  for(const c of ['bladder','barrier','vaginal_moisturizer','lubricant','cleanser'])assert.deepEqual(eligibleProducts(x,catalog,false,c),[]);
+ }
+});
+test('chafing gets plain external skin protection, not a harsh bar or internal moisturizer',()=>{
+ const x=a({area:'outer_groin',concerns:['chafe'],sensitivities:['none']});const r=resultFor(x,catalog);
+ assert.equal(r.primary.id,'vaseline-original');assert.ok(r.recommendations.every(x=>x.product.id!=='mirai-unscented-bar'));
+ assert.match(r.recommendations[0].reason,/unbroken skin/);
+});
+test('specific allergy and failed products are enforced across all multi-concern combinations',()=>{
+ const options=CONCERNS.intimate.map(x=>x[0]).filter(x=>x!=='unsure');
+ for(let mask=1;mask<(1<<options.length);mask++)for(const allergy of [null,...ALLERGENS.map(x=>x[0])]){
+  const concerns=options.filter((_,i)=>mask&(1<<i));const x=a({area:'vaginal_change',concerns,sensitivities:allergy?['allergy']:['none'],allergies:allergy?[allergy]:[],tried:['replens-moisturizer']});
+  const r=resultFor(x,catalog);assert.equal(r.kind,'product',JSON.stringify(x));assert.ok(r.recommendations.length<=5);
+  assert.equal(new Set(r.recommendations.map(x=>x.product.id)).size,r.recommendations.length);
+  for(const item of r.recommendations){
+   assert.notEqual(item.product.id,'replens-moisturizer');assert.ok(item.reason&&item.role);assert.ok(item.product.candidate&&item.product.labelVerified&&item.product.publishEligible);
+   if(allergy&&allergy!=='other')assert.ok(item.product.excludesIngredients.includes(allergy));
+   if(hasIntimateWarning(x))assert.ok(!['vaginal_moisturizer','lubricant','barrier','cleanser','probiotic'].includes(item.product.category||'cleanser'));
+  }
+  const copy=resultIntro(x,r);assert.ok(copy.title&&copy.description);assert.doesNotMatch(copy.description,/undefined|null/);
+ }
+});
+test('copy follows selected needs without claiming that every person wants odor treatment',()=>{
+ const x=a({area:'vaginal_change',concerns:['dryness'],sensitivities:['none']});const r=resultFor(x,catalog);assert.match(resultIntro(x,r).description,/vaginal dryness during the day/);
+ assert.doesNotMatch(resultIntro(x,r).description,/smell comes back|odor that returns/);
+ const b=a({area:'body_folds',concerns:['odor','clothes'],sensitivities:['fragrance'],triedCategories:['soap']});const rb=resultFor(b,catalog);assert.match(resultIntro(b,rb).description,/clothes/);assert.match(resultIntro(b,rb).description,/returns after washing/);
+ assert.ok(rb.recommendations.some(x=>x.product.id==='tide-free-gentle'));
+ for(const p of rb.recommendations)assert.doesNotMatch(p.reason,/washing step on body skin|layer washes/);
+});
+test('products with different jobs never claim compatibility with all condoms',()=>{
+ const rev=catalog.find(x=>x.id==='revaree-original'),rep=catalog.find(x=>x.id==='replens-moisturizer'),uber=catalog.find(x=>x.id==='uberlube');
+ assert.match(rev.caveat,/Not compatible with condoms/);assert.match(rep.caveat,/polyurethane/);assert.match(uber.caveat,/polyurethane/);
+});
+test('dampness-only and uncertain answers do not become recurring odor claims',()=>{
+ for(const concern of ['damp','unsure']){
+  const x=a({area:'body_folds',concerns:[concern],sensitivities:['none'],tried:[]});const r=resultFor(x,catalog);
+  for(const item of r.recommendations)assert.doesNotMatch(item.reason,/smell comes back|odor that comes back/);
+  assert.doesNotMatch(resultIntro(x,r).description,/odor that returns/);
+ }
+});
+test('pad alternative is labeled accurately when absorbent underwear comes first',()=>{
+ const r=result({area:'urine_leakage',concerns:[],sensitivities:['none'],triedCategories:['pads']});
+ const pad=r.recommendations.find(x=>x.product.id==='poise-light-pads');
+ assert.equal(pad.role,'Prefer a light pad?');
 });

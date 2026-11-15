@@ -96,7 +96,7 @@
     "imageSource": "https://menopausewash.com/assets/vanicream.webp",
     "amazonQuery": "Vanicream Gentle Body Wash 12 fl oz",
     "fact": "No botanical extracts or essential oils.",
-    "caveat": "It may not solve the odor by itself.",
+    "caveat": "For external body skin. Rinse well and stop if irritation occurs.",
     "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
     "existingAssetSha256": "f0620692f96a90b2ea80188a52b8c14b07dec9a6eac3b5d4a2baa42809be1091",
     "excludesIngredients": [
@@ -325,7 +325,7 @@
   {
     "id": "vanicream-antiperspirant",
     "name": "Vanicream Anti-Perspirant / Deodorant",
-    "variant": "Fragrance-free solid stick \u00b7 2.25 oz",
+    "variant": "Fragrance-free solid stick · 2.25 oz",
     "category": "antiperspirant",
     "format": "stick",
     "areas": [
@@ -357,7 +357,7 @@
     "order": 10,
     "imageSource": "https://www.vanicream.com/dynamic-media/product/images/vanicream6.1-014.jpg?gravity=center&v=galleryMedia&k=KKJRawvcz%2FvcbQ1pzw0U2g",
     "sourcePhotoSha256": "0fc4584781c41615a2b1ea962d44f73971fd2ea800696f9f37a7607cefedc818",
-    "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner\u2019s request. Separate commercial license not verified.",
+    "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner’s request. Separate commercial license not verified.",
     "photoStyle": "lifestyle",
     "excludesIngredients": [
       "fragrance",
@@ -372,7 +372,7 @@
   {
     "id": "vanicream-deodorant",
     "name": "Vanicream Aluminum-Free Deodorant",
-    "variant": "Fragrance-free gel \u00b7 2 oz",
+    "variant": "Fragrance-free gel · 2 oz",
     "category": "deodorant",
     "format": "gel",
     "areas": [
@@ -400,7 +400,7 @@
     "order": 11,
     "imageSource": "https://www.vanicream.com/dynamic-media/product/images/deodorant-vv24a-front-2806-ret-crop.jpg?gravity=center&k=oOyihXOSkq5ZjBkrweUo4w&v=galleryMedia",
     "sourcePhotoSha256": "8c0801eab8166d473475230aba81d826c2f6aa317b43f6055e538d3498a8ebb7",
-    "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner\u2019s request. Separate commercial license not verified.",
+    "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner’s request. Separate commercial license not verified.",
     "exactListingVerified": false,
     "excludesIngredients": [
       "fragrance",
@@ -416,7 +416,7 @@
   {
     "id": "interdry-fabric",
     "name": "Coloplast InterDry",
-    "variant": "Moisture-wicking fabric \u00b7 10 \u00d7 144 in roll",
+    "variant": "Moisture-wicking fabric · 10 × 144 in roll",
     "category": "moisture",
     "format": "fabric",
     "areas": [
@@ -428,7 +428,7 @@
     "fact": "Wicks moisture away where skin touches skin.",
     "caveat": "For skin folds. Contains silver. Do not use on open wounds or with silver sensitivity.",
     "amazonQuery": "Coloplast InterDry 7910 moisture wicking fabric 10 x 144 inch roll",
-    "size": "10 \u00d7 144 in roll",
+    "size": "10 × 144 in roll",
     "directionsSource": "https://www.coloplast.us/Global/US/Skin%20Care/Interdry/HealthTrust-TryInterDry/SC-M5105N-InterDry-Instructions-Poster.pdf",
     "image": "/assets/finder/interdry-fabric.png",
     "candidate": true,
@@ -441,7 +441,7 @@
     "order": 12,
     "imageSource": "https://products.coloplast.us/globalassets/images/product-images/wtr---multisite/interdry/interdry-us/interdryus1_650x650.png",
     "sourcePhotoSha256": "2192ce1b0bdf3ae2a9c18594decee42bafac660b5c80f2b61ae2cb470cfee18f",
-    "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner\u2019s request. Separate commercial license not verified.",
+    "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner’s request. Separate commercial license not verified.",
     "exactListingVerified": false,
     "excludesIngredients": [
       "fragrance",
@@ -456,7 +456,7 @@
   {
     "id": "tide-free-gentle",
     "name": "Tide Free & Gentle",
-    "variant": "Liquid laundry detergent \u00b7 fragrance-free",
+    "variant": "Liquid laundry detergent · fragrance-free",
     "category": "laundry",
     "format": "liquid",
     "areas": [
@@ -482,7 +482,7 @@
     "order": 13,
     "imageSource": "https://images.ctfassets.net/ajjw8wywicb3/OTym19fie2pvyHlJheFRF/17df7bafee4ed5dcf1a7e2330a0aad70/Tide_Free_and_Gentle_HDL_PI_SP_748x748_20260930.jpg?fm=png",
     "sourcePhotoSha256": "ebafd666bc88ea0a4d80bf5ecd92c91421be6f8889050e51a885a35e6f59c879",
-    "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner\u2019s request. Separate commercial license not verified.",
+    "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner’s request. Separate commercial license not verified.",
     "exactListingVerified": false,
     "excludesIngredients": [
       "fragrance"
@@ -491,7 +491,7 @@
   {
     "id": "poise-light-pads",
     "name": "Poise Ultra Thin Bladder Leak Pads",
-    "variant": "3 Drop Light \u00b7 Regular \u00b7 28 pads",
+    "variant": "3 Drop Light · Regular · 28 pads",
     "category": "bladder",
     "format": "pad",
     "areas": [
@@ -521,7 +521,7 @@
     "checked": "2026-11-14",
     "gentle": true,
     "fragranceFree": true,
-    "order": 20,
+    "order": 1,
     "exactListingVerified": false,
     "sourcePhotoSha256": "303fbc8b8cef46d657355af08d7b1e2f9e7fad28b7ae6225efa966cd0cbde707",
     "imageUsage": "Exact product photo for product identification requested by site owner. Separate commercial license not verified."
@@ -529,7 +529,7 @@
   {
     "id": "hanes-cotton-briefs",
     "name": "Hanes Breathable Cotton Briefs",
-    "variant": "10-pack \u00b7 Choose your size and colors",
+    "variant": "10-pack · Choose your size and colors",
     "category": "underwear",
     "format": "fabric",
     "areas": [
@@ -570,7 +570,7 @@
   {
     "id": "utopia-washcloths",
     "name": "Utopia Cotton Washcloths",
-    "variant": "White \u00b7 12 \u00d7 12 in \u00b7 12-pack",
+    "variant": "White · 12 × 12 in · 12-pack",
     "category": "cloth",
     "format": "fabric",
     "areas": [
@@ -585,7 +585,7 @@
     "ingredients": "100% ring-spun cotton cloth, white. Wash before first use. This material description is not a guarantee against sensitivity to textile finishes or laundry products.",
     "labelDirections": "Machine wash following the care label. For comfort, use clean cloths with water on intact external skin, or pat gently dry. Do not scrub irritated skin or use as a wound dressing.",
     "fact": "A simple cotton cloth for gentle pat-drying or a cool, damp compress on intact skin.",
-    "caveat": "Pat, don\u2019t scrub. Wash before first use. Not a dressing for broken skin.",
+    "caveat": "Pat, don’t scrub. Wash before first use. Not a dressing for broken skin.",
     "amazonQuery": "Utopia Towels Wash Cloths 12 by 12 12 Pack white",
     "excludesIngredients": [
       "fragrance",
@@ -611,5 +611,267 @@
     "order": 22,
     "sourcePhotoSha256": "3bdd5221ca87ce5076e2c0ad2d28c605402d1ae137e3943d640d66a522052410",
     "imageUsage": "Exact product photo for product identification requested by site owner. Separate commercial license not verified."
+  },
+  {
+    "id": "frida-peri-bottle",
+    "name": "Frida Mom Upside Down Peri Bottle",
+    "variant": "10 oz rinse bottle · Pink · Travel bag included",
+    "category": "rinse",
+    "format": "bottle",
+    "areas": [
+      "outer_groin",
+      "vaginal_change",
+      "urine_leakage",
+      "unsure"
+    ],
+    "order": 1,
+    "gentle": true,
+    "ingredients": "HDPE bottle; ABS cover and nozzle. Fill with plain lukewarm water. No cleanser, fragrance or other additive is needed.",
+    "source": "https://frida.com/products/upside-down-peri-bottle",
+    "additionalSources": [
+      "https://www.target.com/p/-/A-76199073",
+      "https://fridaaustralia.com.au/products/frida-mom-peri-bottle"
+    ],
+    "labelDirections": "Fill with lukewarm water, secure the cap and extend the nozzle. While seated, hold upside down and gently rinse the external perineal skin. Do not insert the nozzle or rinse inside the vagina. Empty after use; clean with warm soapy water, rinse and air dry. Do not boil.",
+    "amazonQuery": "Frida Mom Upside Down Peri Bottle Pink 10 oz",
+    "fact": "A handheld water rinse for external intimate skin.",
+    "caveat": "External rinsing only. Use plain lukewarm water and a gentle stream; pat dry. This is not a douche or a treatment for infection.",
+    "excludesIngredients": [
+      "fragrance",
+      "aluminum",
+      "propylene_glycol",
+      "lanolin",
+      "silver"
+    ],
+    "image": "/assets/finder-frida-peri-bottle.webp",
+    "candidate": true,
+    "labelVerified": true,
+    "publishEligible": true,
+    "imageRightsVerified": false,
+    "exactListingVerified": false,
+    "fragranceFree": true,
+    "checked": "2026-11-15",
+    "imageSource": "https://frida.com/cdn/shop/files/image1_02808585-6772-4239-812c-0c38174d07b9_600x.jpg?v=1789756795",
+    "sourcePhotoSha256": "6134a1f582cf61c3ab2d41f9946ea3d39632f8d2d1e83126bc5196f6c8201af9",
+    "imageRightsStatus": "Manufacturer or retailer product-identification photo requested by site owner; no independent commercial-rights certification.",
+    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label."
+  },
+  {
+    "id": "depend-silhouette",
+    "name": "Depend Silhouette Incontinence Underwear",
+    "variant": "Maximum absorbency · Choose your size and pack · M pictured",
+    "category": "bladder",
+    "format": "disposable_underwear",
+    "approach": "leak_underwear",
+    "areas": [
+      "urine_leakage",
+      "vaginal_change",
+      "unsure"
+    ],
+    "order": 2,
+    "gentle": true,
+    "ingredients": "Absorbent disposable underwear with polypropylene, sodium polyacrylate, cellulose, polyethylene, polyester, hydrocarbon resin, styrene/isoprene copolymer, spandex, minerals, pigments and processing aids. Exact materials vary by color and pack. Manufacturer confirms no added scent and no natural rubber latex. Adhesive resins are present; this is not an adhesive-free product.",
+    "source": "https://www.depend.com/en-us/incontinence-products/women/silhouette-classic-underwear",
+    "additionalSources": [
+      "https://www.depend.com/en-us/contact-us",
+      "https://www.target.com/p/depend-silhouette-women-s-medium-postpartum-incontinence-disposable-underwear/-/A-94947535"
+    ],
+    "labelDirections": "Choose your size using the current pack waist chart. Step into the underwear; replace promptly when wet or soiled. Tear sides to remove if directed on the pack. Dispose in the trash, never flush. Keep packaging away from children and the product away from flame.",
+    "amazonQuery": "Depend Silhouette Incontinence Underwear Women Maximum Absorbency Fragrance Free",
+    "fact": "Pull-on, absorbent underwear for bladder leaks, with no added scent.",
+    "caveat": "More coverage than a light pad, but bulkier and disposable. Select the size and absorbency you need; these manage leaks rather than treating their cause.",
+    "excludesIngredients": [
+      "fragrance",
+      "latex"
+    ],
+    "image": "/assets/finder-depend-silhouette.webp",
+    "candidate": true,
+    "labelVerified": true,
+    "publishEligible": true,
+    "imageRightsVerified": false,
+    "exactListingVerified": false,
+    "fragranceFree": true,
+    "checked": "2026-11-15",
+    "imageSource": "https://target.scene7.com/is/image/Target/GUEST_e9213c42-1912-4667-aecc-fe66a250fd69?fmt=pjpeg&hei=900&wid=900",
+    "sourcePhotoSha256": "4608cb618e8824e487b5f60e89e70af33eb9752bdb0f780970ce692cafc15bde",
+    "imageRightsStatus": "Manufacturer or retailer product-identification photo requested by site owner; no independent commercial-rights certification.",
+    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label."
+  },
+  {
+    "id": "vaseline-original",
+    "name": "Vaseline Original Healing Jelly",
+    "variant": "100% white petrolatum · Fragrance-free · 7.5 oz",
+    "category": "barrier",
+    "format": "ointment",
+    "areas": [
+      "body_folds",
+      "outer_groin",
+      "urine_leakage",
+      "vaginal_change",
+      "unsure"
+    ],
+    "order": 1,
+    "gentle": true,
+    "ingredients": "White petrolatum USP 100%. Original formula only; cocoa butter and other scented versions are different products.",
+    "source": "https://www.vaseline.com/us/en/p/vaseline-healing-jelly-original.html/00305212352009",
+    "additionalSources": [
+      "https://uihc.org/educational-resources/vulvar-skin-care-guidelines"
+    ],
+    "labelDirections": "Apply a thin layer to clean, dry, intact external skin needing protection from moisture or friction. Do not put inside the vagina or use as a sexual lubricant. Follow the purchased skin-protectant label and stop if irritation occurs.",
+    "amazonQuery": "Vaseline Original Healing Jelly 100 percent white petrolatum fragrance free 7.5 oz",
+    "fact": "A simple external skin barrier with one ingredient.",
+    "caveat": "For intact outside skin only, not vaginal odor or infection. Oil-based products can weaken latex condoms. Avoid applying under moisture-wicking fabric unless its instructions allow it.",
+    "excludesIngredients": [
+      "fragrance",
+      "aluminum",
+      "propylene_glycol",
+      "lanolin",
+      "silver",
+      "adhesive",
+      "latex"
+    ],
+    "image": "/assets/finder-vaseline-original.webp",
+    "candidate": true,
+    "labelVerified": true,
+    "publishEligible": true,
+    "imageRightsVerified": false,
+    "exactListingVerified": false,
+    "fragranceFree": true,
+    "checked": "2026-11-15",
+    "imageSource": "https://assets.unileversolutions.com/v1/1474787.png",
+    "sourcePhotoSha256": "4a97af11056866ab5163168d84d6aea4cb36906b33ab4e4d3dbe01a007e04189",
+    "imageRightsStatus": "Manufacturer or retailer product-identification photo requested by site owner; no independent commercial-rights certification.",
+    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label."
+  },
+  {
+    "id": "revaree-original",
+    "name": "Bonafide Revaree Vaginal Moisturizer",
+    "variant": "Original 5 mg hyaluronic acid · 10 inserts",
+    "category": "vaginal_moisturizer",
+    "format": "insert",
+    "areas": [
+      "vaginal_change",
+      "unsure"
+    ],
+    "order": 1,
+    "gentle": true,
+    "ingredients": "Hyaluronic acid 5 mg per insert, semi-synthetic glycerides and sodium salt. Original Revaree only. Revaree Plus is a different formula with sweet almond oil.",
+    "source": "https://hellobonafide.com/products/revaree",
+    "additionalSources": [
+      "https://www.target.com/p/-/A-94652229"
+    ],
+    "labelDirections": "Manufacturer directs one vaginal insert every 2–3 nights or as directed by your clinician. Use at bedtime or remain lying down for 30 minutes after insertion. Follow the package instructions; stop if irritation occurs. Not compatible with condoms.",
+    "amazonQuery": "Bonafide Revaree Original 5 mg Hyaluronic Acid Vaginal Moisturizer 10 Inserts",
+    "fact": "A hormone-free vaginal moisturizer for ongoing dryness.",
+    "caveat": "Not compatible with condoms. Inserts can leave residue or leak and can irritate some users. For dryness, not a treatment for new odor, discharge or infection.",
+    "excludesIngredients": [
+      "fragrance",
+      "aluminum",
+      "propylene_glycol",
+      "lanolin",
+      "silver",
+      "adhesive",
+      "latex"
+    ],
+    "image": "/assets/finder-revaree-original.webp",
+    "candidate": true,
+    "labelVerified": true,
+    "publishEligible": true,
+    "imageRightsVerified": false,
+    "exactListingVerified": false,
+    "fragranceFree": true,
+    "checked": "2026-11-15",
+    "imageSource": "https://hellobonafide.com/cdn/shop/files/Bonafide__REV30DAYSTOCKB_Shopify_Cart_2_600x.png?v=1756823829",
+    "sourcePhotoSha256": "e2c0288e5e63b3b746f7d58cd47ea9fd3820ef06cfa23f323fba880d1bc985a0",
+    "imageRightsStatus": "Manufacturer or retailer product-identification photo requested by site owner; no independent commercial-rights certification.",
+    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label."
+  },
+  {
+    "id": "replens-moisturizer",
+    "name": "Replens Long-Lasting Vaginal Moisturizer",
+    "variant": "8 pre-filled, single-use applicators",
+    "category": "vaginal_moisturizer",
+    "format": "gel",
+    "areas": [
+      "vaginal_change",
+      "unsure"
+    ],
+    "order": 2,
+    "gentle": false,
+    "ingredients": "US 8-count retailer label: purified water, glycerin, mineral oil, polycarbophil, carbomer homopolymer type B, hydrogenated palm oil glyceride, sorbic acid, sodium hydroxide. The reusable-tube formula differs; check the exact package.",
+    "source": "https://www.replens.com/en/products/replens-long-lasting-moisturizer",
+    "additionalSources": [
+      "https://www.replens.com/pdf/Replens-Long-Lasting-Vaginal-Moisturizer-with-Disposable-Applicator.pdf",
+      "https://www.target.com/p/-/A-14790490"
+    ],
+    "labelDirections": "Use one pre-filled applicator every three days as needed according to the US package leaflet. Wash hands, follow the applicator instructions and discard after a single use. Stop if vaginal irritation occurs. Compatible with natural rubber latex and polyisoprene condoms, not polyurethane condoms.",
+    "amazonQuery": "Replens Long Lasting Vaginal Moisturizer 8 Pre Filled Single Use Applicators",
+    "fact": "A hormone-free moisturizing gel supplied in single-use applicators.",
+    "caveat": "May leave white residue or discharge. Contains glycerin; stop if it irritates. Not compatible with polyurethane condoms. This is the internal moisturizer, not External Comfort Gel.",
+    "excludesIngredients": [
+      "fragrance",
+      "aluminum",
+      "propylene_glycol",
+      "lanolin",
+      "silver",
+      "adhesive",
+      "latex"
+    ],
+    "image": "/assets/finder-replens-moisturizer.webp",
+    "candidate": true,
+    "labelVerified": true,
+    "publishEligible": true,
+    "imageRightsVerified": false,
+    "exactListingVerified": false,
+    "fragranceFree": true,
+    "checked": "2026-11-15",
+    "imageSource": "https://www.replens.com/images/product-images/replens-long-lasting-moisturizer-03.jpg",
+    "sourcePhotoSha256": "f8def9e730a8a86fa3641ea23078a3af4c2a7189dabf03ce9c67cbe870a4afd3",
+    "imageRightsStatus": "Manufacturer or retailer product-identification photo requested by site owner; no independent commercial-rights certification.",
+    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label."
+  },
+  {
+    "id": "uberlube",
+    "name": "Überlube Silicone Lubricant",
+    "variant": "Unscented · 55 ml glass pump bottle",
+    "category": "lubricant",
+    "format": "silicone",
+    "areas": [
+      "vaginal_change",
+      "unsure"
+    ],
+    "order": 1,
+    "gentle": true,
+    "ingredients": "Dimethicone, dimethiconol, cyclomethicone, tocopheryl acetate (vitamin E).",
+    "source": "https://uberlube.com/pages/medical",
+    "additionalSources": [
+      "https://uberlube.com/pages/instructions-for-use",
+      "https://uberlube.com/products/uberlube-glass-bottle"
+    ],
+    "labelDirections": "Apply as needed to reduce friction during intimate activity, following the label. Stop if irritation occurs. Compatible with natural rubber latex and polyisoprene condoms, not polyurethane condoms. Check toy-manufacturer compatibility before use on silicone toys. Spills make floors slippery.",
+    "amazonQuery": "Uberlube Silicone Lubricant Unscented 55 ml",
+    "fact": "A silicone lubricant for reducing friction during sex.",
+    "caveat": "Not compatible with polyurethane condoms. Check silicone-toy compatibility. Contains vitamin E; it does not treat vaginal odor, infection or the cause of persistent pain.",
+    "excludesIngredients": [
+      "fragrance",
+      "aluminum",
+      "propylene_glycol",
+      "lanolin",
+      "silver",
+      "adhesive",
+      "latex"
+    ],
+    "image": "/assets/finder-uberlube.webp",
+    "candidate": true,
+    "labelVerified": true,
+    "publishEligible": true,
+    "imageRightsVerified": false,
+    "exactListingVerified": false,
+    "fragranceFree": true,
+    "checked": "2026-11-15",
+    "imageSource": "https://uberlube.com/cdn/shop/files/home-slider-55ml-2_e1e0c6ff-6cff-43d9-b277-b9f3f2f90feb.jpg?v=1746133625&width=800",
+    "sourcePhotoSha256": "dbd47a57c9c4e843cdaf8b65b1378e5bad6ae2c9696ba9f4556065506512086c",
+    "imageRightsStatus": "Manufacturer or retailer product-identification photo requested by site owner; no independent commercial-rights certification.",
+    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label."
   }
 ]
