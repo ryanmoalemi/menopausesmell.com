@@ -1,7 +1,8 @@
 import {AREAS,SENSITIVITIES,ALLERGENS,CONCERNS,TRIED_CATEGORIES,triedOptions,productApproach,freshAnswers,concernKind,toggleExclusive,changeArea,careReason,routeAfterConcern,routeAfterSensitivity,resultFor,eligibleProducts,amazonURL,validateCatalog,finderPath,resultIntro,careMessage,historyMessage} from './engine.mjs';
+import {reviewsForProduct,featuredReviews,REVIEW_TAG_LABELS} from './reviews.mjs';
 const root=document.querySelector('#finder'),dialog=document.querySelector('#finder-dialog'),dialogContent=document.querySelector('#dialog-content'),announcer=document.querySelector('#announcer');
 const systemMotion=matchMedia('(prefers-reduced-motion: reduce)');
-let answers=freshAnswers(),step='area',catalog=null,config=null,failed=false,editing=false,notice='',reduced=systemMotion.matches,opener=null,trail=[];
+let answers=freshAnswers(),step='area',catalog=null,config=null,reviewData=null,failed=false,editing=false,notice='',reduced=systemMotion.matches,opener=null,trail=[];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const icon=n=>`<img class="icon" src="./assets/icons/${n}.svg" alt="" aria-hidden="true">`;
 const areaLabel=()=>AREAS.find(x=>x[0]===answers.area)?.[1]||'Not chosen';
@@ -87,7 +88,22 @@ function amazonButton(p){return `<a class="btn result-buy" href="${esc(amazonURL
 function commerceNote(p){return `<p class="commerce-note">As an Amazon Associate I earn from qualifying purchases.${p.exactListingVerified?'':' Opens an Amazon search.'}</p>`;}
 function productCard(p,{compact=false,buy=true,match=null}={}){
  const category=p.category||'cleanser';
- return `<article class="shop-card tone-${category} ${compact?'compact-shop-card':''}"><div class="shop-photo ${p.photoStyle==='lifestyle'?'lifestyle-photo':''}"><span class="photo-label">${esc(categoryNames[category])}</span><img src="${p.image}" alt="${esc(p.name+' '+p.variant)}" width="600" height="600"></div><div class="shop-copy"><p class="eyebrow">${esc(categoryNames[category])}</p><h2>${esc(p.name)}</h2><p class="shop-variant">${esc(p.variant)}</p>${match?matchDetails(p,match):''}<p class="shop-fit">${esc(p.fact)}</p>${buy?amazonButton(p):'<p class="restricted-note">Review the ingredients with your pharmacist before choosing this product.</p>'}<button class="product-details" data-action="details" data-value="${p.id}">${['bladder','underwear','cloth','moisture','rinse'].includes(category)?'Materials &amp; how to use':'Ingredients &amp; how to use'}</button><p class="shop-caution">${esc(p.caveat)}</p>${buy?commerceNote(p):''}</div></article>`;
+ return `<article class="shop-card tone-${category} ${compact?'compact-shop-card':''}"><div class="shop-photo ${p.photoStyle==='lifestyle'?'lifestyle-photo':''}"><span class="photo-label">${esc(categoryNames[category])}</span><img src="${p.image}" alt="${esc(p.name+' '+p.variant)}" width="600" height="600"></div><div class="shop-copy"><p class="eyebrow">${esc(categoryNames[category])}</p><h2>${esc(p.name)}</h2><p class="shop-variant">${esc(p.variant)}</p>${match?matchDetails(p,match):''}<p class="shop-fit">${esc(p.fact)}</p>${buy?amazonButton(p):'<p class="restricted-note">Review the ingredients with your pharmacist before choosing this product.</p>'}<button class="product-details" data-action="details" data-value="${p.id}">${['bladder','underwear','cloth','moisture','rinse'].includes(category)?'Materials &amp; how to use':'Ingredients &amp; how to use'}</button><p class="shop-caution">${esc(p.caveat)}</p>${buy?commerceNote(p):''}</div>${match?reviewPanel(p):''}</article>`;
+}
+function reviewSnippet(r){
+ const topics=r.matchedTags.slice(0,2).map(t=>REVIEW_TAG_LABELS[t]);
+ return `<figure class="review-snippet"><div class="review-topic">${icon('spark')}<span>${topics.length?'Discusses '+esc(topics.join(' · ')):'About this product'}</span></div><blockquote>“${esc(r.quote)}”</blockquote><figcaption><strong>${esc(r.author?'u/'+r.author:'Reddit commenter')}</strong><span>${esc(r.community)}</span></figcaption>${r.context?`<p class="review-context">${esc(r.context)}</p>`:''}<p class="review-scope">${esc(r.productScopeNote||'Product named in the comment.')} <button data-action="review-source" data-value="${esc(r.id)}">Source details</button></p></figure>`;
+}
+function reviewPanel(p){
+ const matches=reviewsForProduct(answers,p,reviewData);
+ const featured=featuredReviews(matches);
+ if(!featured.length)return '';
+ return `<section class="matched-reviews" aria-label="Selected positive experience with ${esc(p.name)}"><div class="review-heading"><h3>Selected positive experience</h3><span>From Reddit</span></div><div class="review-snippets">${featured.map(reviewSnippet).join('')}</div><div class="review-footer"><p>Selected positive excerpt. Individual results vary.</p></div></section>`;
+}
+function showReviewSource(id){
+ const r=reviewData?.reviews.find(x=>x.id===id);if(!r)return;
+ const date=d=>new Date(d+'T00:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric',timeZone:'UTC'});
+ openDialog('About this experience',`<p><strong>${esc(r.author?'u/'+r.author:'Reddit commenter')}</strong> in ${esc(r.community)}${r.postedAt?' · '+date(r.postedAt):''}</p><blockquote class="source-quote">“${esc(r.quote)}”</blockquote><p>${esc(r.context||'A personal report, not a clinical finding.')}</p><p>${esc(r.productScopeNote)}</p><p class="small-note">Text checked ${date(r.checkedAt)}. ${r.sourceLocator==='comment_permalink'?'Source identifies the individual comment.':'Source identifies the thread containing this excerpt.'} No verified-purchase status or endorsement of this site is implied.</p><p class="source-address">${esc(r.sourceUrl)}</p><button class="btn" data-action="close">Back to my picks</button>`);
 }
 function approaches(){
  const types=answers.area==='underarms'?[['deodorants','Deodorants','bottle'],['antiperspirants','Antiperspirants','shield'],['cleansers','Body washes','bottle'],['home','At-home care','leaf']]:[['cleansers','Gentle cleansers','bottle'],['moisture','Moisture care','leaf'],['probiotics','Probiotics','capsule'],['home','At-home care','leaf']];
@@ -199,6 +215,7 @@ function handleAction(e){
  else if(a==='routine-done'){answers.routine=document.querySelector('#routine-detail').value.trim();closeDialog();render();}
  else if(a==='general-browse')browseProductDetails();
  else if(a==='match-why'){const r=resultFor(answers,catalog,config.preview),item=r.recommendations?.find(x=>x.product.id===v);if(!item)return;openDialog('Why this was selected for you',`<h3>${esc(item.product.name)}</h3>${chips({all:true})}<p>${esc(item.reason)}</p>${personalContext(item)?`<p>${esc(personalContext(item))}</p>`:''}<p class="small-note">${esc(item.product.caveat)}</p><button class="btn" data-action="close">Back to my picks</button>`);}
+ else if(a==='review-source')showReviewSource(v);
  else if(a==='tried-notes')triedNotes();
  else if(a==='clarify'){answers.concerns=[v];render({focus:true});}
  else if(a==='care-notes')careNotes();else if(a==='disclosure')disclosure();
@@ -207,7 +224,8 @@ function handleAction(e){
 function renderError(){root.innerHTML='<section class="state-result"><h1 tabindex="-1">Your result could not load.</h1><p class="helper">Your answers are still here.</p><button class="btn" data-action="retry">Try again</button></section>';}
 async function load(){
  try{
-  const [a,b]=await Promise.all([fetch('./catalog.json',{cache:'no-store'}),fetch('./config.json',{cache:'no-store'})]);
+  const [a,b,reviews]=await Promise.all([fetch('./catalog.json',{cache:'no-store'}),fetch('./config.json',{cache:'no-store'}),fetch('./reviews.json',{cache:'no-store',signal:AbortSignal.timeout(4000)}).then(r=>r.ok?r.json():null).catch(()=>null)]);
+  reviewData=reviews?.version===1&&Array.isArray(reviews.reviews)?reviews:null;
   if(!a.ok||!b.ok)throw Error('Unavailable');catalog=validateCatalog(await a.json());config=await b.json();
   if(config.tracking_id!=='menopausewash-20')throw Error('Invalid configuration');failed=false;render();
  }catch{failed=true;renderError();}

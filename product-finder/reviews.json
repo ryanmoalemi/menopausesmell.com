@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-15",
+  "maxAgeDays": 56,
+  "reviews": [
+    {
+      "id": "mirai-1",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/1lgiw7w/persimmon_soap_hype/",
+      "sourceKind": "post",
+      "sourceLocator": "thread_excerpt",
+      "productIds": [
+        "mirai-unscented-bar"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Mirai soap family; the unscented variant was not confirmed.",
+      "quote": "I just got out of the shower and can I tell you? No more weird pit smell!",
+      "context": "An immediate after-shower experience; long-term results were not reported.",
+      "community": "r/Menopause",
+      "author": "LostMyMarbles2",
+      "postedAt": "2025-06-20",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "underarms",
+        "odor",
+        "tried:soap"
+      ]
+    },
+    {
+      "id": "mirai-6",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/AskWomenOver60/comments/1vhxnyg/comment/p28vzyu/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "mirai-unscented-bar"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Mirai soap family; the unscented variant was not confirmed.",
+      "quote": "I use Mirai persimmon soap. And now I just smell neutral.",
+      "context": "The commenter changed both their soap and their laundry routine.",
+      "community": "r/AskWomenOver60",
+      "author": "Confident-Ad7464",
+      "postedAt": "2026-08-07",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "odor",
+        "clothes"
+      ]
+    },
+    {
+      "id": "mirai-7",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/AskWomenOver60/comments/1hzkoxu/comment/m6qbrlt/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "mirai-unscented-bar"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Mirai soap family; the unscented variant was not confirmed.",
+      "quote": "My persimmon soap isn’t really scented. I don’t care for string scents, they make me sneeze and can give me a headache.",
+      "context": "A personal impression of the scent, not a guarantee for fragrance allergies.",
+      "community": "r/AskWomenOver60",
+      "author": "silvermanedwino",
+      "postedAt": "2025-01-12",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "fragrance"
+      ]
+    },
+    {
+      "id": "vanicream-wash-1",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/eczema/comments/1t7pagn/comment/omjv2e7/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "vanicream-gentle-body-wash"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Vanicream body wash; size and variant were not specified.",
+      "quote": "my dermatologist switched me from dove to vanicream body wash. It has helped quite a bit.",
+      "context": "The commenter had been getting itchy while washing with a different product.",
+      "community": "r/eczema",
+      "author": "Early_Ad_1481",
+      "postedAt": "2026-05-09",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "reactive",
+        "tried:body_wash"
+      ]
+    },
+    {
+      "id": "vanicream-antiperspirant-1",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/FragranceFreeBeauty/comments/1xbt8c8/fragrance_free_deodorant_cant_find_vanicream/",
+      "sourceKind": "post",
+      "sourceLocator": "thread_excerpt",
+      "productIds": [
+        "vanicream-antiperspirant"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Vanicream antiperspirant with aluminum; size not specified.",
+      "quote": "I love Vanicream’s fragrance free deodorant (with aluminum) because they truly are fragrance free.",
+      "context": "The commenter specifically identified the formula with aluminum.",
+      "community": "r/FragranceFreeBeauty",
+      "author": "ApricotJazzlike284",
+      "postedAt": "2026-10-21",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "fragrance"
+      ]
+    },
+    {
+      "id": "uberlube-m1xumlp",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/1hdoxpa/comment/m1xumlp/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "uberlube"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Uberlube; bottle size was not specified.",
+      "quote": "I personally love Uber Lube, you can order it from Amazon and it comes in a pretty glass jar.",
+      "context": "The commenter used lubricant alongside prescribed vaginal estrogen.",
+      "community": "r/Menopause",
+      "author": "DamnGoodMarmalade",
+      "postedAt": "2024-12-14",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "vaginal_change"
+      ]
+    },
+    {
+      "id": "uberlube-m27vcvk",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/1hdoxpa/comment/m27vcvk/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "uberlube"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Uberlube; bottle size was not specified.",
+      "quote": "Same now that I’m older it need it. I use Uberlube and like it.",
+      "context": "A brief positive experience in a menopause lubricant discussion.",
+      "community": "r/Menopause",
+      "author": "DeeLite04",
+      "postedAt": "2024-12-15",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": []
+    },
+    {
+      "id": "frida-gbcwux0",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Healthyhooha/comments/jp7mm1/comment/gbcwux0/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "frida-peri-bottle"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Frida peri bottle; pack and version were not specified.",
+      "quote": "The FridaMom peri bottle is the Rolls Royce of peri bottles. I especially loved mine when I tore giving birth to my son.",
+      "context": "A postpartum rinsing experience, not a menopause treatment review.",
+      "community": "r/Healthyhooha",
+      "author": "hellokitschy",
+      "postedAt": null,
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": []
+    },
+    {
+      "id": "frida-gbeepgr",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Healthyhooha/comments/jp7mm1/comment/gbeepgr/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "frida-peri-bottle"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Frida peri bottle; pack and version were not specified.",
+      "quote": "Found the Frida bottle on Amazon and it was such a relief.",
+      "context": "A rinsing experience after a vulvar procedure, not treatment for vaginal odor.",
+      "community": "r/Healthyhooha",
+      "author": "ashl_litning",
+      "postedAt": null,
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "outside"
+      ]
+    },
+    {
+      "id": "poise-jyl39vp",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/166k21e/comment/jyl39vp/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "poise-light-pads"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Poise pads; the 3-drop Light variant was not confirmed.",
+      "quote": "I wear a Poise pad every single day. I have very minimal leave and they work just fine. No odor at all.",
+      "context": "The commenter described minimal leakage; the absorbency level was not specified.",
+      "community": "r/Menopause",
+      "author": "Drumwife91",
+      "postedAt": "2023-08-31",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "odor"
+      ]
+    }
+  ]
+}

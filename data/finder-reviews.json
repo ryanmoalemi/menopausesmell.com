@@ -1,0 +1,926 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-15",
+  "providers": {
+    "reddit": {
+      "enabled": true,
+      "mode": "source-checked editorial excerpts"
+    },
+    "amazon": {
+      "enabled": false,
+      "reason": "No authorized review-text feed or permission for reuse and personalization. An affiliate tag, account login, or review-count API is insufficient."
+    }
+  },
+  "reviews": [
+    {
+      "id": "mirai-1",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/1lgiw7w/persimmon_soap_hype/",
+      "sourceKind": "post",
+      "sourceLocator": "thread_excerpt",
+      "productIds": [
+        "mirai-unscented-bar"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Mirai soap family; the unscented variant was not confirmed.",
+      "quote": "I just got out of the shower and can I tell you? No more weird pit smell!",
+      "context": "An immediate after-shower experience; long-term results were not reported.",
+      "community": "r/Menopause",
+      "author": "LostMyMarbles2",
+      "postedAt": "2025-06-20",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "underarms",
+        "odor",
+        "tried:soap"
+      ],
+      "tagEvidence": {
+        "underarms": "armpit smell",
+        "odor": "weird pit smell",
+        "tried:soap": "I tried every soap in the store"
+      },
+      "sourceText": "You guys!!! Gals! Ladies! Beautiful people! Angels! You all have been underplaying the effectiveness of persimmon soap!\nI have been fighting for the last six years with a neverending, weird armpit smell. I tried every soap in the store and some I found online. I found a tea tree oil soap that successfully helped me a lot with some other issues which I am thankful for. But, this persimmon soap? Come on! It's freakin' magical! I ordered some of the Mirai soap (and shampoo) and it arrived today.\nI just got out of the shower and can I tell you? No more weird pit smell! After SIX freaking years! I even had my (very amazing, perhaps gullible, loving partner) smell my pits. He couldn't detect any odor. Like, AT ALL.\nI'd like to reassure any of you sensitive-to-smell folks (absolutely include myself in this group), this one will pass the bill. The bar soap smells like the original Neutragena orange bar soap but not quite as potent. When lathered, the Neutragena smell becomes less pronounced and it has an extremely light, almost sweet, slightly fruity smell. I don't know what an actual persimmon smells like but my guess is that's what it smells like, but I promise it is the faintest of smells.\nIt doesn't linger after the shower so you won't go around town smelling like a fruit stand.\nIf you were debating on this soap, please do not wait. Yes, it's pricey, but it's worth it. I certainly could have saved myself a lot of money and time if I had known about this soap earlier. Believe the hype. It's amazing. Buy it, then come back and tell me how much you love it and how it has solved all of your problems! 😄\n\nLove to all the odoriferous emanaters out there! ❤️",
+      "sourceContextTexts": [],
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn275view0",
+        "turn269reddit12"
+      ]
+    },
+    {
+      "id": "mirai-2",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/1lgiw7w/comment/mywusyt/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "mirai-unscented-bar"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Mirai soap family; the unscented variant was not confirmed.",
+      "quote": "Anyway, the soap has been good for me, but not long lasting enough for my issues.",
+      "context": "The commenter later switched products because the effect did not last long enough.",
+      "community": "r/Menopause",
+      "author": "Tricky_Assistant_703",
+      "postedAt": null,
+      "checkedAt": "2026-11-15",
+      "sentiment": "mixed",
+      "reportType": "experience",
+      "tags": [
+        "odor"
+      ],
+      "tagEvidence": {
+        "odor": "the soap has been good for me, but not long lasting enough for my issues"
+      },
+      "sourceText": "I’m so grateful for this group because I’ve been using the same. Tbh, I think my husband needed it more. I’ve been so bothered by his smell for months and I didn’t know what to do. Our bedroom started having that old smell and he’s only 49. Anyway, the soap has been good for me, but not long lasting enough for my issues. I just switched to Lume and so far I’m so impressed. I can’t even believe it.\nI picked up the Toner, as well, so I’m hoping a mix of all this will get rid of the stink that has been haunting for the last few months.",
+      "sourceContextTexts": [],
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn282view1",
+        "turn275view0"
+      ]
+    },
+    {
+      "id": "mirai-4",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/AskWomenOver60/comments/1vhxnyg/comment/p28wpgp/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "mirai-unscented-bar"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Mirai soap family; the unscented variant was not confirmed.",
+      "quote": "Mirai for the win. I’ve tried a couple others, made my pits break out and it didn’t work as well. Ticks me off because it’s expensive.",
+      "context": "Other soaps irritated this commenter’s underarms; they also mentioned the price.",
+      "community": "r/AskWomenOver60",
+      "author": "silvermanedwino",
+      "postedAt": "2026-08-07",
+      "checkedAt": "2026-11-15",
+      "sentiment": "mixed",
+      "reportType": "experience",
+      "tags": [
+        "underarms",
+        "reactive"
+      ],
+      "tagEvidence": {
+        "underarms": "pits",
+        "reactive": "made my pits break out"
+      },
+      "sourceText": "Mirai for the win. I’ve tried a couple others, made my pits break out and it didn’t work as well. Ticks me off because it’s expensive.",
+      "sourceContextTexts": [],
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn298view1",
+        "turn295view1",
+        "turn293reddit2"
+      ]
+    },
+    {
+      "id": "mirai-5",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/AskWomenOver60/comments/1vhxnyg/comment/p2djg5n/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "mirai-unscented-bar"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Mirai soap family; the unscented variant was not confirmed.",
+      "quote": "Mirai hasn’t worked for me. I have a spot behind my ear lobe that is difficult. The Mirai hasn’t helped.",
+      "context": "An odor concern behind the ear; the commenter preferred a different soap.",
+      "community": "r/AskWomenOver60",
+      "author": "Optimal-Tea5628",
+      "postedAt": "2026-08-08",
+      "checkedAt": "2026-11-15",
+      "sentiment": "negative",
+      "reportType": "experience",
+      "tags": [
+        "odor"
+      ],
+      "tagEvidence": {
+        "odor": "gotten rid of the odor"
+      },
+      "sourceText": "Mirai hasn’t worked for me. I have a spot behind my ear lobe that is difficult. The Mirai hasn’t helped. I tried the Morovan Persimmon Soap off Amazon and it has gotten rid of the odor. It is cheaper too. The soap smell isn’t over powering. Amazon used to display the ingredients in the product pictures but no longer. So the formula could have changed since I last bought it.",
+      "sourceContextTexts": [],
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn298view2",
+        "turn296view2",
+        "turn293reddit2"
+      ]
+    },
+    {
+      "id": "mirai-6",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/AskWomenOver60/comments/1vhxnyg/comment/p28vzyu/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "mirai-unscented-bar"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Mirai soap family; the unscented variant was not confirmed.",
+      "quote": "I use Mirai persimmon soap. And now I just smell neutral.",
+      "context": "The commenter changed both their soap and their laundry routine.",
+      "community": "r/AskWomenOver60",
+      "author": "Confident-Ad7464",
+      "postedAt": "2026-08-07",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "odor",
+        "clothes"
+      ],
+      "tagEvidence": {
+        "odor": "now I just smell neutral",
+        "clothes": "washing my clothes"
+      },
+      "sourceText": "I use Mirai persimmon soap. And now I just smell neutral. At the same time I started washing my clothes in Tide clean and gentle powder because it has lipase, which seems to be the only thing that will get the nonenal off your clothes. There was a post in r/laundry about getting rid of the nonenal smell. I bought the soap from the Mirai website once and then the same brand from Amazon, and it seems to be the same.",
+      "sourceContextTexts": [],
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn298view0",
+        "turn293reddit2"
+      ]
+    },
+    {
+      "id": "mirai-7",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/AskWomenOver60/comments/1hzkoxu/comment/m6qbrlt/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "mirai-unscented-bar"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Mirai soap family; the unscented variant was not confirmed.",
+      "quote": "My persimmon soap isn’t really scented. I don’t care for string scents, they make me sneeze and can give me a headache.",
+      "context": "A personal impression of the scent, not a guarantee for fragrance allergies.",
+      "community": "r/AskWomenOver60",
+      "author": "silvermanedwino",
+      "postedAt": "2025-01-12",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "fragrance"
+      ],
+      "tagEvidence": {
+        "fragrance": "they make me sneeze and can give me a headache"
+      },
+      "sourceText": "My persimmon soap isn’t really scented. I don’t care for string scents, they make me sneeze and can give me a headache.",
+      "sourceContextTexts": [
+        {
+          "author": "silvermanedwino",
+          "sourceRef": "turn296view1",
+          "relation": "Same-author follow-up naming product",
+          "text": "Mirai Clinical Persimmon Soap Bar for Body 100g - Helps Eliminate Nonenal - Japanese Natural Body Odor Soap for Men & WomenMirai Clinical Persimmon Soap Bar for Body 100g - Helps Eliminate Nonenal - Japanese"
+        }
+      ],
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn298view3",
+        "turn296view1",
+        "turn293reddit5"
+      ]
+    },
+    {
+      "id": "vanicream-wash-1",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/eczema/comments/1t7pagn/comment/omjv2e7/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "vanicream-gentle-body-wash"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Vanicream body wash; size and variant were not specified.",
+      "quote": "my dermatologist switched me from dove to vanicream body wash. It has helped quite a bit.",
+      "context": "The commenter had been getting itchy while washing with a different product.",
+      "community": "r/eczema",
+      "author": "Early_Ad_1481",
+      "postedAt": "2026-05-09",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "reactive",
+        "tried:body_wash"
+      ],
+      "tagEvidence": {
+        "reactive": "The dove used to make me itch like crazy",
+        "tried:body_wash": "switched me from dove to vanicream body wash"
+      },
+      "sourceText": "Not sure if youre willing to try it, but my dermatologist switched me from dove to vanicream body wash. It has helped quite a bit. The dove used to make me itch like crazy WHILE I was washing. Id come out of the shower looking like a walking red crayon. I hope you find something that helps!",
+      "sourceContextTexts": [],
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn292view3",
+        "turn279view2",
+        "turn272reddit5"
+      ]
+    },
+    {
+      "id": "vanicream-wash-2",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/eczema/comments/1u4ll0z/what_ingredients_to_avoid_in_body_wash/",
+      "sourceKind": "post",
+      "sourceLocator": "thread_excerpt",
+      "productIds": [
+        "vanicream-gentle-body-wash"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Vanicream body wash; size and variant were not specified.",
+      "quote": "Vanicream was by far the worst and made my skin burn.",
+      "context": "An individual irritation report in a discussion of body washes.",
+      "community": "r/eczema",
+      "author": "swamp_kittens",
+      "postedAt": "2026-06-13",
+      "checkedAt": "2026-11-15",
+      "sentiment": "negative",
+      "reportType": "experience",
+      "tags": [
+        "reactive",
+        "irritated",
+        "tried:body_wash"
+      ],
+      "tagEvidence": {
+        "reactive": "made my skin burn",
+        "irritated": "made my skin burn",
+        "tried:body_wash": "I’ve tried the dove and aveeno sensitive skin body washes and vanicream"
+      },
+      "sourceText": "Every body wash seems to make my skin itchy. I’ve tried the dove and aveeno sensitive skin body washes and vanicream. Vanicream was by far the worst and made my skin burn. What ingredients could be causing this and does anyone have any body washes recommendations?",
+      "sourceContextTexts": [],
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn279view3",
+        "turn272reddit10"
+      ]
+    },
+    {
+      "id": "vanicream-antiperspirant-1",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/FragranceFreeBeauty/comments/1xbt8c8/fragrance_free_deodorant_cant_find_vanicream/",
+      "sourceKind": "post",
+      "sourceLocator": "thread_excerpt",
+      "productIds": [
+        "vanicream-antiperspirant"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Vanicream antiperspirant with aluminum; size not specified.",
+      "quote": "I love Vanicream’s fragrance free deodorant (with aluminum) because they truly are fragrance free.",
+      "context": "The commenter specifically identified the formula with aluminum.",
+      "community": "r/FragranceFreeBeauty",
+      "author": "ApricotJazzlike284",
+      "postedAt": "2026-10-21",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "fragrance"
+      ],
+      "tagEvidence": {
+        "fragrance": "fragrance free"
+      },
+      "sourceText": "I love Vanicream’s fragrance free deodorant (with aluminum) because they truly are fragrance free. But it’s rarely in stock online…wondering if anyone has a stick they like that is fragrance free?",
+      "sourceContextTexts": [
+        {
+          "author": "ApricotJazzlike284",
+          "sourceRef": "turn307view3",
+          "relation": "Same-author clarification",
+          "text": "Oh good question, I guess antiperspirant. Do you make your hocl? Or buy it?"
+        }
+      ],
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn275view2",
+        "turn272reddit3"
+      ]
+    },
+    {
+      "id": "vanicream-both-negative-1",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/FragranceFreeBeauty/comments/1r45lk2/stinking_after_becoming_fragrance_free/",
+      "sourceKind": "post",
+      "sourceLocator": "thread_excerpt",
+      "productIds": [
+        "vanicream-antiperspirant",
+        "vanicream-deodorant"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Both Vanicream deodorant and antiperspirant are discussed.",
+      "quote": "Since switching to be fragrance free, I’ve started using the Vanicream deodorant and antiperspirant and I stink like onions.",
+      "context": "Both Vanicream formulas were used; this account cannot separate their effects.",
+      "community": "r/FragranceFreeBeauty",
+      "author": "Automatic-News-1740",
+      "postedAt": "2026-02-14",
+      "checkedAt": "2026-11-15",
+      "sentiment": "negative",
+      "reportType": "experience",
+      "tags": [
+        "odor",
+        "fragrance"
+      ],
+      "tagEvidence": {
+        "odor": "I stink like onions",
+        "fragrance": "allergic to both fragrance mixes"
+      },
+      "sourceText": "I got contact dermatitis patch testing done twice in the last year and am allergic to both fragrance mixes. Since switching to be fragrance free, I’ve started using the Vanicream deodorant and antiperspirant and I stink like onions.\n\nI smell worse than I ever have before. I used to think I could just not wear deodorant and smell perfectly fine. Something is wrong and I need major help.\nYes I’ve read about using benzoyl peroxide and I’ve done that the past two days but I still stink. I just bought the Ban roll on deodorant people have recommended to try but I’m afraid I’m still going ro smell.\n\nI’ve also been taking creatine for a couple weeks and have heard that can increase sweating. If anyone knows more, please share that as well.\n\nEDIT: I have found Almay Sensitive Skin Clear Gel to work perfectly for me. Even with my creatine I no longer smell and am free of fragrance 😁\nThings that didn’t work: I also tried Vanicream both deodorant and antiperspirant and although safe it made me stink horribly. Ban Unscented Roll-On has “extract” (fragrance), and Secret Clincal Strength Free and Clear also has fragrance. Check your ingredients everyone and stay safe.\n\n2nd EDIT: I recently switched to Carpe fragrance free deodorant and love it. It’s better than the Almay IMO which does develop “normal” odor over the day, I don’t notice that with Carpe.\n\nThank you everyone who commented!!!",
+      "sourceContextTexts": [],
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn279view1",
+        "turn270reddit5",
+        "turn272reddit9"
+      ]
+    },
+    {
+      "id": "vanicream-gel-1",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/FragranceFreeBeauty/comments/1r45lk2/comment/o5d7fay/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "vanicream-deodorant"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Vanicream gel deodorant; size not specified.",
+      "quote": "I use a combo of the Almay antiperspirant and the Vanicream gel deodorant (not antiperspirant).",
+      "context": "Used alongside Almay antiperspirant and a laundry change.",
+      "community": "r/FragranceFreeBeauty",
+      "author": "Pointe_no_more",
+      "postedAt": null,
+      "checkedAt": "2026-11-15",
+      "sentiment": "mixed",
+      "reportType": "experience",
+      "tags": [
+        "odor",
+        "clothes"
+      ],
+      "tagEvidence": {
+        "odor": "I definitely smelled worse",
+        "clothes": "my shirts had old deodorant caked on"
+      },
+      "sourceText": "I definitely smelled worse for a little while, but my body seemed to adjust and now I would say I smell less than when I used regular/fragranced deodorant. One thing that seemed to help was adding the Lysol free and clear laundry sanitizer. I think my shirts had old deodorant caked on (I used a soft stick) and the new smell would kind of stick to it. I use a combo of the Almay antiperspirant and the Vanicream gel deodorant (not antiperspirant).\nI do the Almay once every third day or so and the Vanicream the rest of the time. I apply a small amount morning and night. I don’t think it lasts as long as traditional deodorants.",
+      "sourceContextTexts": [],
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn292view4",
+        "turn279view1"
+      ]
+    },
+    {
+      "id": "interdry-1",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Zepbound/comments/1qnhl7q/comment/o221dgp/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "interdry-fabric"
+      ],
+      "productScope": "exact",
+      "productScopeNote": "InterDry fabric identified by the commenter’s product link.",
+      "quote": "This is expensive, but it works great.",
+      "context": "A brief recommendation in a skin-fold discussion, with a price reservation.",
+      "community": "r/Zepbound",
+      "author": "TreefrogsandDogs",
+      "postedAt": null,
+      "checkedAt": "2026-11-15",
+      "sentiment": "mixed",
+      "reportType": "recommendation",
+      "tags": [],
+      "tagEvidence": {},
+      "sourceText": "This is expensive, but it works great.\nhttps://www.amazon.com/Coloplast-InterDry-Textile-Antimicrobial-Complex/dp/B00427Q0VK/ref=sr_1_1?dib=eyJ2IjoiMSJ9.tU7M16b841tztV_riZvIABvosMC0ZUAdKtV4dDCsLO34uTz51X9oJTvVQkJ-6ljCrhh8YDzhqnfXLp5LVlwUnE576c71SoOF1Wk8yhyiA80Z26B82gqgncDyztbBRInVKsK7FKDlTc_SWouZsoKkSemPtVbL2BTkEF9DE-p6dPKHOjJJWJnV5jKOQrGLFKtDR6Ri6R5_hXPd6fG0sLuVS9k8it5fFI0UqFDzirOlnTeCO-ZeJNWknBtn7TzYJ4ThBhYN2AMiDaXfBGqQ-bBNY3u7h4voWyuCP1zmNFo0nS8.wAO9iVbVu78TUTiAd0LFA07Q-P7zL68T4bN01pLeyc4&dib_tag=se&keywords=interdry&qid=1769536367&sr=8-1&th=1",
+      "sourceContextTexts": [],
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn293view0",
+        "turn292view2",
+        "turn291search0"
+      ]
+    },
+    {
+      "id": "revaree-kp3ot0p",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/1ajtkq5/comment/kp3ot0p/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "revaree-original"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Revaree family; Original versus Plus was not specified.",
+      "quote": "I've been using Revaree and have found it to be very effective.",
+      "context": "The commenter also found it a little messy and used a liner at bedtime.",
+      "community": "r/Menopause",
+      "author": "castironbirb",
+      "postedAt": "2024-02-05",
+      "checkedAt": "2026-11-15",
+      "sentiment": "mixed",
+      "reportType": "experience",
+      "tags": [],
+      "tagEvidence": {},
+      "sourceText": "I've been using Revaree and have found it to be very effective. I actually like it better than the vaginal estrogen I had been using. In terms of your question, if you anticipate activities, I would suggest using it afterwards. It's easiest to use right as you go to bed. It can be a little messy so I just use a panty liner.",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn287view4",
+        "turn283view1"
+      ]
+    },
+    {
+      "id": "revaree-mrnwa8p",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/HormoneFreeMenopause/comments/1kjmka3/comment/mrnwa8p/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "revaree-original"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Revaree family; Original versus Plus was not specified.",
+      "quote": "it's oily the next morning, but that's a small price to pay for how much of a difference it makes. the actual price however..... deffo overpriced IMO, but I'm glad it exists.",
+      "context": "The commenter described benefit alongside next-morning oiliness and a high price.",
+      "community": "r/HormoneFreeMenopause",
+      "author": "priceyfrenchsoaps",
+      "postedAt": "2025-05-10",
+      "checkedAt": "2026-11-15",
+      "sentiment": "mixed",
+      "reportType": "experience",
+      "tags": [],
+      "tagEvidence": {},
+      "sourceText": "I'm not allowed any HRT at the moment (SBOTs) but I've had a great experience with revaree. it's oily the next morning, but that's a small price to pay for how much of a difference it makes. the actual price however..... deffo overpriced IMO, but I'm glad it exists.",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn303view3",
+        "turn302view3"
+      ]
+    },
+    {
+      "id": "replens-nhws4lr",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/1nynwqw/comment/nhws4lr/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "replens-moisturizer"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Replens internal moisturizer; pack size was not specified.",
+      "quote": "I reacted with more irritation when I attempted to use it.",
+      "context": "An individual irritation experience; it does not establish the cause.",
+      "community": "r/Menopause",
+      "author": "Responsible_Claim_91",
+      "postedAt": "2025-10-05",
+      "checkedAt": "2026-11-15",
+      "sentiment": "negative",
+      "reportType": "experience",
+      "tags": [
+        "reactive",
+        "irritated",
+        "vaginal_change"
+      ],
+      "tagEvidence": {
+        "reactive": "more irritation",
+        "irritated": "more irritation",
+        "vaginal_change": "internally especially"
+      },
+      "sourceText": "I've read reviews and a handful of folks post that Replens causes BV, UTIs, etc. for some of us. I reacted with more irritation when I attempted to use it. It contains glycerin (a sugar alcohol) and mineral oil and for me that does not interact well with my skin, internally especially.",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn283view3",
+        "turn281view2"
+      ]
+    },
+    {
+      "id": "replens-1xoyzdf",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/1xoyzdf/vaginal_dryness_and_burning_anything_besides/",
+      "sourceKind": "post",
+      "sourceLocator": "thread_excerpt",
+      "productIds": [
+        "replens-moisturizer"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Replens internal moisturizer; pack size was not specified.",
+      "quote": "When I did use Replens, it has worked fine but I am not crazy about the discharge and the applicator reside.",
+      "context": "The commenter reported benefit when using it, with discharge and residue as drawbacks.",
+      "community": "r/Menopause",
+      "author": "DixieDoodle697",
+      "postedAt": "2026-11-06",
+      "checkedAt": "2026-11-15",
+      "sentiment": "mixed",
+      "reportType": "experience",
+      "tags": [
+        "dryness",
+        "vaginal_change"
+      ],
+      "tagEvidence": {
+        "dryness": "dry down there",
+        "vaginal_change": "vaginal area"
+      },
+      "sourceText": "When I began menopause two years ago after my hysterectomy, my obgyn recommended to me Replens. Will totally admit that I do not use it regularly and now my vaginal area is seriously burning and dry down there. When I did use Replens, it has worked fine but I am not crazy about the discharge and the applicator reside.",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn306view0",
+        "turn271reddit26"
+      ]
+    },
+    {
+      "id": "replens-kp3re95",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/1ajtkq5/comment/kp3re95/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "replens-moisturizer"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Replens internal moisturizer; pack size was not specified.",
+      "quote": "When traveling I tend use either CVS’s generic vaginal suppository (similar to Revaree) or the prefilled Replens.",
+      "context": "Used when traveling; no specific symptom improvement was reported.",
+      "community": "r/Menopause",
+      "author": "SquirrellyPumpkin",
+      "postedAt": "2024-02-05",
+      "checkedAt": "2026-11-15",
+      "sentiment": "neutral",
+      "reportType": "experience",
+      "tags": [],
+      "tagEvidence": {},
+      "sourceText": "I like the gel version Hyalo Gyn. That company also makes a suppository version, but I haven’t tried it. When traveling I tend use either CVS’s generic vaginal suppository (similar to Revaree) or the prefilled Replens.",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn287view5",
+        "turn283view1"
+      ]
+    },
+    {
+      "id": "uberlube-m1zbrtk",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/1hdoxpa/comment/m1zbrtk/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "uberlube"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Uberlube; bottle size was not specified.",
+      "quote": "My gynecologist recommended Uberlube. It’s a little pricey but a lot better than KY.",
+      "context": "A personal preference over KY, with a price reservation.",
+      "community": "r/Menopause",
+      "author": "Deep_Nebula_8145",
+      "postedAt": "2024-12-14",
+      "checkedAt": "2026-11-15",
+      "sentiment": "mixed",
+      "reportType": "experience",
+      "tags": [],
+      "tagEvidence": {},
+      "sourceText": "My gynecologist recommended Uberlube. It’s a little pricey but a lot better than KY.",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn305view2",
+        "turn304view4"
+      ]
+    },
+    {
+      "id": "uberlube-ky8adcz",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/1bw5nc7/comment/ky8adcz/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "uberlube"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Uberlube; bottle size was not specified.",
+      "quote": "Mine suggested this one too but I personally don’t love it",
+      "context": "A reply to a recommendation naming Uberlube; no reason for the dislike was given.",
+      "community": "r/Menopause",
+      "author": "TinyCatLady1978",
+      "postedAt": "2024-04-05",
+      "checkedAt": "2026-11-15",
+      "sentiment": "negative",
+      "reportType": "experience",
+      "tags": [],
+      "tagEvidence": {},
+      "sourceText": "Mine suggested this one too but I personally don’t love it",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn303view2",
+        "turn302view2"
+      ]
+    },
+    {
+      "id": "uberlube-m1xumlp",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/1hdoxpa/comment/m1xumlp/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "uberlube"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Uberlube; bottle size was not specified.",
+      "quote": "I personally love Uber Lube, you can order it from Amazon and it comes in a pretty glass jar.",
+      "context": "The commenter used lubricant alongside prescribed vaginal estrogen.",
+      "community": "r/Menopause",
+      "author": "DamnGoodMarmalade",
+      "postedAt": "2024-12-14",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "vaginal_change"
+      ],
+      "tagEvidence": {
+        "vaginal_change": "vaginal atrophy"
+      },
+      "sourceText": "Lube is excellent for making things more comfortable. I personally love Uber Lube, you can order it from Amazon and it comes in a pretty glass jar. But lube will not reverse vaginal atrophy. Only estrogen cream can do that. I use both!",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn305view4",
+        "turn304view4"
+      ]
+    },
+    {
+      "id": "uberlube-m27vcvk",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/1hdoxpa/comment/m27vcvk/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "uberlube"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Uberlube; bottle size was not specified.",
+      "quote": "Same now that I’m older it need it. I use Uberlube and like it.",
+      "context": "A brief positive experience in a menopause lubricant discussion.",
+      "community": "r/Menopause",
+      "author": "DeeLite04",
+      "postedAt": "2024-12-15",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [],
+      "tagEvidence": {},
+      "sourceText": "Same now that I’m older it need it. I use Uberlube and like it.",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn305view3",
+        "turn304view4"
+      ]
+    },
+    {
+      "id": "frida-gbcwux0",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Healthyhooha/comments/jp7mm1/comment/gbcwux0/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "frida-peri-bottle"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Frida peri bottle; pack and version were not specified.",
+      "quote": "The FridaMom peri bottle is the Rolls Royce of peri bottles. I especially loved mine when I tore giving birth to my son.",
+      "context": "A postpartum rinsing experience, not a menopause treatment review.",
+      "community": "r/Healthyhooha",
+      "author": "hellokitschy",
+      "postedAt": null,
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [],
+      "tagEvidence": {},
+      "sourceText": "The FridaMom peri bottle is the Rolls Royce of peri bottles. I especially loved mine when I tore giving birth to my son. It’s so much better than the ones you get at the hospital and now I give it to pregnant friends as a gift, lmao.",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn287view6",
+        "turn283view2"
+      ]
+    },
+    {
+      "id": "frida-gbeepgr",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Healthyhooha/comments/jp7mm1/comment/gbeepgr/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "frida-peri-bottle"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Frida peri bottle; pack and version were not specified.",
+      "quote": "Found the Frida bottle on Amazon and it was such a relief.",
+      "context": "A rinsing experience after a vulvar procedure, not treatment for vaginal odor.",
+      "community": "r/Healthyhooha",
+      "author": "ashl_litning",
+      "postedAt": null,
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "outside"
+      ],
+      "tagEvidence": {
+        "outside": "vulvar punch biopsy"
+      },
+      "sourceText": "Yes!!! I had a vulvar punch biopsy (along with a host of other issues) and suffered for way too long trying find a way to pour water on the site. Found the Frida bottle on Amazon and it was such a relief. I've installed handheld bidets on my toilets since, but still have a couple of those peri bottles around.",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn287view7",
+        "turn283view2"
+      ]
+    },
+    {
+      "id": "poise-jyl39vp",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/166k21e/comment/jyl39vp/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "poise-light-pads"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Poise pads; the 3-drop Light variant was not confirmed.",
+      "quote": "I wear a Poise pad every single day. I have very minimal leave and they work just fine. No odor at all.",
+      "context": "The commenter described minimal leakage; the absorbency level was not specified.",
+      "community": "r/Menopause",
+      "author": "Drumwife91",
+      "postedAt": "2023-08-31",
+      "checkedAt": "2026-11-15",
+      "sentiment": "positive",
+      "reportType": "experience",
+      "tags": [
+        "odor"
+      ],
+      "tagEvidence": {
+        "odor": "No odor at all"
+      },
+      "sourceText": "I wear a Poise pad every single day. I have very minimal leave and they work just fine. No odor at all.",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn303view0",
+        "turn299reddit6"
+      ]
+    },
+    {
+      "id": "poise-jykc8wb",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/Menopause/comments/166k21e/comment/jykc8wb/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "poise-light-pads"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Poise pads; the 3-drop Light variant was not confirmed.",
+      "quote": "But, if I'm traveling or somehow limited as to when I might be able to change the pad, then I use Poise.",
+      "context": "Chosen when traveling or unable to change a liner as often.",
+      "community": "r/Menopause",
+      "author": "SquirrellyPumpkin",
+      "postedAt": "2023-08-31",
+      "checkedAt": "2026-11-15",
+      "sentiment": "neutral",
+      "reportType": "experience",
+      "tags": [
+        "urine",
+        "urine_leakage"
+      ],
+      "tagEvidence": {
+        "urine": "urine leakage",
+        "urine_leakage": "urine leakage"
+      },
+      "sourceText": "Consider the amount of urine leakage and how frequently you'd change the pads. I typically use panty liners and change when there's leakage. But, if I'm traveling or somehow limited as to when I might be able to change the pad, then I use Poise.",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn303view1",
+        "turn299reddit6"
+      ]
+    },
+    {
+      "id": "vaseline-kx6z27h",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/ultrarunning/comments/1br4qqm/comment/kx6z27h/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "vaseline-original"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Vaseline family; exact formula was not specified.",
+      "quote": "Vaseline is cheap and definitely helps for shorter distances but it never lasts long for me.",
+      "context": "A running and chafing discussion, not a menopause-specific experience.",
+      "community": "r/ultrarunning",
+      "author": "funkycrabmeat",
+      "postedAt": "2024-03-30",
+      "checkedAt": "2026-11-15",
+      "sentiment": "mixed",
+      "reportType": "experience",
+      "tags": [],
+      "tagEvidence": {},
+      "sourceText": "Prior to using Gold Bond I liked Squirrels nut butter but that stuff doesn't last as long and melts when it gets hot. Vaseline is cheap and definitely helps for shorter distances but it never lasts long for me.",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn306view2",
+        "turn305view0"
+      ]
+    },
+    {
+      "id": "vaseline-kx728im",
+      "source": "reddit",
+      "sourceUrl": "https://www.reddit.com/r/ultrarunning/comments/1br4qqm/comment/kx728im/",
+      "sourceKind": "comment",
+      "sourceLocator": "comment_permalink",
+      "productIds": [
+        "vaseline-original"
+      ],
+      "productScope": "family",
+      "productScopeNote": "Vaseline family; exact formula was not specified.",
+      "quote": "Vaseline can leave an oily stain on clothes. SNB doesn’t, so I’ve used that instead",
+      "context": "A clothing-stain concern raised in a running and chafing discussion.",
+      "community": "r/ultrarunning",
+      "author": "liamt07",
+      "postedAt": "2024-03-30",
+      "checkedAt": "2026-11-15",
+      "sentiment": "negative",
+      "reportType": "experience",
+      "tags": [],
+      "tagEvidence": {},
+      "sourceText": "Vaseline can leave an oily stain on clothes. SNB doesn’t, so I’ve used that instead",
+      "sourceVerified": true,
+      "status": "verified",
+      "retrievalRefs": [
+        "turn306view3",
+        "turn305view0"
+      ]
+    }
+  ]
+}

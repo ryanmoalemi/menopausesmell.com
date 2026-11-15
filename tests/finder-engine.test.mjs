@@ -30,7 +30,7 @@ test('urine route recommends bladder pads with a care note',()=>{const r=result(
 test('aluminum-free preference offers odor care without calling it sweat control',()=>{const r=result({concerns:['wetness'],aluminumFree:true});assert.equal(r.route,'odor-only');assert.equal(r.primary.category,'deodorant');assert.equal(r.primary.aluminumFree,true);});
 test('capsules and gummies remain distinct exact products',()=>{const cap=catalog.find(x=>x.id==='uro-capsules'),gum=catalog.find(x=>x.id==='uro-gummies');assert.notEqual(cap.amazonQuery,gum.amazonQuery);assert.notEqual(cap.image,gum.image);});
 test('uncleared preview records cannot qualify for production',()=>assert.equal(eligibleProducts(a(),catalog.map(p=>({...p,publishEligible:false})),false).length,0));
-test('clothes and dampness get products for the correct job',()=>{for(const [c,category] of [['clothes','laundry'],['damp','moisture']])assert.equal(result({area:'body_folds',concerns:[c]}).primary.category,category);});
+test('clothes and dampness get products for the correct job',()=>{for(const [c,category] of [['clothes','cleanser'],['damp','moisture']])assert.equal((result({area:'body_folds',concerns:[c]}).primary.category||'cleanser'),category);});
 test('uncertain underarm answer has its own explanation and an odor product',()=>{const r=result({concerns:['unsure']});assert.equal(r.route,'odor-unsure');assert.equal(r.primary.category,'deodorant');});
 test('Amazon parameters contain fixed product and affiliate tag only',()=>{const p=catalog[2],u=new URL(amazonURL(p));assert.equal(u.hostname,'www.amazon.com');assert.deepEqual([...u.searchParams.keys()],['k','tag']);assert.equal(u.searchParams.get('tag'),'menopausewash-20');assert.equal(u.searchParams.get('k'),p.amazonQuery);});
 test('invalid catalog fails separately from no-match',()=>{assert.throws(()=>validateCatalog([]));assert.throws(()=>validateCatalog([catalog[0],catalog[0]]));assert.throws(()=>validateCatalog([{...catalog[2],ingredients:null}]));});
@@ -202,4 +202,16 @@ test('pad alternative is labeled accurately when absorbent underwear comes first
  const r=result({area:'urine_leakage',concerns:[],sensitivities:['none'],triedCategories:['pads']});
  const pad=r.recommendations.find(x=>x.product.id==='poise-light-pads');
  assert.equal(pad.role,'Prefer a light pad?');
+});
+
+test('clothing odor never pushes laundry ahead of applicable body care',()=>{
+ for(const concerns of [['clothes'],['odor','clothes'],['damp','clothes'],['chafe','clothes']]){
+  const x=a({area:'body_folds',concerns,sensitivities:['none'],tried:[]});const r=resultFor(x,catalog);
+  assert.notEqual(r.primary.category,'laundry');
+  const laundry=r.recommendations.findIndex(i=>i.product.category==='laundry');
+  assert.ok(laundry>0);
+  assert.ok(r.recommendations.slice(laundry+1).every(i=>!['cleanser','moisture','barrier'].includes(i.product.category||'cleanser')));
+ }
+ const x=a({area:'body_folds',concerns:['clothes'],sensitivities:['none'],tried:[]});
+ assert.match(resultIntro(x,resultFor(x,catalog)).title,/Body-odor care first/);
 });

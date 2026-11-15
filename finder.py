@@ -3,6 +3,7 @@ from pathlib import Path
 import hashlib
 import json
 import shutil
+from finder_reviews import public_corpus
 
 ROOT = Path(__file__).resolve().parent
 ROUTE = {"path": "/product-finder/", "title": "Find your next step", "description": "A few questions to find a useful next step."}
@@ -41,11 +42,15 @@ def build_finder(out, preview=False, *, root=ROOT, settings=None, products=None)
         if any((p.get('candidate') or p.get('browseEligible')) and (not p.get('labelVerified') or not p.get('publishEligible')) for p in products):
             raise ValueError('Finder recommendation eligibility remains unverified')
     shutil.copytree(root / 'finder_src', target)
+    corpus=json.loads((root / 'data/finder-reviews.json').read_text())
+    (target / 'reviews.json').write_text(json.dumps(public_corpus(corpus,products),indent=2,ensure_ascii=False)+'\n')
     (target / 'catalog.json').write_text(json.dumps(products, indent=2) + '\n')
     (target / 'config.json').write_text(json.dumps({'preview': preview, 'tracking_id': settings['tracking_id']}) + '\n')
     engine_version = hashlib.sha256((target / 'engine.mjs').read_bytes()).hexdigest()[:12]
     app = target / 'app.mjs'
     app.write_text(app.read_text().replace("'./engine.mjs'", f"'./engine.mjs?v={engine_version}'"))
+    review_version=hashlib.sha256((target/'reviews.mjs').read_bytes()).hexdigest()[:12]
+    app.write_text(app.read_text().replace("'./reviews.mjs'",f"'./reviews.mjs?v={review_version}'"))
     page = (target / 'index.html').read_text()
     for name in ['finder.css', 'app.mjs']:
         version = hashlib.sha256((target / name).read_bytes()).hexdigest()[:12]
