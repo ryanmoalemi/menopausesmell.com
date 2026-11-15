@@ -46,7 +46,7 @@ export function ingredientCompatible(a,p){
  return restrictions.filter(x=>x!=='other').every(x=>(p.excludesIngredients||[]).includes(x));
 }
 export function eligibleProducts(a,catalog,preview=false,category='cleanser'){
- const care=careReason(a),support=['cloth','underwear','bladder'];
+ const care=careReason(a),support=care==='skin'?['cloth','underwear','laundry']:['cloth','underwear','bladder'];
  if(care&&!support.includes(category))return [];
  if(care==='skin'&&category==='bladder')return [];
  if(care&&care!=='urine'&&category==='bladder')return [];
@@ -81,8 +81,38 @@ export function resultFor(a,catalog,preview=false){
   }
  }
  if(!products.length)return {kind:'no-match',reason:'excluded'};
- return {kind:'product',route,primary:products[0],alternatives:products.slice(1,3),gentle,care,allergyReview:allergyReviewNeeded(a),fallback,revisitsCategory:triedCategory(products[0]),triedCategory:productApproach(products[0])};
+ const primary=products[0],intimate=['outer_groin','vaginal_change','urine_leakage','unsure'].includes(a.area)||a.concerns.includes('outside');
+ let categories;
+ if(care==='skin')categories=['cloth','laundry',...(intimate?['underwear']:[])];
+ else if(care==='urine')categories=['bladder','underwear','cloth'];
+ else if(care)categories=['underwear','cloth'];
+ else if(a.area==='underarms')categories=[category,...(a.concerns.includes('both')&&category==='antiperspirant'?['deodorant']:[]),'cleanser','cloth'];
+ else categories=[category,...(a.concerns.includes('damp')?['moisture']:[]),'cleanser',...(intimate?['underwear']:[]),'cloth'];
+ // Offer distinct, relevant choices. Eligibility rules apply to every card.
+ const shortlist=[primary],seen=new Set([primary.id]);
+ for(const c of [...new Set(categories)])for(const p of list(c)){
+  if(seen.has(p.id)||shortlist.length===5)continue;
+  seen.add(p.id);shortlist.push(p);
+ }
+ const recommendations=shortlist.map((product,index)=>({product,rank:index+1,...recommendationContext(a,product,primary,care,index),revisitsCategory:triedCategory(product),triedCategory:productApproach(product)}));
+ return {kind:'product',route,primary,recommendations,alternatives:products.slice(1,3),gentle,care,allergyReview:allergyReviewNeeded(a),fallback,revisitsCategory:triedCategory(primary),triedCategory:productApproach(primary)};
 }
+function recommendationContext(a,p,primary,care,index){
+ const category=p.category||'cleanser',sameJob=category===(primary.category||'cleanser');
+ const role=index===0?'Start here':sameJob?(category==='cleanser'?(p.format==='bar'?'A bar alternative':'A liquid alternative'):'Another option to compare'):({deodorant:'An alternative for smell only',cleanser:'For the washing step',moisture:'For damp skin folds',laundry:'For your clothes and towels',bladder:'For light bladder leaks',underwear:'For a fresh, dry change',cloth:'For gentle drying'})[category];
+ const reason={
+  antiperspirant:'You mentioned wetness. This fragrance-free stick reduces underarm sweat and also targets odor.',
+  deodorant:a.concerns.some(x=>['both','wetness'].includes(x))?(primary.category==='antiperspirant'?'An alternative if odor control is your priority. This gel does not reduce sweating; choose between it and the antiperspirant.':'You selected wetness too. This aluminum-free option targets odor only; it does not reduce sweating.'):'You mentioned underarm smell. This fragrance-free gel targets odor without adding scent.',
+  cleanser:a.area==='outer_groin'||a.concerns.includes('outside')?'For gently washing the surrounding outer body skin. Keep it off the vulva and out of the vagina.':p.format==='bar'?'A bar option for the washing step on body skin. Choose one cleanser; you do not need to layer washes.':'A gentle liquid option for the washing step. Choose one cleanser rather than adding several.',
+  moisture:'You mentioned damp skin folds. This fabric helps wick moisture away where skin touches skin.',
+  laundry:care==='skin'?'For clothes and towels touching sensitive skin: wash without added perfume. This is laundry care, not a rash treatment.':'You said clothes hold the smell. This detergent is for the fabric, not your skin.',
+  bladder:'You mentioned little leaks. These pads absorb light bladder leakage and help contain urine odor.',
+  underwear:care==='vaginal'||care==='uncertain'?'A breathable, dry change for everyday comfort while you get a new intimate odor or other change checked.':'For a fresh change when underwear feels damp. Choose a comfortable fit and check the fabric blend.',
+  cloth:care==='skin'?'For gently patting intact skin dry or a cool, damp compress. Do not scrub or use it as a wound dressing.':intimateArea(a)?'For gently patting the outside skin dry with a clean cloth. No scrubbing or internal use.':'For gently drying body skin after washing. A clean cloth supports the routine; it does not treat the cause of odor.'
+ }[category];
+ return {role,reason};
+}
+function intimateArea(a){return ['outer_groin','vaginal_change','urine_leakage','unsure'].includes(a.area)||a.concerns.includes('outside');}
 export function amazonURL(product,tag='menopausewash-20'){
  if(product.exactListingVerified&&/^B[A-Z0-9]{9}$/.test(product.asin||'')){
   const u=new URL('https://www.amazon.com/dp/'+product.asin);u.searchParams.set('tag',tag);return u.href;

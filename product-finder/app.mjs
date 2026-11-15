@@ -1,4 +1,4 @@
-import {AREAS,SENSITIVITIES,ALLERGENS,CONCERNS,TRIED_CATEGORIES,triedOptions,productApproach,freshAnswers,concernKind,toggleExclusive,changeArea,careReason,routeAfterConcern,routeAfterSensitivity,resultFor,eligibleProducts,amazonURL,validateCatalog,finderPath} from './engine.mjs?v=25738faafac4';
+import {AREAS,SENSITIVITIES,ALLERGENS,CONCERNS,TRIED_CATEGORIES,triedOptions,productApproach,freshAnswers,concernKind,toggleExclusive,changeArea,careReason,routeAfterConcern,routeAfterSensitivity,resultFor,eligibleProducts,amazonURL,validateCatalog,finderPath} from './engine.mjs?v=b391ecde0d87';
 const root=document.querySelector('#finder'),dialog=document.querySelector('#finder-dialog'),dialogContent=document.querySelector('#dialog-content'),announcer=document.querySelector('#announcer');
 const systemMotion=matchMedia('(prefers-reduced-motion: reduce)');
 let answers=freshAnswers(),step='area',catalog=null,config=null,failed=false,editing=false,notice='',reduced=systemMotion.matches,opener=null,trail=[];
@@ -99,24 +99,23 @@ function matchDetails(p,r){
  if(p.fragranceFree)badges.push(['flower','Fragrance-free']);
  if(p.aluminumFree===true)badges.push(['leaf','Aluminum-free']);
  if((answers.triedCategories||[]).some(x=>x!=='nothing')&&!r.revisitsCategory)badges.push(['spark','Another approach']);
- if(r.revisitsCategory)badges.push(['bottle','Formula to compare']);
+ if(r.revisitsCategory)badges.push(['bottle','Compare with yours']);
  if(!badges.length)badges.push(['check',categoryNames[p.category||'cleanser']]);
- return `<div class="match-details"><p class="match-mini-title">${icon('spark')} Your first option</p><div class="match-badges">${badges.slice(0,2).map(([i,t])=>`<span>${icon(i)}${t}</span>`).join('')}</div>${r.revisitsCategory?`<p class="match-history">You’ve tried ${esc(TRIED_CATEGORIES[r.triedCategory]?.[0].toLowerCase()||'this type')}. Compare this formula with yours.</p>`:''}<button class="match-why" data-action="match-why">Why this fits your answers ${icon('chevron')}</button></div>`;
+ return `<div class="match-details"><p class="match-reason">${esc(r.reason)}</p><div class="match-badges">${badges.slice(0,2).map(([i,t])=>`<span>${icon(i)}${t}</span>`).join('')}</div>${r.revisitsCategory?`<p class="match-history">You’ve tried ${esc(TRIED_CATEGORIES[r.triedCategory]?.[0].toLowerCase()||'this type')}. Compare this option with yours.</p>`:''}<button class="match-why" data-action="match-why" data-value="${p.id}">Why this fits your answers ${icon('chevron')}</button></div>`;
 }
 function personalContext(r){
  const tried=answers.triedCategories.filter(x=>x!=='nothing').map(x=>TRIED_CATEGORIES[x]?.[0].toLowerCase()).filter(Boolean);
  if(!tried.length)return '';
- if(r.revisitsCategory){const label=TRIED_CATEGORIES[r.triedCategory]?.[0].toLowerCase()||'this type';return `You’ve tried ${label}. Compare this formula with yours before buying; we don’t know which one you used.`;}
+ if(r.revisitsCategory){const label=TRIED_CATEGORIES[r.triedCategory]?.[0].toLowerCase()||'this type';return `You’ve tried ${label}. Compare this option with yours before buying; we don’t know which one you used.`;}
  const before=tried.length>2?tried.slice(0,2).join(', ')+' and more':tried.join(' and ');
- const after=({antiperspirant:'sweat control',deodorant:'leave-on odor control',cleanser:r.primary.format==='bar'?'a bar instead':'a rinse-off wash',moisture:'wicking moisture away',laundry:'the clothes holding odor',bladder:'absorbing light bladder leaks',underwear:'a fresh, breathable change',cloth:'gentle skin care'})[r.primary.category||'cleanser'];
+ const p=r.product;const after=({antiperspirant:'sweat control',deodorant:'leave-on odor control',cleanser:p.format==='bar'?'a bar instead':'a rinse-off wash',moisture:'wicking moisture away',laundry:'washing clothes and towels',bladder:'absorbing light bladder leaks',underwear:'a fresh, breathable change',cloth:'gentle skin care'})[p.category||'cleanser'];
  return `You’ve tried ${before}. This option focuses on ${after}.`;
 }
 function renderResult(){
  const r=resultFor(answers,catalog,config.preview);
  if(r.kind!=='product'){renderState(r);return;}
- const p=r.primary;
  const careNotes={urine:'For new or bothersome leaks, see a clinician. Painful urination, blood in urine or fever needs prompt medical advice.',vaginal:'Get new odor, discharge, itching, burning, pain or bleeding checked. Comfort items do not treat the cause.',skin:'Avoid scrubbing or adding actives to irritated skin. Get advice for broken skin or a new, persistent or worsening rash.',uncertain:'If the smell is new, persistent or comes with other symptoms, a clinician can help identify the cause.'};
- const notes=[r.care?careNotes[r.care]:'',r.allergyReview?'Your allergy isn’t fully identified here. Check the exact label with a pharmacist before using this option.':answers.sensitivities.includes('allergy')?'We filtered the ingredients you selected using the labels we checked. Recheck the exact label before use.':''].filter(Boolean);
+ const allergyNote=r.allergyReview?'Your allergy isn’t fully identified here. Check the exact label with a pharmacist before using this option.':answers.sensitivities.includes('allergy')?'We filtered the ingredients you selected using the labels we checked. Recheck the exact label before use.':'';
  const copy={
   sweat:['Start with sweat control.','You chose '+(answers.concerns.includes('both')?'smell and wetness.':'underarm wetness.')+' Start with a fragrance-free antiperspirant for sweat control.','An option for the wetness you described.','Use on dry underarms and follow the label. If sweating is new, severe or persistent, speak with a clinician.'],
   odor:['Start with odor control.','You said the smell is the problem. This fragrance-free deodorant targets underarm odor without adding another scent.','A simple option for the smell you described.','Apply a small amount to clean underarms. This is deodorant, so it will not stop sweating.'],
@@ -128,13 +127,13 @@ function renderResult(){
   'cloth-fallback':['Keep your next step gentle.','With your earlier choices ruled out, a clean cotton cloth is a simple option for gently patting intact skin dry.'],
   leaks:['Help for little leaks.','These fragrance-free pads absorb the light bladder leaks you described and help contain odor.'],
   'comfort-intimate':['A fresh, comfortable change.','For intimate odor or a change you’re unsure about, breathable cotton underwear is a comfort option while you get the cause checked.'],
-  'comfort-skin':['A softer next step for your skin.','You said your skin is sore or irritated. A clean cotton cloth with cool water can comfort intact skin without adding another scented product.'],
+  'comfort-skin':['Keep your next step gentle.','You mentioned sore or irritated skin. These options keep the routine simple.'],
   clothes:['Give the clothes a fresh start.','You said the smell seems to stay in your clothes. Try a fragrance-free laundry detergent before adding more products to your skin.','For the fabric holding onto the smell.','Use the amount on the bottle, follow the garment care label, and dry clothes fully.'],
   damp:['Help damp skin folds stay dry.','You said the skin stays sweaty or damp. For areas where skin touches skin, this fabric helps move moisture away.','For damp folds, including under the breasts.','Start with clean, dry skin and follow the fabric instructions. Change damp clothing, too.'],
   external:['Keep outside-skin care gentle.','For sweat on outer groin skin, start gently. If you want a rinse-off cleanser for that outer body skin, this fragrance-free option fits.','An optional cleanser for outer body skin.','Water is enough for vulva care. Keep this cleanser off the vulva and out of the vagina. Dry the surrounding skin gently.'],
   wash:[r.gentle?'A gentle wash to start with.':'A washing option that fits.','You said the smell comes back after washing.'+(r.gentle?' A fragrance-free cleanser keeps the washing step gentle.':' This rinse-off option is a place to start for body skin.'),'For the washing part of your routine.','Rinse well and gently pat dry. A cleanser alone may not solve persistent odor.']
  }[r.route];
- root.innerHTML=`<div class="result-layout ${r.care?'has-care':''}">${progress()}<div class="step-content result-main"><section class="result-intro"><div class="result-heading-row"><p class="reveal-badge">${icon('spark')} Selected for you</p><button class="edit-button" data-action="edit">Edit answers</button></div><h1 tabindex="-1">${copy[0]}</h1><p class="result-reason">${copy[1]}</p>${chips()}</section>${productCard(p,{match:r})}${notes.length?`<aside class="care-note"><strong>A quick note</strong><p>${notes.map(esc).join(' ')}</p></aside>`:''}</div><div class="result-actions">${backButton()}<button class="btn secondary" data-action="more-options">${r.alternatives.length?'Compare options':'Other options'} ${icon('chevron')}</button></div>${resultFooter()}</div>`;
+ root.innerHTML=`<div class="result-layout numbered-results ${r.care?'has-care':''}">${progress()}<div class="step-content result-main"><section class="result-intro"><div class="result-heading-row"><p class="reveal-badge">${icon('spark')} Selected for you</p><div class="result-nav"><button class="result-back" data-action="back" aria-label="Back to questions">${icon('arrow')} Back</button><button class="edit-button" data-action="edit">Edit answers</button></div></div><h1 tabindex="-1">${copy[0]}</h1><p class="result-reason">${copy[1]}</p>${chips()}</section>${allergyNote?`<aside class="care-note"><strong>About your allergy</strong><p>${esc(allergyNote)}</p></aside>`:''}<div class="shortlist-intro"><h2>${r.recommendations.length===1?'Your product pick':`${r.recommendations.length} picks for your answers`}</h2><p>${r.recommendations.length===1?'Chosen for the answers you gave.':'Compare your options. You don’t need to buy them all.'}</p></div>${r.route==='sweat'||r.route==='odor-only'?`<label class="choice multi aluminum-choice"><input id="aluminum-preference" type="checkbox" name="aluminum" ${answers.aluminumFree?'checked':''}><span class="choice-label">I prefer aluminum-free options</span><span class="mark">${icon('check')}</span></label>`:''}<ol class="recommendation-list" aria-label="Recommended products">${r.recommendations.map(item=>`<li class="recommendation-item"><div class="pick-heading"><span class="pick-number">${item.rank}</span><strong>${esc(item.role)}</strong></div>${productCard(item.product,{match:item})}${item.rank===1&&r.care?`<aside class="care-note"><strong>A quick note</strong><p>${esc(careNotes[r.care])}</p></aside>`:''}</li>`).join('')}</ol></div>${resultFooter()}</div>`;
 }
 function renderState(){
  root.innerHTML=`<section class="state-result">${progress()}<div class="step-content"><h1 tabindex="-1">You’ve ruled out these options.</h1><p class="helper">We won’t recommend something you said did not work or contains an ingredient you need to avoid.</p>${chips()}<button class="btn" data-action="edit">Review my choices</button></div><div class="result-actions">${backButton()}<button class="btn secondary" data-action="start-over">Start over</button></div>${resultFooter()}</section>`;
@@ -149,10 +148,6 @@ function startOver(){
 }
 function triedNotes(){
  openDialog('What didn’t work?',`<p class="helper">Optional. The selected products are already excluded from your recommendations.</p>${selectedProducts().map(p=>`<section class="failure-details"><h3>${esc(shortName(p))}</h3><fieldset class="choices"><legend class="sr-only">Why ${esc(p.name)} did not help</legend>${[['odor',"Didn't help the smell"],['sweat',"Didn't help the sweating"],['irritated','Irritated my skin'],['disliked',"Didn't like the scent or texture"]].map(([v,l])=>choice('reason-'+p.id,v,l,{multi:true,checked:(answers.reasons[p.id]||[]).includes(v)})).join('')}</fieldset></section>`).join('')}<button class="btn" data-action="close">Done</button>`);
-}
-function moreOptions(){
- const r=resultFor(answers,catalog,config.preview);
- openDialog('Explore your options',`${r.route==='sweat'||r.route==='odor-only'?`<label class="choice multi aluminum-choice"><input id="aluminum-preference" type="checkbox" name="aluminum" ${answers.aluminumFree?'checked':''}><span class="choice-label">I prefer aluminum-free options</span><span class="mark">${icon('check')}</span></label>`:''}${r.alternatives?.length?`<h3>Another option that fits</h3>${r.alternatives.map(p=>productCard(p,{compact:true})).join('')}`:''}${approaches()}<button class="text-link" data-action="another">Start over ${icon('chevron')}</button><button class="btn secondary" data-action="close">Back to my result</button>`);
 }
 function openDialog(title,html){opener=document.activeElement;dialogContent.innerHTML=`<div class="dialog-header"><h2 id="dialog-title">${title}</h2><button class="close-dialog" data-action="close" aria-label="${title==='Your answers'?'Close answer editor':'Close dialog'}">${icon('close')}</button></div>${html}`;dialog.showModal();}
 function closeDialog(){dialog.close();opener?.focus({preventScroll:true});}
@@ -203,7 +198,7 @@ function handleChange(e){
   if(!answers.tried.includes('unknown'))answers.unknownProduct='';
   if(dialog.open){dialog.querySelectorAll('input[name="tried"]').forEach(x=>x.checked=answers.tried.includes(x.value));return;}
  }else if(t.name.startsWith('reason-')){const id=t.name.slice(7);answers.reasons[id]=toggleExclusive(answers.reasons[id]||[],t.value,[]);return;}
- else if(t.name==='aluminum'){answers.aluminumFree=t.checked;render();moreOptions();return;}
+ else if(t.name==='aluminum'){answers.aluminumFree=t.checked;render({restoreId:t.id});return;}
  else return;
  render({restoreId:t.id});
 }
@@ -225,8 +220,8 @@ function handleAction(e){
  else if(a==='routine'){answers.tried=toggleExclusive(answers.tried,'routine',['nothing','unknown']);render();if(answers.tried.includes('routine'))openDialog('At-home remedy or routine',`<p class="helper">Add a note if you want. This stays in your browser tab.</p><label for="routine-detail">What did you try? (optional)</label><textarea class="plain-input" id="routine-detail" maxlength="240" rows="3">${esc(answers.routine)}</textarea><button class="btn" data-action="routine-done">Done</button>`);}
  else if(a==='routine-done'){answers.routine=document.querySelector('#routine-detail').value.trim();closeDialog();render();}
  else if(a==='general-browse')browseProductDetails();
- else if(a==='match-why'){const r=resultFor(answers,catalog,config.preview);openDialog('Why this was selected for you',`${chips({all:true})}<p>${esc(r.primary.fact)}</p>${personalContext(r)?`<p>${esc(personalContext(r))}</p>`:''}<p class="small-note">${esc(r.primary.caveat)}</p><button class="btn" data-action="close">Back to my match</button>`);}
- else if(a==='tried-notes')triedNotes();else if(a==='more-options')moreOptions();
+ else if(a==='match-why'){const r=resultFor(answers,catalog,config.preview),item=r.recommendations?.find(x=>x.product.id===v);if(!item)return;openDialog('Why this was selected for you',`<h3>${esc(item.product.name)}</h3>${chips({all:true})}<p>${esc(item.reason)}</p>${personalContext(item)?`<p>${esc(personalContext(item))}</p>`:''}<p class="small-note">${esc(item.product.caveat)}</p><button class="btn" data-action="close">Back to my picks</button>`);}
+ else if(a==='tried-notes')triedNotes();
  else if(a==='clarify'){answers.concerns=[v];render({focus:true});}
  else if(a==='care-notes')careNotes();else if(a==='disclosure')disclosure();
  else if(a==='details')details(v);else if(a==='approach')approach(v);else if(a==='privacy')privacy();else if(a==='retry')load();

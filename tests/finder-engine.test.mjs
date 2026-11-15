@@ -89,3 +89,42 @@ test('all combinations of visible category history retain a supported result',()
   }
  }
 });
+test('odor and wetness can offer five distinct useful picks with the primary first',()=>{
+ const r=result({concerns:['both'],sensitivities:['none'],tried:[]});
+ assert.equal(r.recommendations.length,5);assert.equal(r.recommendations[0].product.id,r.primary.id);
+ assert.equal(new Set(r.recommendations.map(x=>x.product.id)).size,5);
+ assert.deepEqual(r.recommendations.map(x=>x.rank),[1,2,3,4,5]);
+ assert.match(r.recommendations.find(x=>x.product.category==='deodorant').reason,/does not reduce sweating/);
+});
+test('the sore-skin example shows cloth and laundry care without a harsh wash',()=>{
+ const r=result({area:'body_folds',concerns:['rash'],sensitivities:['none'],triedCategories:['soap','body_wash','deodorant'],tried:[]});
+ assert.deepEqual(r.recommendations.map(x=>x.product.id),['utopia-washcloths','tide-free-gentle']);
+ assert.match(r.recommendations[1].reason,/not a rash treatment/);
+});
+test('every shortlisted item respects allergies, exact failures, and body area',()=>{
+ for(const area of ['underarms','body_folds','outer_groin','vaginal_change','urine_leakage','unsure']){
+  const kind=area==='underarms'?'underarms':['vaginal_change','unsure'].includes(area)?'intimate':'body';
+  for(const [concern] of CONCERNS[kind])for(const allergy of [null,...ALLERGENS.map(x=>x[0])]){
+   const x=a({area,concerns:area==='urine_leakage'?[]:[concern],sensitivities:allergy?['allergy']:['reactive'],allergies:allergy?[allergy]:[],tried:['mirai-unscented-bar'],triedCategories:['soap','body_wash']});
+   const r=resultFor(x,catalog);assert.ok(r.recommendations.length>=1&&r.recommendations.length<=5);
+   assert.equal(new Set(r.recommendations.map(i=>i.product.id)).size,r.recommendations.length);
+   for(const item of r.recommendations){
+    const p=item.product;assert.ok(eligibleProducts(x,catalog,false,p.category||'cleanser').some(y=>y.id===p.id));
+    assert.ok(p.candidate&&p.publishEligible&&p.labelVerified);assert.ok(item.reason&&item.role);assert.ok(!x.tried.includes(p.id));
+    if(allergy&&allergy!=='other')assert.ok(p.excludesIngredients.includes(allergy));
+    assert.notEqual(p.category,'probiotic');
+   }
+  }
+ }
+});
+test('care shortlists never add an active skin treatment to reach five',()=>{
+ for(const x of [a({concerns:['rash']}),a({area:'vaginal_change',concerns:['change']}),a({area:'urine_leakage',concerns:[]})]){
+  const r=resultFor(x,catalog);assert.ok(r.recommendations.length<5);
+  for(const item of r.recommendations)assert.ok(['cloth','laundry','underwear','bladder'].includes(item.product.category));
+ }
+});
+test('aluminum-free applies to every recommendation',()=>{
+ const r=result({concerns:['both'],aluminumFree:true,tried:[],sensitivities:['none']});
+ assert.ok(r.recommendations.every(x=>x.product.aluminumFree!==false));
+ assert.ok(r.recommendations.every(x=>x.product.category!=='antiperspirant'));
+});
