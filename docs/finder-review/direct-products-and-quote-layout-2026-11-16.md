@@ -20,3 +20,7 @@ The selected positive quote appears before the Amazon action in document order. 
 - Source/context dialog works and preserves the original comment, attribution, context, source URL and variant limitation.
 
 Raw measurements: `quote-viewport-checks-2026-11-16.json`.
+
+## Live confirmation
+
+Application release `844ad33f818c17e4f6dce019b4990a68f6b64d4b` deployed successfully through GitHub Pages. The live finder was walked through again after deployment. Its opening screen has 18px choices, a 38px heading and 960px content width. The live result shows the quote ending at y=600 and the Amazon button beginning at y=634; the direct B07FKQGN7F URL includes the correct affiliate tag. No horizontal overflow was observed. Screenshots: `live-larger-questionnaire-2026-11-16.jpg` and `live-quote-before-amazon-2026-11-16.jpg`.
