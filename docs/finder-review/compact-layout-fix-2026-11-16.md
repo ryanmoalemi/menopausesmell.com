@@ -17,3 +17,7 @@ The finder wordmark is a normal accessible link to `/`. The existing homepage wo
 - 79 JavaScript checks, 15 Python checks and 25-page static validation passed. No recommendation logic or Amazon destinations changed.
 
 Raw measurements: `compact-layout-checks-2026-11-16.json`. These are CSS viewport checks, not physical-device certification for every possible content length.
+
+## Published check
+
+Release `0776c162b55f40165ff7836505f782578e38a4d6` deployed successfully. On the live site, all six opening options appeared in two columns without an internal scrollbar, and the logo navigated to `https://menopausewash.com/`. The reproduced Mirai result begins at y=164 in the live 1348px-wide desktop viewport; its quote ends at y=427 and Amazon button at y=517. Screenshots: `live-six-options-2026-11-16.jpg` and `live-compact-result-2026-11-16.jpg`.
