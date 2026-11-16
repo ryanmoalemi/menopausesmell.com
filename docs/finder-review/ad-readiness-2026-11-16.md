@@ -35,3 +35,9 @@ The questionnaire's practical advantage is a fast, repeatable decision: correct 
 Product facts and benefit sources are recorded per product in data/finder-products.json. InterDry compatibility: https://www.coloplast.us/Global/US/Skin%20Care/Interdry/HealthTrust-TryInterDry/SC-M5105N-InterDry-Instructions-Poster.pdf
 
 Google configuration and consent behavior: https://developers.google.com/analytics/devguides/collection/ga4/reference/config and https://developers.google.com/tag-platform/security/concepts/consent-mode
+
+## Published verification
+
+Release 47c747553d1bcf3c9ea29cf8c48eee01aacd17c4 deployed successfully. Live checks confirmed the InterDry exclusion, unknown-allergy review without shopping, benefits, Amazon CTA wording and the underarm alternative explanation. No site errors appeared in the inspected console logs. The final automated run passed 78 JavaScript checks and 15 Python build/review checks.
+
+![Published product result](live-result-2026-11-16.jpg)
