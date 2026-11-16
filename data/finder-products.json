@@ -32,14 +32,14 @@
   {
     "id": "mirai-unscented-bar",
     "name": "Mirai Clinical Persimmon Soap",
-    "variant": "Unscented bar",
+    "variant": "Unscented bar · 3.5 oz / 100 g",
     "image": "/assets/mirai-unscented-soap.webp",
     "format": "bar",
     "candidate": true,
     "labelVerified": true,
     "publishEligible": true,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "gentle": false,
     "fragranceFree": true,
     "areas": [
@@ -73,19 +73,26 @@
       "Rinse-off bar with persimmon and green tea extracts."
     ],
     "benefitsSource": "https://miraiclinical.com/products/deodorizing-soap-with-persimmon",
-    "benefitsChecked": "2026-11-16"
+    "benefitsChecked": "2026-11-16",
+    "asin": "B0DP37D91R",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://zambia.desertcart.com/products/6655157",
+      "https://www.ebay.com/p/19078692474"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   },
   {
     "id": "vanicream-gentle-body-wash",
     "name": "Vanicream Gentle Body Wash",
-    "variant": "Rinse-off cleanser",
+    "variant": "Rinse-off cleanser · 12 fl oz",
     "image": "/assets/vanicream.webp",
     "format": "liquid",
     "candidate": true,
     "labelVerified": true,
     "publishEligible": true,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "gentle": true,
     "fragranceFree": true,
     "areas": [
@@ -117,11 +124,16 @@
     "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label.",
     "benefits": [
       "Soap-free liquid for daily body cleansing.",
-      "No fragrance, botanical extracts or essential oils.",
-      "Rinses off rather than leaving an odor-control product on your skin."
+      "No fragrance, botanical extracts or essential oils."
     ],
     "benefitsSource": "https://www.vanicream.com/product/vanicream-body-wash",
-    "benefitsChecked": "2026-11-16"
+    "benefitsChecked": "2026-11-16",
+    "asin": "B07FKQGN7F",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://www.barcodespider.com/345334302124"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   },
   {
     "id": "mirai-persimmon-body-wash",
@@ -246,14 +258,14 @@
   {
     "id": "uro-capsules",
     "name": "URO Vaginal Probiotic",
-    "variant": "Capsules, not gummies",
+    "variant": "60 capsules · 1 bottle · Not gummies",
     "image": "/assets/uro-capsules.webp",
     "format": "capsules",
     "candidate": false,
     "labelVerified": true,
     "publishEligible": true,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "gentle": true,
     "fragranceFree": true,
     "areas": [
@@ -273,7 +285,14 @@
     "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
     "existingAssetSha256": "add6f7eaba41e2ce43df93580e8b9ac7941f1c8538e539d6753c7fad7b6219d3",
     "category": "probiotic",
-    "browseEligible": true
+    "browseEligible": true,
+    "asin": "B0D5FZGY8W",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://app.parseshelf.com/best-sellers/asin/B0D5FZGY8W/",
+      "https://www.asinsight.com/report/US/vaginal-probiotic"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   },
   {
     "id": "uro-gummies",
@@ -421,7 +440,7 @@
     "imageSource": "https://www.vanicream.com/dynamic-media/product/images/deodorant-vv24a-front-2806-ret-crop.jpg?gravity=center&k=oOyihXOSkq5ZjBkrweUo4w&v=galleryMedia",
     "sourcePhotoSha256": "8c0801eab8166d473475230aba81d826c2f6aa317b43f6055e538d3498a8ebb7",
     "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner’s request. Separate commercial license not verified.",
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "excludesIngredients": [
       "fragrance",
       "aluminum",
@@ -438,7 +457,14 @@
       "Simple five-ingredient gel formula."
     ],
     "benefitsSource": "https://www.vanicream.com/product/vanicream-aluminum-free-deodorant",
-    "benefitsChecked": "2026-11-16"
+    "benefitsChecked": "2026-11-16",
+    "asin": "B07BKCL9RR",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://www.barcodespider.com/345334306023",
+      "https://www.asinsight.com/report/US/vanicream-deodorant-aluminum-free"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   },
   {
     "id": "interdry-fabric",
@@ -469,7 +495,7 @@
     "imageSource": "https://products.coloplast.us/globalassets/images/product-images/wtr---multisite/interdry/interdry-us/interdryus1_650x650.png",
     "sourcePhotoSha256": "2192ce1b0bdf3ae2a9c18594decee42bafac660b5c80f2b61ae2cb470cfee18f",
     "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner’s request. Separate commercial license not verified.",
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "excludesIngredients": [
       "fragrance",
       "aluminum",
@@ -489,12 +515,19 @@
     "incompatibleWith": [
       "vaseline-original"
     ],
-    "compatibilitySource": "https://www.coloplast.us/Global/US/Skin%20Care/Interdry/HealthTrust-TryInterDry/SC-M5105N-InterDry-Instructions-Poster.pdf"
+    "compatibilitySource": "https://www.coloplast.us/Global/US/Skin%20Care/Interdry/HealthTrust-TryInterDry/SC-M5105N-InterDry-Instructions-Poster.pdf",
+    "asin": "B00427Q0VK",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://www.zazadistribution.com/product-page/coloplast-interdry-ag-textile-with-antimicrobial-silver-complex-wholesale-usa",
+      "https://costarica.yaxa.co/products/coloplast-interdry-ag-textil-con-complejo-de-plata-antimicrobiana-rollo-de-10-x-12-pies"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   },
   {
     "id": "tide-free-gentle",
     "name": "Tide Free & Gentle",
-    "variant": "Liquid laundry detergent · fragrance-free",
+    "variant": "Fragrance-free liquid · 84 fl oz",
     "category": "laundry",
     "format": "liquid",
     "areas": [
@@ -508,7 +541,7 @@
     "fact": "Cleans clothing without adding perfume.",
     "caveat": "For laundry, not skin. Follow garment care labels; delicate fabrics may need a different detergent.",
     "amazonQuery": "Tide Free Gentle liquid laundry detergent fragrance free",
-    "size": "Check current bottle size",
+    "size": "84 fl oz",
     "image": "/assets/finder/tide-free-gentle.png",
     "candidate": true,
     "labelVerified": true,
@@ -521,7 +554,7 @@
     "imageSource": "https://images.ctfassets.net/ajjw8wywicb3/OTym19fie2pvyHlJheFRF/17df7bafee4ed5dcf1a7e2330a0aad70/Tide_Free_and_Gentle_HDL_PI_SP_748x748_20260930.jpg?fm=png",
     "sourcePhotoSha256": "ebafd666bc88ea0a4d80bf5ecd92c91421be6f8889050e51a885a35e6f59c879",
     "imageUsage": "Manufacturer product photo used to identify the recommended product at the site owner’s request. Separate commercial license not verified.",
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "excludesIngredients": [
       "fragrance"
     ],
@@ -530,7 +563,14 @@
       "No dyes or perfumes added."
     ],
     "benefitsSource": "https://tide.com/en-us/shop/type/liquid/tide-free-and-gentle-liquid",
-    "benefitsChecked": "2026-11-16"
+    "benefitsChecked": "2026-11-16",
+    "asin": "B085V5ZMV9",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://app.parseshelf.com/best-sellers/asin/B085V5ZMV9/",
+      "https://pricehistory.app/p/tide-free-gentle-liquid-laundry-detergent-64-DnnudhQ2"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   },
   {
     "id": "poise-light-pads",
@@ -566,7 +606,7 @@
     "gentle": true,
     "fragranceFree": true,
     "order": 1,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "sourcePhotoSha256": "303fbc8b8cef46d657355af08d7b1e2f9e7fad28b7ae6225efa966cd0cbde707",
     "imageUsage": "Exact product photo for product identification requested by site owner. Separate commercial license not verified.",
     "benefits": [
@@ -575,12 +615,18 @@
       "28 regular-length pads in this version."
     ],
     "benefitsSource": "https://www.poise.com/en-us/products/incontinence-pads/ultra-thin/light-absorbency-regular-length-without-wings",
-    "benefitsChecked": "2026-11-16"
+    "benefitsChecked": "2026-11-16",
+    "asin": "B082WZGLXX",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://www.desertcart.in/products/686627457-poise-pads-gm-ultra-thin-light-regular-length-28-count"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   },
   {
     "id": "hanes-cotton-briefs",
     "name": "Hanes Breathable Cotton Briefs",
-    "variant": "10-pack · Choose your size and colors",
+    "variant": "10-pack · Opens at size 7 · Choose your size and colors",
     "category": "underwear",
     "format": "fabric",
     "areas": [
@@ -614,7 +660,7 @@
     "gentle": true,
     "fragranceFree": true,
     "order": 21,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "sourcePhotoSha256": "2500359c25af79724c6c2583710d762850ee6b1a43c2e9fa51bc2c47f708df41",
     "imageUsage": "Exact product photo for product identification requested by site owner. Separate commercial license not verified.",
     "benefits": [
@@ -622,7 +668,14 @@
       "10-pack makes a fresh change easy."
     ],
     "benefitsSource": "https://www.hanes.com/products/hanes-womens-cotton-assorted-briefs-10-pack/pw40wh",
-    "benefitsChecked": "2026-11-16"
+    "benefitsChecked": "2026-11-16",
+    "asin": "B00FZR1C7I",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://www.asinsight.com/report/US/hanes-womens-underwear-briefs",
+      "https://www.desertcart.in/products/56640282-hanes-women-s-ribbed-collar-comfort-t-shirt"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   },
   {
     "id": "utopia-washcloths",
@@ -712,7 +765,7 @@
     "labelVerified": true,
     "publishEligible": true,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "fragranceFree": true,
     "checked": "2026-11-15",
     "imageSource": "https://frida.com/cdn/shop/files/image1_02808585-6772-4239-812c-0c38174d07b9_600x.jpg?v=1789756795",
@@ -725,12 +778,19 @@
       "10 oz capacity with a travel bag."
     ],
     "benefitsSource": "https://frida.com/products/upside-down-peri-bottle",
-    "benefitsChecked": "2026-11-16"
+    "benefitsChecked": "2026-11-16",
+    "asin": "B07TXLZ8MR",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://pricehistory.app/p/frida-mom-upside-down-peri-bottle-postpartum-E3wSPpmb",
+      "https://www.asinsight.com/report/US/frida-mom-upside-down-peri-bottle"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   },
   {
     "id": "depend-silhouette",
     "name": "Depend Silhouette Incontinence Underwear",
-    "variant": "Maximum absorbency · Choose your size and pack · M pictured",
+    "variant": "Maximum absorbency · Opens at Medium, 14-count · Choose your size",
     "category": "bladder",
     "format": "disposable_underwear",
     "approach": "leak_underwear",
@@ -760,7 +820,7 @@
     "labelVerified": true,
     "publishEligible": true,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "fragranceFree": true,
     "checked": "2026-11-15",
     "imageSource": "https://target.scene7.com/is/image/Target/GUEST_e9213c42-1912-4667-aecc-fe66a250fd69?fmt=pjpeg&hei=900&wid=900",
@@ -773,7 +833,14 @@
       "No added scent or natural rubber latex."
     ],
     "benefitsSource": "https://www.depend.com/en-us/incontinence-products/women/silhouette-classic-underwear",
-    "benefitsChecked": "2026-11-16"
+    "benefitsChecked": "2026-11-16",
+    "asin": "B082WZ4419",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://cayman.desertcart.com/products/309061644-depend-silhouette-incontinence-underwear-for-women-maximum-absorbency-disposable-medium",
+      "https://www.u-buy.co.uk/product/ZYT8IOI-depend-silhouette-incontinence-underwear-for-women-maximum-absorbency-disposable-medium-lavender-tea"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   },
   {
     "id": "vaseline-original",
@@ -813,7 +880,7 @@
     "labelVerified": true,
     "publishEligible": true,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "fragranceFree": true,
     "checked": "2026-11-15",
     "imageSource": "https://assets.unileversolutions.com/v1/1474787.png",
@@ -829,7 +896,14 @@
     "benefitsChecked": "2026-11-16",
     "incompatibleWith": [
       "interdry-fabric"
-    ]
+    ],
+    "asin": "B000PKJBCI",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://www.desertcart.co.il/products/23999012-petroleum-jelly-for-dry-cracked-skin-and-eczema-relief-original",
+      "https://www.picksmartly.com/scoring-methodology/B000PKJBCI"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   },
   {
     "id": "revaree-original",
@@ -866,7 +940,7 @@
     "labelVerified": true,
     "publishEligible": true,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "fragranceFree": true,
     "checked": "2026-11-15",
     "imageSource": "https://hellobonafide.com/cdn/shop/files/Bonafide__REV30DAYSTOCKB_Shopify_Cart_2_600x.png?v=1756823829",
@@ -879,7 +953,14 @@
       "10 inserts for regular bedtime use."
     ],
     "benefitsSource": "https://hellobonafide.com/products/revaree",
-    "benefitsChecked": "2026-11-16"
+    "benefitsChecked": "2026-11-16",
+    "asin": "B07GX9NQ65",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://pricehistory.app/p/revaree-bonafide-vaginal-moisturizer-5mg-hyaluronic-acid-tTmohkQ2",
+      "https://www.merchantwords.com/asin/us/B07GX9NQ65"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   },
   {
     "id": "replens-moisturizer",
@@ -917,7 +998,7 @@
     "labelVerified": true,
     "publishEligible": true,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "fragranceFree": true,
     "checked": "2026-11-15",
     "imageSource": "https://www.replens.com/images/product-images/replens-long-lasting-moisturizer-03.jpg",
@@ -930,7 +1011,14 @@
       "8 single-use applicators in this version."
     ],
     "benefitsSource": "https://www.replens.com/en/products/replens-long-lasting-moisturizer",
-    "benefitsChecked": "2026-11-16"
+    "benefitsChecked": "2026-11-16",
+    "asin": "B001G7QR8A",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://www.desertcart.ph/products/11628384-replens-long-lasting-vaginal-moisturizer-for-vaginal-dryness-doctor-recommended",
+      "https://www.asinsight.com/report/US/replens-long-lasting-vaginal-moisturizer"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   },
   {
     "id": "uberlube",
@@ -968,7 +1056,7 @@
     "labelVerified": true,
     "publishEligible": true,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "fragranceFree": true,
     "checked": "2026-11-15",
     "imageSource": "https://uberlube.com/cdn/shop/files/home-slider-55ml-2_e1e0c6ff-6cff-43d9-b277-b9f3f2f90feb.jpg?v=1746133625&width=800",
@@ -981,6 +1069,13 @@
       "55 ml pump bottle for controlled dispensing."
     ],
     "benefitsSource": "https://uberlube.com/pages/medical",
-    "benefitsChecked": "2026-11-16"
+    "benefitsChecked": "2026-11-16",
+    "asin": "B00KDHS8PO",
+    "amazonListingChecked": "2026-11-16",
+    "amazonListingSources": [
+      "https://www.asinsight.com/market-analysis/US/uberlube",
+      "https://aruba.desertcart.com/products/48148206-uberlube-premium-silicone-lube-unscented-and-ultra-smooth-55-ml"
+    ],
+    "amazonListingVerification": "Product identity and named variant cross-referenced with public ASIN records and the manufacturer product. Amazon blocked automated access: live offer, seller, stock, price and checkout were not verified. Secondary sources are identity references only, not ingredient or clinical evidence."
   }
 ]

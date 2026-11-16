@@ -1,0 +1,99 @@
+{
+  "sourceCommit": "1b7cfc1",
+  "products": {
+    "lume-unscented-wash": {
+      "amazonQuery": "Lume Acidified Body Wash Unscented",
+      "exactListingVerified": false
+    },
+    "mirai-unscented-bar": {
+      "amazonQuery": "Mirai Clinical Persimmon Deodorizing Soap Unscented 3.5 oz",
+      "exactListingVerified": false
+    },
+    "vanicream-gentle-body-wash": {
+      "amazonQuery": "Vanicream Gentle Body Wash 12 fl oz",
+      "exactListingVerified": false
+    },
+    "mirai-persimmon-body-wash": {
+      "amazonQuery": "Mirai Clinical Purifying Deodorizing Body Wash Persimmon",
+      "exactListingVerified": false
+    },
+    "dove-ultra-sensitive": {
+      "amazonQuery": "Dove Ultra Sensitive Body Wash 10 ingredients fragrance free 18.5 oz",
+      "exactListingVerified": false
+    },
+    "ordinary-glycolic-7": {
+      "amazonQuery": "The Ordinary Glycolic Acid 7% Exfoliating Toner",
+      "exactListingVerified": false
+    },
+    "panoxyl-10-bar": {
+      "amazonQuery": "PanOxyl Acne Treatment Bar 10% Benzoyl Peroxide 4 oz",
+      "exactListingVerified": false
+    },
+    "uro-capsules": {
+      "amazonQuery": "O Positiv URO Vaginal Probiotic Capsules 60 count",
+      "exactListingVerified": false
+    },
+    "uro-gummies": {
+      "amazonQuery": "O Positiv URO Vaginal Probiotic Gummies Pink Pineapple 60 count",
+      "exactListingVerified": false
+    },
+    "rephresh-pro-b": {
+      "amazonQuery": "repHresh Pro-B Vaginal Probiotic Supplement 30 capsules",
+      "exactListingVerified": false
+    },
+    "vanicream-antiperspirant": {
+      "amazonQuery": "Vanicream Anti Perspirant Deodorant 2.25 oz",
+      "asin": "B01M7ZAQNN",
+      "exactListingVerified": true
+    },
+    "vanicream-deodorant": {
+      "amazonQuery": "Vanicream Aluminum Free Deodorant gel 2 oz",
+      "exactListingVerified": false
+    },
+    "interdry-fabric": {
+      "amazonQuery": "Coloplast InterDry 7910 moisture wicking fabric 10 x 144 inch roll",
+      "exactListingVerified": false
+    },
+    "tide-free-gentle": {
+      "amazonQuery": "Tide Free Gentle liquid laundry detergent fragrance free",
+      "exactListingVerified": false
+    },
+    "poise-light-pads": {
+      "amazonQuery": "Poise Ultra Thin bladder leak pads 3 Drop Light Regular 28 count",
+      "exactListingVerified": false
+    },
+    "hanes-cotton-briefs": {
+      "amazonQuery": "Hanes womens breathable cotton briefs 10 pack PW40WH",
+      "exactListingVerified": false
+    },
+    "utopia-washcloths": {
+      "amazonQuery": "Utopia Towels Wash Cloths 12 by 12 12 Pack white",
+      "asin": "B01N7K7EFF",
+      "exactListingVerified": true
+    },
+    "frida-peri-bottle": {
+      "amazonQuery": "Frida Mom Upside Down Peri Bottle Pink 10 oz",
+      "exactListingVerified": false
+    },
+    "depend-silhouette": {
+      "amazonQuery": "Depend Silhouette Incontinence Underwear Women Maximum Absorbency Fragrance Free",
+      "exactListingVerified": false
+    },
+    "vaseline-original": {
+      "amazonQuery": "Vaseline Original Healing Jelly 100 percent white petrolatum fragrance free 7.5 oz",
+      "exactListingVerified": false
+    },
+    "revaree-original": {
+      "amazonQuery": "Bonafide Revaree Original 5 mg Hyaluronic Acid Vaginal Moisturizer 10 Inserts",
+      "exactListingVerified": false
+    },
+    "replens-moisturizer": {
+      "amazonQuery": "Replens Long Lasting Vaginal Moisturizer 8 Pre Filled Single Use Applicators",
+      "exactListingVerified": false
+    },
+    "uberlube": {
+      "amazonQuery": "Uberlube Silicone Lubricant Unscented 55 ml",
+      "exactListingVerified": false
+    }
+  }
+}

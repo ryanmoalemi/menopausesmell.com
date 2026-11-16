@@ -32,7 +32,7 @@ test('capsules and gummies remain distinct exact products',()=>{const cap=catalo
 test('uncleared preview records cannot qualify for production',()=>assert.equal(eligibleProducts(a(),catalog.map(p=>({...p,publishEligible:false})),false).length,0));
 test('clothes and dampness get products for the correct job',()=>{for(const [c,category] of [['clothes','cleanser'],['damp','moisture']])assert.equal((result({area:'body_folds',concerns:[c]}).primary.category||'cleanser'),category);});
 test('uncertain underarm answer has its own explanation and an odor product',()=>{const r=result({concerns:['unsure']});assert.equal(r.route,'odor-unsure');assert.equal(r.primary.category,'deodorant');});
-test('Amazon parameters contain fixed product and affiliate tag only',()=>{const p=catalog[2],u=new URL(amazonURL(p));assert.equal(u.hostname,'www.amazon.com');assert.deepEqual([...u.searchParams.keys()],['k','tag']);assert.equal(u.searchParams.get('tag'),'menopausewash-20');assert.equal(u.searchParams.get('k'),p.amazonQuery);});
+test('Amazon parameters contain fixed product and affiliate tag only',()=>{const p={...catalog[2],exactListingVerified:false},u=new URL(amazonURL(p));assert.equal(u.hostname,'www.amazon.com');assert.deepEqual([...u.searchParams.keys()],['k','tag']);assert.equal(u.searchParams.get('tag'),'menopausewash-20');assert.equal(u.searchParams.get('k'),p.amazonQuery);});
 test('invalid catalog fails separately from no-match',()=>{assert.throws(()=>validateCatalog([]));assert.throws(()=>validateCatalog([catalog[0],catalog[0]]));assert.throws(()=>validateCatalog([{...catalog[2],ingredients:null}]));});
 test('finder shell and application contain no health persistence, external tracker, or simulated delay',()=>{const app=fs.readFileSync(new URL('../finder_src/app.mjs',import.meta.url),'utf8'),html=fs.readFileSync(new URL('../finder_src/index.html',import.meta.url),'utf8');assert.doesNotMatch(app,/localStorage|sessionStorage|setTimeout|setInterval|gtag\(|pushState|replaceState/);assert.doesNotMatch(html,/googletagmanager|fonts.googleapis|analytics/);assert.match(html,/no-referrer/);assert.match(html,/connect-src 'self'/);});
 
@@ -42,7 +42,7 @@ test('care flags cannot be bypassed with category browsing',()=>{for(const categ
 test('underarm antiperspirant never appears for outer groin or folds',()=>{for(const area of ['outer_groin','body_folds'])assert.deepEqual(eligibleProducts(a({area}),catalog,true,'antiperspirant'),[]);});
 test('probiotic is optional only, never an automatic odor or sweat match',()=>{for(const area of ['underarms','body_folds','outer_groin'])assert.notEqual(result({area}).primary?.category,'probiotic');});
 test('verified Amazon listing uses exact ASIN and fixed tag only',()=>{const p=catalog.find(p=>p.id==='vanicream-antiperspirant'),u=new URL(amazonURL(p));assert.equal(u.pathname,'/dp/B01M7ZAQNN');assert.deepEqual([...u.searchParams.keys()],['tag']);assert.equal(u.searchParams.get('tag'),'menopausewash-20');});
-test('unverified Amazon listing stays an explicit product search',()=>{const p=catalog.find(p=>p.id==='vanicream-deodorant'),u=new URL(amazonURL(p));assert.equal(u.pathname,'/s');assert.equal(u.searchParams.get('k'),p.amazonQuery);});
+test('unverified Amazon listing stays an explicit product search',()=>{const p={...catalog.find(p=>p.id==='vanicream-deodorant'),exactListingVerified:false},u=new URL(amazonURL(p));assert.equal(u.pathname,'/s');assert.equal(u.searchParams.get('k'),p.amazonQuery);});
 test('finder has no guide or comparison exit links',()=>{for(const path of ['../finder_src/app.mjs','../finder_src/index.html']){const text=fs.readFileSync(new URL(path,import.meta.url),'utf8');assert.doesNotMatch(text,/href=["']\/(?:body-odor|underarm-products|external-washes|gentle-care|appointment-checklist|odor-and-menopause|probiotics|ingredient-labels|when-to-get-checked)/);}});
 
 test('ordinary progress follows the four questions actually asked',()=>assert.deepEqual(finderPath(a()),['area','concern','sensitivity','tried']));
@@ -214,4 +214,19 @@ test('clothing odor never pushes laundry ahead of applicable body care',()=>{
  }
  const x=a({area:'body_folds',concerns:['clothes'],sensitivities:['none'],tried:[]});
  assert.match(resultIntro(x,resultFor(x,catalog)).title,/Body-odor care first/);
+});
+
+// Every currently shoppable product must reach its own listing with the fixed tag.
+test('all publishable recommendations and browse items have direct Amazon destinations',()=>{
+ const active=catalog.filter(p=>p.publishEligible&&(p.candidate||p.browseEligible));
+ assert.equal(active.length,16);
+ assert.equal(new Set(active.map(p=>p.asin)).size,active.length);
+ for(const p of active){
+  assert.equal(p.exactListingVerified,true,p.id);
+  assert.match(p.asin,/^B[A-Z0-9]{9}$/,p.id);
+  const u=new URL(amazonURL(p));
+  assert.equal(u.origin,'https://www.amazon.com');
+  assert.equal(u.pathname,`/dp/${p.asin}`,p.id);
+  assert.deepEqual([...u.searchParams],[['tag','menopausewash-20']],p.id);
+ }
 });

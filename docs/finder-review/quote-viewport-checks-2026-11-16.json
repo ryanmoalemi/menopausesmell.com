@@ -1,0 +1,209 @@
+[
+  {
+    "viewport": "320x740",
+    "broken": [],
+    "button": {
+      "bottom": 803.0625,
+      "height": 48,
+      "top": 755.0625
+    },
+    "height": 740,
+    "href": "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+    "overflow": false,
+    "quote": {
+      "bottom": 650.28125,
+      "height": 58.78125,
+      "top": 591.5
+    },
+    "review": {
+      "bottom": 749.0625,
+      "height": 195.75,
+      "top": 553.3125
+    },
+    "width": 320
+  },
+  {
+    "viewport": "360x800",
+    "broken": [],
+    "button": {
+      "bottom": 771.09375,
+      "height": 48,
+      "top": 723.09375
+    },
+    "height": 800,
+    "href": "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+    "overflow": false,
+    "quote": {
+      "bottom": 614.3125,
+      "height": 58.78125,
+      "top": 555.53125
+    },
+    "review": {
+      "bottom": 713.09375,
+      "height": 195.75,
+      "top": 517.34375
+    },
+    "width": 360
+  },
+  {
+    "viewport": "375x740",
+    "broken": [],
+    "button": {
+      "bottom": 730.09375,
+      "height": 48,
+      "top": 682.09375
+    },
+    "height": 740,
+    "href": "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+    "overflow": false,
+    "quote": {
+      "bottom": 577.3125,
+      "height": 58.78125,
+      "top": 518.53125
+    },
+    "review": {
+      "bottom": 676.09375,
+      "height": 195.75,
+      "top": 480.34375
+    },
+    "width": 375
+  },
+  {
+    "viewport": "390x844",
+    "broken": [],
+    "button": {
+      "bottom": 754.90625,
+      "height": 48,
+      "top": 706.90625
+    },
+    "height": 844,
+    "href": "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+    "overflow": false,
+    "quote": {
+      "bottom": 598.125,
+      "height": 58.78125,
+      "top": 539.34375
+    },
+    "review": {
+      "bottom": 696.90625,
+      "height": 195.75,
+      "top": 501.15625
+    },
+    "width": 390
+  },
+  {
+    "viewport": "430x932",
+    "broken": [],
+    "button": {
+      "bottom": 704.53125,
+      "height": 48,
+      "top": 656.53125
+    },
+    "height": 932,
+    "href": "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+    "overflow": false,
+    "quote": {
+      "bottom": 563.140625,
+      "height": 39.1875,
+      "top": 523.953125
+    },
+    "review": {
+      "bottom": 646.53125,
+      "height": 160.765625,
+      "top": 485.765625
+    },
+    "width": 430
+  },
+  {
+    "viewport": "768x1024",
+    "broken": [],
+    "button": {
+      "bottom": 764.1875,
+      "height": 52,
+      "top": 712.1875
+    },
+    "height": 1024,
+    "href": "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+    "overflow": false,
+    "quote": {
+      "bottom": 633.5625,
+      "height": 58.78125,
+      "top": 574.78125
+    },
+    "review": {
+      "bottom": 732.34375,
+      "height": 195.75,
+      "top": 536.59375
+    },
+    "width": 768
+  },
+  {
+    "viewport": "1024x900",
+    "broken": [],
+    "button": {
+      "bottom": 719.890625,
+      "height": 52,
+      "top": 667.890625
+    },
+    "height": 900,
+    "href": "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+    "overflow": false,
+    "quote": {
+      "bottom": 633.5625,
+      "height": 58.78125,
+      "top": 574.78125
+    },
+    "review": {
+      "bottom": 732.34375,
+      "height": 195.75,
+      "top": 536.59375
+    },
+    "width": 1009
+  },
+  {
+    "viewport": "1440x1100",
+    "broken": [],
+    "button": {
+      "bottom": 694.34765625,
+      "height": 51.9921875,
+      "top": 642.35546875
+    },
+    "height": 1100,
+    "href": "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+    "overflow": false,
+    "quote": {
+      "bottom": 608.4296875,
+      "height": 58.76953125,
+      "top": 549.66015625
+    },
+    "review": {
+      "bottom": 707.4140930175781,
+      "height": 196.19143676757812,
+      "top": 511.22265625
+    },
+    "width": 1440
+  },
+  {
+    "viewport": "1366x768",
+    "broken": [],
+    "button": {
+      "bottom": 694.390625,
+      "height": 52,
+      "top": 642.390625
+    },
+    "height": 768,
+    "href": "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+    "overflow": false,
+    "quote": {
+      "bottom": 608.0625,
+      "height": 58.78125,
+      "top": 549.28125
+    },
+    "review": {
+      "bottom": 706.84375,
+      "height": 195.75,
+      "top": 511.09375
+    },
+    "width": 1351
+  }
+]
