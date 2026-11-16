@@ -295,3 +295,26 @@ body:has(.result-layout) .site-header,body:has(.state-result) .site-header{displ
 .review-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:6px}.review-footer p{font-size:10px;color:var(--muted);line-height:1.5}.review-footer button{display:flex;align-items:center;gap:4px;min-height:40px;text-align:left;font-size:11px;color:var(--plum);font-weight:600}.review-footer .icon{width:13px;height:13px}
 .review-dialog-list{display:grid;gap:12px;margin:18px 0}.source-address{overflow-wrap:anywhere;font-size:11px;background:#f5f0f8;padding:12px;border-radius:10px;user-select:all}.source-quote{padding:12px 0;font-size:16px}
 @media(max-width:767px){.review-snippets{grid-template-columns:1fr}.matched-reviews{padding-top:13px;margin-top:8px}.review-heading h3{font-size:13px}.review-heading>span{font-size:10px}.review-snippet blockquote{font-size:13px}.review-footer{flex-wrap:wrap}.review-scope button{min-height:40px}.review-heading{align-items:center}}
+
+/* Benefits, purchase checks and a small starting shortlist. */
+.result-progress{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);margin:0 0 8px;grid-column:1/-1}
+.result-progress .icon{width:14px;height:14px}
+.exact-tried{border-top:1px solid var(--border);padding-top:8px;margin-top:8px}
+.exact-tried .text-link{font-size:13px;min-height:40px;display:flex;align-items:center;gap:5px;text-align:left}
+.exact-tried p{font-size:12px;line-height:1.5;color:var(--muted)}
+.product-benefits{padding-left:19px;margin:2px 0 8px;font-size:14px;line-height:1.5}
+.product-benefits li+li{margin-top:4px}
+.numbered-results .product-benefits{grid-column:1/-1;grid-row:4}
+.numbered-results .shop-caution{display:block;grid-row:5;background:#fbf4e3;border:0;border-radius:9px;padding:9px 11px}
+.numbered-results .result-buy,.numbered-results .restricted-note{grid-column:1/-1;grid-row:6}
+.numbered-results .product-details{grid-row:7}
+.numbered-results .commerce-note{grid-row:8}
+.numbered-results .matched-reviews{grid-row:9}
+.choice-instruction,.extras-note{font-size:13px;line-height:1.5;color:var(--muted);margin:0 0 10px}
+.optional-extras{border-top:1px solid var(--border);margin-top:26px;padding-top:10px}
+.optional-extras>summary{cursor:pointer;font-weight:600;font-size:15px;padding:14px 0;min-height:48px;color:var(--plum)}
+.optional-extras[open]>summary{margin-bottom:6px}
+@media(min-width:768px){
+ .numbered-results .product-benefits,.numbered-results .result-buy,.numbered-results .restricted-note{grid-column:2}
+ .numbered-results .shop-photo{grid-row:1/9;height:320px}
+}

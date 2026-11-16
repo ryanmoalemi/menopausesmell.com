@@ -114,3 +114,7 @@ Results-design references: https://docs.revenuehunt.com/how-to-guides/show-resul
 - The reported outside-sweat + urine-leaks + intimate-symptoms case now returns five applicable products. Skin warnings and ingredient exclusions apply to the full list. Dryness-only and friction-only paths do not add filler products.
 - Validation passed: 62 engine tests and 8 build tests; 25-page validation; JS syntax and diff checks. Engine tests include 567 combined intimate-concern/allergy contexts. Browser review covered 390px body-odor results, 320px concern and dryness flows, 1440px five-product results, back navigation and a fresh reset. Final preview had no broken product images or horizontal overflow. The smallest screen uses the existing scrollable question panel with the action buttons kept visible.
 - Research, manufacturer labels, social coverage limitations and Amazon session limitations are documented in [research-and-copy-2026-11-15.md](research-and-copy-2026-11-15.md). Exact new Amazon listing verification remains incomplete; those destinations are explicitly disclosed searches.
+
+## Recommendation fixes, 2026-11-16
+
+See [ad-readiness-2026-11-16.md](ad-readiness-2026-11-16.md) for the current recommendation, exact-product exclusion, benefits, purchase-check, result-order and isolated aggregate measurement changes. Earlier no-analytics descriptions above describe historical releases. Amazon searches are now labeled Find on Amazon; no additional exact listings were guessed.

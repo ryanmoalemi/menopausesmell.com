@@ -2,6 +2,7 @@
 from pathlib import Path
 import hashlib
 import json
+import re
 import shutil
 from finder_reviews import public_corpus
 
@@ -45,10 +46,17 @@ def build_finder(out, preview=False, *, root=ROOT, settings=None, products=None)
     corpus=json.loads((root / 'data/finder-reviews.json').read_text())
     (target / 'reviews.json').write_text(json.dumps(public_corpus(corpus,products),indent=2,ensure_ascii=False)+'\n')
     (target / 'catalog.json').write_text(json.dumps(products, indent=2) + '\n')
-    (target / 'config.json').write_text(json.dumps({'preview': preview, 'tracking_id': settings['tracking_id']}) + '\n')
+    measurement_id='' if preview else json.loads((root/'data/search-services.json').read_text()).get('ga4_measurement_id','')
+    if measurement_id and not re.fullmatch(r'G-[A-Z0-9]+',measurement_id):
+        raise ValueError('Invalid finder measurement ID')
+    (target / 'config.json').write_text(json.dumps({'preview': preview, 'tracking_id': settings['tracking_id'], 'measurement_id': measurement_id}) + '\n')
+    metrics=target/'metrics-frame.js'
+    metrics.write_text(metrics.read_text().replace('__MEASUREMENT_ID__',measurement_id))
     engine_version = hashlib.sha256((target / 'engine.mjs').read_bytes()).hexdigest()[:12]
     app = target / 'app.mjs'
     app.write_text(app.read_text().replace("'./engine.mjs'", f"'./engine.mjs?v={engine_version}'"))
+    metrics_version=hashlib.sha256((target/'metrics.mjs').read_bytes()).hexdigest()[:12]
+    app.write_text(app.read_text().replace("'./metrics.mjs'",f"'./metrics.mjs?v={metrics_version}'"))
     review_version=hashlib.sha256((target/'reviews.mjs').read_bytes()).hexdigest()[:12]
     app.write_text(app.read_text().replace("'./reviews.mjs'",f"'./reviews.mjs?v={review_version}'"))
     page = (target / 'index.html').read_text()

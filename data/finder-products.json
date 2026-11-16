@@ -67,7 +67,13 @@
       "adhesive",
       "latex"
     ],
-    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label."
+    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label.",
+    "benefits": [
+      "Cleanses body skin without added fragrance.",
+      "Rinse-off bar with persimmon and green tea extracts."
+    ],
+    "benefitsSource": "https://miraiclinical.com/products/deodorizing-soap-with-persimmon",
+    "benefitsChecked": "2026-11-16"
   },
   {
     "id": "vanicream-gentle-body-wash",
@@ -108,7 +114,14 @@
       "adhesive",
       "latex"
     ],
-    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label."
+    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label.",
+    "benefits": [
+      "Soap-free liquid for daily body cleansing.",
+      "No fragrance, botanical extracts or essential oils.",
+      "Rinses off rather than leaving an odor-control product on your skin."
+    ],
+    "benefitsSource": "https://www.vanicream.com/product/vanicream-body-wash",
+    "benefitsChecked": "2026-11-16"
   },
   {
     "id": "mirai-persimmon-body-wash",
@@ -367,7 +380,14 @@
       "adhesive",
       "latex"
     ],
-    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label."
+    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label.",
+    "benefits": [
+      "Reduces underarm sweat and controls odor.",
+      "Fragrance-free solid stick.",
+      "2.25 oz size for daily underarm use."
+    ],
+    "benefitsSource": "https://www.vanicream.com/product/vanicream-antiperspirant-deodorant",
+    "benefitsChecked": "2026-11-16"
   },
   {
     "id": "vanicream-deodorant",
@@ -411,7 +431,14 @@
       "adhesive",
       "latex"
     ],
-    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label."
+    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label.",
+    "benefits": [
+      "Controls underarm odor without aluminum.",
+      "No added fragrance to mask the smell.",
+      "Simple five-ingredient gel formula."
+    ],
+    "benefitsSource": "https://www.vanicream.com/product/vanicream-aluminum-free-deodorant",
+    "benefitsChecked": "2026-11-16"
   },
   {
     "id": "interdry-fabric",
@@ -424,9 +451,9 @@
     ],
     "source": "https://products.coloplast.us/coloplast/skin-care/interdry-us/interdry/",
     "ingredients": "Silver-coated polyester fabric. Material information, not a topical ingredient list.",
-    "labelDirections": "Clean and thoroughly dry the skin fold. Place a single layer in the fold with at least 2 inches exposed to air. Follow the package instructions. Do not use on open wounds or with a known silver sensitivity.",
+    "labelDirections": "Clean and thoroughly dry the skin fold. Place a single layer in the fold with at least 2 inches exposed to air. Follow the package instructions. Do not use on open wounds or with a known silver sensitivity. Do not use creams, ointments or powders with InterDry. Remove before bathing and follow replacement instructions on the pack.",
     "fact": "Wicks moisture away where skin touches skin.",
-    "caveat": "For skin folds. Contains silver. Do not use on open wounds or with silver sensitivity.",
+    "caveat": "Contains silver. Do not use on open wounds, with silver sensitivity, or with creams, ointments or powders in the same fold.",
     "amazonQuery": "Coloplast InterDry 7910 moisture wicking fabric 10 x 144 inch roll",
     "size": "10 × 144 in roll",
     "directionsSource": "https://www.coloplast.us/Global/US/Skin%20Care/Interdry/HealthTrust-TryInterDry/SC-M5105N-InterDry-Instructions-Poster.pdf",
@@ -451,7 +478,18 @@
       "adhesive",
       "latex"
     ],
-    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label."
+    "ingredientScreeningBasis": "Checked against the recorded manufacturer formula or fabric composition, not a certification of allergy safety. Recheck the purchased label.",
+    "benefits": [
+      "Wicks moisture out of skin folds.",
+      "Soft fabric reduces skin-to-skin friction.",
+      "Cut the roll to fit the fold; leave an edge exposed to air."
+    ],
+    "benefitsSource": "https://products.coloplast.us/coloplast/skin-care/interdry-us/interdry/",
+    "benefitsChecked": "2026-11-16",
+    "incompatibleWith": [
+      "vaseline-original"
+    ],
+    "compatibilitySource": "https://www.coloplast.us/Global/US/Skin%20Care/Interdry/HealthTrust-TryInterDry/SC-M5105N-InterDry-Instructions-Poster.pdf"
   },
   {
     "id": "tide-free-gentle",
@@ -486,7 +524,13 @@
     "exactListingVerified": false,
     "excludesIngredients": [
       "fragrance"
-    ]
+    ],
+    "benefits": [
+      "Cleans odor-holding clothes and towels.",
+      "No dyes or perfumes added."
+    ],
+    "benefitsSource": "https://tide.com/en-us/shop/type/liquid/tide-free-and-gentle-liquid",
+    "benefitsChecked": "2026-11-16"
   },
   {
     "id": "poise-light-pads",
@@ -524,7 +568,14 @@
     "order": 1,
     "exactListingVerified": false,
     "sourcePhotoSha256": "303fbc8b8cef46d657355af08d7b1e2f9e7fad28b7ae6225efa966cd0cbde707",
-    "imageUsage": "Exact product photo for product identification requested by site owner. Separate commercial license not verified."
+    "imageUsage": "Exact product photo for product identification requested by site owner. Separate commercial license not verified.",
+    "benefits": [
+      "Absorbs light urine leaks inside your own underwear.",
+      "Thin, fragrance-free pad format.",
+      "28 regular-length pads in this version."
+    ],
+    "benefitsSource": "https://www.poise.com/en-us/products/incontinence-pads/ultra-thin/light-absorbency-regular-length-without-wings",
+    "benefitsChecked": "2026-11-16"
   },
   {
     "id": "hanes-cotton-briefs",
@@ -565,7 +616,13 @@
     "order": 21,
     "exactListingVerified": false,
     "sourcePhotoSha256": "2500359c25af79724c6c2583710d762850ee6b1a43c2e9fa51bc2c47f708df41",
-    "imageUsage": "Exact product photo for product identification requested by site owner. Separate commercial license not verified."
+    "imageUsage": "Exact product photo for product identification requested by site owner. Separate commercial license not verified.",
+    "benefits": [
+      "Breathable cotton for everyday comfort.",
+      "10-pack makes a fresh change easy."
+    ],
+    "benefitsSource": "https://www.hanes.com/products/hanes-womens-cotton-assorted-briefs-10-pack/pw40wh",
+    "benefitsChecked": "2026-11-16"
   },
   {
     "id": "utopia-washcloths",
@@ -610,7 +667,14 @@
     "fragranceFree": true,
     "order": 22,
     "sourcePhotoSha256": "3bdd5221ca87ce5076e2c0ad2d28c605402d1ae137e3943d640d66a522052410",
-    "imageUsage": "Exact product photo for product identification requested by site owner. Separate commercial license not verified."
+    "imageUsage": "Exact product photo for product identification requested by site owner. Separate commercial license not verified.",
+    "benefits": [
+      "Soft cotton for gentle pat-drying.",
+      "Washable 12-pack for a clean cloth each time.",
+      "Compact 12 × 12 inch size."
+    ],
+    "benefitsSource": "https://www.utopiadeals.com/products/washcloths",
+    "benefitsChecked": "2026-11-16"
   },
   {
     "id": "frida-peri-bottle",
@@ -654,7 +718,14 @@
     "imageSource": "https://frida.com/cdn/shop/files/image1_02808585-6772-4239-812c-0c38174d07b9_600x.jpg?v=1789756795",
     "sourcePhotoSha256": "6134a1f582cf61c3ab2d41f9946ea3d39632f8d2d1e83126bc5196f6c8201af9",
     "imageRightsStatus": "Manufacturer or retailer product-identification photo requested by site owner; no independent commercial-rights certification.",
-    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label."
+    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label.",
+    "benefits": [
+      "Angled nozzle makes an external water rinse easier.",
+      "Needs plain water, with no added cleanser.",
+      "10 oz capacity with a travel bag."
+    ],
+    "benefitsSource": "https://frida.com/products/upside-down-peri-bottle",
+    "benefitsChecked": "2026-11-16"
   },
   {
     "id": "depend-silhouette",
@@ -695,7 +766,14 @@
     "imageSource": "https://target.scene7.com/is/image/Target/GUEST_e9213c42-1912-4667-aecc-fe66a250fd69?fmt=pjpeg&hei=900&wid=900",
     "sourcePhotoSha256": "4608cb618e8824e487b5f60e89e70af33eb9752bdb0f780970ce692cafc15bde",
     "imageRightsStatus": "Manufacturer or retailer product-identification photo requested by site owner; no independent commercial-rights certification.",
-    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label."
+    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label.",
+    "benefits": [
+      "Pull-on protection with fuller coverage than a light pad.",
+      "Maximum-absorbency option for bladder leaks.",
+      "No added scent or natural rubber latex."
+    ],
+    "benefitsSource": "https://www.depend.com/en-us/incontinence-products/women/silhouette-classic-underwear",
+    "benefitsChecked": "2026-11-16"
   },
   {
     "id": "vaseline-original",
@@ -741,7 +819,17 @@
     "imageSource": "https://assets.unileversolutions.com/v1/1474787.png",
     "sourcePhotoSha256": "4a97af11056866ab5163168d84d6aea4cb36906b33ab4e4d3dbe01a007e04189",
     "imageRightsStatus": "Manufacturer or retailer product-identification photo requested by site owner; no independent commercial-rights certification.",
-    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label."
+    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label.",
+    "benefits": [
+      "Forms a barrier against moisture and friction on intact skin.",
+      "One ingredient: 100% white petrolatum.",
+      "Original formula has no added fragrance."
+    ],
+    "benefitsSource": "https://www.vaseline.com/us/en/p/vaseline-healing-jelly-original.html/00305212352009",
+    "benefitsChecked": "2026-11-16",
+    "incompatibleWith": [
+      "interdry-fabric"
+    ]
   },
   {
     "id": "revaree-original",
@@ -784,7 +872,14 @@
     "imageSource": "https://hellobonafide.com/cdn/shop/files/Bonafide__REV30DAYSTOCKB_Shopify_Cart_2_600x.png?v=1756823829",
     "sourcePhotoSha256": "e2c0288e5e63b3b746f7d58cd47ea9fd3820ef06cfa23f323fba880d1bc985a0",
     "imageRightsStatus": "Manufacturer or retailer product-identification photo requested by site owner; no independent commercial-rights certification.",
-    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label."
+    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label.",
+    "benefits": [
+      "Hormone-free moisture for ongoing vaginal dryness.",
+      "5 mg hyaluronic acid in each original-formula insert.",
+      "10 inserts for regular bedtime use."
+    ],
+    "benefitsSource": "https://hellobonafide.com/products/revaree",
+    "benefitsChecked": "2026-11-16"
   },
   {
     "id": "replens-moisturizer",
@@ -828,7 +923,14 @@
     "imageSource": "https://www.replens.com/images/product-images/replens-long-lasting-moisturizer-03.jpg",
     "sourcePhotoSha256": "f8def9e730a8a86fa3641ea23078a3af4c2a7189dabf03ce9c67cbe870a4afd3",
     "imageRightsStatus": "Manufacturer or retailer product-identification photo requested by site owner; no independent commercial-rights certification.",
-    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label."
+    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label.",
+    "benefits": [
+      "Hormone-free gel for ongoing vaginal dryness.",
+      "Pre-filled applicators avoid measuring a dose.",
+      "8 single-use applicators in this version."
+    ],
+    "benefitsSource": "https://www.replens.com/en/products/replens-long-lasting-moisturizer",
+    "benefitsChecked": "2026-11-16"
   },
   {
     "id": "uberlube",
@@ -872,6 +974,13 @@
     "imageSource": "https://uberlube.com/cdn/shop/files/home-slider-55ml-2_e1e0c6ff-6cff-43d9-b277-b9f3f2f90feb.jpg?v=1746133625&width=800",
     "sourcePhotoSha256": "dbd47a57c9c4e843cdaf8b65b1378e5bad6ae2c9696ba9f4556065506512086c",
     "imageRightsStatus": "Manufacturer or retailer product-identification photo requested by site owner; no independent commercial-rights certification.",
-    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label."
+    "ingredientScreeningBasis": "Recorded exact formula/materials and stated exclusions only; not a certification of allergy safety. Recheck the purchased label.",
+    "benefits": [
+      "Adds slip to reduce friction during intimacy.",
+      "Unscented silicone formula with four ingredients.",
+      "55 ml pump bottle for controlled dispensing."
+    ],
+    "benefitsSource": "https://uberlube.com/pages/medical",
+    "benefitsChecked": "2026-11-16"
   }
 ]

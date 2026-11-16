@@ -1,0 +1,3856 @@
+{
+  "date": "2026-11-16",
+  "method": "Actual browser controls in responsive preview; 50 mobile and 50 desktop journeys. Optional extras expanded before checking all product cards.",
+  "viewports": [
+    {
+      "ids": [
+        1,
+        22
+      ],
+      "width": 390,
+      "height": 844
+    },
+    {
+      "ids": [
+        23,
+        50
+      ],
+      "width": 320,
+      "height": 740
+    },
+    {
+      "ids": [
+        51,
+        100
+      ],
+      "width": 1440,
+      "height": 1100
+    }
+  ],
+  "runs": [
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "odor"
+      ],
+      "id": 1,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Aluminum+Free+Deodorant+gel+2+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-deodorant",
+        "vanicream-gentle-body-wash",
+        "mirai-unscented-bar",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "For underarm smell that bothers you.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "odor"
+      ],
+      "id": 2,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Aluminum+Free+Deodorant+gel+2+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-deodorant",
+        "vanicream-gentle-body-wash",
+        "mirai-unscented-bar",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "For underarm smell that bothers you.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "odor"
+      ],
+      "id": 3,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Aluminum+Free+Deodorant+gel+2+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-deodorant",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "For underarm smell that bothers you.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "odor"
+      ],
+      "id": 4,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "tide-free-gentle"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "soap"
+    },
+    {
+      "allergen": "aluminum",
+      "area": "underarms",
+      "benefits": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou need to avoid aluminum. These picks passed that ingredient filter using the labels we checked. Confirm the current label before use.",
+      "concerns": [
+        "odor"
+      ],
+      "id": 5,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Aluminum+Free+Deodorant+gel+2+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-deodorant",
+        "mirai-unscented-bar",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "allergy",
+      "title": "For underarm smell that bothers you.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "wetness"
+      ],
+      "id": 6,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01M7ZAQNN?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-antiperspirant",
+        "mirai-unscented-bar",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "For underarms that stay wet.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "wetness"
+      ],
+      "id": 7,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01M7ZAQNN?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-antiperspirant",
+        "vanicream-gentle-body-wash",
+        "mirai-unscented-bar",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "For underarms that stay wet.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "wetness"
+      ],
+      "id": 8,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01M7ZAQNN?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-antiperspirant",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "For underarms that stay wet.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "wetness"
+      ],
+      "id": 9,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "tide-free-gentle"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "aluminum",
+      "area": "underarms",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou need to avoid aluminum. These picks passed that ingredient filter using the labels we checked. Confirm the current label before use.",
+      "concerns": [
+        "wetness"
+      ],
+      "id": 10,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Aluminum+Free+Deodorant+gel+2+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-deodorant",
+        "vanicream-gentle-body-wash",
+        "mirai-unscented-bar",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "allergy",
+      "title": "Odor options without aluminum.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        3,
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "both"
+      ],
+      "id": 11,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01M7ZAQNN?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Aluminum+Free+Deodorant+gel+2+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-antiperspirant",
+        "vanicream-deodorant",
+        "mirai-unscented-bar",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "For underarm smell and wetness.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "both"
+      ],
+      "id": 12,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01M7ZAQNN?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Aluminum+Free+Deodorant+gel+2+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-antiperspirant",
+        "vanicream-deodorant",
+        "vanicream-gentle-body-wash",
+        "mirai-unscented-bar",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "For underarm smell and wetness.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "both"
+      ],
+      "id": 13,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01M7ZAQNN?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Aluminum+Free+Deodorant+gel+2+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-antiperspirant",
+        "vanicream-deodorant",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "For underarm smell and wetness.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "both"
+      ],
+      "id": 14,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "tide-free-gentle"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "aluminum",
+      "area": "underarms",
+      "benefits": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou need to avoid aluminum. These picks passed that ingredient filter using the labels we checked. Confirm the current label before use.",
+      "concerns": [
+        "both"
+      ],
+      "id": 15,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Aluminum+Free+Deodorant+gel+2+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-deodorant",
+        "mirai-unscented-bar",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "allergy",
+      "title": "Odor options without aluminum.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "unsure"
+      ],
+      "id": 16,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Aluminum+Free+Deodorant+gel+2+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-deodorant",
+        "vanicream-gentle-body-wash",
+        "mirai-unscented-bar",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "Not sure if it is sweat or smell?",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "unsure"
+      ],
+      "id": 17,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Aluminum+Free+Deodorant+gel+2+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-deodorant",
+        "vanicream-gentle-body-wash",
+        "mirai-unscented-bar",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "Not sure if it is sweat or smell?",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "unsure"
+      ],
+      "id": 18,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Aluminum+Free+Deodorant+gel+2+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-deodorant",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "Not sure if it is sweat or smell?",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "underarms",
+      "benefits": [
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "unsure"
+      ],
+      "id": 19,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "tide-free-gentle"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "soap"
+    },
+    {
+      "allergen": "aluminum",
+      "area": "underarms",
+      "benefits": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou need to avoid aluminum. These picks passed that ingredient filter using the labels we checked. Confirm the current label before use.",
+      "concerns": [
+        "unsure"
+      ],
+      "id": 20,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Aluminum+Free+Deodorant+gel+2+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-deodorant",
+        "mirai-unscented-bar",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "allergy",
+      "title": "Not sure if it is sweat or smell?",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "odor"
+      ],
+      "id": 21,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "mirai-unscented-bar",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "For body odor that keeps coming back.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "odor"
+      ],
+      "id": 22,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "mirai-unscented-bar",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "For body odor that keeps coming back.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "odor"
+      ],
+      "id": 23,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "For body odor that keeps coming back.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "odor"
+      ],
+      "id": 24,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "tide-free-gentle"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "damp"
+      ],
+      "id": 25,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Coloplast+InterDry+7910+moisture+wicking+fabric+10+x+144+inch+roll&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "interdry-fabric",
+        "vanicream-gentle-body-wash",
+        "mirai-unscented-bar",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "For skin folds that stay damp.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "damp"
+      ],
+      "id": 26,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Coloplast+InterDry+7910+moisture+wicking+fabric+10+x+144+inch+roll&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "interdry-fabric",
+        "vanicream-gentle-body-wash",
+        "mirai-unscented-bar",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "For skin folds that stay damp.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "damp"
+      ],
+      "id": 27,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Coloplast+InterDry+7910+moisture+wicking+fabric+10+x+144+inch+roll&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "interdry-fabric",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "For skin folds that stay damp.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "damp"
+      ],
+      "id": 28,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "tide-free-gentle"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "clothes"
+      ],
+      "id": 29,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "mirai-unscented-bar",
+        "vanicream-gentle-body-wash",
+        "tide-free-gentle",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "Body-odor care first. Fresher clothes next.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        2,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "clothes"
+      ],
+      "id": 30,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "mirai-unscented-bar",
+        "tide-free-gentle",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "Body-odor care first. Fresher clothes next.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "clothes"
+      ],
+      "id": 31,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "tide-free-gentle",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "Body-odor care first. Fresher clothes next.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "clothes"
+      ],
+      "id": 32,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "tide-free-gentle"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "chafe"
+      ],
+      "id": 33,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vaseline-original",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "Protect the skin where it rubs.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "chafe"
+      ],
+      "id": 34,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vaseline-original",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "Protect the skin where it rubs.",
+      "tried": "barrier"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "chafe"
+      ],
+      "id": 35,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vaseline-original",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "Protect the skin where it rubs.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "chafe"
+      ],
+      "id": 36,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "tide-free-gentle"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "rash"
+      ],
+      "id": 37,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "tide-free-gentle"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "rash"
+      ],
+      "id": 38,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "tide-free-gentle"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "rash"
+      ],
+      "id": 39,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "tide-free-gentle"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "rash"
+      ],
+      "id": 40,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "tide-free-gentle"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "unsure"
+      ],
+      "id": 41,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "mirai-unscented-bar",
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "A simple start for body odor.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "unsure"
+      ],
+      "id": 42,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "mirai-unscented-bar",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "A simple start for body odor.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "unsure"
+      ],
+      "id": 43,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "A simple start for body odor.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "body_folds",
+      "benefits": [
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "unsure"
+      ],
+      "id": 44,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Tide+Free+Gentle+liquid+laundry+detergent+fragrance+free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "tide-free-gentle"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "odor"
+      ],
+      "id": 45,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "For sweat on your outer groin skin.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "odor"
+      ],
+      "id": 46,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "For sweat on your outer groin skin.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "odor"
+      ],
+      "id": 47,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "For sweat on your outer groin skin.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "odor"
+      ],
+      "id": 48,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "damp"
+      ],
+      "id": 49,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "For sweat on your outer groin skin.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "damp"
+      ],
+      "id": 50,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "For sweat on your outer groin skin.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "damp"
+      ],
+      "id": 51,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "For sweat on your outer groin skin.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "damp"
+      ],
+      "id": 52,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "chafe"
+      ],
+      "id": 53,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vaseline-original",
+        "vanicream-gentle-body-wash",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "Protect the skin where it rubs.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "chafe"
+      ],
+      "id": 54,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vaseline-original",
+        "vanicream-gentle-body-wash",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "Protect the skin where it rubs.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "chafe"
+      ],
+      "id": 55,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vaseline-original",
+        "vanicream-gentle-body-wash",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "Protect the skin where it rubs.",
+      "tried": "barrier"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "chafe"
+      ],
+      "id": 56,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "rash"
+      ],
+      "id": 57,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "rash"
+      ],
+      "id": 58,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "rash"
+      ],
+      "id": 59,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "outer_groin",
+      "benefits": [
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked.",
+      "concerns": [
+        "rash"
+      ],
+      "id": 60,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "outside"
+      ],
+      "id": 61,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "For sweat on your outer groin skin.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "concerns": [
+        "outside"
+      ],
+      "id": 62,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "For sweat on your outer groin skin.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "other",
+      "area": "vaginal_change",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou mentioned an ingredient allergy, but have not identified it here. These are product details to review, not confirmed matches. Check the exact label with a pharmacist before choosing.",
+      "concerns": [
+        "outside"
+      ],
+      "id": 63,
+      "links": [],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Ingredient review needed",
+      "skin": "allergy",
+      "title": "Check your allergy before choosing.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "Before choosing a productGet new vaginal odor, discharge, itching, burning or pain checked. Bleeding after menopause needs prompt medical advice. These products do not treat the cause.",
+      "concerns": [
+        "change"
+      ],
+      "id": 64,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "hanes-cotton-briefs",
+        "frida-peri-bottle",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "Gentle care while you check the change.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "Before choosing a productGet new vaginal odor, discharge, itching, burning or pain checked. Bleeding after menopause needs prompt medical advice. These products do not treat the cause.",
+      "concerns": [
+        "change"
+      ],
+      "id": 65,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "hanes-cotton-briefs",
+        "frida-peri-bottle",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "Gentle care while you check the change.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "other",
+      "area": "vaginal_change",
+      "benefits": [
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou mentioned an ingredient allergy, but have not identified it here. These are product details to review, not confirmed matches. Check the exact label with a pharmacist before choosing.",
+      "concerns": [
+        "change"
+      ],
+      "id": 66,
+      "links": [],
+      "overflow": false,
+      "products": [
+        "hanes-cotton-briefs",
+        "frida-peri-bottle",
+        "utopia-washcloths"
+      ],
+      "review": " Ingredient review needed",
+      "skin": "allergy",
+      "title": "Check your allergy before choosing.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productFor new or bothersome leaks, ask about pelvic floor care and treatment options. Painful urination, blood in urine or fever needs prompt medical advice.",
+      "concerns": [
+        "urine"
+      ],
+      "id": 67,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Depend+Silhouette+Incontinence+Underwear+Women+Maximum+Absorbency+Fragrance+Free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Poise+Ultra+Thin+bladder+leak+pads+3+Drop+Light+Regular+28+count&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "depend-silhouette",
+        "poise-light-pads",
+        "frida-peri-bottle",
+        "vaseline-original",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "For little leaks and the smell they leave.",
+      "tried": "pads"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productFor new or bothersome leaks, ask about pelvic floor care and treatment options. Painful urination, blood in urine or fever needs prompt medical advice.",
+      "concerns": [
+        "urine"
+      ],
+      "id": 68,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Poise+Ultra+Thin+bladder+leak+pads+3+Drop+Light+Regular+28+count&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Depend+Silhouette+Incontinence+Underwear+Women+Maximum+Absorbency+Fragrance+Free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "poise-light-pads",
+        "depend-silhouette",
+        "frida-peri-bottle",
+        "vaseline-original",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "For little leaks and the smell they leave.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "other",
+      "area": "vaginal_change",
+      "benefits": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "About your allergyYou mentioned an ingredient allergy, but have not identified it here. These are product details to review, not confirmed matches. Check the exact label with a pharmacist before choosing.",
+      "concerns": [
+        "urine"
+      ],
+      "id": 69,
+      "links": [],
+      "overflow": false,
+      "products": [
+        "poise-light-pads",
+        "depend-silhouette",
+        "frida-peri-bottle",
+        "vaseline-original",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Ingredient review needed",
+      "skin": "allergy",
+      "title": "Check your allergy before choosing.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "Keep in mindIf dryness or discomfort persists, ask about vaginal estrogen and other treatments. Stop any product that irritates.",
+      "concerns": [
+        "dryness"
+      ],
+      "id": 70,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Bonafide+Revaree+Original+5+mg+Hyaluronic+Acid+Vaginal+Moisturizer+10+Inserts&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Replens+Long+Lasting+Vaginal+Moisturizer+8+Pre+Filled+Single+Use+Applicators&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "revaree-original",
+        "replens-moisturizer"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "More comfort when you feel dry.",
+      "tried": "vaginal_moisturizer"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "Keep in mindIf dryness or discomfort persists, ask about vaginal estrogen and other treatments. Stop any product that irritates.",
+      "concerns": [
+        "dryness"
+      ],
+      "id": 71,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Bonafide+Revaree+Original+5+mg+Hyaluronic+Acid+Vaginal+Moisturizer+10+Inserts&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Replens+Long+Lasting+Vaginal+Moisturizer+8+Pre+Filled+Single+Use+Applicators&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "revaree-original",
+        "replens-moisturizer"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "More comfort when you feel dry.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "other",
+      "area": "vaginal_change",
+      "benefits": [
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou mentioned an ingredient allergy, but have not identified it here. These are product details to review, not confirmed matches. Check the exact label with a pharmacist before choosing.",
+      "concerns": [
+        "dryness"
+      ],
+      "id": 72,
+      "links": [],
+      "overflow": false,
+      "products": [
+        "revaree-original",
+        "replens-moisturizer"
+      ],
+      "review": " Ingredient review needed",
+      "skin": "allergy",
+      "title": "Check your allergy before choosing.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        3
+      ],
+      "broken": [],
+      "care": "Keep in mindIf dryness or discomfort persists, ask about vaginal estrogen and other treatments. Stop any product that irritates.",
+      "concerns": [
+        "friction"
+      ],
+      "id": 73,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Uberlube+Silicone+Lubricant+Unscented+55+ml&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "uberlube"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "Less friction, more comfortable intimacy.",
+      "tried": "lubricant"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        3
+      ],
+      "broken": [],
+      "care": "Keep in mindIf dryness or discomfort persists, ask about vaginal estrogen and other treatments. Stop any product that irritates.",
+      "concerns": [
+        "friction"
+      ],
+      "id": 74,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Uberlube+Silicone+Lubricant+Unscented+55+ml&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "uberlube"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "Less friction, more comfortable intimacy.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "other",
+      "area": "vaginal_change",
+      "benefits": [
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou mentioned an ingredient allergy, but have not identified it here. These are product details to review, not confirmed matches. Check the exact label with a pharmacist before choosing.",
+      "concerns": [
+        "friction"
+      ],
+      "id": 75,
+      "links": [],
+      "overflow": false,
+      "products": [
+        "uberlube"
+      ],
+      "review": " Ingredient review needed",
+      "skin": "allergy",
+      "title": "Check your allergy before choosing.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "Before choosing a productGet new vaginal odor, discharge, itching, burning or pain checked. Bleeding after menopause needs prompt medical advice. These products do not treat the cause.",
+      "concerns": [
+        "symptoms"
+      ],
+      "id": 76,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "hanes-cotton-briefs",
+        "frida-peri-bottle",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "Gentle care while you check the change.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "Before choosing a productGet new vaginal odor, discharge, itching, burning or pain checked. Bleeding after menopause needs prompt medical advice. These products do not treat the cause.",
+      "concerns": [
+        "symptoms"
+      ],
+      "id": 77,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "hanes-cotton-briefs",
+        "frida-peri-bottle",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "Gentle care while you check the change.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "other",
+      "area": "vaginal_change",
+      "benefits": [
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou mentioned an ingredient allergy, but have not identified it here. These are product details to review, not confirmed matches. Check the exact label with a pharmacist before choosing.",
+      "concerns": [
+        "symptoms"
+      ],
+      "id": 78,
+      "links": [],
+      "overflow": false,
+      "products": [
+        "hanes-cotton-briefs",
+        "frida-peri-bottle",
+        "utopia-washcloths"
+      ],
+      "review": " Ingredient review needed",
+      "skin": "allergy",
+      "title": "Check your allergy before choosing.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "Before choosing a productA new or persistent intimate smell is worth getting checked, especially with pain, itching, discharge or bleeding.",
+      "concerns": [
+        "unsure"
+      ],
+      "id": 79,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "hanes-cotton-briefs",
+        "frida-peri-bottle",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "Gentle care while you check the change.",
+      "tried": "soap"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "Before choosing a productA new or persistent intimate smell is worth getting checked, especially with pain, itching, discharge or bleeding.",
+      "concerns": [
+        "unsure"
+      ],
+      "id": 80,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "hanes-cotton-briefs",
+        "frida-peri-bottle",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "Gentle care while you check the change.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "other",
+      "area": "vaginal_change",
+      "benefits": [
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou mentioned an ingredient allergy, but have not identified it here. These are product details to review, not confirmed matches. Check the exact label with a pharmacist before choosing.",
+      "concerns": [
+        "unsure"
+      ],
+      "id": 81,
+      "links": [],
+      "overflow": false,
+      "products": [
+        "hanes-cotton-briefs",
+        "frida-peri-bottle",
+        "utopia-washcloths"
+      ],
+      "review": " Ingredient review needed",
+      "skin": "allergy",
+      "title": "Check your allergy before choosing.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        3,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "Keep in mindIf dryness or discomfort persists, ask about vaginal estrogen and other treatments. Stop any product that irritates.",
+      "concerns": [
+        "dryness",
+        "friction"
+      ],
+      "id": 82,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Bonafide+Revaree+Original+5+mg+Hyaluronic+Acid+Vaginal+Moisturizer+10+Inserts&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Uberlube+Silicone+Lubricant+Unscented+55+ml&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Replens+Long+Lasting+Vaginal+Moisturizer+8+Pre+Filled+Single+Use+Applicators&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "revaree-original",
+        "uberlube",
+        "replens-moisturizer"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "More comfort when you feel dry.",
+      "tried": "vaginal_moisturizer"
+    },
+    {
+      "allergen": null,
+      "area": "vaginal_change",
+      "benefits": [
+        3,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "Keep in mindIf dryness or discomfort persists, ask about vaginal estrogen and other treatments. Stop any product that irritates.",
+      "concerns": [
+        "dryness",
+        "friction"
+      ],
+      "id": 83,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Bonafide+Revaree+Original+5+mg+Hyaluronic+Acid+Vaginal+Moisturizer+10+Inserts&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Uberlube+Silicone+Lubricant+Unscented+55+ml&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Replens+Long+Lasting+Vaginal+Moisturizer+8+Pre+Filled+Single+Use+Applicators&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "revaree-original",
+        "uberlube",
+        "replens-moisturizer"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "More comfort when you feel dry.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "other",
+      "area": "vaginal_change",
+      "benefits": [
+        3,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou mentioned an ingredient allergy, but have not identified it here. These are product details to review, not confirmed matches. Check the exact label with a pharmacist before choosing.",
+      "concerns": [
+        "dryness",
+        "friction"
+      ],
+      "id": 84,
+      "links": [],
+      "overflow": false,
+      "products": [
+        "revaree-original",
+        "uberlube",
+        "replens-moisturizer"
+      ],
+      "review": " Ingredient review needed",
+      "skin": "allergy",
+      "title": "Check your allergy before choosing.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "urine_leakage",
+      "benefits": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productFor new or bothersome leaks, ask about pelvic floor care and treatment options. Painful urination, blood in urine or fever needs prompt medical advice.",
+      "concerns": [],
+      "id": 85,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Poise+Ultra+Thin+bladder+leak+pads+3+Drop+Light+Regular+28+count&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Depend+Silhouette+Incontinence+Underwear+Women+Maximum+Absorbency+Fragrance+Free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "poise-light-pads",
+        "depend-silhouette",
+        "frida-peri-bottle",
+        "vaseline-original",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "For little leaks and the smell they leave.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "urine_leakage",
+      "benefits": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productFor new or bothersome leaks, ask about pelvic floor care and treatment options. Painful urination, blood in urine or fever needs prompt medical advice.",
+      "concerns": [],
+      "id": 86,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Depend+Silhouette+Incontinence+Underwear+Women+Maximum+Absorbency+Fragrance+Free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Poise+Ultra+Thin+bladder+leak+pads+3+Drop+Light+Regular+28+count&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "depend-silhouette",
+        "poise-light-pads",
+        "frida-peri-bottle",
+        "vaseline-original",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "none",
+      "title": "For little leaks and the smell they leave.",
+      "tried": "pads"
+    },
+    {
+      "allergen": null,
+      "area": "urine_leakage",
+      "benefits": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productFor new or bothersome leaks, ask about pelvic floor care and treatment options. Painful urination, blood in urine or fever needs prompt medical advice.",
+      "concerns": [],
+      "id": 87,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Poise+Ultra+Thin+bladder+leak+pads+3+Drop+Light+Regular+28+count&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Depend+Silhouette+Incontinence+Underwear+Women+Maximum+Absorbency+Fragrance+Free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "poise-light-pads",
+        "depend-silhouette",
+        "frida-peri-bottle",
+        "vaseline-original",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "For little leaks and the smell they leave.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "urine_leakage",
+      "benefits": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productFor new or bothersome leaks, ask about pelvic floor care and treatment options. Painful urination, blood in urine or fever needs prompt medical advice.",
+      "concerns": [],
+      "id": 88,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Depend+Silhouette+Incontinence+Underwear+Women+Maximum+Absorbency+Fragrance+Free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Poise+Ultra+Thin+bladder+leak+pads+3+Drop+Light+Regular+28+count&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "depend-silhouette",
+        "poise-light-pads",
+        "frida-peri-bottle",
+        "vaseline-original",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "fragrance",
+      "title": "For little leaks and the smell they leave.",
+      "tried": "pads"
+    },
+    {
+      "allergen": null,
+      "area": "urine_leakage",
+      "benefits": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productFor new or bothersome leaks, ask about pelvic floor care and treatment options. Painful urination, blood in urine or fever needs prompt medical advice.",
+      "concerns": [],
+      "id": 89,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Poise+Ultra+Thin+bladder+leak+pads+3+Drop+Light+Regular+28+count&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Depend+Silhouette+Incontinence+Underwear+Women+Maximum+Absorbency+Fragrance+Free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "poise-light-pads",
+        "depend-silhouette",
+        "frida-peri-bottle",
+        "vaseline-original",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "For little leaks and the smell they leave.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "urine_leakage",
+      "benefits": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productFor new or bothersome leaks, ask about pelvic floor care and treatment options. Painful urination, blood in urine or fever needs prompt medical advice.",
+      "concerns": [],
+      "id": 90,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Depend+Silhouette+Incontinence+Underwear+Women+Maximum+Absorbency+Fragrance+Free&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Poise+Ultra+Thin+bladder+leak+pads+3+Drop+Light+Regular+28+count&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "depend-silhouette",
+        "poise-light-pads",
+        "frida-peri-bottle",
+        "vaseline-original",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "reactive",
+      "title": "For little leaks and the smell they leave.",
+      "tried": "pads"
+    },
+    {
+      "allergen": null,
+      "area": "urine_leakage",
+      "benefits": [
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked. For new or bothersome leaks, ask about pelvic floor care and treatment options. Painful urination, blood in urine or fever needs prompt medical advice.",
+      "concerns": [],
+      "id": 91,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": null,
+      "area": "urine_leakage",
+      "benefits": [
+        3,
+        3,
+        2
+      ],
+      "broken": [],
+      "care": "Before choosing a productAvoid scrubbing or adding active products to sore or broken skin. Get a new, persistent or worsening rash checked. For new or bothersome leaks, ask about pelvic floor care and treatment options. Painful urination, blood in urine or fever needs prompt medical advice.",
+      "concerns": [],
+      "id": 92,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs"
+      ],
+      "review": " Matched to your answers",
+      "skin": "irritated",
+      "title": "Give sore skin a gentler routine.",
+      "tried": "pads"
+    },
+    {
+      "allergen": "fragrance",
+      "area": "unsure",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou need to avoid fragrance. These picks passed that ingredient filter using the labels we checked. Confirm the current label before use.",
+      "concerns": [
+        "outside"
+      ],
+      "id": 93,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "allergy",
+      "title": "For sweat on your outer groin skin.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "aluminum",
+      "area": "unsure",
+      "benefits": [
+        2,
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou need to avoid aluminum. These picks passed that ingredient filter using the labels we checked. Confirm the current label before use.",
+      "concerns": [
+        "change"
+      ],
+      "id": 94,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "hanes-cotton-briefs",
+        "frida-peri-bottle",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "allergy",
+      "title": "Gentle care while you check the change.",
+      "tried": "soap"
+    },
+    {
+      "allergen": "propylene_glycol",
+      "area": "unsure",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou need to avoid propylene glycol. These picks passed that ingredient filter using the labels we checked. Confirm the current label before use.",
+      "concerns": [
+        "urine"
+      ],
+      "id": 95,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Frida+Mom+Upside+Down+Peri+Bottle+Pink+10+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Vaseline+Original+Healing+Jelly+100+percent+white+petrolatum+fragrance+free+7.5+oz&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "frida-peri-bottle",
+        "vaseline-original",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "allergy",
+      "title": "Freshen up with a gentle water rinse.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "lanolin",
+      "area": "unsure",
+      "benefits": [
+        3,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou need to avoid lanolin. These picks passed that ingredient filter using the labels we checked. Confirm the current label before use.",
+      "concerns": [
+        "dryness"
+      ],
+      "id": 96,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Bonafide+Revaree+Original+5+mg+Hyaluronic+Acid+Vaginal+Moisturizer+10+Inserts&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/s?k=Replens+Long+Lasting+Vaginal+Moisturizer+8+Pre+Filled+Single+Use+Applicators&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "revaree-original",
+        "replens-moisturizer"
+      ],
+      "review": " Matched to your answers",
+      "skin": "allergy",
+      "title": "More comfort when you feel dry.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "silver",
+      "area": "unsure",
+      "benefits": [
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou need to avoid silver. These picks passed that ingredient filter using the labels we checked. Confirm the current label before use.",
+      "concerns": [
+        "friction"
+      ],
+      "id": 97,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Uberlube+Silicone+Lubricant+Unscented+55+ml&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "uberlube"
+      ],
+      "review": " Matched to your answers",
+      "skin": "allergy",
+      "title": "Less friction, more comfortable intimacy.",
+      "tried": "lubricant"
+    },
+    {
+      "allergen": "adhesive",
+      "area": "unsure",
+      "benefits": [
+        2,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou need to avoid adhesives. These picks passed that ingredient filter using the labels we checked. Confirm the current label before use.",
+      "concerns": [
+        "symptoms"
+      ],
+      "id": 98,
+      "links": [
+        {
+          "href": "https://www.amazon.com/s?k=Hanes+womens+breathable+cotton+briefs+10+pack+PW40WH&tag=menopausewash-20",
+          "text": "Find on Amazon "
+        },
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "allergy",
+      "title": "Gentle care while you check the change.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "latex",
+      "area": "unsure",
+      "benefits": [
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou need to avoid latex. These picks passed that ingredient filter using the labels we checked. Confirm the current label before use.",
+      "concerns": [
+        "unsure"
+      ],
+      "id": 99,
+      "links": [
+        {
+          "href": "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20",
+          "text": "View on Amazon "
+        }
+      ],
+      "overflow": false,
+      "products": [
+        "utopia-washcloths"
+      ],
+      "review": " Matched to your answers",
+      "skin": "allergy",
+      "title": "A gentler way to wash and dry.",
+      "tried": "nothing"
+    },
+    {
+      "allergen": "other",
+      "area": "unsure",
+      "benefits": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "broken": [],
+      "care": "About your allergyYou mentioned an ingredient allergy, but have not identified it here. These are product details to review, not confirmed matches. Check the exact label with a pharmacist before choosing.",
+      "concerns": [
+        "outside"
+      ],
+      "id": 100,
+      "links": [],
+      "overflow": false,
+      "products": [
+        "vanicream-gentle-body-wash",
+        "frida-peri-bottle",
+        "hanes-cotton-briefs",
+        "utopia-washcloths"
+      ],
+      "review": " Ingredient review needed",
+      "skin": "allergy",
+      "title": "Check your allergy before choosing.",
+      "tried": "soap"
+    }
+  ]
+}

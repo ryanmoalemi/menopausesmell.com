@@ -97,6 +97,8 @@ export function resultFor(a,catalog,preview=false){
  const triedCategory=p=>(a.triedCategories||[]).includes(productApproach(p));
  const list=category=>eligibleProducts(a,catalog,preview,category).filter(p=>p.candidate).sort((x,y)=>Number(triedCategory(x))-Number(triedCategory(y))||(gentle?Number(y.gentle)-Number(x.gentle):0)||x.order-y.order);
  let products=list(category),fallback=false;
+ // A failed sweat-control product cannot be replaced by a cleanser or ordinary deodorant.
+ if(!products.length&&route==='sweat'&&a.concerns.includes('wetness'))return {kind:'no-match',reason:'sweat'};
  if(!products.length){
   const alternatives=care?['rinse','underwear','cloth']:a.area==='underarms'?['deodorant','cleanser','cloth']:['cleanser','underwear','cloth'];
   for(const next of alternatives){
@@ -121,14 +123,25 @@ export function resultFor(a,catalog,preview=false){
  }
  // Cover distinct selected needs before adding alternate formulas, then comfort extras.
  const shortlist=[primary],seen=new Set([primary.id]);
- const add=p=>{if(p&&!seen.has(p.id)&&shortlist.length<5){seen.add(p.id);shortlist.push(p);}};
+ // These are presented together. Never imply an ointment can be layered under InterDry.
+ const add=p=>{if(p&&!seen.has(p.id)&&shortlist.length<5&&!shortlist.some(other=>(p.incompatibleWith||[]).includes(other.id)||(other.incompatibleWith||[]).includes(p.id))){seen.add(p.id);shortlist.push(p);}};
  const jobs=[...new Set([category,...categories])];
  for(const c of jobs)add(list(c)[0]);
  for(const c of jobs)for(const p of list(c))add(p);
  for(const c of support)for(const p of list(c))add(p);
  const recommendations=shortlist.map((product,index)=>({product,rank:index+1,...recommendationContext(a,product,primary,care,index),revisitsCategory:triedCategory(product),triedCategory:productApproach(product)}));
+ let alternativeShown=false;
+ const primaryJob=productJob(primary);
+ for(const item of recommendations){
+  const c=item.product.category||'cleanser';
+  if(item.rank===1)item.section='primary';
+  else if(productJob(item.product)===primaryJob&&!alternativeShown){item.section='alternative';alternativeShown=true;}
+  else if((c==='bladder'&&hasLeaks(a))||(c==='vaginal_moisturizer'&&a.concerns.includes('dryness'))||(c==='lubricant'&&a.concerns.includes('friction'))||(c==='moisture'&&a.concerns.includes('damp'))||(c==='barrier'&&a.concerns.includes('chafe'))||(c==='laundry'&&a.concerns.includes('clothes')))item.section='additional';
+  else item.section='optional';
+ }
  return {kind:'product',route,primary,recommendations,alternatives:products.slice(1,3),gentle,care,allergyReview:allergyReviewNeeded(a),fallback,revisitsCategory:triedCategory(primary),triedCategory:productApproach(primary)};
 }
+const productJob=p=>['antiperspirant','deodorant'].includes(p.category)?'underarm':p.category||'cleanser';
 function recommendationContext(a,p,primary,care,index){
  const category=p.category||'cleanser',sameJob=category===(primary.category||'cleanser');
  const role=index===0?'Start here':sameJob?(category==='cleanser'?(p.format==='bar'?'Prefer a bar?':'Prefer a liquid wash?'):category==='vaginal_moisturizer'?'Another moisturizer to compare':category==='bladder'?(p.format==='disposable_underwear'?'Prefer absorbent underwear?':'Prefer a light pad?'):'Another option for the same need'):({deodorant:'For smell, without sweat control',cleanser:'For washing your skin',moisture:'For damp skin folds',laundry:hasSkinWarning(a)?'For your clothes and towels':'Then, refresh the clothes holding odor',bladder:'For bladder leaks',underwear:'For a fresh, dry change',cloth:'For drying without rubbing',rinse:'For a gentle water rinse',barrier:'For protecting outside skin',vaginal_moisturizer:'For everyday vaginal dryness',lubricant:'For less friction during sex'})[category];
@@ -211,6 +224,7 @@ export function validateCatalog(data){
   if(!p.id||ids.has(p.id)||!p.name||!p.variant||!p.image||!Array.isArray(p.areas))throw Error('Invalid product data');
   ids.add(p.id);
   if((p.candidate||p.browseEligible)&&p.labelVerified&&(!p.ingredients||!p.source||!p.checked||!p.labelDirections))throw Error('Missing verified product context');
+  if(p.candidate&&(!Array.isArray(p.benefits)||p.benefits.length<2||p.benefits.length>3||p.benefits.some(x=>typeof x!=='string'||!x.trim())||!p.benefitsSource))throw Error('Missing verified product benefits');
  }
  return data;
 }
