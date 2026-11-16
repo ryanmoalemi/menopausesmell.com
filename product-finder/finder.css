@@ -404,3 +404,49 @@ body:has(.result-layout) .site-header,body:has(.state-result) .site-header{displ
 @media(max-width:767px) and (max-height:760px){
  .numbered-results .shortlist-intro{display:none}
 }
+
+/* A complete first question and a short lead-in to the actual products. */
+.area-screen{max-height:none}
+.area-screen .step-content{overflow:visible;flex:none;overscroll-behavior:auto}
+.finder-shell:has(.numbered-results){padding-top:4px}
+.numbered-results .result-intro h1{font-size:27px;line-height:1.22;margin:4px 0 6px;letter-spacing:-.4px}
+.numbered-results:not(.has-care) .result-reason{display:none}
+.numbered-results .result-heading-row{margin:0;min-height:32px}
+.numbered-results .reveal-badge{padding:5px 9px;font-size:12px}
+.numbered-results .result-nav .edit-button,.numbered-results .result-back{min-height:32px;font-size:13px}
+.numbered-results .recommendation-list{margin-top:4px}
+.numbered-results .pick-heading{margin-bottom:4px}
+.numbered-results .pick-number{width:26px;height:26px;font-size:14px}
+.numbered-results .shop-card{align-content:start}
+@media(min-width:768px){
+ .site-header{height:54px}
+ .finder-shell{padding-top:10px}
+ .finder-shell:has(.area-screen){padding-bottom:10px}
+ .area-screen .finder-introduction{padding:8px 12px;margin-bottom:9px;font-size:15px}
+ .area-screen .finder-introduction .intro-title{font-size:18px;margin-bottom:2px}
+ .area-screen .journey-progress{margin-bottom:10px}
+ .area-screen .progress-caption{font-size:13px;margin-bottom:5px}
+ .area-screen .progress{font-size:12px}
+ .area-screen .step-node{width:28px;height:28px}
+ .area-screen .step-node .icon{width:16px;height:16px}
+ .area-screen .step-track{top:11px;height:6px}
+ .area-screen h1{font-size:32px}
+ .area-screen .helper{font-size:16px;margin:5px 0 10px}
+ .area-screen .area-grid{grid-template-columns:148px minmax(0,1fr);gap:18px}
+ .area-screen .body-picture{width:100px;height:200px}
+ .area-screen .body-pillar{border-radius:24px;min-height:0}
+ .area-screen .choices{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .area-screen .choice{font-size:17px;min-height:58px;padding:10px 12px;gap:9px}
+ .area-screen .choice .icon{width:22px;height:22px}
+ .area-screen .question-footer{margin-top:10px;padding-top:9px}
+ .area-screen .question-footer .btn{min-height:48px;font-size:17px}
+ .numbered-results .result-intro h1{font-size:28px}
+ .numbered-results .shop-card:has(.matched-reviews) .shop-photo{height:140px}
+ .numbered-results .shop-copy h2{font-size:27px}
+}
+@media(max-width:767px){
+ .numbered-results .result-intro h1{font-size:24px}
+ .numbered-results .result-heading-row{gap:4px}
+ .numbered-results .reveal-badge{font-size:10px;padding:5px 7px}
+ .numbered-results .result-nav .edit-button,.numbered-results .result-back{font-size:11px}
+}

@@ -1,0 +1,115 @@
+{
+  "opening": [
+    {
+      "viewport": "320x740",
+      "allOptionsVisible": true,
+      "footerBottom": 713.453125,
+      "height": 740,
+      "internalScroll": false,
+      "overflow": false,
+      "pageHeight": 740
+    },
+    {
+      "viewport": "375x740",
+      "allOptionsVisible": true,
+      "footerBottom": 723.453125,
+      "height": 740,
+      "internalScroll": false,
+      "overflow": false,
+      "pageHeight": 740
+    },
+    {
+      "viewport": "390x844",
+      "allOptionsVisible": true,
+      "footerBottom": 786.71875,
+      "height": 844,
+      "internalScroll": false,
+      "overflow": false,
+      "pageHeight": 844
+    },
+    {
+      "viewport": "768x1024",
+      "allOptionsVisible": true,
+      "footerBottom": 598.15625,
+      "height": 1024,
+      "internalScroll": false,
+      "overflow": false,
+      "pageHeight": 1024
+    },
+    {
+      "viewport": "1024x600",
+      "allOptionsVisible": true,
+      "footerBottom": 577.15625,
+      "height": 600,
+      "internalScroll": false,
+      "overflow": false,
+      "pageHeight": 600
+    },
+    {
+      "viewport": "1093x614",
+      "allOptionsVisible": true,
+      "footerBottom": 577.15625,
+      "height": 614,
+      "internalScroll": false,
+      "overflow": false,
+      "pageHeight": 614
+    },
+    {
+      "viewport": "1366x768",
+      "allOptionsVisible": true,
+      "footerBottom": 577.15625,
+      "height": 768,
+      "internalScroll": false,
+      "overflow": false,
+      "pageHeight": 768
+    }
+  ],
+  "miraiClothesResult": [
+    {
+      "viewport": "1024x600",
+      "broken": 0,
+      "buttonBottom": 521.453125,
+      "cardTop": 172.15625,
+      "height": 600,
+      "overflow": false,
+      "quoteBottom": 434.53125
+    },
+    {
+      "viewport": "1093x614",
+      "broken": 0,
+      "buttonBottom": 521.453125,
+      "cardTop": 172.15625,
+      "height": 614,
+      "overflow": false,
+      "quoteBottom": 434.53125
+    },
+    {
+      "viewport": "1366x768",
+      "broken": 0,
+      "buttonBottom": 525.453125,
+      "cardTop": 172.15625,
+      "height": 768,
+      "overflow": false,
+      "quoteBottom": 434.53125
+    },
+    {
+      "viewport": "375x740",
+      "broken": 0,
+      "buttonBottom": 738.03125,
+      "cardTop": 188.53125,
+      "height": 740,
+      "overflow": false,
+      "quoteBottom": 567.859375
+    },
+    {
+      "viewport": "390x844",
+      "broken": 0,
+      "buttonBottom": 750.03125,
+      "cardTop": 196.53125,
+      "height": 844,
+      "overflow": false,
+      "quoteBottom": 575.859375
+    }
+  ],
+  "logoNavigation": "Clicked the finder wordmark and observed the home page at /."
+}
