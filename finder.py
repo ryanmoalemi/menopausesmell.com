@@ -61,8 +61,15 @@ def build_finder(out, preview=False, *, root=ROOT, settings=None, products=None)
     app.write_text(app.read_text().replace("'./compat.mjs'",f"'./compat.mjs?v={compat_version}'"))
     review_version=hashlib.sha256((target/'reviews.mjs').read_bytes()).hexdigest()[:12]
     app.write_text(app.read_text().replace("'./reviews.mjs'",f"'./reviews.mjs?v={review_version}'"))
+    loading=target/'loading.mjs'
+    loading.write_text(loading.read_text().replace("'./reviews.mjs'",f"'./reviews.mjs?v={review_version}'"))
+    data_loader=target/'finder-data.mjs'
+    data_loader.write_text(data_loader.read_text().replace("'./compat.mjs'",f"'./compat.mjs?v={compat_version}'"))
+    for module in ['loading.mjs','finder-data.mjs']:
+        module_version=hashlib.sha256((target/module).read_bytes()).hexdigest()[:12]
+        app.write_text(app.read_text().replace(f"'./{module}'",f"'./{module}?v={module_version}'"))
     page = (target / 'index.html').read_text()
-    for name in ['finder.css', 'app.mjs']:
+    for name in ['finder.css', 'loading.css', 'app.mjs']:
         version = hashlib.sha256((target / name).read_bytes()).hexdigest()[:12]
         page = page.replace(f'./{name}"', f'./{name}?v={version}"')
     if not preview:

@@ -1,9 +1,11 @@
-import {fetchJSON} from './compat.mjs';
+import {loadFinderData} from './finder-data.mjs';
+import {createRecommendationReveal,loadingSteps,canCelebrate} from './loading.mjs';
 import {AREAS,SENSITIVITIES,ALLERGENS,CONCERNS,TRIED_CATEGORIES,triedOptions,productApproach,freshAnswers,concernKind,toggleExclusive,changeArea,careReason,routeAfterConcern,routeAfterSensitivity,resultFor,eligibleProducts,amazonURL,validateCatalog,finderPath,resultIntro,careMessage,historyMessage,allergyReviewNeeded} from './engine.mjs';
 import {reviewsForProduct,featuredReviews,REVIEW_TAG_LABELS} from './reviews.mjs';
 import {createMetrics} from './metrics.mjs';
-let measure=()=>{},started=false;
+let measure=()=>{},started=false,pendingReveal=false;
 const root=document.querySelector('#finder'),dialog=document.querySelector('#finder-dialog'),dialogContent=document.querySelector('#dialog-content'),announcer=document.querySelector('#announcer');
+const recommendationReveal=createRecommendationReveal({root,isPaused:()=>document.hidden||dialog.open});
 const systemMotion=matchMedia('(prefers-reduced-motion: reduce)');
 let answers=freshAnswers(),step='area',catalog=null,config=null,reviewData=null,failed=false,editing=false,notice='',reduced=systemMotion.matches,opener=null,trail=[];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -52,12 +54,13 @@ function syncPresentation(scope=root){
  scope.querySelectorAll('.pick-heading').forEach(el=>el.classList.toggle('has-more-products',!!el.querySelector('.more-products')));
  scope.querySelector('#sensitivities-none')?.closest('.choice')?.classList.add('none-choice');
  if(scope===root){
-  for(const name of ['result-layout','state-result','numbered-results','area-screen']){
+  for(const name of ['result-layout','state-result','numbered-results','area-screen','mw-loading']){
    const active=!!root.querySelector('.'+name);root.classList.toggle('has-'+name,active);document.body.classList.toggle('has-'+name,active);
   }
  }
 }
 function render({focus=false,restoreId=null}={}){
+ recommendationReveal.cancel();pendingReveal=false;
  if(failed){renderError();return;}
  if(step==='area'){
   question('Where do you notice the smell?',`<p class="helper">Choose one area to get started.</p><div class="area-grid"><div class="body-pillar">${body(true)}</div><fieldset class="choices"><legend class="sr-only">Choose the area where you notice the smell</legend>${AREAS.map(([v,l,i])=>choice('area',v,l,{art:i,checked:answers.area===v})).join('')}</fieldset></div>${footer(!!answers.area)}`,'area-screen','<div class="finder-introduction"><p class="intro-title">Stop guessing what to try for menopause odor.</p><p>Find a starting product, see why it fits, and skip formulas that already failed. Matched to your concern and skin needs.</p></div>');
@@ -83,6 +86,8 @@ function render({focus=false,restoreId=null}={}){
  else if(restoreId)document.getElementById(restoreId)?.focus({preventScroll:true});
 }
 function next(){
+ if(recommendationReveal.active)return;
+ const wasEditing=editing;
  if(step==='sensitivity'&&answers.sensitivities.includes('allergy')&&!answers.allergies.length){openAllergens();return;}
  if(!started){measure('finder_start');started=true;}
  measure('finder_step',finderPath(answers).indexOf(step)+1);
@@ -93,7 +98,15 @@ function next(){
  else if(step==='tried')step='result';
  if(editing&&step==='sensitivity'&&answers.sensitivities.length)step=routeAfterSensitivity(answers);
  if(editing&&step==='tried'&&answers.triedCategories.length)step='result';
- if(step==='result'){measure('finder_complete');editing=false;announcer.textContent='Your next step is ready. You can edit your answers.';}
+ if(step==='result'){
+  editing=false;
+  const result=resultFor(answers,catalog,config.preview);
+  const ready=()=>{render({focus:true});root.classList.add('mw-reveal');measure('finder_complete');announcer.textContent='Your next step is ready. You can edit your answers.';};
+  if(!wasEditing&&canCelebrate(result)){
+   pendingReveal=true;announcer.textContent='';recommendationReveal.start({steps:loadingSteps(answers,result,reviewData),onReady:ready});syncPresentation();updateMotion();
+  }else{render({focus:true});measure('finder_complete');announcer.textContent='Your next step is ready. You can edit your answers.';}
+  return;
+ }
  render({focus:true});
 }
 function rememberStep(){trail.push({step,resultAnswers:step==='result'?JSON.parse(JSON.stringify(answers)):null});}
@@ -255,9 +268,8 @@ function handleAction(e){
 function renderError(){root.innerHTML='<section class="state-result"><h1 tabindex="-1">Your result could not load.</h1><p class="helper">Your answers are still here.</p><button class="btn" data-action="retry">Try again</button></section>';}
 async function load(){
  try{
-  const [data,settings,reviews]=await Promise.all([fetchJSON('./catalog.json'),fetchJSON('./config.json'),fetchJSON('./reviews.json',{timeout:4000}).catch(()=>null)]);
-  reviewData=reviews?.version===1&&Array.isArray(reviews.reviews)?reviews:null;
-  catalog=validateCatalog(data);config=settings;
+  const payload=await loadFinderData();
+  reviewData=payload.reviews;catalog=validateCatalog(payload.catalog);config=payload.config;
   if(config.tracking_id!=='menopausewash-20')throw Error('Invalid configuration');failed=false;measure=createMetrics(config);measure('finder_open');render();
  }catch{failed=true;renderError();}
 }
@@ -275,3 +287,6 @@ document.querySelector('#menu-reset').addEventListener('click',()=>{closeMenu();
 document.querySelector('#menu-privacy').addEventListener('click',()=>{closeMenu();privacy();});
 const motionChanged=e=>{if(e.matches){reduced=true;updateMotion();}};
 if(systemMotion.addEventListener)systemMotion.addEventListener('change',motionChanged);else systemMotion.addListener(motionChanged);updateMotion();load();
+
+window.addEventListener('pagehide',()=>recommendationReveal.cancel());
+window.addEventListener('pageshow',event=>{if(event.persisted){const completed=step==='result'&&pendingReveal;render({focus:true});if(completed){measure('finder_complete');announcer.textContent='Your next step is ready. You can edit your answers.';}}});

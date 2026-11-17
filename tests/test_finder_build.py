@@ -24,6 +24,19 @@ class FinderBuild(unittest.TestCase):
         self.assertTrue(json.loads((self.out/'product-finder/config.json').read_text())['preview'])
         self.assertFalse(self.settings['release_approved'])
         self.assertTrue((self.out/'__review/index.html').exists())
+    def test_reveal_dependencies_have_matching_cache_versions(self):
+        import hashlib
+        self.assertTrue(self.build(True))
+        target=self.out/'product-finder'
+        dependencies={'index.html':['app.mjs','loading.css'],
+                      'app.mjs':['loading.mjs','finder-data.mjs'],
+                      'loading.mjs':['reviews.mjs'],
+                      'finder-data.mjs':['compat.mjs']}
+        for parent,children in dependencies.items():
+            content=(target/parent).read_text()
+            for child in children:
+                version=hashlib.sha256((target/child).read_bytes()).hexdigest()[:12]
+                self.assertIn(f'./{child}?v={version}',content)
     def test_unapproved_release_fails(self):
         self.settings['enabled']=True
         with self.assertRaisesRegex(ValueError,'approved'):self.build()

@@ -1,0 +1,232 @@
+{
+  "stages": [
+    {
+      "active": "Using relevant experiences from our saved Reddit research.",
+      "bottom": 607.453125,
+      "caption": "1 of 4 · Making it personal",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "active": "Comparing sweat-control products in our researched shortlist.",
+      "bottom": 607.453125,
+      "caption": "2 of 4 · Finding your fit",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "active": "Checking your picks against your fragrance preferences.",
+      "bottom": 607.453125,
+      "caption": "3 of 4 · Checking the details",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "active": "Putting together your picks for underarm odor and sweating…",
+      "bottom": 607.453125,
+      "caption": "4 of 4 · Your picks are almost ready!",
+      "scrollWidth": 390,
+      "width": 390
+    }
+  ],
+  "layouts": [
+    {
+      "size": "320x568",
+      "bottom": 497.21875,
+      "height": 568,
+      "rows": 4,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "size": "360x560",
+      "bottom": 479.03125,
+      "height": 560,
+      "rows": 4,
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "size": "390x600",
+      "bottom": 524.6875,
+      "height": 600,
+      "rows": 4,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "size": "390x844",
+      "bottom": 607.453125,
+      "height": 844,
+      "rows": 4,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "size": "740x390",
+      "bottom": 342.34375,
+      "height": 390,
+      "rows": 4,
+      "scrollWidth": 740,
+      "width": 740
+    },
+    {
+      "size": "1024x600",
+      "bottom": 368.75,
+      "height": 600,
+      "rows": 4,
+      "scrollWidth": 1024,
+      "width": 1024
+    },
+    {
+      "size": "1366x768",
+      "bottom": 686.765625,
+      "height": 768,
+      "rows": 4,
+      "scrollWidth": 1366,
+      "width": 1366
+    }
+  ],
+  "cases": [
+    {
+      "name": "Reduce motion",
+      "pressed": "true",
+      "animations": false
+    },
+    {
+      "name": "Edit does not replay",
+      "loading": 0,
+      "heading": "For underarm smell and wetness."
+    },
+    {
+      "name": "Back during loading",
+      "heading": "What hasn’t worked for you?",
+      "loading": 0,
+      "checked": ""
+    },
+    {
+      "name": "Reset during loading",
+      "heading": "Where do you notice the smell?",
+      "selected": 0
+    },
+    {
+      "name": "Care bypass",
+      "loading": 0,
+      "heading": "For little leaks and the smell they leave.",
+      "care": "Before choosing a productFor new or bothersome leaks, ask about pelvic floor care and treatment options. Painful urination, blood in urine or fever needs prompt medical advice."
+    },
+    {
+      "name": "Cancelled timers stayed cancelled",
+      "heading": "For little leaks and the smell they leave."
+    },
+    {
+      "name": "Unknown allergy bypass",
+      "loading": 0,
+      "buyLinks": 0,
+      "badge": " Ingredient review needed"
+    },
+    {
+      "name": "No-match bypass",
+      "loading": 0,
+      "heading": "No other sweat-control match."
+    },
+    {
+      "name": "Missing reviews fallback",
+      "text": "1\nMatching options to your underarm odor needs."
+    },
+    {
+      "name": "Missing reviews result",
+      "heading": "For underarm smell that bothers you.",
+      "reviews": 0
+    },
+    {
+      "name": "Required-data error",
+      "heading": "Your result could not load.",
+      "loading": 0
+    },
+    {
+      "name": "Retry recovered",
+      "success": true
+    },
+    {
+      "name": "Older APIs absent",
+      "heading": "For underarm smell that bothers you.",
+      "links": [
+        "https://www.amazon.com/dp/B07BKCL9RR?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B0DP37D91R?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20"
+      ],
+      "overflow": false
+    },
+    {
+      "name": "Home during loading",
+      "url": "http://127.0.0.1:4173/product-finder/",
+      "heading": "Smelling different since menopause?"
+    },
+    {
+      "name": "Browser return",
+      "url": "http://127.0.0.1:4173/product-finder/",
+      "heading": "For underarm smell that bothers you.",
+      "loading": 0
+    }
+  ],
+  "layoutsBefore": [
+    {
+      "size": "320x568",
+      "bottom": 654.015625,
+      "height": 568,
+      "rows": 4,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "size": "360x560",
+      "bottom": 599.453125,
+      "height": 560,
+      "rows": 4,
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "size": "390x600",
+      "bottom": 599.453125,
+      "height": 600,
+      "rows": 4,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "size": "390x844",
+      "bottom": 607.453125,
+      "height": 844,
+      "rows": 4,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "size": "740x390",
+      "bottom": 670.5,
+      "height": 390,
+      "rows": 4,
+      "scrollWidth": 740,
+      "width": 740
+    },
+    {
+      "size": "1024x600",
+      "bottom": 686.765625,
+      "height": 600,
+      "rows": 4,
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    {
+      "size": "1366x768",
+      "bottom": 686.765625,
+      "height": 768,
+      "rows": 4,
+      "scrollWidth": 1366,
+      "width": 1366
+    }
+  ]
+}

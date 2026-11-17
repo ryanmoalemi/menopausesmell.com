@@ -5,7 +5,7 @@ export async function fetchJSON(url,{timeout=10000,fetcher=fetch,Controller=glob
  let timer;
  try{
   return await Promise.race([
-   Promise.resolve().then(()=>fetcher(url,{cache:'no-store',...(controller?{signal:controller.signal}:{})})).then(response=>{
+   Promise.resolve().then(()=>fetcher(url,{cache:'no-store',credentials:'omit',referrerPolicy:'no-referrer',...(controller?{signal:controller.signal}:{})})).then(response=>{
     if(!response.ok)throw Error('Product data unavailable');
     return response.json();
    }),
