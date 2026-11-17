@@ -450,3 +450,9 @@ body:has(.result-layout) .site-header,body:has(.state-result) .site-header{displ
  .numbered-results .reveal-badge{font-size:10px;padding:5px 7px}
  .numbered-results .result-nav .edit-button,.numbered-results .result-back{font-size:11px}
 }
+
+/* Keep the rest of the shortlist visible before the first purchase decision. */
+.pick-heading .more-products{margin-left:auto;flex:none;min-height:32px;padding:4px 0 4px 6px;color:var(--plum);font-size:13px;font-weight:600;line-height:1.4;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.more-products span{display:inline-block;margin-left:3px;text-decoration:none}
+.recommendation-item{scroll-margin-top:12px}
+@media(max-width:767px){.pick-heading .more-products{font-size:12px;padding-left:0}.pick-heading:has(.more-products){gap:6px}}
