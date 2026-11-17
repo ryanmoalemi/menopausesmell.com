@@ -1,4 +1,5 @@
-import {AREAS,SENSITIVITIES,ALLERGENS,CONCERNS,TRIED_CATEGORIES,triedOptions,productApproach,freshAnswers,concernKind,toggleExclusive,changeArea,careReason,routeAfterConcern,routeAfterSensitivity,resultFor,eligibleProducts,amazonURL,validateCatalog,finderPath,resultIntro,careMessage,historyMessage,allergyReviewNeeded} from './engine.mjs?v=0f32e7c9a720';
+import {fetchJSON} from './compat.mjs?v=5e0247835e79';
+import {AREAS,SENSITIVITIES,ALLERGENS,CONCERNS,TRIED_CATEGORIES,triedOptions,productApproach,freshAnswers,concernKind,toggleExclusive,changeArea,careReason,routeAfterConcern,routeAfterSensitivity,resultFor,eligibleProducts,amazonURL,validateCatalog,finderPath,resultIntro,careMessage,historyMessage,allergyReviewNeeded} from './engine.mjs?v=002687d6e089';
 import {reviewsForProduct,featuredReviews,REVIEW_TAG_LABELS} from './reviews.mjs?v=4cfc2c1ec21f';
 import {createMetrics} from './metrics.mjs?v=62388ea05da2';
 let measure=()=>{},started=false;
@@ -44,10 +45,22 @@ function productChoice(p,search=false){
  const prefix=search?'search':'tried';
  return `<label class="choice multi ${search?'search-choice':'product-choice'}" for="${prefix}-${p.id}"><input id="${prefix}-${p.id}" type="checkbox" name="tried" value="${p.id}" ${answers.tried.includes(p.id)?'checked':''} aria-label="${esc(p.name+' '+p.variant)}"><span class="photo-well ${p.id==='mirai-unscented-bar'?'tactile':''}"><img class="product-image" src="${p.image}" alt="${esc(p.name+' '+p.variant)}"></span><span class="choice-label">${esc(p.name)}<span class="variant">${esc(p.variant)}</span></span><span class="mark">${icon('check')}</span></label>`;
 }
+function syncPresentation(scope=root){
+ scope.querySelectorAll('.choice,.category-tile,.product-choice').forEach(el=>el.classList.toggle('is-selected',!!el.querySelector('input:checked')));
+ scope.querySelectorAll('.shop-card').forEach(el=>el.classList.toggle('has-matched-reviews',!!el.querySelector('.matched-reviews')));
+ scope.querySelectorAll('.review-snippets').forEach(el=>el.classList.toggle('single-review',el.children.length===1));
+ scope.querySelectorAll('.pick-heading').forEach(el=>el.classList.toggle('has-more-products',!!el.querySelector('.more-products')));
+ scope.querySelector('#sensitivities-none')?.closest('.choice')?.classList.add('none-choice');
+ if(scope===root){
+  for(const name of ['result-layout','state-result','numbered-results','area-screen']){
+   const active=!!root.querySelector('.'+name);root.classList.toggle('has-'+name,active);document.body.classList.toggle('has-'+name,active);
+  }
+ }
+}
 function render({focus=false,restoreId=null}={}){
  if(failed){renderError();return;}
  if(step==='area'){
-  question('Where do you notice the smell?',`<p class="helper">Tap an area or the body outline.</p><div class="area-grid"><div class="body-pillar">${body(true)}</div><fieldset class="choices"><legend class="sr-only">Choose the area where you notice the smell</legend>${AREAS.map(([v,l,i])=>choice('area',v,l,{art:i,checked:answers.area===v})).join('')}</fieldset></div>${footer(!!answers.area)}`,'area-screen','<div class="finder-introduction"><p class="intro-title">Stop guessing what to try for menopause odor.</p><p>Find a starting product, see why it fits, and skip formulas that already failed. Matched to your concern and skin needs.</p></div>');
+  question('Where do you notice the smell?',`<p class="helper">Choose one area to get started.</p><div class="area-grid"><div class="body-pillar">${body(true)}</div><fieldset class="choices"><legend class="sr-only">Choose the area where you notice the smell</legend>${AREAS.map(([v,l,i])=>choice('area',v,l,{art:i,checked:answers.area===v})).join('')}</fieldset></div>${footer(!!answers.area)}`,'area-screen','<div class="finder-introduction"><p class="intro-title">Stop guessing what to try for menopause odor.</p><p>Find a starting product, see why it fits, and skip formulas that already failed. Matched to your concern and skin needs.</p></div>');
  }else if(step==='concern'){
   const kind=concernKind(answers),under=kind==='underarms';
   const [title,help]=({
@@ -65,6 +78,7 @@ function render({focus=false,restoreId=null}={}){
    const [label,art,tone]=TRIED_CATEGORIES[id];return `<label class="category-tile tone-${tone}" for="category-${id}"><input type="checkbox" id="category-${id}" name="tried-category" value="${id}" ${answers.triedCategories.includes(id)?'checked':''}><span class="category-art">${icon(art)}</span><span class="category-label">${label}</span><span class="mark">${icon('check')}</span></label>`;
   }).join('')}</fieldset><p class="category-hint">${answers.triedCategories.filter(x=>x!=='nothing').length?answers.triedCategories.filter(x=>x!=='nothing').length+' selected · We’ll keep these in mind.':'Select all that apply.'}</p>${answers.triedCategories.some(x=>x!=='nothing')?`<div class="exact-tried"><button id="exact-tried-search" class="text-link" data-action="search">${selectedProducts().length?'Edit products to exclude':'Know the exact product? Exclude it here'} ${icon('chevron')}</button><p>${selectedProducts().length?esc(selectedProducts().map(p=>shortName(p)).join(', '))+' will not be recommended again.':'Optional. Choose the exact formula so we don’t suggest it again.'}</p>${answers.tried.includes('unknown')?'<p>Exact formula not found. Compare any result with the product you tried.</p>':''}</div>`:''}${footer(!!answers.triedCategories.length,'Find my match')}`,'tried-screen category-screen');
  }else if(step==='result')renderResult();
+ syncPresentation();
  if(focus){window.scrollTo({top:0,behavior:'instant'});document.querySelector('h1')?.focus({preventScroll:true});}
  else if(restoreId)document.getElementById(restoreId)?.focus({preventScroll:true});
 }
@@ -82,15 +96,15 @@ function next(){
  if(step==='result'){measure('finder_complete');editing=false;announcer.textContent='Your next step is ready. You can edit your answers.';}
  render({focus:true});
 }
-function rememberStep(){trail.push({step,resultAnswers:step==='result'?structuredClone(answers):null});}
+function rememberStep(){trail.push({step,resultAnswers:step==='result'?JSON.parse(JSON.stringify(answers)):null});}
 function back(){
  const previous=trail.pop();
  if(!previous||previous.step==='area'){startOver();return;}
  notice='';step=previous.step;if(previous.resultAnswers)answers=previous.resultAnswers;editing=false;render({focus:true});
 }
 const categoryNames={cleanser:'Cleansing option',antiperspirant:'For sweat control',deodorant:'For odor control',moisture:'For damp skin folds',laundry:'For clothes holding odor',probiotic:'Optional supplement',bladder:'Bladder leak protection',underwear:'Everyday comfort',cloth:'Gentle drying',rinse:'Plain-water rinsing',barrier:'Outside-skin protection',vaginal_moisturizer:'Regular vaginal moisture',lubricant:'Comfort during intimacy'};
-function amazonButton(p){if(allergyReviewNeeded(answers))return '<p class="restricted-note">Your allergy still needs an ingredient check before you choose this product.</p>';return `<a class="btn result-buy" href="${esc(amazonURL(p,config.tracking_id))}" target="_blank" rel="sponsored noopener noreferrer" aria-label="Shop ${esc(p.name+' '+p.variant)} on Amazon">${p.exactListingVerified?'View on Amazon':'Find on Amazon'} ${icon('arrow')}</a>`;}
-function commerceNote(p){return `<p class="commerce-note">As an Amazon Associate I earn from qualifying purchases.${p.exactListingVerified?'':' Opens an Amazon search.'}</p>`;}
+function amazonButton(p){if(allergyReviewNeeded(answers))return '<p class="restricted-note">Your allergy still needs an ingredient check before you choose this product.</p>';if(!amazonURL(p))return '<p class="restricted-note">The exact Amazon product link is being checked.</p>';return `<a class="btn result-buy" href="${esc(amazonURL(p,config.tracking_id))}" target="_blank" rel="sponsored noopener noreferrer" aria-label="Shop ${esc(p.name+' '+p.variant)} on Amazon">View on Amazon ${icon('arrow')}</a>`;}
+function commerceNote(p){return `<p class="commerce-note">As an Amazon Associate I earn from qualifying purchases.</p>`;}
 function productCard(p,{compact=false,buy=true,match=null}={}){
  const category=p.category||'cleanser';
  return `<article class="shop-card tone-${category} ${compact?'compact-shop-card':''}"><div class="shop-photo ${p.photoStyle==='lifestyle'?'lifestyle-photo':''}"><span class="photo-label">${esc(categoryNames[category])}</span><img src="${p.image}" alt="${esc(p.name+' '+p.variant)}" width="600" height="600"></div><div class="shop-copy"><p class="eyebrow">${esc(categoryNames[category])}</p><h2>${esc(p.name)}</h2><p class="shop-variant">${esc(p.variant)}</p>${match?matchDetails(p,match):''}<p class="shop-fit">${esc(p.fact)}</p>${p.benefits?.length?`<ul class="product-benefits" aria-label="Product benefits">${p.benefits.map(b=>`<li>${esc(b)}</li>`).join('')}</ul>`:''}<p class="shop-caution">${esc(p.caveat)}</p>${match?reviewPanel(p):''}${buy?amazonButton(p):'<p class="restricted-note">Review the ingredients with your pharmacist before choosing this product.</p>'}<div class="product-more">${match&&!allergyReviewNeeded(answers)?`<button class="match-why" data-action="match-why" data-value="${p.id}" aria-label="Why this fits your answers">Why this fits ${icon('chevron')}</button>`:''}<button class="product-details" data-action="details" data-value="${p.id}">${['bladder','underwear','cloth','moisture','rinse'].includes(category)?'Materials &amp; how to use':'Ingredients &amp; how to use'}</button></div>${buy&&!allergyReviewNeeded(answers)?commerceNote(p):''}</div></article>`;
@@ -153,7 +167,7 @@ function startOver(){
 function triedNotes(){
  openDialog('What didn’t work?',`<p class="helper">Optional. The selected products are already excluded from your recommendations.</p>${selectedProducts().map(p=>`<section class="failure-details"><h3>${esc(shortName(p))}</h3><fieldset class="choices"><legend class="sr-only">Why ${esc(p.name)} did not help</legend>${[['odor',"Didn't help the smell"],['sweat',"Didn't help the sweating"],['irritated','Irritated my skin'],['disliked',"Didn't like the scent or texture"]].map(([v,l])=>choice('reason-'+p.id,v,l,{multi:true,checked:(answers.reasons[p.id]||[]).includes(v)})).join('')}</fieldset></section>`).join('')}<button class="btn" data-action="close">Done</button>`);
 }
-function openDialog(title,html){opener=document.activeElement;dialogContent.innerHTML=`<div class="dialog-header"><h2 id="dialog-title">${title}</h2><button class="close-dialog" data-action="close" aria-label="${title==='Your answers'?'Close answer editor':'Close dialog'}">${icon('close')}</button></div>${html}`;dialog.showModal();}
+function openDialog(title,html){opener=document.activeElement;dialogContent.innerHTML=`<div class="dialog-header"><h2 id="dialog-title">${title}</h2><button class="close-dialog" data-action="close" aria-label="${title==='Your answers'?'Close answer editor':'Close dialog'}">${icon('close')}</button></div>${html}`;syncPresentation(dialog);dialog.showModal();}
 function closeDialog(){dialog.close();opener?.focus({preventScroll:true});}
 function openEditor(){
  const values=[['area','Your area',areaLabel()],['concern','Your concern',answers.concerns.map(x=>concernLabels[x]).join(', ')||'Not chosen'],['sensitivity','Sensitivities',answers.sensitivities.map(x=>sensitivityLabels[x]).join(', ')||'Not chosen'],['tried','Already tried',[...answers.triedCategories.map(x=>TRIED_CATEGORIES[x]?.[0]).filter(Boolean),...selectedProducts().map(p=>shortName(p))].join(', ')||'Not chosen']];
@@ -185,7 +199,7 @@ function browseProductDetails(){
 }
 function careNotes(){openDialog('What to tell your clinician',`<p class="helper">You can use this short summary when you ask for advice.</p>${chips({all:true})}<ul class="care-list"><li>When the smell, discharge, rash or leakage started.</li><li>Any pain, burning, itching, bleeding or fever.</li><li>Products or medicines you recently started, and any allergies.</li><li>What you have already tried and whether it irritated your skin.</li></ul><button class="btn" data-action="close">Back to my result</button>`);}
 function disclosure(){openDialog('About Amazon links','<p>As an Amazon Associate I earn from qualifying purchases.</p><p>Product choices are filtered using the answers you give. We do not take payment to change your answers or include a product you have ruled out.</p><p>Check the current product label, formula, pack size, seller and price on Amazon before ordering.</p><button class="btn" data-action="close">Back to the finder</button>');}
-function privacy(){openDialog('About your answers','<p class="helper">Your selections stay in memory in this browser tab. Refreshing or closing the page clears them.</p><p>We do not send your answers, product names or ingredient choices to analytics or advertising services. We count generic finder visits, steps, completions and shopping clicks using isolated, cookieless Google Analytics. Global Privacy Control and Do Not Track disable these counts. This finder loads fonts and product data from this site.</p><p class="small-note">Amazon links contain only a product identifier or search and our affiliate tag. Hosting providers and websites you choose to visit have their own privacy practices.</p><button class="btn" data-action="close">Got it</button>');}
+function privacy(){openDialog('About your answers','<p class="helper">Your selections stay in memory in this browser tab. Refreshing or closing the page clears them.</p><p>We do not send your answers, product names or ingredient choices to analytics or advertising services. We count generic finder visits, steps, completions and shopping clicks using isolated, cookieless Google Analytics. Global Privacy Control and Do Not Track disable these counts. This finder loads fonts and product data from this site.</p><p class="small-note">Amazon links contain only a product identifier and our affiliate tag. Hosting providers and websites you choose to visit have their own privacy practices.</p><button class="btn" data-action="close">Got it</button>');}
 function updateMotion(){document.documentElement.classList.toggle('reduce-motion',reduced);document.querySelectorAll('[data-action="motion"],#menu-motion').forEach(b=>{b.setAttribute('aria-pressed',String(reduced));b.textContent=reduced?'Motion reduced':'Reduce motion';});}
 function toggleMotion(){reduced=systemMotion.matches||!reduced;updateMotion();announcer.textContent=reduced?'Reduced motion enabled.':'Standard motion enabled.';}
 function setArea(area){notice='';answers=changeArea(answers,area);}
@@ -195,14 +209,14 @@ function handleChange(e){
  else if(t.name==='concerns')answers.concerns=concernKind(answers)==='underarms'?[t.value]:toggleExclusive(answers.concerns,t.value,['unsure']);
  else if(t.name==='sensitivities'){answers.sensitivities=toggleExclusive(answers.sensitivities,t.value);if(!answers.sensitivities.includes('allergy'))answers.allergies=[];}
  else if(t.name==='tried-category'){answers.triedCategories=toggleExclusive(answers.triedCategories,t.value,['nothing']);if(answers.triedCategories.includes('nothing')){answers.tried=[];answers.reasons={};answers.unknownProduct='';}}
- else if(t.name==='allergens'){answers.allergies=toggleExclusive(answers.allergies,t.value,[]);return;}
+ else if(t.name==='allergens'){answers.allergies=toggleExclusive(answers.allergies,t.value,[]);syncPresentation(dialog);return;}
  else if(t.name==='tried'){
   answers.tried=toggleExclusive(answers.tried,t.value,['nothing','unknown']);
   const selected=catalog.find(p=>p.id===t.value);if(selected&&answers.tried.includes(t.value)){answers.triedCategories=answers.triedCategories.filter(x=>x!=='nothing');const type=productApproach(selected);if(TRIED_CATEGORIES[type]&&!answers.triedCategories.includes(type))answers.triedCategories.push(type);}
   for(const id of Object.keys(answers.reasons))if(!answers.tried.includes(id))delete answers.reasons[id];
   if(!answers.tried.includes('unknown'))answers.unknownProduct='';
-  if(dialog.open){dialog.querySelectorAll('input[name="tried"]').forEach(x=>x.checked=answers.tried.includes(x.value));return;}
- }else if(t.name.startsWith('reason-')){const id=t.name.slice(7);answers.reasons[id]=toggleExclusive(answers.reasons[id]||[],t.value,[]);return;}
+  if(dialog.open){dialog.querySelectorAll('input[name="tried"]').forEach(x=>x.checked=answers.tried.includes(x.value));syncPresentation(dialog);return;}
+ }else if(t.name.startsWith('reason-')){const id=t.name.slice(7);answers.reasons[id]=toggleExclusive(answers.reasons[id]||[],t.value,[]);syncPresentation(dialog);return;}
  else if(t.name==='aluminum'){answers.aluminumFree=t.checked;render({restoreId:t.id});return;}
  else return;
  render({restoreId:t.id});
@@ -241,16 +255,16 @@ function handleAction(e){
 function renderError(){root.innerHTML='<section class="state-result"><h1 tabindex="-1">Your result could not load.</h1><p class="helper">Your answers are still here.</p><button class="btn" data-action="retry">Try again</button></section>';}
 async function load(){
  try{
-  const [a,b,reviews]=await Promise.all([fetch('./catalog.json',{cache:'no-store'}),fetch('./config.json',{cache:'no-store'}),fetch('./reviews.json',{cache:'no-store',signal:AbortSignal.timeout(4000)}).then(r=>r.ok?r.json():null).catch(()=>null)]);
+  const [data,settings,reviews]=await Promise.all([fetchJSON('./catalog.json'),fetchJSON('./config.json'),fetchJSON('./reviews.json',{timeout:4000}).catch(()=>null)]);
   reviewData=reviews?.version===1&&Array.isArray(reviews.reviews)?reviews:null;
-  if(!a.ok||!b.ok)throw Error('Unavailable');catalog=validateCatalog(await a.json());config=await b.json();
+  catalog=validateCatalog(data);config=settings;
   if(config.tracking_id!=='menopausewash-20')throw Error('Invalid configuration');failed=false;measure=createMetrics(config);measure('finder_open');render();
  }catch{failed=true;renderError();}
 }
 document.addEventListener('click',e=>{if(e.target.closest('a.result-buy'))measure('finder_product_click');});
 root.addEventListener('change',handleChange);root.addEventListener('click',handleAction);dialog.addEventListener('change',handleChange);dialog.addEventListener('click',handleAction);
-dialog.addEventListener('input',e=>{if(e.target.id==='product-search'){const q=e.target.value.toLowerCase().trim(),found=catalog.filter(p=>(p.name+' '+p.variant).toLowerCase().includes(q));dialog.querySelector('.search-results').innerHTML=found.length?found.map(p=>productChoice(p,true)).join(''):'<p>No exact product found. You can continue without guessing the formula.</p>';}});
-dialog.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const c=[...dialog.querySelectorAll('a[href],button,input,select,textarea,[tabindex="0"]')].filter(x=>!x.disabled&&x.getClientRects().length),first=c[0],last=c.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}});
+dialog.addEventListener('input',e=>{if(e.target.id==='product-search'){const q=e.target.value.toLowerCase().trim(),found=catalog.filter(p=>(p.name+' '+p.variant).toLowerCase().includes(q));dialog.querySelector('.search-results').innerHTML=found.length?found.map(p=>productChoice(p,true)).join(''):'<p>No exact product found. You can continue without guessing the formula.</p>';syncPresentation(dialog);}});
+dialog.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const c=[...dialog.querySelectorAll('a[href],button,input,select,textarea,[tabindex="0"]')].filter(x=>!x.disabled&&x.getClientRects().length),first=c[0],last=c[c.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}});
 dialog.addEventListener('close',()=>opener?.focus({preventScroll:true}));
 const menuToggle=document.querySelector('#menu-toggle'),menu=document.querySelector('#finder-menu');
 function closeMenu(){menu.hidden=true;menuToggle.setAttribute('aria-expanded','false');}
@@ -259,4 +273,5 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!menu.hidden){close
 document.addEventListener('click',e=>{if(!menu.hidden&&!e.target.closest('#finder-menu')&&!e.target.closest('#menu-toggle'))closeMenu();});
 document.querySelector('#menu-reset').addEventListener('click',()=>{closeMenu();startOver();});
 document.querySelector('#menu-privacy').addEventListener('click',()=>{closeMenu();privacy();});
-systemMotion.addEventListener('change',e=>{if(e.matches){reduced=true;updateMotion();}});updateMotion();load();
+const motionChanged=e=>{if(e.matches){reduced=true;updateMotion();}};
+if(systemMotion.addEventListener)systemMotion.addEventListener('change',motionChanged);else systemMotion.addListener(motionChanged);updateMotion();load();

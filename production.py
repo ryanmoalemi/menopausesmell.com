@@ -98,12 +98,12 @@ gtag('config', '''+json.dumps(measurement_id)+''', {
         page = page.replace('The current concept has no active affiliate tracking or verified program enrollment.', 'Some product links earn a commission from qualifying purchases. See our affiliate disclosure for details.')
         page = page.replace('The current Amazon search links do not earn commissions.', 'Our Amazon links include affiliate tracking. We may earn a commission from qualifying purchases.')
         page = page.replace('They do not currently earn a commission.', 'We may earn a commission from qualifying purchases.')
-        page = page.replace('This preview uses Amazon search links.', 'Our Amazon buttons link to product searches or individual listings, as labeled.')
+        page = page.replace('This preview uses Amazon search links.', 'Our Amazon buttons open the individual product shown.')
     if path == '/affiliate-disclosure/':
         status = '<p>As an Amazon Associate I earn from qualifying purchases.</p><p>Some product links are affiliate links. If you buy through one of those links, we may receive a commission. The disclosure appears near shopping links as well as on this page.</p>' if active else '<p>The current buttons open ordinary Amazon searches. They do not currently earn a commission. Exact product affiliate links have not yet been connected.</p>'
         body = '<h2>How this site is funded</h2>'+status
         body += '<h2>How we choose products</h2><p>We use published product labels and source-linked community discussions. Commission rates do not determine our comparisons. We have not personally tested these products, and community experiences do not establish that a product treats menopause-related odor.</p>'
-        body += '<h2>Before you buy</h2><p>Confirm the exact formula, size, seller and one-time purchase or subscription terms on Amazon. Search results can include different products and sponsored listings. Prices, availability, shipping and returns are set by the seller.</p>'
+        body += '<h2>Before you buy</h2><p>Confirm the exact formula, size, seller and one-time purchase or subscription terms on Amazon. Prices, availability, shipping and returns are set by the seller.</p>'
         body += '<h2>Your choices</h2><p>You can use the guides without buying anything. A product comparison does not replace medical care for a new or persistent symptom.</p>'
         dek = 'Some links may earn us a commission from qualifying purchases.' if active else 'The current Amazon search links do not earn a commission.'
         page = replace_article(page, 'Amazon links and affiliate disclosure', dek, body)
@@ -168,6 +168,8 @@ if indexnow_key:
 
 (OUT / '.nojekyll').touch()
 shutil.copy2(ROOT / 'CNAME', OUT / 'CNAME')
+from amazon_audit import audit_site
+audit_site(OUT)
 if not finder_preview:
     for file in OUT.rglob('*'):
         if file.is_file() and file.name != 'finder-routes.json':

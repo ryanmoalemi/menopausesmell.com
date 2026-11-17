@@ -169,7 +169,7 @@ function recommendationContext(a,p,primary,care,index){
  return {role,reason};
 }
 function intimateArea(a){return ['outer_groin','vaginal_change','urine_leakage','unsure'].includes(a.area)||a.concerns.includes('outside');}
-const joinNatural=items=>items.length<2?items[0]||'':items.slice(0,-1).join(', ')+' and '+items.at(-1);
+const joinNatural=items=>items.length<2?items[0]||'':items.slice(0,-1).join(', ')+' and '+items[items.length-1];
 export function selectedConcernText(a){
  if(a.area==='urine_leakage')return 'little bladder leaks';
  const labels={odor:a.area==='underarms'?'underarm smell':'odor that returns after washing',wetness:'underarm wetness',both:'underarm smell and wetness',damp:'skin that stays sweaty or damp',clothes:'smell lingering in your clothes',chafe:'skin rubbing or chafing',rash:'sore skin or a new rash',outside:'sweat on the outside skin',change:'a change in vaginal smell or discharge',urine:'little bladder leaks',dryness:'vaginal dryness during the day',friction:'dryness or friction during sex',symptoms:'discomfort or other intimate symptoms',unsure:'a smell you are not sure about'};
@@ -215,7 +215,7 @@ export function amazonURL(product,tag='menopausewash-20'){
  if(product.exactListingVerified&&/^B[A-Z0-9]{9}$/.test(product.asin||'')){
   const u=new URL('https://www.amazon.com/dp/'+product.asin);u.searchParams.set('tag',tag);return u.href;
  }
- const u=new URL('https://www.amazon.com/s');u.searchParams.set('k',product.amazonQuery);u.searchParams.set('tag',tag);return u.href;
+ return null;
 }
 export function validateCatalog(data){
  if(!Array.isArray(data)||!data.length)throw Error('Product data unavailable');
@@ -223,6 +223,7 @@ export function validateCatalog(data){
  for(const p of data){
   if(!p.id||ids.has(p.id)||!p.name||!p.variant||!p.image||!Array.isArray(p.areas))throw Error('Invalid product data');
   ids.add(p.id);
+  if((p.candidate||p.browseEligible)&&p.publishEligible&&!amazonURL(p))throw Error('Missing direct Amazon product destination');
   if((p.candidate||p.browseEligible)&&p.labelVerified&&(!p.ingredients||!p.source||!p.checked||!p.labelDirections))throw Error('Missing verified product context');
   if(p.candidate&&(!Array.isArray(p.benefits)||p.benefits.length<2||p.benefits.length>3||p.benefits.some(x=>typeof x!=='string'||!x.trim())||!p.benefitsSource))throw Error('Missing verified product benefits');
  }

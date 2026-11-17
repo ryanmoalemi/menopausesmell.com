@@ -57,6 +57,8 @@ def build_finder(out, preview=False, *, root=ROOT, settings=None, products=None)
     app.write_text(app.read_text().replace("'./engine.mjs'", f"'./engine.mjs?v={engine_version}'"))
     metrics_version=hashlib.sha256((target/'metrics.mjs').read_bytes()).hexdigest()[:12]
     app.write_text(app.read_text().replace("'./metrics.mjs'",f"'./metrics.mjs?v={metrics_version}'"))
+    compat_version=hashlib.sha256((target/'compat.mjs').read_bytes()).hexdigest()[:12]
+    app.write_text(app.read_text().replace("'./compat.mjs'",f"'./compat.mjs?v={compat_version}'"))
     review_version=hashlib.sha256((target/'reviews.mjs').read_bytes()).hexdigest()[:12]
     app.write_text(app.read_text().replace("'./reviews.mjs'",f"'./reviews.mjs?v={review_version}'"))
     page = (target / 'index.html').read_text()
@@ -72,6 +74,13 @@ def build_finder(out, preview=False, *, root=ROOT, settings=None, products=None)
         review = out / '__review'
         review.mkdir(exist_ok=True)
         shutil.copy2(root / 'tests/fixtures/finder-responsive-review.html', review / 'index.html')
+        for profile in ['legacy','reviews-offline','retry']:
+            fixture=review/profile/'product-finder'
+            shutil.copytree(target,fixture,dirs_exist_ok=True)
+            shutil.copy2(root/'tests/fixtures/finder-compat-boot.js',fixture/'compat-test.js')
+            fixture_page=(fixture/'index.html').read_text().replace('<script type="module"','<script src="./compat-test.js"></script><script type="module"')
+            (fixture/'index.html').write_text(fixture_page)
+
     for site_page in out.rglob('index.html'):
         if site_page.is_relative_to(target) or '__review' in site_page.parts:
             continue

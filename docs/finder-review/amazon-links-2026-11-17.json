@@ -1,0 +1,201 @@
+{
+  "static_shopping_links": 32,
+  "static_pages": 13,
+  "active_finder_products": 16,
+  "search_links": 0,
+  "unique_active_destinations": 25,
+  "links": [
+    {
+      "page": "external-washes/index.html",
+      "product": "lume-unscented-wash",
+      "asin": "B099GSW926",
+      "url": "https://www.amazon.com/dp/B099GSW926?tag=menopausewash-20"
+    },
+    {
+      "page": "external-washes/index.html",
+      "product": "mirai-unscented-bar",
+      "asin": "B0DP37D91R",
+      "url": "https://www.amazon.com/dp/B0DP37D91R?tag=menopausewash-20"
+    },
+    {
+      "page": "external-washes/index.html",
+      "product": "mirai-persimmon-body-wash",
+      "asin": "B00UZX8V0S",
+      "url": "https://www.amazon.com/dp/B00UZX8V0S?tag=menopausewash-20"
+    },
+    {
+      "page": "gummies-vs-capsules/index.html",
+      "product": "uro-capsules",
+      "asin": "B0D5FZGY8W",
+      "url": "https://www.amazon.com/dp/B0D5FZGY8W?tag=menopausewash-20"
+    },
+    {
+      "page": "gummies-vs-capsules/index.html",
+      "product": "uro-gummies",
+      "asin": "B0H7DYZN26",
+      "url": "https://www.amazon.com/dp/B0H7DYZN26?tag=menopausewash-20"
+    },
+    {
+      "page": "index.html",
+      "product": "mirai-persimmon-body-wash",
+      "asin": "B00UZX8V0S",
+      "url": "https://www.amazon.com/dp/B00UZX8V0S?tag=menopausewash-20"
+    },
+    {
+      "page": "index.html",
+      "product": "lume-unscented-wash",
+      "asin": "B099GSW926",
+      "url": "https://www.amazon.com/dp/B099GSW926?tag=menopausewash-20"
+    },
+    {
+      "page": "index.html",
+      "product": "mirai-unscented-bar",
+      "asin": "B0DP37D91R",
+      "url": "https://www.amazon.com/dp/B0DP37D91R?tag=menopausewash-20"
+    },
+    {
+      "page": "odor-and-menopause/index.html",
+      "product": "love-wellness-ph-balanced-cleanser",
+      "asin": "B09HW69MY3",
+      "url": "https://www.amazon.com/dp/B09HW69MY3?tag=menopausewash-20"
+    },
+    {
+      "page": "probiotics/index.html",
+      "product": "uro-capsules",
+      "asin": "B0D5FZGY8W",
+      "url": "https://www.amazon.com/dp/B0D5FZGY8W?tag=menopausewash-20"
+    },
+    {
+      "page": "probiotics/index.html",
+      "product": "uro-gummies",
+      "asin": "B0H7DYZN26",
+      "url": "https://www.amazon.com/dp/B0H7DYZN26?tag=menopausewash-20"
+    },
+    {
+      "page": "probiotics/index.html",
+      "product": "uro-capsules",
+      "asin": "B0D5FZGY8W",
+      "url": "https://www.amazon.com/dp/B0D5FZGY8W?tag=menopausewash-20"
+    },
+    {
+      "page": "probiotics/index.html",
+      "product": "rephresh-pro-b",
+      "asin": "B001FOPQQS",
+      "url": "https://www.amazon.com/dp/B001FOPQQS?tag=menopausewash-20"
+    },
+    {
+      "page": "probiotics/index.html",
+      "product": "love-good-girl",
+      "asin": "B0DPR5XGPX",
+      "url": "https://www.amazon.com/dp/B0DPR5XGPX?tag=menopausewash-20"
+    },
+    {
+      "page": "probiotics/uro-capsules/index.html",
+      "product": "uro-capsules",
+      "asin": "B0D5FZGY8W",
+      "url": "https://www.amazon.com/dp/B0D5FZGY8W?tag=menopausewash-20"
+    },
+    {
+      "page": "probiotics/uro-capsules/index.html",
+      "product": "uro-capsules",
+      "asin": "B0D5FZGY8W",
+      "url": "https://www.amazon.com/dp/B0D5FZGY8W?tag=menopausewash-20"
+    },
+    {
+      "page": "underarm-products/index.html",
+      "product": "mirai-unscented-bar",
+      "asin": "B0DP37D91R",
+      "url": "https://www.amazon.com/dp/B0DP37D91R?tag=menopausewash-20"
+    },
+    {
+      "page": "underarm-products/index.html",
+      "product": "lume-unscented-wash",
+      "asin": "B099GSW926",
+      "url": "https://www.amazon.com/dp/B099GSW926?tag=menopausewash-20"
+    },
+    {
+      "page": "underarm-products/index.html",
+      "product": "ordinary-glycolic-7",
+      "asin": "B0DMTDN158",
+      "url": "https://www.amazon.com/dp/B0DMTDN158?tag=menopausewash-20"
+    },
+    {
+      "page": "underarm-products/index.html",
+      "product": "panoxyl-10-bar",
+      "asin": "B09SQFPLC9",
+      "url": "https://www.amazon.com/dp/B09SQFPLC9?tag=menopausewash-20"
+    },
+    {
+      "page": "washes/dove-ultra-sensitive/index.html",
+      "product": "dove-ultra-sensitive",
+      "asin": "B0CNBTJ6NY",
+      "url": "https://www.amazon.com/dp/B0CNBTJ6NY?tag=menopausewash-20"
+    },
+    {
+      "page": "washes/dove-ultra-sensitive/index.html",
+      "product": "dove-ultra-sensitive",
+      "asin": "B0CNBTJ6NY",
+      "url": "https://www.amazon.com/dp/B0CNBTJ6NY?tag=menopausewash-20"
+    },
+    {
+      "page": "washes/love-wellness-ph-balanced-cleanser/index.html",
+      "product": "love-wellness-ph-balanced-cleanser",
+      "asin": "B09HW69MY3",
+      "url": "https://www.amazon.com/dp/B09HW69MY3?tag=menopausewash-20"
+    },
+    {
+      "page": "washes/love-wellness-ph-balanced-cleanser/index.html",
+      "product": "love-wellness-ph-balanced-cleanser",
+      "asin": "B09HW69MY3",
+      "url": "https://www.amazon.com/dp/B09HW69MY3?tag=menopausewash-20"
+    },
+    {
+      "page": "washes/lume-unscented-wash/index.html",
+      "product": "lume-unscented-wash",
+      "asin": "B099GSW926",
+      "url": "https://www.amazon.com/dp/B099GSW926?tag=menopausewash-20"
+    },
+    {
+      "page": "washes/lume-unscented-wash/index.html",
+      "product": "lume-unscented-wash",
+      "asin": "B099GSW926",
+      "url": "https://www.amazon.com/dp/B099GSW926?tag=menopausewash-20"
+    },
+    {
+      "page": "washes/mirai-persimmon-body-wash/index.html",
+      "product": "mirai-persimmon-body-wash",
+      "asin": "B00UZX8V0S",
+      "url": "https://www.amazon.com/dp/B00UZX8V0S?tag=menopausewash-20"
+    },
+    {
+      "page": "washes/mirai-persimmon-body-wash/index.html",
+      "product": "mirai-persimmon-body-wash",
+      "asin": "B00UZX8V0S",
+      "url": "https://www.amazon.com/dp/B00UZX8V0S?tag=menopausewash-20"
+    },
+    {
+      "page": "washes/mirai-unscented-bar/index.html",
+      "product": "mirai-unscented-bar",
+      "asin": "B0DP37D91R",
+      "url": "https://www.amazon.com/dp/B0DP37D91R?tag=menopausewash-20"
+    },
+    {
+      "page": "washes/mirai-unscented-bar/index.html",
+      "product": "mirai-unscented-bar",
+      "asin": "B0DP37D91R",
+      "url": "https://www.amazon.com/dp/B0DP37D91R?tag=menopausewash-20"
+    },
+    {
+      "page": "washes/vanicream-gentle-body-wash/index.html",
+      "product": "vanicream-gentle-body-wash",
+      "asin": "B07FKQGN7F",
+      "url": "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20"
+    },
+    {
+      "page": "washes/vanicream-gentle-body-wash/index.html",
+      "product": "vanicream-gentle-body-wash",
+      "asin": "B07FKQGN7F",
+      "url": "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20"
+    }
+  ]
+}

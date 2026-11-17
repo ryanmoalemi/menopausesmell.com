@@ -43,18 +43,28 @@ def product_quote(pid):
 def amazon(pid,placement='card'):
  p=LINKS['products'].get(pid,{})
  special=p.get('special_link')
- active=bool(LINKS.get('enrollment_verified') and p.get('exact_listing_verified') and special)
- url=special if active else p.get('search_url','https://www.amazon.com/s?'+urlencode({'k':PRODUCT_MAP.get(pid,{}).get('name',pid.replace('-',' '))}))
- if LINKS.get('enrollment_verified') and LINKS.get('tracking_id'):
-  parts=urlsplit(url)
-  query=dict(parse_qsl(parts.query))
-  query['tag']=LINKS['tracking_id']
-  url=urlunsplit((parts.scheme,parts.netloc,parts.path,urlencode(query),parts.fragment))
+ if not p.get('exact_listing_verified') or not special:
+  raise ValueError(f'{pid}: no verified direct Amazon product destination')
+ parts=urlsplit(special)
+ if parts.scheme!='https' or parts.hostname!='www.amazon.com' or not re.fullmatch(r'/dp/B[A-Z0-9]{9}',parts.path):
+  raise ValueError(f'{pid}: Amazon destination must be a direct product page')
+ query={'tag':LINKS['tracking_id']} if LINKS.get('enrollment_verified') else {}
+ url=urlunsplit((parts.scheme,parts.netloc,parts.path,urlencode(query),''))
+ active=True
  name=p.get('button_name',PRODUCT_MAP.get(pid,{}).get('display_name',pid.replace('-',' ')))
- label=('View ' if active else 'Find ')+name+' on Amazon'
+ label='View '+name+' on Amazon'
  target=p.get('listing_target',PRODUCT_MAP.get(pid,{}).get('name',name))
- kind='Amazon listing' if active else 'Amazon search'
+ kind='Amazon product'
  return f'<div class="amazon-choice"><a class="btn amazon" aria-label="{E(label+" for "+target,quote=True)}" href="{E(url,quote=True)}" rel="sponsored nofollow noopener" target="_blank" data-product-id="{pid}" data-placement="{placement}">{E(label)}<span aria-hidden="true">↗</span></a><span class="amazon-target"><strong>{kind}:</strong> {E(target)}. Confirm the label, size and seller before ordering.</span></div>'
+
+def refresh_amazon_links(content):
+ def replace(match):
+  block=match.group(0)
+  pid=re.search(r'data-product-id="([^"]+)"',block)
+  placement=re.search(r'data-placement="([^"]+)"',block)
+  if not pid: raise ValueError('Amazon block is missing its product ID')
+  return amazon(pid.group(1),placement.group(1) if placement else 'card')
+ return re.sub(r'<div class="amazon-choice">.*?</div>',replace,content,flags=re.S)
 
 def disclosure():
  if LINKS.get('enrollment_verified'):
@@ -145,6 +155,6 @@ def extra_pages():
  pages.append(('/reddit-recommendations/','Reddit product recommendations and sources','How the community shortlist was selected.',research_page()))
  pages.append(('/body-odor/','Menopause body odor: washes and underarm products','Compare body-odor product options from menopause discussions.',f'<div class="wrap"><header class="article-head"><span class="eyebrow">Menopause body odor</span><h1>Body odor, underarms or vaginal odor?</h1><p class="dek">Choose the area you are concerned about to find the relevant product comparison or care guide.</p></header><div class="article-layout"><article class="article-body">{quote("body")}<p>Start with where you notice the odor. The comparisons below cover different areas and product types.</p><h2>Body washes</h2><p>These are rinse-off cleansers for body skin. Persimmon soap and Lume wash came up repeatedly in the reviewed discussions, with both positive and negative experiences.</p>{button("/external-washes/","Compare body washes")}<h2>Underarm products</h2><p>Reddit users also discuss acne cleansers and exfoliating acids for underarm odor. Those uses differ from the labels. Read the differences and precautions before considering a product.</p>{button("/underarm-products/","Read the underarm comparison",True)}<h2>Intimate odor</h2><p>The vulva is the outside genital skin; the vagina is internal. A change in vaginal odor or discharge belongs in the care guide, not a stronger body-wash routine.</p>{a("/odor-and-menopause/","Read the intimate-odor guide")}</article></div></div>'))
  if (DATA/'extra-commerce-pages.json').exists():
-  for p in json.loads((DATA/'extra-commerce-pages.json').read_text()): pages.append((p['path'],p['title'],p['description'],p['content']))
+  for p in json.loads((DATA/'extra-commerce-pages.json').read_text()): pages.append((p['path'],p['title'],p['description'],refresh_amazon_links(p['content'])))
  (DATA/'reddit-copy.json').write_text(json.dumps(Q,indent=2,ensure_ascii=False))
  return pages

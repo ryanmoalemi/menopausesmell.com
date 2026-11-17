@@ -1,0 +1,771 @@
+{
+  "opening": [
+    {
+      "size": "390x844",
+      "footerBottom": 786.71875,
+      "height": 844,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 390,
+      "visibleOptions": 6,
+      "width": 390
+    },
+    {
+      "size": "320x740",
+      "footerBottom": 713.453125,
+      "height": 740,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 320,
+      "visibleOptions": 6,
+      "width": 320
+    },
+    {
+      "size": "360x800",
+      "footerBottom": 769.625,
+      "height": 800,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 360,
+      "visibleOptions": 6,
+      "width": 360
+    },
+    {
+      "size": "375x740",
+      "footerBottom": 723.453125,
+      "height": 740,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 375,
+      "visibleOptions": 6,
+      "width": 375
+    },
+    {
+      "size": "430x932",
+      "footerBottom": 782.71875,
+      "height": 932,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 430,
+      "visibleOptions": 6,
+      "width": 430
+    },
+    {
+      "size": "768x1024",
+      "footerBottom": 598.15625,
+      "height": 1024,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 768,
+      "visibleOptions": 6,
+      "width": 768
+    },
+    {
+      "size": "1024x900",
+      "footerBottom": 577.15625,
+      "height": 900,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 1024,
+      "visibleOptions": 6,
+      "width": 1024
+    },
+    {
+      "size": "1024x600",
+      "footerBottom": 577.15625,
+      "height": 600,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 1024,
+      "visibleOptions": 6,
+      "width": 1024
+    },
+    {
+      "size": "1093x614",
+      "footerBottom": 577.15625,
+      "height": 614,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 1093,
+      "visibleOptions": 6,
+      "width": 1093
+    },
+    {
+      "size": "1366x768",
+      "footerBottom": 577.15625,
+      "height": 768,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 1366,
+      "visibleOptions": 6,
+      "width": 1366
+    },
+    {
+      "size": "1440x1100",
+      "footerBottom": 577.0913848876953,
+      "height": 1100,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 1440,
+      "visibleOptions": 6,
+      "width": 1440
+    },
+    {
+      "size": "740x390",
+      "footerBottom": 301.65625,
+      "height": 390,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 740,
+      "visibleOptions": 6,
+      "width": 740
+    },
+    {
+      "size": "320x568",
+      "footerBottom": 552.546875,
+      "height": 568,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 320,
+      "visibleOptions": 6,
+      "width": 320
+    },
+    {
+      "size": "360x560",
+      "footerBottom": 540.046875,
+      "height": 560,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 360,
+      "visibleOptions": 6,
+      "width": 360
+    },
+    {
+      "size": "375x600",
+      "footerBottom": 540.046875,
+      "height": 600,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 375,
+      "visibleOptions": 6,
+      "width": 375
+    },
+    {
+      "size": "390x600",
+      "footerBottom": 511.25,
+      "height": 600,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 390,
+      "visibleOptions": 6,
+      "width": 390
+    },
+    {
+      "size": "430x700",
+      "footerBottom": 474.953125,
+      "height": 700,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 430,
+      "visibleOptions": 6,
+      "width": 430
+    },
+    {
+      "size": "1920x1080",
+      "footerBottom": 577.4552345275879,
+      "height": 1080,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 1920,
+      "visibleOptions": 6,
+      "width": 1920
+    }
+  ],
+  "journeys": [
+    {
+      "case": "Urine, no allergies, nothing tried",
+      "size": "320x568",
+      "brokenImages": 0,
+      "extrasOpen": true,
+      "heading": "For little leaks and the smell they leave.",
+      "links": [
+        "https://www.amazon.com/dp/B082WZGLXX?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B082WZ4419?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B07TXLZ8MR?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B000PKJBCI?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B00FZR1C7I?tag=menopausewash-20"
+      ],
+      "moreLabel": "See 4 more options below ↓",
+      "products": 5,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "case": "Underarm odor; exclude exact Vanicream wash",
+      "size": "390x844",
+      "brokenImages": 0,
+      "extrasOpen": true,
+      "heading": "For underarm smell that bothers you.",
+      "links": [
+        "https://www.amazon.com/dp/B07BKCL9RR?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B0DP37D91R?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20"
+      ],
+      "moreLabel": "See 2 more options below ↓",
+      "products": 3,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "case": "Underarms; Both; No allergies",
+      "size": "360x560",
+      "brokenImages": 0,
+      "extrasOpen": true,
+      "heading": "For underarm smell and wetness.",
+      "links": [
+        "https://www.amazon.com/dp/B01M7ZAQNN?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B07BKCL9RR?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B0DP37D91R?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20"
+      ],
+      "moreLabel": "See 4 more options below ↓",
+      "products": 5,
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "case": "Body skin, including under breasts and other skin folds; It seems to stay in my clothes; No allergies",
+      "size": "375x600",
+      "brokenImages": 0,
+      "extrasOpen": true,
+      "heading": "Body-odor care first. Fresher clothes next.",
+      "links": [
+        "https://www.amazon.com/dp/B0DP37D91R?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B085V5ZMV9?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20"
+      ],
+      "moreLabel": "See 3 more options below ↓",
+      "products": 4,
+      "scrollWidth": 375,
+      "width": 375
+    },
+    {
+      "case": "Sweat on surrounding outer skin, separate from vaginal changes; The smell comes back after washing; Products often dry or irritate my skin",
+      "size": "430x700",
+      "brokenImages": 0,
+      "extrasOpen": true,
+      "heading": "For sweat on your outer groin skin.",
+      "links": [
+        "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B00FZR1C7I?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20"
+      ],
+      "moreLabel": "See 2 more options below ↓",
+      "products": 3,
+      "scrollWidth": 430,
+      "width": 430
+    },
+    {
+      "case": "Vaginal odor or discharge; Vaginal dryness during the day; No allergies",
+      "size": "768x1024",
+      "brokenImages": 0,
+      "extrasOpen": null,
+      "heading": "More comfort when you feel dry.",
+      "links": [
+        "https://www.amazon.com/dp/B07GX9NQ65?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B001G7QR8A?tag=menopausewash-20"
+      ],
+      "moreLabel": "See 1 more option below ↓",
+      "products": 2,
+      "scrollWidth": 753,
+      "width": 753
+    },
+    {
+      "case": "Vaginal odor or discharge; Dryness or friction during sex; No allergies",
+      "size": "1366x768",
+      "brokenImages": 0,
+      "extrasOpen": null,
+      "heading": "Less friction, more comfortable intimacy.",
+      "links": [
+        "https://www.amazon.com/dp/B00KDHS8PO?tag=menopausewash-20"
+      ],
+      "products": 1,
+      "scrollWidth": 1351,
+      "width": 1351
+    },
+    {
+      "case": "Body skin, including under breasts and other skin folds; The skin stays sweaty or damp; No allergies",
+      "size": "740x390",
+      "brokenImages": 0,
+      "extrasOpen": true,
+      "heading": "For skin folds that stay damp.",
+      "links": [
+        "https://www.amazon.com/dp/B00427Q0VK?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B0DP37D91R?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20"
+      ],
+      "moreLabel": "See 3 more options below ↓",
+      "products": 4,
+      "scrollWidth": 740,
+      "width": 740
+    },
+    {
+      "case": "Underarms; The smell; No allergies",
+      "size": "390x600",
+      "brokenImages": 0,
+      "extrasOpen": true,
+      "heading": "For underarm smell that bothers you.",
+      "links": [
+        "https://www.amazon.com/dp/B07BKCL9RR?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B0DP37D91R?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20"
+      ],
+      "moreLabel": "See 3 more options below ↓",
+      "products": 4,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "case": "Urine or little leaks; No allergies",
+      "size": "1024x600",
+      "brokenImages": 0,
+      "extrasOpen": true,
+      "heading": "For little leaks and the smell they leave.",
+      "links": [
+        "https://www.amazon.com/dp/B082WZGLXX?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B082WZ4419?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B07TXLZ8MR?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B000PKJBCI?tag=menopausewash-20",
+        "https://www.amazon.com/dp/B00FZR1C7I?tag=menopausewash-20"
+      ],
+      "moreLabel": "See 4 more options below ↓",
+      "products": 5,
+      "scrollWidth": 1009,
+      "width": 1009
+    }
+  ],
+  "faults": [
+    {
+      "profile": "Older APIs absent",
+      "result": {
+        "brokenImages": 0,
+        "extrasOpen": true,
+        "heading": "For underarm smell that bothers you.",
+        "links": [
+          "https://www.amazon.com/dp/B07BKCL9RR?tag=menopausewash-20",
+          "https://www.amazon.com/dp/B0DP37D91R?tag=menopausewash-20",
+          "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+          "https://www.amazon.com/dp/B01N7K7EFF?tag=menopausewash-20"
+        ],
+        "moreLabel": "See 3 more options below ↓",
+        "products": 4,
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "profile": "Legacy dialog opens",
+      "visible": true
+    },
+    {
+      "profile": "Reviews unavailable",
+      "reviews": 0,
+      "result": {
+        "brokenImages": 0,
+        "extrasOpen": true,
+        "heading": "For little leaks and the smell they leave.",
+        "links": [
+          "https://www.amazon.com/dp/B082WZGLXX?tag=menopausewash-20",
+          "https://www.amazon.com/dp/B082WZ4419?tag=menopausewash-20",
+          "https://www.amazon.com/dp/B07TXLZ8MR?tag=menopausewash-20",
+          "https://www.amazon.com/dp/B000PKJBCI?tag=menopausewash-20",
+          "https://www.amazon.com/dp/B00FZR1C7I?tag=menopausewash-20"
+        ],
+        "moreLabel": "See 4 more options below ↓",
+        "products": 5,
+        "scrollWidth": 1009,
+        "width": 1009
+      }
+    },
+    {
+      "profile": "Catalog initial failure",
+      "text": "Your result could not load.\n\nYour answers are still here.\n\nTry again"
+    },
+    {
+      "profile": "Catalog retry",
+      "restored": true
+    }
+  ],
+  "openingBefore": [
+    {
+      "size": "390x844",
+      "footerBottom": 786.71875,
+      "height": 844,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 390,
+      "visibleOptions": 6,
+      "width": 390
+    },
+    {
+      "size": "320x740",
+      "footerBottom": 713.453125,
+      "height": 740,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 320,
+      "visibleOptions": 6,
+      "width": 320
+    },
+    {
+      "size": "360x800",
+      "footerBottom": 769.625,
+      "height": 800,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 360,
+      "visibleOptions": 6,
+      "width": 360
+    },
+    {
+      "size": "375x740",
+      "footerBottom": 723.453125,
+      "height": 740,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 375,
+      "visibleOptions": 6,
+      "width": 375
+    },
+    {
+      "size": "430x932",
+      "footerBottom": 782.71875,
+      "height": 932,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 430,
+      "visibleOptions": 6,
+      "width": 430
+    },
+    {
+      "size": "768x1024",
+      "footerBottom": 598.15625,
+      "height": 1024,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 768,
+      "visibleOptions": 6,
+      "width": 768
+    },
+    {
+      "size": "1024x900",
+      "footerBottom": 577.15625,
+      "height": 900,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 1024,
+      "visibleOptions": 6,
+      "width": 1024
+    },
+    {
+      "size": "1024x600",
+      "footerBottom": 577.15625,
+      "height": 600,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 1024,
+      "visibleOptions": 6,
+      "width": 1024
+    },
+    {
+      "size": "1093x614",
+      "footerBottom": 577.15625,
+      "height": 614,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 1093,
+      "visibleOptions": 6,
+      "width": 1093
+    },
+    {
+      "size": "1366x768",
+      "footerBottom": 577.15625,
+      "height": 768,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 1366,
+      "visibleOptions": 6,
+      "width": 1366
+    },
+    {
+      "size": "1440x1100",
+      "footerBottom": 577.0913848876953,
+      "height": 1100,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 1440,
+      "visibleOptions": 6,
+      "width": 1440
+    },
+    {
+      "size": "740x390",
+      "footerBottom": 635.6875,
+      "height": 390,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 740,
+      "visibleOptions": 2,
+      "width": 740
+    },
+    {
+      "size": "320x568",
+      "footerBottom": 713.453125,
+      "height": 568,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 320,
+      "visibleOptions": 4,
+      "width": 320
+    },
+    {
+      "size": "360x560",
+      "footerBottom": 713.453125,
+      "height": 560,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 360,
+      "visibleOptions": 4,
+      "width": 360
+    },
+    {
+      "size": "375x600",
+      "footerBottom": 723.453125,
+      "height": 600,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 375,
+      "visibleOptions": 4,
+      "width": 375
+    },
+    {
+      "size": "390x600",
+      "footerBottom": 723.453125,
+      "height": 600,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 390,
+      "visibleOptions": 4,
+      "width": 390
+    },
+    {
+      "size": "430x700",
+      "footerBottom": 652.484375,
+      "height": 700,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 430,
+      "visibleOptions": 6,
+      "width": 430
+    },
+    {
+      "size": "1920x1080",
+      "footerBottom": 577.4552345275879,
+      "height": 1080,
+      "innerScroll": false,
+      "options": 6,
+      "scrollWidth": 1920,
+      "visibleOptions": 6,
+      "width": 1920
+    }
+  ],
+  "jump": {
+    "title": "Depend Silhouette Incontinence Underwear",
+    "top": 11.734375
+  },
+  "console": [
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:42.904Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:43.973Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:43.974Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:43.974Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:43.975Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:43.976Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:44.972Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:44.979Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:44.981Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:44.982Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:46.006Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:46.006Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:46.010Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:46.013Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:46.013Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:47.007Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:47.016Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:47.018Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:47.019Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:48.026Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:48.026Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:48.033Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:48.035Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:48.035Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:49.036Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:49.037Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:49.058Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:49.058Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:57.502Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    },
+    {
+      "level": "error",
+      "message": "Error sending browser metadata to extension: Object",
+      "timestamp": "2026-11-17T09:44:57.566Z",
+      "url": "chrome-extension://kcdongibgcplmaagnmgpjhpjgmmaaaaa/content-script.bundle.js"
+    }
+  ]
+}

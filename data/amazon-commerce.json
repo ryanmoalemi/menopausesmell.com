@@ -3,95 +3,164 @@
   "enrollment_verified": true,
   "products": {
     "vanicream-gentle-body-wash": {
-      "search_url": "https://www.amazon.com/s?k=Vanicream+Gentle+Body+Wash+12+fl+oz",
-      "special_link": null,
-      "exact_listing_verified": false,
+      "special_link": "https://www.amazon.com/dp/B07FKQGN7F?tag=menopausewash-20",
+      "exact_listing_verified": true,
       "button_name": "Vanicream",
-      "listing_target": "Vanicream Gentle Body Wash · 12 fl oz"
+      "listing_target": "Vanicream Gentle Body Wash · 12 fl oz",
+      "asin": "B07FKQGN7F",
+      "listing_checked": "2026-11-17",
+      "listing_sources": [],
+      "verification_scope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
     },
     "dove-ultra-sensitive": {
-      "search_url": "https://www.amazon.com/s?k=Dove+Ultra+Sensitive+Body+Wash+10+ingredients+fragrance+free+18.5+oz",
-      "special_link": null,
-      "exact_listing_verified": false,
+      "special_link": "https://www.amazon.com/dp/B0CNBTJ6NY?tag=menopausewash-20",
+      "exact_listing_verified": true,
       "button_name": "Dove Ultra Sensitive",
-      "listing_target": "Dove Ultra Sensitive Body Wash · fragrance-free · 18.5 oz"
+      "listing_target": "Dove Ultra Sensitive Body Wash · fragrance-free · 18.5 fl oz",
+      "asin": "B0CNBTJ6NY",
+      "listing_checked": "2026-11-17",
+      "listing_sources": [
+        "https://www.desertcart.com.eg/products/597778440-ultra-sensitive-serum-body-wash-fragrance-free-10-ingredients-18",
+        "https://slickdeals.net/f/17423709-5-49-w-s-s-dove-fragrance-free-body-wash-18-5-oz"
+      ],
+      "verification_scope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
     },
     "love-wellness-ph-balanced-cleanser": {
-      "search_url": "https://www.amazon.com/s?k=Love+Wellness+pH+Balanced+Cleanser+fragrance+free+5+fl+oz",
-      "special_link": null,
-      "exact_listing_verified": false,
+      "special_link": "https://www.amazon.com/dp/B09HW69MY3?tag=menopausewash-20",
+      "exact_listing_verified": true,
       "button_name": "Love Wellness cleanser",
-      "listing_target": "Love Wellness pH Balanced Cleanser · fragrance-free · 5 fl oz"
+      "listing_target": "Love Wellness pH Balanced Cleanser · fragrance-free · 5 fl oz",
+      "asin": "B09HW69MY3",
+      "listing_checked": "2026-11-17",
+      "listing_sources": [
+        "https://herwell-hub.co/love-wellness-ph-balancing-cleanser-feminine-vaginal-wash-fragrance-free-vaginal-cleanser-for-balanced-ph-intimate-health-hygiene-non-irritating-with-aloe-vera-for-sensitive-skin-5-fl-oz/",
+        "https://lovewellness.com/products/ph-balanced-cleanser-5oz"
+      ],
+      "verification_scope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
     },
     "uro-gummies": {
-      "search_url": "https://www.amazon.com/s?k=O+Positiv+URO+Vaginal+Probiotic+Gummies+Pink+Pineapple+60+count",
-      "special_link": null,
-      "exact_listing_verified": false,
+      "special_link": "https://www.amazon.com/dp/B0H7DYZN26?tag=menopausewash-20",
+      "exact_listing_verified": true,
       "button_name": "URO gummies",
-      "listing_target": "O Positiv URO Vaginal Probiotic Gummies · Pink Pineapple · 60 count"
+      "listing_target": "O Positiv URO Vaginal Probiotic Gummies · Pink Pineapple · 60 gummies / 30-day supply",
+      "asin": "B0H7DYZN26",
+      "listing_checked": "2026-11-17",
+      "listing_sources": [
+        "https://www.sellersnooper.com/O%20Positiv/productsByRevenue",
+        "https://opositiv.com/products/vaginal-probiotic-gummies"
+      ],
+      "verification_scope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
     },
     "rephresh-pro-b": {
-      "search_url": "https://www.amazon.com/s?k=repHresh+Pro-B+Vaginal+Probiotic+Supplement+30+capsules",
-      "special_link": null,
-      "exact_listing_verified": false,
+      "special_link": "https://www.amazon.com/dp/B001FOPQQS?tag=menopausewash-20",
+      "exact_listing_verified": true,
       "button_name": "repHresh Pro-B",
-      "listing_target": "repHresh Pro-B Vaginal Probiotic · 30 capsules"
+      "listing_target": "RepHresh Pro-B Vaginal Probiotic · 30 oral capsules",
+      "asin": "B001FOPQQS",
+      "listing_checked": "2026-11-17",
+      "listing_sources": [
+        "https://www.desertcart.in/products/1361539-rephresh-pro-b-vaginal-probiotic-supplement-probiotic-for-women-balances",
+        "https://www.desertcart.com.om/products/105927475-rephresh-pro-b-probiotic-feminine-supplement-capsules-30-ea"
+      ],
+      "verification_scope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
     },
     "love-good-girl": {
-      "search_url": "https://www.amazon.com/s?k=Love+Wellness+Good+Girl+Probiotics+9+strains+30+capsules",
-      "special_link": null,
-      "exact_listing_verified": false,
+      "special_link": "https://www.amazon.com/dp/B0DPR5XGPX?tag=menopausewash-20",
+      "exact_listing_verified": true,
       "button_name": "Good Girl Probiotics",
-      "listing_target": "Love Wellness Good Girl Probiotics · 9 strains · 30 capsules"
+      "listing_target": "Love Wellness Good Girl Probiotics · 9 strains · 30 capsules",
+      "asin": "B0DPR5XGPX",
+      "listing_checked": "2026-11-17",
+      "listing_sources": [
+        "https://ritewellbeing.com/products/love-wellness-good-girl-probiotics-women-s-vaginal-health-ph-balance-supplement-9-strain-probiotic-for-urinary-tract-yeast-odor-immune-support-gluten-free-30-day-supply",
+        "https://wellnesscollectiveco.com/love-wellness-good-girl-probiotics-womens-vaginal-health-ph-balance-supplement-9-strain-probiotic-for-urinary-tract-yeast-odor-immune-support-gluten-free-30-ct-30-day-supply/"
+      ],
+      "verification_scope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
     },
     "mirai-unscented-bar": {
-      "search_url": "https://www.amazon.com/s?k=Mirai+Clinical+Persimmon+Deodorizing+Soap+Unscented+3.5+oz",
-      "special_link": null,
-      "exact_listing_verified": false,
+      "special_link": "https://www.amazon.com/dp/B0DP37D91R?tag=menopausewash-20",
+      "exact_listing_verified": true,
       "button_name": "Mirai Unscented",
-      "listing_target": "Mirai Clinical Persimmon Soap · Unscented · 3.5 oz"
+      "listing_target": "Mirai Clinical Persimmon Soap · Unscented · 3.5 oz",
+      "asin": "B0DP37D91R",
+      "listing_checked": "2026-11-17",
+      "listing_sources": [],
+      "verification_scope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
     },
     "lume-unscented-wash": {
-      "search_url": "https://www.amazon.com/s?k=Lume+Acidified+Body+Wash+Unscented",
-      "special_link": null,
-      "exact_listing_verified": false,
+      "special_link": "https://www.amazon.com/dp/B099GSW926?tag=menopausewash-20",
+      "exact_listing_verified": true,
       "button_name": "Lume Unscented",
-      "listing_target": "Lume Acidified Body Wash · Unscented · check current size"
+      "listing_target": "Lume Acidified Body Wash · Unscented · 8.5 fl oz",
+      "asin": "B099GSW926",
+      "listing_checked": "2026-11-17",
+      "listing_sources": [
+        "https://www.desertcart.in/products/353040127-acidified-body-wash-8-5-oz-unscented",
+        "https://manuals.plus/ko/asin/B099GSW926"
+      ],
+      "verification_scope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
     },
     "dove-sensitive-beauty-bar": {
-      "search_url": "https://www.amazon.com/s?k=Dove+Sensitive+Skin+Beauty+Bar+Fragrance+Free",
-      "special_link": null,
-      "exact_listing_verified": false,
+      "special_link": "https://www.amazon.com/dp/B001ET7IQK?tag=menopausewash-20",
+      "exact_listing_verified": true,
       "button_name": "Dove Sensitive bar",
-      "listing_target": "Dove Sensitive Skin Beauty Bar · fragrance-free"
+      "listing_target": "Dove Sensitive Skin Beauty Bar · fragrance-free · 3.75 oz · 8 bars",
+      "asin": "B001ET7IQK",
+      "listing_checked": "2026-11-17",
+      "listing_sources": [
+        "https://www.asinsight.com/market-analysis/US/dove-sensitive-skin-bar-soap",
+        "https://www.bullsprice.com/product-details/B001ET7IQK/Beauty"
+      ],
+      "verification_scope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
     },
     "panoxyl-10-bar": {
-      "search_url": "https://www.amazon.com/s?k=PanOxyl+Acne+Treatment+Bar+10%25+Benzoyl+Peroxide+4+oz",
-      "special_link": null,
-      "exact_listing_verified": false,
+      "special_link": "https://www.amazon.com/dp/B09SQFPLC9?tag=menopausewash-20",
+      "exact_listing_verified": true,
       "button_name": "PanOxyl bar",
-      "listing_target": "PanOxyl Acne Treatment Bar · 10% benzoyl peroxide · 4 oz"
+      "listing_target": "PanOxyl Acne Treatment Bar · 10% benzoyl peroxide · 4 oz",
+      "asin": "B09SQFPLC9",
+      "listing_checked": "2026-11-17",
+      "listing_sources": [
+        "https://www.merchantwords.com/asin/us/B09SQFPLC9",
+        "https://panoxyl.com/acne-products/acne-treatment-bar-bpo/"
+      ],
+      "verification_scope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
     },
     "ordinary-glycolic-7": {
-      "search_url": "https://www.amazon.com/s?k=The+Ordinary+Glycolic+Acid+7%25+Exfoliating+Toner",
-      "special_link": null,
-      "exact_listing_verified": false,
+      "special_link": "https://www.amazon.com/dp/B0DMTDN158?tag=menopausewash-20",
+      "exact_listing_verified": true,
       "button_name": "The Ordinary toner",
-      "listing_target": "The Ordinary Glycolic Acid 7% Exfoliating Toner"
+      "listing_target": "The Ordinary Glycolic Acid 7% Exfoliating Toner · 100 mL",
+      "asin": "B0DMTDN158",
+      "listing_checked": "2026-11-17",
+      "listing_sources": [
+        "https://www.desertcart.in/products/725408969-glycolic-acid-7-exfoliating-toner-brightening-and-smoothing-daily-toner-for-more-even-looking-skin-tone",
+        "https://www.merchantwords.com/page1products/us/glow%20recipe%20toner"
+      ],
+      "verification_scope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
     },
     "mirai-persimmon-body-wash": {
-      "search_url": "https://www.amazon.com/s?k=Mirai+Clinical+Purifying+Deodorizing+Body+Wash+Persimmon",
-      "special_link": null,
-      "exact_listing_verified": false,
+      "special_link": "https://www.amazon.com/dp/B00UZX8V0S?tag=menopausewash-20",
+      "exact_listing_verified": true,
       "button_name": "Mirai liquid wash",
-      "listing_target": "Mirai Clinical Purifying & Deodorizing Body Wash with Persimmon · liquid"
+      "listing_target": "Mirai Clinical Persimmon Body Wash · liquid · 9.29 fl oz",
+      "asin": "B00UZX8V0S",
+      "listing_checked": "2026-11-17",
+      "listing_sources": [
+        "https://www.asinsight.com/market-analysis/US/mirai-clinical-persimmon-soap-bar",
+        "https://888lots.com/item/purifying-and-deodorizing-body-wash-with-natural-persimmon-888-b00uzx8v0s-us"
+      ],
+      "verification_scope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
     },
     "uro-capsules": {
-      "search_url": "https://www.amazon.com/s?k=O+Positiv+URO+Vaginal+Probiotic+Capsules+60+count",
-      "special_link": null,
-      "exact_listing_verified": false,
+      "special_link": "https://www.amazon.com/dp/B0D5FZGY8W?tag=menopausewash-20",
+      "exact_listing_verified": true,
       "button_name": "URO capsules",
-      "listing_target": "O Positiv URO Vaginal Probiotic Capsules · 60 count"
+      "listing_target": "O Positiv URO Vaginal Probiotic Capsules · 60 count",
+      "asin": "B0D5FZGY8W",
+      "listing_checked": "2026-11-17",
+      "listing_sources": [],
+      "verification_scope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
     }
   },
   "historical_user_links": [
@@ -116,6 +185,6 @@
     "source": "Site owner confirmation in chat",
     "date": "2026-11-12",
     "website_registered": "https://menopausewash.com",
-    "note": "Normal US tagged links enabled. OneLink activation not verified. Exact listing matches remain unverified; use tagged product searches."
+    "note": "Owner-authorized US affiliate tag. All shopping destinations are direct product URLs. OneLink activation is not verified."
   }
 }

@@ -9,7 +9,7 @@
     "labelVerified": false,
     "publishEligible": false,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "gentle": false,
     "fragranceFree": null,
     "areas": [
@@ -27,7 +27,14 @@
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
     "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
-    "existingAssetSha256": "c44dbc8d9f856513ac3761d15f281a80c27eb2a0cb2a690ad7ceec841d014653"
+    "existingAssetSha256": "c44dbc8d9f856513ac3761d15f281a80c27eb2a0cb2a690ad7ceec841d014653",
+    "asin": "B099GSW926",
+    "listingVerificationSources": [
+      "https://www.desertcart.in/products/353040127-acidified-body-wash-8-5-oz-unscented",
+      "https://manuals.plus/ko/asin/B099GSW926"
+    ],
+    "listingVerifiedDate": "2026-11-17",
+    "listingVerificationScope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
   },
   {
     "id": "mirai-unscented-bar",
@@ -145,7 +152,7 @@
     "labelVerified": false,
     "publishEligible": false,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "gentle": false,
     "fragranceFree": null,
     "areas": [
@@ -163,7 +170,14 @@
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
     "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
-    "existingAssetSha256": "95b9fc895de744d81abf47201abb0e719f18193ab7b402cfe71edf777510c46b"
+    "existingAssetSha256": "95b9fc895de744d81abf47201abb0e719f18193ab7b402cfe71edf777510c46b",
+    "asin": "B00UZX8V0S",
+    "listingVerificationSources": [
+      "https://www.asinsight.com/market-analysis/US/mirai-clinical-persimmon-soap-bar",
+      "https://888lots.com/item/purifying-and-deodorizing-body-wash-with-natural-persimmon-888-b00uzx8v0s-us"
+    ],
+    "listingVerifiedDate": "2026-11-17",
+    "listingVerificationScope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
   },
   {
     "id": "dove-ultra-sensitive",
@@ -175,7 +189,7 @@
     "labelVerified": false,
     "publishEligible": false,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "gentle": false,
     "fragranceFree": null,
     "areas": [
@@ -193,7 +207,14 @@
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
     "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
-    "existingAssetSha256": "dd9ba3ce528c5fa34f14578659d81fd95089b9ec56fc9be564ece89163435719"
+    "existingAssetSha256": "dd9ba3ce528c5fa34f14578659d81fd95089b9ec56fc9be564ece89163435719",
+    "asin": "B0CNBTJ6NY",
+    "listingVerificationSources": [
+      "https://www.desertcart.com.eg/products/597778440-ultra-sensitive-serum-body-wash-fragrance-free-10-ingredients-18",
+      "https://slickdeals.net/f/17423709-5-49-w-s-s-dove-fragrance-free-body-wash-18-5-oz"
+    ],
+    "listingVerifiedDate": "2026-11-17",
+    "listingVerificationScope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
   },
   {
     "id": "ordinary-glycolic-7",
@@ -205,7 +226,7 @@
     "labelVerified": false,
     "publishEligible": false,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "gentle": false,
     "fragranceFree": null,
     "areas": [
@@ -223,7 +244,14 @@
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
     "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
-    "existingAssetSha256": "735d077fd0bfb28ae600f70c300797ed5c971b86c4841c4b123ede9757caebb0"
+    "existingAssetSha256": "735d077fd0bfb28ae600f70c300797ed5c971b86c4841c4b123ede9757caebb0",
+    "asin": "B0DMTDN158",
+    "listingVerificationSources": [
+      "https://www.desertcart.in/products/725408969-glycolic-acid-7-exfoliating-toner-brightening-and-smoothing-daily-toner-for-more-even-looking-skin-tone",
+      "https://www.merchantwords.com/page1products/us/glow%20recipe%20toner"
+    ],
+    "listingVerifiedDate": "2026-11-17",
+    "listingVerificationScope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
   },
   {
     "id": "panoxyl-10-bar",
@@ -235,7 +263,7 @@
     "labelVerified": false,
     "publishEligible": false,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "gentle": false,
     "fragranceFree": null,
     "areas": [
@@ -253,7 +281,14 @@
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
     "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
-    "existingAssetSha256": "be0292ec95b30199e04818f29dd1599957f87ae82d38f00ed07801accb7294b3"
+    "existingAssetSha256": "be0292ec95b30199e04818f29dd1599957f87ae82d38f00ed07801accb7294b3",
+    "asin": "B09SQFPLC9",
+    "listingVerificationSources": [
+      "https://www.merchantwords.com/asin/us/B09SQFPLC9",
+      "https://panoxyl.com/acne-products/acne-treatment-bar-bpo/"
+    ],
+    "listingVerifiedDate": "2026-11-17",
+    "listingVerificationScope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
   },
   {
     "id": "uro-capsules",
@@ -304,7 +339,7 @@
     "labelVerified": false,
     "publishEligible": false,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "gentle": false,
     "fragranceFree": null,
     "areas": [
@@ -322,7 +357,14 @@
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
     "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
-    "existingAssetSha256": "e17c411ee732e423fbfdafb122d14ee65133fb5781ce3c80df4c9c963725ad9c"
+    "existingAssetSha256": "e17c411ee732e423fbfdafb122d14ee65133fb5781ce3c80df4c9c963725ad9c",
+    "asin": "B0H7DYZN26",
+    "listingVerificationSources": [
+      "https://www.sellersnooper.com/O%20Positiv/productsByRevenue",
+      "https://opositiv.com/products/vaginal-probiotic-gummies"
+    ],
+    "listingVerifiedDate": "2026-11-17",
+    "listingVerificationScope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
   },
   {
     "id": "rephresh-pro-b",
@@ -334,7 +376,7 @@
     "labelVerified": false,
     "publishEligible": false,
     "imageRightsVerified": false,
-    "exactListingVerified": false,
+    "exactListingVerified": true,
     "gentle": false,
     "fragranceFree": null,
     "areas": [
@@ -352,7 +394,14 @@
     "fact": "Recognition only, not a personalized recommendation.",
     "caveat": "Exact formula and label need verification before recommendation.",
     "imageRightsStatus": "Existing published site image reused at site-owner launch request. Third-party commercial reuse permission remains unverified.",
-    "existingAssetSha256": "ead7573a952b7595e05317f4f9c46785bb28a2e3a2d2fd27c675b0f5abc3ec1f"
+    "existingAssetSha256": "ead7573a952b7595e05317f4f9c46785bb28a2e3a2d2fd27c675b0f5abc3ec1f",
+    "asin": "B001FOPQQS",
+    "listingVerificationSources": [
+      "https://www.desertcart.in/products/1361539-rephresh-pro-b-vaginal-probiotic-supplement-probiotic-for-women-balances",
+      "https://www.desertcart.com.om/products/105927475-rephresh-pro-b-probiotic-feminine-supplement-capsules-30-ea"
+    ],
+    "listingVerifiedDate": "2026-11-17",
+    "listingVerificationScope": "Product identity and variant matched to published sources. Live Amazon offer, seller, stock and checkout not verified; Amazon retrieval was blocked."
   },
   {
     "id": "vanicream-antiperspirant",
