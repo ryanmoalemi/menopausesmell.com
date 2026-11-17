@@ -55,3 +55,9 @@ For every pending combination, complete a normal match, a multi-concern match an
 Technical references: [AbortSignal.timeout compatibility](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/timeout_static), [Safari 15.4 features](https://webkit.org/blog/12445/new-webkit-features-in-safari-15-4/), [Apple security release list](https://support.apple.com/en-us/100100), [Android 17 release information](https://developer.android.com/blog/topics/android-17).
 
 Raw evidence: `browser-checks-2026-11-17.json` and `amazon-links-2026-11-17.json` in this folder. Product source references are in the commerce ledger. Live deployment verification is recorded separately after publication.
+
+## Published verification
+
+Published application commit `887c42d79c93046b74e1ada61254914ab305b8b5`; GitHub Pages run `44058943137` completed successfully. Revisited all 13 live shopping pages and inspected all 32 Amazon anchors: every link is a direct ASIN URL with the correct affiliate tag. Completed a live urine-leak finder journey with five direct product links, expanded extras and the more-options button. No site-origin console warnings or errors were captured during that live journey. This checks our outgoing destinations, not Amazon stock or checkout.
+
+Evidence: `live-links-2026-11-17.json`, `live-links-2026-11-17.jpg`, and `short-phone-2026-11-17.jpg`. The phone screenshot is the locally tested 320×568 viewport; the desktop screenshot is the deployed site.
