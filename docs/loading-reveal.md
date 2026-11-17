@@ -39,3 +39,9 @@ Observed UI checks include Reduce motion, immediate edits, Back and reset during
 The automated suite includes timing boundaries, cancellation, replacement runs, hidden-page behavior, dialog pause, review eligibility, escaping, bounded data fetching and cache-version integrity. Run `node --test tests/*.test.mjs`, `python -m unittest discover -s tests`, `python production.py`, `python validate.py`, `python amazon_audit.py dist`, and `git diff --check`.
 
 This is cloud Chrome testing at different viewport sizes, not certification of real social-app browsers, Safari, Firefox, iOS or Android. Actual cross-device coverage remains pending as documented in the earlier Amazon/browser audit.
+
+## Release verification
+
+Application commit `55db0e00e1d208db9708fec4b15fc6cd485ba372` passed GitHub Pages deployment run `44186094708`. Validation finished with 100 Node tests and 20 Python tests passing, 25 site pages validated, a clean Amazon destination audit and no whitespace errors.
+
+On the live site, completed an underarm smell-and-wetness journey with fragrance preference. Observed the staged sequence followed by automatic results and heading focus; all five displayed shopping links were direct product URLs with `menopausewash-20`, extras were expanded, and no site-origin console errors or warnings were captured. Live evidence: `finder-review/loading-live.jpg` and `finder-review/loading-live-check.json`.
