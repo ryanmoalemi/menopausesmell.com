@@ -28,9 +28,9 @@ The source package's older instruction to retain Amazon search fallbacks conflic
 - `finder_src/app.mjs`: normal submit, immediate exceptional results, edits, reset and browser-history recovery.
 - `finder.py`: dependent module and stylesheet cache versions.
 
-The in-page Reduce motion button disables movement but preserves reading time. System reduced-motion CSS is also supported. Opening a dialog or hiding the page pauses progress. Browser history restoration renders the current screen immediately and records completion if it interrupted a pending reveal. The existing generic completion event fires when results appear rather than when the final answer is submitted.
+The four stages stay in one vertical column at every viewport size. There is no in-page motion button; animations automatically follow the system's reduced-motion setting, including changes while the page is open, while preserving reading time. Opening a dialog or hiding the page pauses progress. Browser history restoration renders the current screen immediately and records completion if it interrupted a pending reveal. The existing generic completion event fires when results appear rather than when the final answer is submitted.
 
-## Verification
+## Initial integration verification (before the layout correction below)
 
 Browser evidence is in `finder-review/loading-browser-checks.json`. All four stages and automatic heading focus were observed. Seven viewport sizes were measured: 320×568, 360×560, 390×600, 390×844, 740×390, 1024×600 and 1366×768. The first pass found the sequence too tall in short windows. The corrected version fits all four rows without horizontal overflow in these sizes.
 
@@ -45,3 +45,9 @@ This is cloud Chrome testing at different viewport sizes, not certification of r
 Application commit `55db0e00e1d208db9708fec4b15fc6cd485ba372` passed GitHub Pages deployment run `44186094708`. Validation finished with 100 Node tests and 20 Python tests passing, 25 site pages validated, a clean Amazon destination audit and no whitespace errors.
 
 On the live site, completed an underarm smell-and-wetness journey with fragrance preference. Observed the staged sequence followed by automatic results and heading focus; all five displayed shopping links were direct product URLs with `menopausewash-20`, extras were expanded, and no site-origin console errors or warnings were captured. Live evidence: `finder-review/loading-live.jpg` and `finder-review/loading-live-check.json`.
+
+## Owner-requested layout correction
+
+Restored one stage per line at every screen size and removed the visible motion toggle. The operating-system motion preference remains automatic. Results now use one ordered list with consecutive numbers, including the former extras. Removed the extras accordion heading, explanatory paragraph and repeated Optional prefix, and reduced the gap between product cards to 16px. Product selection, product content, alternative explanations and medical cautions are unchanged.
+
+Rebuilt and validated all 25 pages; 24 relevant Node checks and 9 finder build checks passed. Browser preview completed an underarm odor journey and verified the more-options link focuses the second product, headed `2 For washing your skin`, with no extras disclosure to expand. Four loading rows shared the same left edge and width at 1024×600, 320×568, 390×844 and 740×390; all four rows were within those viewports. No motion button was present. These are cloud Chrome viewport checks, not additional device or browser certifications.

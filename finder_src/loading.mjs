@@ -81,7 +81,6 @@ export function loadingMarkup(steps) {
       <div class="mw-step-copy"><p>${esc(s.label)}</p><h2>${esc(s.text)}</h2><div class="mw-step-track" aria-hidden="true"><span></span></div></div>
       ${i===3?'<div class="mw-sparkles" aria-hidden="true"><i>✦</i><i>✧</i><i>✦</i></div>':''}
     </li>`).join('')}</ol>
-    <button type="button" class="mw-loading-motion" data-action="motion" aria-pressed="false">Reduce motion</button>
   </section>`;
 }
 
